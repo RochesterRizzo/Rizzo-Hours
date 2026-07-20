@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prof. Rizzo Office Hours</title>
+  <meta name="description" content="Prof. Rizzo office hours, student information, jobs, internships, advising, and department events.">
+  <style>
+    :root {
+      --navy: #063a66;
+      --blue: #08007a;
+      --orange: #ff965f;
+      --green: #389b68;
+      --red: #d40000;
+      --lav: #b5a4cc;
+      --ink: #111;
+      --paper: #f7f7f7;
+      --line: #d7d7d7;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: #e9edf2;
+    }
+
+    .page {
+      max-width: 1180px;
+      margin: 0 auto;
+      min-height: 100vh;
+      background: white;
+      box-shadow: 0 0 24px rgba(0,0,0,.12);
+    }
+
+    header {
+      background: var(--navy);
+      color: white;
+      padding: 22px 26px 16px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: clamp(1.6rem, 3.2vw, 2.4rem);
+      letter-spacing: .5px;
+    }
+
+    header p {
+      margin: 10px 0 0;
+      font-size: 1.05rem;
+    }
+
+    header a { color: white; font-weight: 700; }
+
+    .quick-bar {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      padding: 16px 22px;
+      background: #f4f6f8;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .quick-card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 12px 14px;
+      min-height: 92px;
+    }
+
+    .quick-card h2 {
+      font-size: .86rem;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      margin: 0 0 8px;
+      color: #555;
+    }
+
+    .quick-card p {
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.35;
+    }
+
+    .quick-card strong { font-size: 1.08rem; }
+
+    .schedule-wrap {
+      padding: 22px;
+      background: var(--navy);
+    }
+
+    .schedule {
+      display: grid;
+      grid-template-columns: 168px repeat(5, 1fr);
+      border: 2px solid var(--navy);
+      background: white;
+    }
+
+    .corner, .day, .time, .slot {
+      border: 1px solid var(--navy);
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .corner, .day, .time {
+      background: var(--orange);
+      font-weight: 700;
+    }
+
+    .time {
+      justify-content: flex-start;
+      font-size: 1.05rem;
+      font-weight: 500;
+      text-align: left;
+    }
+
+    .day { font-size: 1.18rem; }
+
+    .slot {
+      background: #fff;
+      font-size: 1rem;
+      line-height: 1.25;
+    }
+
+    .class { background: var(--blue); color: white; }
+    .office { background: var(--green); color: white; }
+    .meeting { background: var(--red); color: white; }
+    .research { background: var(--blue); color: white; }
+
+    .tall { min-height: 126px; }
+    .very-tall { min-height: 190px; }
+
+    main {
+      padding: 22px;
+    }
+
+    .notice {
+      border-left: 8px solid var(--red);
+      background: #fff7f7;
+      padding: 16px 18px;
+      margin-bottom: 22px;
+      border-radius: 8px;
+    }
+
+    .notice h2 {
+      margin: 0 0 8px;
+      color: #a00000;
+      font-size: 1.35rem;
+    }
+
+    .notice p {
+      margin: 0;
+      line-height: 1.45;
+      font-size: 1.03rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 20px;
+    }
+
+    section {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 18px;
+      background: var(--paper);
+    }
+
+    section h2 {
+      margin: 0 0 12px;
+      font-size: 1.25rem;
+      color: var(--navy);
+    }
+
+    .links {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .links a, .button {
+      display: block;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px 14px;
+      color: #043ea5;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .links a:hover, .button:hover {
+      text-decoration: underline;
+      background: #f9fbff;
+    }
+
+    .updates article {
+      border-top: 1px solid var(--line);
+      padding-top: 12px;
+      margin-top: 12px;
+    }
+
+    .updates article:first-of-type {
+      border-top: 0;
+      padding-top: 0;
+      margin-top: 0;
+    }
+
+    .date {
+      font-weight: 700;
+      color: #555;
+      font-size: .92rem;
+    }
+
+    footer {
+      margin-top: 22px;
+      padding: 18px 22px;
+      background: var(--lav);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      font-size: 1.03rem;
+    }
+
+    footer p { margin: 5px 0; }
+
+    @media (max-width: 900px) {
+      .quick-bar, .grid, footer { grid-template-columns: 1fr; }
+      .schedule-wrap { overflow-x: auto; }
+      .schedule { min-width: 920px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <h1>Prof. Rizzo’s Office Hours & Student Information</h1>
+      <p>Fall 2026 schedule. Check weekly at <a href="http://tiny.cc/RizzoHours">tiny.cc/RizzoHours</a>. Text any time.</p>
+    </header>
+
+    <div class="quick-bar" aria-label="Key office hour information">
+      <div class="quick-card">
+        <h2>Office Hours</h2>
+        <p><strong>Tue 12:30–1:30</strong><br>236 Harkness</p>
+      </div>
+      <div class="quick-card">
+        <h2>Outdoor Office Hours</h2>
+        <p><strong>Wed 11:30–12:45</strong><br>Picnic tables between Meliora and Harkness</p>
+      </div>
+      <div class="quick-card">
+        <h2>Lunch Bunch</h2>
+        <p><strong>Mon 11:30–12:45</strong><br>Bring lunch/snack. Picnic tables between Meliora and Harkness.</p>
+      </div>
+      <div class="quick-card">
+        <h2>Contact</h2>
+        <p><strong>Text:</strong> 585-478-2677<br><strong>Email:</strong> <a href="mailto:rizzo.liberty@gmail.com">rizzo.liberty@gmail.com</a></p>
+      </div>
+    </div>
+
+    <div class="schedule-wrap">
+      <div class="schedule" role="table" aria-label="Weekly schedule">
+        <div class="corner" role="columnheader"></div>
+        <div class="day" role="columnheader">Monday</div>
+        <div class="day" role="columnheader">Tuesday</div>
+        <div class="day" role="columnheader">Wednesday</div>
+        <div class="day" role="columnheader">Thursday</div>
+        <div class="day" role="columnheader">Friday</div>
+
+        <div class="time">9:00 to 9:50</div>
+        <div class="slot class">Eco 108<br>(Goergen 101)</div>
+        <div class="slot"></div>
+        <div class="slot class">Eco 108<br>(Goergen 101)</div>
+        <div class="slot"></div>
+        <div class="slot class">Eco 108<br>(Goergen 101)</div>
+
+        <div class="time">10:25 to 11:15</div>
+        <div class="slot class">Eco 108<br>(Dewey 1101)</div>
+        <div class="slot"></div>
+        <div class="slot class">Eco 108<br>(Dewey 1101)</div>
+        <div class="slot"></div>
+        <div class="slot class">Eco 108<br>(Dewey 1101)</div>
+
+        <div class="time tall">11:30 to 12:45</div>
+        <div class="slot office tall">Lunch Bunch Discussions<br>Bring LUNCH/Snack<br>(Picnic tables b/w Meliora and Harkness)</div>
+        <div class="slot class tall">Eco 238<br>(B&L 106)<br>11:05 to 12:30</div>
+        <div class="slot office tall">Office Hours<br>(Picnic tables b/w Meliora and Harkness)</div>
+        <div class="slot class tall">Eco 238<br>(B&L 106)<br>11:05 to 12:30</div>
+        <div class="slot meeting tall">TA Meetings</div>
+
+        <div class="time">12:30 to 1:30</div>
+        <div class="slot"></div>
+        <div class="slot office">Office Hours<br>(236 Harkness)</div>
+        <div class="slot"></div>
+        <div class="slot research">Research/Seminar Meetings<br>(236 Harkness)</div>
+        <div class="slot meeting"></div>
+
+        <div class="time">2:00 to 3:00</div>
+        <div class="slot meeting">TA Meetings</div>
+        <div class="slot"></div>
+        <div class="slot"></div>
+        <div class="slot research"></div>
+        <div class="slot"></div>
+      </div>
+    </div>
+
+    <main>
+      <div class="notice">
+        <h2>Current update</h2>
+        <p>Office hours resume in the Fall semester on Monday, August 31, 2026. Schedule varies by week; check this page before coming.</p>
+      </div>
+
+      <div class="grid">
+        <section class="updates">
+          <h2>News, updates, and discussion items</h2>
+          <article>
+            <p class="date">Fall 2026</p>
+            <p>Use this page for current weekly office hours, special events, lunch bunch discussions, TA information, and general student opportunities.</p>
+          </article>
+          <article>
+            <p class="date">Student note</p>
+            <p>Office hours are for course questions, advising, jobs, internships, grad school, research ideas, career questions, and general economics conversation.</p>
+          </article>
+        </section>
+
+        <section>
+          <h2>Student resource links</h2>
+          <div class="links">
+            <a href="#" aria-label="Office hour information">Office Hour Information</a>
+            <a href="#" aria-label="Sign up for office hour">Sign Up for Office Hour</a>
+            <a href="#" aria-label="Economics bulletin board jobs internships and summer programs">Economics Bulletin Board</a>
+            <a href="#" aria-label="Undergraduate research opportunities">Undergraduate Research Opportunities</a>
+            <a href="#" aria-label="Letters of recommendation">Letters of Recommendation</a>
+            <a href="#" aria-label="Advising forms and paperwork">Advising Forms and Paperwork</a>
+            <a href="#" aria-label="Economics department information">Economics Department Information</a>
+            <a href="#" aria-label="Econ graduate school">Econ Graduate School</a>
+            <a href="#" aria-label="Oyster club and special events">OYSTER Club and Special Events</a>
+            <a href="#" aria-label="What to do with my life">“I Have No Idea What to Do With My Life”</a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div>
+        <p><strong>OH times, department events, job/grad school info:</strong></p>
+        <p><a href="http://tiny.cc/RizzoHours">http://tiny.cc/RizzoHours</a></p>
+        <p>* Schedule will vary by week. Check website for update.</p>
+      </div>
+      <div>
+        <p><strong>Mobile:</strong> 585-478-2677</p>
+        <p><strong>Zoom:</strong> <a href="https://rochester.zoom.us/my/wintercow20">https://rochester.zoom.us/my/wintercow20</a></p>
+        <p><strong>E-mail:</strong> <a href="mailto:rizzo.liberty@gmail.com">rizzo.liberty@gmail.com</a></p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

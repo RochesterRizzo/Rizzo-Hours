@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OYSTER Club & Special Events | Pr. Rizzo</title>
+  <meta name="description" content="OYSTER Club, special lectures, department talks, college talks, posters, slides, and event announcements from Pr. Rizzo.">
+
+  <style>
+    :root {
+      --navy: #063a66;
+      --gold: #ffd166;
+      --orange: #ff965f;
+      --green: #2e8b57;
+      --red: #b00020;
+      --ink: #111;
+      --muted: #555;
+      --paper: #f7f7f7;
+      --line: #d7d7d7;
+      --blue-link: #043ea5;
+      --soft-blue: #eef6ff;
+      --soft-gold: #fff8df;
+      --soft-green: #f2fbf6;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: #e9edf2;
+      line-height: 1.5;
+    }
+
+    .page {
+      max-width: 1120px;
+      margin: 0 auto;
+      min-height: 100vh;
+      background: white;
+      box-shadow: 0 0 24px rgba(0,0,0,.12);
+    }
+
+    header {
+      background: var(--navy);
+      color: white;
+      padding: 34px 32px 28px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: clamp(2.1rem, 5vw, 3.8rem);
+      letter-spacing: .5px;
+    }
+
+    header p {
+      margin: 10px auto 0;
+      max-width: 860px;
+      font-size: 1.15rem;
+    }
+
+    header a {
+      color: white;
+      font-weight: 700;
+    }
+
+    main {
+      padding: 26px 32px 44px;
+    }
+
+    a {
+      color: var(--blue-link);
+      font-weight: 700;
+    }
+
+    .back {
+      margin: 0 0 20px;
+    }
+
+    .back a {
+      text-decoration: none;
+    }
+
+    .back a:hover {
+      text-decoration: underline;
+    }
+
+    .notice {
+      border-left: 8px solid var(--orange);
+      background: var(--soft-gold);
+      padding: 17px 18px;
+      margin-bottom: 22px;
+      border-radius: 8px;
+    }
+
+    .notice h2 {
+      margin: 0 0 8px;
+      color: #8a3f00;
+      font-size: 1.4rem;
+    }
+
+    .notice p {
+      margin: 0 0 10px;
+      font-size: 1.04rem;
+    }
+
+    .notice p:last-child {
+      margin-bottom: 0;
+    }
+
+    .nav-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 18px 0 24px;
+    }
+
+    .nav-strip a {
+      display: inline-block;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 7px 11px;
+      color: var(--blue-link);
+      text-decoration: none;
+      font-size: .95rem;
+    }
+
+    .nav-strip a:hover {
+      background: var(--soft-blue);
+      text-decoration: underline;
+    }
+
+    section {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--paper);
+      padding: 20px;
+      margin-bottom: 22px;
+    }
+
+    section h2 {
+      margin: 0 0 12px;
+      color: var(--navy);
+      font-size: 1.42rem;
+    }
+
+    section h3 {
+      margin: 0 0 8px;
+      color: #333;
+      font-size: 1.16rem;
+    }
+
+    p {
+      margin-top: 0;
+    }
+
+    ul {
+      margin-top: 8px;
+      padding-left: 24px;
+    }
+
+    li {
+      margin-bottom: 9px;
+    }
+
+    .event-card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 16px;
+    }
+
+    .event-main {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(280px, .85fr);
+      gap: 0;
+    }
+
+    .event-text {
+      padding: 20px;
+    }
+
+    .event-poster {
+      background: #111;
+      border-left: 1px solid var(--line);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 260px;
+    }
+
+    .event-poster img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+
+    .event-title {
+      margin: 0 0 8px;
+      color: var(--navy);
+      font-size: 1.55rem;
+      line-height: 1.15;
+    }
+
+    .event-subtitle {
+      margin: 0 0 14px;
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin: 14px 0 16px;
+    }
+
+    .meta {
+      background: var(--soft-blue);
+      border: 1px solid #c8ddf5;
+      border-radius: 8px;
+      padding: 10px 12px;
+    }
+
+    .meta strong {
+      display: block;
+      color: var(--navy);
+      font-size: .9rem;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+
+    .tag {
+      display: inline-block;
+      background: var(--gold);
+      color: #222;
+      padding: 3px 8px;
+      border-radius: 999px;
+      font-size: .84rem;
+      font-weight: 700;
+      margin: 4px 6px 0 0;
+      white-space: nowrap;
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--navy);
+      color: white;
+      border-radius: 8px;
+      padding: 10px 13px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .button.secondary {
+      background: var(--green);
+    }
+
+    .button.light {
+      background: white;
+      color: var(--blue-link);
+      border: 1px solid var(--line);
+    }
+
+    .button:hover {
+      text-decoration: underline;
+    }
+
+    .grid-two {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .small-card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 16px 18px;
+    }
+
+    .small-card h3 {
+      color: var(--navy);
+    }
+
+    .archive-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .archive-item {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 16px 18px;
+    }
+
+    .archive-item h3 {
+      color: var(--navy);
+      margin-bottom: 5px;
+    }
+
+    .archive-item .date {
+      color: var(--muted);
+      font-weight: 700;
+      margin: 0 0 8px;
+      font-size: .92rem;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 18px 32px;
+      background: #f4f6f8;
+      font-size: .95rem;
+    }
+
+    @media (max-width: 840px) {
+      main {
+        padding: 22px 18px 34px;
+      }
+
+      header {
+        padding: 28px 18px 24px;
+      }
+
+      section {
+        padding: 16px;
+      }
+
+      .event-main,
+      .grid-two,
+      .meta-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .event-poster {
+        border-left: 0;
+        border-top: 1px solid var(--line);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+
+    <header>
+      <h1>OYSTER Club & Special Events</h1>
+      <p>Extra lectures, public talks, department events, college talks, posters, slides, and other student-centered intellectual mischief.</p>
+    </header>
+
+    <main>
+
+      <p class="back">
+        <a href="index.html">← Back to Office Hours & Student Information</a>
+      </p>
+
+      <div class="notice">
+        <h2>Current Events and Announcements</h2>
+        <p>
+          This page collects special events, extra lectures, OYSTER Club gatherings, posters, slides, and related materials. Events here are usually outside normal class meetings and are open to interested students unless otherwise noted.
+        </p>
+      </div>
+
+      <nav class="nav-strip" aria-label="Page sections">
+        <a href="#featured">Featured Event</a>
+        <a href="#upcoming">Upcoming</a>
+        <a href="#archive">Past Events / Materials</a>
+        <a href="#what-is-oyster">What is OYSTER?</a>
+      </nav>
+
+      <section id="featured">
+        <h2>Featured Event</h2>
+
+        <article class="event-card">
+          <div class="event-main">
+
+            <div class="event-text">
+              <h3 class="event-title">Ding Dong the Climate Witch is Dead?</h3>
+              <p class="event-subtitle">
+                Squalls squashed the Eastern Sorceress: will they come for the West?
+              </p>
+
+              <div class="meta-grid">
+                <div class="meta">
+                  <strong>Speaker</strong>
+                  Professor Michael Rizzo
+                </div>
+
+                <div class="meta">
+                  <strong>Date</strong>
+                  Monday, 10/30
+                </div>
+
+                <div class="meta">
+                  <strong>Time</strong>
+                  7:30pm
+                </div>
+
+                <div class="meta">
+                  <strong>Location</strong>
+                  Wegmans 1400
+                </div>
+              </div>
+
+              <p>
+                A public lecture on climate economics, catastrophe rhetoric, adaptation, resilience, and how to think clearly about environmental risk without drowning in doombubbles.
+              </p>
+
+              <p>
+                <span class="tag">Climate</span>
+                <span class="tag">Environmental Economics</span>
+                <span class="tag">Public Lecture</span>
+                <span class="tag">Open to All</span>
+              </p>
+
+              <div class="button-row">
+                <a class="button" href="assets/ding-dong-climate-witch-poster.png">View Poster</a>
+                <a class="button secondary" href="assets/ding-dong-climate-witch-slides.pptx">Download Slides</a>
+              </div>
+            </div>
+
+            <div class="event-poster">
+              <img src="assets/ding-dong-climate-witch-poster.png" alt="Poster for Ding Dong the Climate Witch is Dead, a lecture by Professor Michael Rizzo.">
+            </div>
+
+          </div>
+        </article>
+      </section>
+
+      <section id="upcoming">
+        <h2>Upcoming Events</h2>
+
+        <div class="grid-two">
+          <article class="small-card">
+            <h3>Next OYSTER Club Gathering</h3>
+            <p>
+              Details coming soon. Check this page for the next discussion topic, location, and materials.
+            </p>
+            <p>
+              <span class="tag">OYSTER Club</span>
+              <span class="tag">Discussion</span>
+            </p>
+          </article>
+
+          <article class="small-card">
+            <h3>Special Lecture / Department Talk</h3>
+            <p>
+              Add upcoming talks here when the date, speaker, poster, or slides are ready.
+            </p>
+            <p>
+              <span class="tag">Lecture</span>
+              <span class="tag">Department Event</span>
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="archive">
+        <h2>Past Events / Materials</h2>
+
+        <div class="archive-list">
+
+          <article class="archive-item">
+            <h3>Ding Dong the Climate Witch is Dead?</h3>
+            <p class="date">Monday, 10/30 · Wegmans 1400</p>
+            <p>
+              Public lecture on climate economics, catastrophe rhetoric, adaptation, resilience, and environmental tradeoffs.
+            </p>
+            <div class="button-row">
+              <a class="button light" href="assets/ding-dong-climate-witch-poster.png">Poster</a>
+              <a class="button light" href="assets/ding-dong-climate-witch-slides.pptx">Slides</a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <section id="what-is-oyster">
+        <h2>What is OYSTER Club?</h2>
+
+        <p>
+          OYSTER Club is a loose home for extra conversations, special talks, strange questions, economics-adjacent ideas, department events, and the intellectual material that does not always fit neatly inside a regular class meeting.
+        </p>
+
+        <p>
+          The spirit is simple: show up curious, argue in good faith, read things carefully, and be willing to think harder than the discourse usually requires.
+        </p>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>
+        Pr. Rizzo · Office Hours & Student Information · <a href="index.html">Return home</a>
+      </p>
+    </footer>
+
+  </div>
+</body>
+</html>

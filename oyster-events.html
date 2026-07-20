@@ -301,16 +301,67 @@
     }
 
     .archive-list {
-      display: grid;
-      gap: 14px;
-    }
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
 
-    .archive-item {
-      background: white;
-      border: 1px solid var(--line);
-      border-radius: 10px;
-      padding: 16px 18px;
-    }
+.archive-item {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 180px 1fr;
+}
+
+.archive-thumb {
+  background: #111;
+  border-right: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+}
+
+.archive-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.archive-body {
+  padding: 16px 18px;
+}
+
+.archive-item h3 {
+  color: var(--navy);
+  margin: 0 0 5px;
+}
+
+.archive-item .date {
+  color: var(--muted);
+  font-weight: 700;
+  margin: 0 0 8px;
+  font-size: .92rem;
+}
+
+@media (max-width: 700px) {
+  .archive-item {
+    grid-template-columns: 1fr;
+  }
+
+  .archive-thumb {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+    max-height: 360px;
+  }
+
+  .archive-thumb img {
+    object-fit: contain;
+  }
+}
 
     .archive-item h3 {
       color: var(--navy);
@@ -525,24 +576,115 @@
 </section>
 
       <section id="archive">
-        <h2>Past Events / Materials</h2>
+  <h2>Past Events / Materials</h2>
 
-        <div class="archive-list">
+  <div class="archive-list">
 
-          <article class="archive-item">
-            <h3>Ding Dong the Climate Witch is Dead?</h3>
-            <p class="date">Monday, 10/30 · Wegmans 1400</p>
-            <p>
-              Public lecture on climate economics, catastrophe rhetoric, adaptation, resilience, and environmental tradeoffs.
-            </p>
-            <div class="button-row">
-              <a class="button light" href="ding-dong-climate-witch-poster.png">Poster</a>
-              <a class="button light" href="Ding-Dong-Climate-Witch-compressed-under-25MB.pptx">Slides</a>
-            </div>
-          </article>
+    <article class="archive-item">
+      <div class="archive-thumb">
+        <a href="assets/engerman-margo-poster.png">
+          <img src="assets/engerman-margo-poster.png" alt="Poster for Robert Margo Engerman Lecture, From the Artisan Shop to the Mechanized Factory.">
+        </a>
+      </div>
 
+      <div class="archive-body">
+        <h3>From the Artisan Shop to the Mechanized Factory</h3>
+        <p class="date">Wednesday, October 15 · 5:00 PM · Morey 321</p>
+
+        <p>
+          <strong>Speaker:</strong> Robert Margo
+        </p>
+
+        <p>
+          <strong>Event:</strong> Engerman Lecture
+        </p>
+
+        <p>
+          <strong>Topic:</strong> Inanimate power and the transformation of American manufacturing, 1820 to 1900.
+        </p>
+
+        <p>
+          <span class="tag">Economic History</span>
+          <span class="tag">Engerman Lecture</span>
+          <span class="tag">Manufacturing</span>
+        </p>
+
+        <div class="button-row">
+          <a class="button light" href="assets/engerman-margo-poster.png">View Poster</a>
         </div>
-      </section>
+      </div>
+    </article>
+
+    <article class="archive-item">
+      <div class="archive-thumb">
+        <a href="assets/robots-ai-pmp-poster.png">
+          <img src="assets/robots-ai-pmp-poster.png" alt="Poster for Politics and Markets Project panel, The Robots Are Coming: Will AI Take Your Job?">
+        </a>
+      </div>
+
+      <div class="archive-body">
+        <h3>The Robots Are Coming: Will AI Take Your Job?</h3>
+        <p class="date">Wednesday, November 5 · 7:30–9:00 PM · Wegmans 1400</p>
+
+        <p>
+          <strong>Event:</strong> Politics and Markets Project panel discussion
+        </p>
+
+        <p>
+          <strong>Moderator:</strong> Prof. David Primo
+        </p>
+
+        <p>
+          <strong>Topic:</strong> AI, labor markets, occupational disruption, automation, and the future of work.
+        </p>
+
+        <p>
+          <span class="tag">Politics and Markets</span>
+          <span class="tag">AI</span>
+          <span class="tag">Labor Markets</span>
+          <span class="tag">Panel</span>
+        </p>
+
+        <div class="button-row">
+          <a class="button light" href="assets/robots-ai-pmp-poster.png">View Poster</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="archive-item">
+      <div class="archive-thumb">
+        <a href="assets/ding-dong-climate-witch-poster.png">
+          <img src="assets/ding-dong-climate-witch-poster.png" alt="Poster for Ding Dong the Climate Witch is Dead, a lecture by Professor Michael Rizzo.">
+        </a>
+      </div>
+
+      <div class="archive-body">
+        <h3>Ding Dong the Climate Witch is Dead?</h3>
+        <p class="date">Monday, 10/30 · 7:30 PM · Wegmans 1400</p>
+
+        <p>
+          <strong>Speaker:</strong> Professor Michael Rizzo
+        </p>
+
+        <p>
+          <strong>Topic:</strong> Climate economics, catastrophe rhetoric, adaptation, resilience, and environmental tradeoffs.
+        </p>
+
+        <p>
+          <span class="tag">Climate</span>
+          <span class="tag">Environmental Economics</span>
+          <span class="tag">Public Lecture</span>
+        </p>
+
+        <div class="button-row">
+          <a class="button light" href="assets/ding-dong-climate-witch-poster.png">View Poster</a>
+          <a class="button light" href="assets/ding-dong-climate-witch-slides.pptx">Slides</a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
 
       <section id="what-is-oyster">
         <h2>What is OYSTER Club?</h2>

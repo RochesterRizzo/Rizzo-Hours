@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Becoming Worth Betting On | Pr. Rizzo</title>
+  <meta name="description" content="Character, judgment, career preparation, AI-era work, ambition, adulthood, and becoming the kind of person others can trust with hard things.">
+
+  <style>
+    :root {
+      --navy: #063a66;
+      --gold: #ffd166;
+      --green: #2e8b57;
+      --red: #b00020;
+      --ink: #111;
+      --muted: #555;
+      --paper: #f7f7f7;
+      --line: #d7d7d7;
+      --blue-link: #043ea5;
+      --soft-blue: #eef6ff;
+      --soft-green: #f2fbf6;
+      --soft-gold: #fff8df;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: #e9edf2;
+      line-height: 1.5;
+    }
+
+    .page {
+      max-width: 1080px;
+      margin: 0 auto;
+      min-height: 100vh;
+      background: white;
+      box-shadow: 0 0 24px rgba(0,0,0,.12);
+    }
+
+    header {
+      background: var(--navy);
+      color: white;
+      padding: 34px 32px 28px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: clamp(2.1rem, 5vw, 3.8rem);
+      letter-spacing: .5px;
+    }
+
+    header p {
+      margin: 10px auto 0;
+      max-width: 850px;
+      font-size: 1.18rem;
+    }
+
+    header a { color: white; font-weight: 700; }
+    main { padding: 26px 32px 44px; }
+    a { color: var(--blue-link); font-weight: 700; }
+
+    .back { margin: 0 0 20px; }
+    .back a { text-decoration: none; }
+    .back a:hover { text-decoration: underline; }
+
+    .notice {
+      border-left: 8px solid var(--green);
+      background: var(--soft-green);
+      padding: 17px 18px;
+      margin-bottom: 22px;
+      border-radius: 8px;
+    }
+
+    .notice h2 {
+      margin: 0 0 8px;
+      color: var(--green);
+      font-size: 1.4rem;
+    }
+
+    .notice p {
+      margin: 0 0 10px;
+      font-size: 1.04rem;
+    }
+
+    .notice p:last-child { margin-bottom: 0; }
+
+    .nav-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 18px 0 24px;
+    }
+
+    .nav-strip a {
+      display: inline-block;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 7px 11px;
+      color: var(--blue-link);
+      text-decoration: none;
+      font-size: .95rem;
+    }
+
+    .nav-strip a:hover {
+      background: var(--soft-blue);
+      text-decoration: underline;
+    }
+
+    section {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--paper);
+      padding: 20px;
+      margin-bottom: 22px;
+    }
+
+    section h2 {
+      margin: 0 0 12px;
+      color: var(--navy);
+      font-size: 1.42rem;
+    }
+
+    section h3 {
+      margin: 18px 0 8px;
+      color: #333;
+      font-size: 1.08rem;
+    }
+
+    p { margin-top: 0; }
+    ul { margin-top: 8px; padding-left: 24px; }
+    li { margin-bottom: 9px; }
+
+    .callout, .principle, .warning {
+      background: white;
+      padding: 13px 15px;
+      margin: 12px 0;
+      border-radius: 6px;
+    }
+
+    .callout { border-left: 5px solid var(--gold); }
+    .principle { border-left: 5px solid var(--navy); }
+    .warning { border-left: 5px solid var(--red); background: #fff7f7; }
+
+    .tag {
+      display: inline-block;
+      background: var(--gold);
+      color: #222;
+      padding: 3px 8px;
+      border-radius: 999px;
+      font-size: .84rem;
+      font-weight: 700;
+      margin: 4px 6px 0 0;
+      white-space: nowrap;
+    }
+
+    .tools {
+      background: var(--soft-blue);
+      border: 1px solid #c8ddf5;
+      border-radius: 10px;
+      padding: 16px;
+      margin-bottom: 22px;
+    }
+
+    .tools label {
+      display: block;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: var(--navy);
+    }
+
+    .search-row {
+      display: grid;
+      grid-template-columns: 1fr 220px;
+      gap: 12px;
+    }
+
+    input[type="search"], select {
+      width: 100%;
+      font-size: 1rem;
+      padding: 10px 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: white;
+    }
+
+    .result-count {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+    .resource-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    .resource-card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 16px 18px;
+    }
+
+    .resource-card h3 {
+      margin: 0 0 4px;
+      color: var(--navy);
+      font-size: 1.18rem;
+    }
+
+    .type {
+      color: var(--muted);
+      font-weight: 700;
+      font-size: .9rem;
+      margin: 0 0 10px;
+    }
+
+    .resource-card p { margin-bottom: 10px; }
+
+    .resource-card .quote {
+      background: var(--soft-gold);
+      border-left: 4px solid var(--gold);
+      padding: 10px 12px;
+      margin: 10px 0;
+      border-radius: 6px;
+      font-style: italic;
+    }
+
+    .resource-card .links-line { margin-top: 10px; }
+
+    .no-results {
+      display: none;
+      background: #fff7f7;
+      border: 1px solid #f0b4b4;
+      border-radius: 10px;
+      padding: 16px;
+      margin-top: 12px;
+    }
+
+    .edit-box {
+      background: #fafafa;
+      border: 1px dashed #aaa;
+      border-radius: 8px;
+      padding: 12px 14px;
+      font-family: Consolas, Monaco, monospace;
+      font-size: .9rem;
+      overflow-x: auto;
+      white-space: pre-wrap;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 18px 32px;
+      background: #f4f6f8;
+      font-size: .95rem;
+    }
+
+    @media (max-width: 760px) {
+      main { padding: 22px 18px 34px; }
+      header { padding: 28px 18px 24px; }
+      section { padding: 16px; }
+      .search-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+
+    <header>
+      <h1>Becoming Worth Betting On</h1>
+      <p>Character, judgment, work, and human capital in an age of AI, credential inflation, and hypercompetition.</p>
+    </header>
+
+    <main>
+
+      <p class="back">
+        <a href="index.html">← Back to Office Hours & Student Information</a>
+      </p>
+
+      <div class="notice">
+        <h2>This page is nominally about careers.</h2>
+        <p>
+          It is really about becoming the kind of person other people want to trust, hire, recommend, work with, learn from, and bet on.
+        </p>
+        <p>
+          In a world of AI, credential inflation, and hypercompetition, the scarce traits are not merely technical skills. They are judgment, intellectual tenacity, emotional steadiness, honesty, initiative, persistence, seriousness, and the ability to cooperate without becoming a conformist.
+        </p>
+        <p>
+          Do not just ask, “What should I put on my résumé?” Ask: <strong>Am I becoming the kind of person who can be trusted with hard things?</strong>
+        </p>
+      </div>
+
+      <nav class="nav-strip" aria-label="Page sections">
+        <a href="#start">Start Here</a>
+        <a href="#principles">Core Principles</a>
+        <a href="#resources">Searchable Library</a>
+        <a href="#how-to-add">How to Add Items</a>
+      </nav>
+
+      <section id="start">
+        <h2>Start Here</h2>
+        <p>
+          Students often want a checklist: the right major, the right internship, the right LinkedIn polish, the right campus activities, the right résumé words. Those things matter, but they are not enough.
+        </p>
+        <p>
+          The deeper question is whether you are developing the traits that make adults, employers, mentors, and colleagues willing to invest in you.
+        </p>
+        <div class="callout">
+          <strong>Core claim:</strong> The best preparation for careers, graduate school, leadership, friendship, and adult life is character plus competence. One without the other is fragile.
+        </div>
+        <p>
+          The links and notes below are not assigned readings. They are prompts. Pick one, read seriously, and ask what it would mean to live differently if the argument is right.
+        </p>
+      </section>
+
+      <section id="principles">
+        <h2>Core Principles</h2>
+        <div class="principle">
+          <strong>1. Become hard to replace.</strong><br>
+          AI will make routine symbolic work cheaper. The response is not panic. The response is to develop judgment, taste, tenacity, communication, and the ability to use tools rather than be displaced by them.
+        </div>
+        <div class="principle">
+          <strong>2. Stop living by checklists.</strong><br>
+          Requirements matter, but requirements are minimums. Being excellent requires initiative, persistence, curiosity, and an appetite for hard problems.
+        </div>
+        <div class="principle">
+          <strong>3. Learn to work with things, people, and symbols.</strong><br>
+          Many elite students are trained mostly for symbolic work: writing, calculating, analyzing, coding, modeling. The most robust careers often combine symbolic work with people, operations, institutions, technical tools, or physical reality.
+        </div>
+        <div class="principle">
+          <strong>4. Work where incentives teach you.</strong><br>
+          Your first jobs shape your standards. Do not work for people you do not want to become.
+        </div>
+        <div class="principle">
+          <strong>5. Be serious about something.</strong><br>
+          Seriousness orders priorities. If nothing is sacred, life becomes drift.
+        </div>
+      </section>
+
+      <section id="resources">
+        <h2>Searchable Resource Library</h2>
+
+        <div class="tools">
+          <div class="search-row">
+            <div>
+              <label for="resourceSearch">Search by title, idea, tag, author, or phrase</label>
+              <input id="resourceSearch" type="search" placeholder="Try: AI, adulthood, ambition, profit, economics degree, tenacity">
+            </div>
+            <div>
+              <label for="categoryFilter">Filter by category</label>
+              <select id="categoryFilter">
+                <option value="all">All categories</option>
+                <option value="start">Start here</option>
+                <option value="character">Character and adulthood</option>
+                <option value="ambition">Ambition and great work</option>
+                <option value="ai">AI and work</option>
+                <option value="where">Where to work</option>
+                <option value="economics">Economics degree and fit</option>
+                <option value="thinking">Critical thinking and judgment</option>
+              </select>
+            </div>
+          </div>
+          <p class="result-count" id="resultCount">Showing all resources.</p>
+        </div>
+
+        <div class="resource-grid" id="resourceGrid">
+
+          <article class="resource-card" data-category="start" data-tags="character jobs success tenacity social adjustment personality wages">
+            <h3>Character, Jobs, Success</h3>
+            <p class="type">Start Here · Character · Labor Market</p>
+            <p>
+              A reminder that students anxious to check boxes and get requirements done often miss what employers and institutions actually value.
+            </p>
+            <div class="quote">
+              Occupational personality requirements can be grouped into intellectual tenacity and social adjustment. Intellectual tenacity includes achievement, effort, persistence, initiative, analytical thinking, innovation, and independence. Social adjustment includes emotion regulation, concern for others, social orientation, cooperation, and stress tolerance.
+            </div>
+            <p>
+              The point is not that skills do not matter. The point is that skills without tenacity, steadiness, cooperation, and judgment are less valuable than students often imagine.
+            </p>
+          </article>
+
+          <article class="resource-card" data-category="start" data-tags="job market responsibility agency auren hoffman">
+            <h3>If You Can’t Get a Job Today, It’s Your Fault</h3>
+            <p class="type">Start Here · Agency · Labor Market</p>
+            <p>
+              A deliberately blunt piece about agency, labor-market excuses, and the difference between a hard market and a passive job search.
+            </p>
+            <p class="links-line"><a href="https://auren.substack.com/p/if-you-cant-get-a-job-today-its-your">Read the piece</a></p>
+          </article>
+
+          <article class="resource-card" data-category="ambition" data-tags="ambition excellence important problems top performers">
+            <h3>Top Performers Are Pathologically Ambitious</h3>
+            <p class="type">Ambition and Great Work · Excellence</p>
+            <p>
+              If you work on an important problem, you should work harder and aim higher. This is a useful corrective to the fantasy that success is mostly about balance, vibes, or credentials.
+            </p>
+            <p class="links-line"><a href="https://thatvastvariety.substack.com/p/top-performers-are-pathologically">Read the piece</a></p>
+          </article>
+
+          <article class="resource-card" data-category="ambition" data-tags="niche specialization weird comparative advantage">
+            <h3>Be the Best in the World at Something Nobody Does</h3>
+            <p class="type">Ambition and Great Work · Comparative Advantage</p>
+            <p>
+              Advice without a link, but worth keeping: do not merely chase obvious crowded status ladders. Find neglected combinations of skills, tastes, and problems where you can become unusually valuable.
+            </p>
+          </article>
+
+          <article class="resource-card" data-category="ai" data-tags="AI harvard symbolic work software development automation arnold kling">
+            <h3>How Do Elite College Graduates Prepare for a Labor Market in a World of AI?</h3>
+            <p class="type">AI and Work · Symbolic Labor · Automation</p>
+            <p>
+              Remember the three types of jobs: working with things, working with people, and working with symbols. College often prepares students for symbolic work, but AI is changing the economics of routine symbolic tasks.
+            </p>
+            <div class="quote">
+              From now on, all symbol-using jobs involve software development. Instead of writing jobs, there will be jobs developing software that writes. Instead of financial analysis jobs, there will be jobs developing software to do financial analysis.
+            </div>
+            <p>
+              The practical advice: adopt the software-development mindset. Whenever you catch yourself doing something repetitive, ask whether a tool, script, spreadsheet, template, or system should do it.
+            </p>
+            <p class="links-line"><a href="https://arnoldkling.substack.com/p/pity-the-harvard-undergrad">Read Arnold Kling</a></p>
+          </article>
+
+          <article class="resource-card" data-category="character" data-tags="adult responsibility emotional regulation integrity identity adulthood">
+            <h3>What It Means to Be an Adult</h3>
+            <p class="type">Character and Adulthood · Responsibility</p>
+            <p>
+              Adulthood is not age. It is responsibility, self-command, honesty, the ability to delay gratification, and the capacity to take care of yourself and others.
+            </p>
+            <ul>
+              <li>Take primary responsibility for your actions and choices.</li>
+              <li>Admit mistakes and learn from them.</li>
+              <li>Do not let emotional reasoning and snap judgment run your life.</li>
+              <li>Recognize that the world does not exist to make you happy.</li>
+              <li>Keep promises, act honestly, and value integrity.</li>
+              <li>Develop comfortable control of your own identity.</li>
+            </ul>
+          </article>
+
+          <article class="resource-card" data-category="character" data-tags="seriousness priorities sacred experimental history">
+            <h3>Surely You Can Be Serious</h3>
+            <p class="type">Character and Adulthood · Seriousness · Priorities</p>
+            <p>
+              Seriousness is not a late-life reward for playing the game well. It is a basic practice that keeps life from disintegrating.
+            </p>
+            <div class="quote">
+              Being serious means holding something sacred. If you do not feel like you are doing that right now, take a small but perceptible step toward doing that tomorrow, and then another step after that.
+            </div>
+            <p class="links-line"><a href="https://www.experimental-history.com/p/surely-you-can-be-serious">Read Experimental History</a></p>
+          </article>
+
+          <article class="resource-card" data-category="ambition" data-tags="paul graham great work curiosity taste hard problems">
+            <h3>How to Do Great Work</h3>
+            <p class="type">Ambition and Great Work · Paul Graham</p>
+            <p>
+              A general guide to doing important work: choosing problems, developing taste, following curiosity, and understanding that great work is not merely “work hard.”
+            </p>
+            <div class="quote">The shape of great work is not just a point labeled “work hard.”</div>
+            <p class="links-line"><a href="https://paulgraham.com/greatwork.html">Read Paul Graham</a></p>
+          </article>
+
+          <article class="resource-card" data-category="ambition" data-tags="high impact career 80000 hours altruism career choice">
+            <h3>Finding Your Way to a High Impact Career</h3>
+            <p class="type">Ambition and Great Work · Career Choice</p>
+            <p>A structured guide for thinking about impact, skills, career capital, and cause selection.</p>
+            <p class="links-line"><a href="https://80000hours.org/wp-content/uploads/2022/06/80000-Hours-Starter-Guide.pdf">Read the 80,000 Hours starter guide</a></p>
+          </article>
+
+          <article class="resource-card" data-category="where" data-tags="progress institution building institute for progress policy entrepreneurship doers">
+            <h3>On Progress: Build New Institutions</h3>
+            <p class="type">Where to Work · Progress · Institution Building</p>
+            <p>
+              Progress is a policy choice. The personal version: think about where your skills give you comparative advantage and where you can help build something that did not exist before.
+            </p>
+            <div class="quote">
+              The cool thing about starting a new institution is you can start with a clean slate: hire the very best people from day one, start a new mission, and build out a new institution.
+            </div>
+          </article>
+
+          <article class="resource-card" data-category="where" data-tags="where to work profit nonprofits sociotropic sociopathic kevin kelly arnold kling">
+            <h3>Work in a Sociotropic Environment</h3>
+            <p class="type">Where to Work · Incentives · Organizations</p>
+            <p>Kevin Kelly’s rule is short and brutal: do not ever work for someone you do not want to become.</p>
+            <div class="quote">
+              Work for a profit. Profit-seeking firms are generally more sociotropic: they must create value for customers, and they must develop employees who can help satisfy those customers.
+            </div>
+            <p>The larger lesson: the organization you join will teach you. Choose carefully.</p>
+          </article>
+
+          <article class="resource-card" data-category="economics" data-tags="fortune 500 ceos college ivy league status schools">
+            <h3>Where the CEOs of Fortune 500 Firms Went to College</h3>
+            <p class="type">Economics Degree and Fit · Status · Institutions</p>
+            <p>
+              Arkansas, Auburn, Illinois State, and many others. The point is not that pedigree is irrelevant. The point is that pedigree is not destiny.
+            </p>
+            <p class="links-line"><a href="https://fortune.com/2023/06/14/fortune-500-ceo-colleges-ivy-league/">Read Fortune</a></p>
+          </article>
+
+          <article class="resource-card" data-category="character" data-tags="unstuck bog motivation drift experimental history">
+            <h3>Getting Unstuck from the Bog</h3>
+            <p class="type">Character and Adulthood · Drift · Motivation</p>
+            <p>
+              Useful for students who feel stuck, passive, or buried in low-energy avoidance. The theme is movement: find the next concrete step.
+            </p>
+            <p class="links-line"><a href="https://www.experimental-history.com/p/so-you-wanna-de-bog-yourself">Read Experimental History</a></p>
+          </article>
+
+          <article class="resource-card" data-category="economics" data-tags="fit vocation place life experimental history">
+            <h3>Where Do I Fit In?</h3>
+            <p class="type">Economics Degree and Fit · Vocation · Life Design</p>
+            <p>
+              “Where do I fit in?” is not merely a private question. We all benefit when people find useful places to contribute.
+            </p>
+            <div class="quote">Well-slotted people make good neighbors, bosses, partners, and parents.</div>
+            <p class="links-line"><a href="https://www.experimental-history.com/p/theres-a-place-for-everyone">Read Experimental History</a></p>
+          </article>
+
+          <article class="resource-card" data-category="economics" data-tags="economics degree jobs twitter crowdsource career options">
+            <h3>Things to Do With an Economics Degree</h3>
+            <p class="type">Economics Degree and Fit · Career Options</p>
+            <p>
+              A crowd-sourced list of paths people have taken with economics training. Useful for students who think the only options are consulting, finance, law, or grad school.
+            </p>
+            <p class="links-line"><a href="https://x.com/DaveEvansPhD/status/1829168888778764403">See the thread</a></p>
+          </article>
+
+          <article class="resource-card" data-category="ambition" data-tags="deep wide generalist specialist communication nber knowledge economy">
+            <h3>Go Deep and Wide at the Same Time: Communicate Well</h3>
+            <p class="type">Ambition and Great Work · Depth · Breadth · Communication</p>
+            <p>
+              Do not think of college as choosing between specialist and generalist. The world needs both. Practice both: dive deep enough to know what real discovery feels like, range widely enough to see how ideas connect, and communicate well enough to make your work useful to others.
+            </p>
+            <p class="links-line"><a href="https://www.nber.org/papers/w34145">Read the NBER paper</a></p>
+          </article>
+
+          <article class="resource-card" data-category="thinking" data-tags="intelligence analyst sourcing bullshit critical thinking librarians data journalism tenacity scorekeeping">
+            <h3>What Intelligence Analysts Teach Us About Preparing for Careers</h3>
+            <p class="type">Critical Thinking and Judgment · Sourcing · Tenacity</p>
+            <p>
+              The best analysts care about sourcing, critical thinking, and process. They are relentless about questions and skeptical of fluff.
+            </p>
+            <div class="quote">
+              The people who crush it are like a dog with a bone. They will not let go. They have a question, and they are going to answer it. The tenacious ones care about sources, critical thinking tools, and keeping score.
+            </div>
+            <p>
+              In an era of grade inflation and intense competition, what is most valuable? Hint: it is not something on a checklist.
+            </p>
+          </article>
+
+        </div>
+
+        <div class="no-results" id="noResults">
+          No resources match that search/filter. Try a broader search term.
+        </div>
+      </section>
+
+      <section id="how-to-add">
+        <h2>How to Add Items Later</h2>
+        <p>
+          To add another resource, copy this template and paste it inside the <strong>resource-grid</strong> section, below the existing cards.
+        </p>
+
+        <div class="edit-box">&lt;article class=&quot;resource-card&quot; data-category=&quot;character&quot; data-tags=&quot;comma free search words here&quot;&gt;
+  &lt;h3&gt;Title of the piece&lt;/h3&gt;
+  &lt;p class=&quot;type&quot;&gt;Category · Subtopic&lt;/p&gt;
+  &lt;p&gt;
+    One or two sentences explaining why this is worth a student's time.
+  &lt;/p&gt;
+  &lt;div class=&quot;quote&quot;&gt;
+    Optional short quote or key idea.
+  &lt;/div&gt;
+  &lt;p class=&quot;links-line&quot;&gt;
+    &lt;a href=&quot;PASTE-LINK-HERE&quot;&gt;Read more&lt;/a&gt;
+  &lt;/p&gt;
+&lt;/article&gt;</div>
+
+        <p>Valid categories currently used by the filter are:</p>
+        <ul>
+          <li><strong>start</strong> — Start here</li>
+          <li><strong>character</strong> — Character and adulthood</li>
+          <li><strong>ambition</strong> — Ambition and great work</li>
+          <li><strong>ai</strong> — AI and work</li>
+          <li><strong>where</strong> — Where to work</li>
+          <li><strong>economics</strong> — Economics degree and fit</li>
+          <li><strong>thinking</strong> — Critical thinking and judgment</li>
+        </ul>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>Pr. Rizzo · Office Hours & Student Information · <a href="index.html">Return home</a></p>
+    </footer>
+
+  </div>
+
+  <script>
+    const searchInput = document.getElementById("resourceSearch");
+    const categoryFilter = document.getElementById("categoryFilter");
+    const cards = Array.from(document.querySelectorAll(".resource-card"));
+    const resultCount = document.getElementById("resultCount");
+    const noResults = document.getElementById("noResults");
+
+    function normalize(text) {
+      return text.toLowerCase().trim();
+    }
+
+    function updateCards() {
+      const query = normalize(searchInput.value);
+      const category = categoryFilter.value;
+      let visible = 0;
+
+      cards.forEach(card => {
+        const cardCategory = card.dataset.category || "";
+        const searchableText = normalize(card.innerText + " " + (card.dataset.tags || ""));
+        const matchesQuery = !query || searchableText.includes(query);
+        const matchesCategory = category === "all" || cardCategory === category;
+
+        if (matchesQuery && matchesCategory) {
+          card.style.display = "";
+          visible += 1;
+        } else {
+          card.style.display = "none";
+        }
+      });
+
+      if (visible === cards.length && category === "all" && !query) {
+        resultCount.textContent = "Showing all resources.";
+      } else {
+        resultCount.textContent = "Showing " + visible + " of " + cards.length + " resources.";
+      }
+
+      noResults.style.display = visible === 0 ? "block" : "none";
+    }
+
+    searchInput.addEventListener("input", updateCards);
+    categoryFilter.addEventListener("change", updateCards);
+  </script>
+
+</body>
+</html>

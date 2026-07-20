@@ -283,11 +283,47 @@
       text-decoration: underline;
     }
 
-    .grid-two {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-    }
+    ..grid-three {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.upcoming-card {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.upcoming-thumb {
+  background: #111;
+  min-height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ddd;
+  text-align: center;
+  padding: 18px;
+  font-weight: 700;
+}
+
+.upcoming-thumb img {
+  width: 100%;
+  height: 100%;
+  max-height: 280px;
+  object-fit: contain;
+  display: block;
+}
+
+.upcoming-body {
+  padding: 16px 18px;
+}
+
+.upcoming-body h3 {
+  color: var(--navy);
+  margin: 0 0 8px;
+}
 
     .small-card {
       background: white;
@@ -396,11 +432,11 @@
       }
 
       .event-main,
-      .grid-two,
-      .meta-grid {
-        grid-template-columns: 1fr;
-      }
-
+.grid-two,
+.grid-three,
+.meta-grid {
+  grid-template-columns: 1fr;
+}
       .event-poster {
         border-left: 0;
         border-top: 1px solid var(--line);
@@ -499,77 +535,129 @@
       <section id="upcoming">
   <h2>Upcoming Events</h2>
 
-  <div class="grid-two">
+  <div class="grid-three">
 
-    <article class="small-card">
-  <h3>Engerman Lecture</h3>
+    <article class="upcoming-card">
+      <div class="upcoming-thumb">
+        Poster coming soon
+      </div>
 
-  <p>
-    <strong>Title:</strong> TBD
-  </p>
+      <div class="upcoming-body">
+        <h3>Engerman Lecture</h3>
 
-  <p>
-    <strong>Speaker:</strong>
-    <a href="https://www.chicagobooth.edu/faculty/directory/h/richard-hornbeck" target="_blank" rel="noopener noreferrer">Richard Hornbeck</a>,
-    John P. Gould Professor of Economics and Neubauer Family Faculty Fellow, University of Chicago Booth School of Business
-  </p>
+        <p>
+          <strong>Title:</strong> TBD
+        </p>
 
-  <p>
-    <strong>Date:</strong> Wednesday, September 16th
-  </p>
+        <p>
+          <strong>Speaker:</strong>
+          <a href="https://www.chicagobooth.edu/faculty/directory/h/richard-hornbeck" target="_blank" rel="noopener noreferrer">Richard Hornbeck</a>,
+          John P. Gould Professor of Economics and Neubauer Family Faculty Fellow, University of Chicago Booth School of Business
+        </p>
 
-  <p>
-    <strong>Time:</strong> TBD
-  </p>
+        <p>
+          <strong>Date:</strong> Wednesday, September 16
+        </p>
 
-  <p>
-    <strong>Location:</strong> TBD
-  </p>
+        <p>
+          <strong>Time:</strong> TBD
+        </p>
 
-  <p>
-    <strong>Notes:</strong> Economic history lecture. Hornbeck is an economic historian and applied-micro economist whose research focuses on the historical development of the American economy, including why some places and people become wealthier while others remain poorer.
-  </p>
+        <p>
+          <strong>Location:</strong> TBD
+        </p>
 
-  <p>
-    <span class="tag">Economic History</span>
-    <span class="tag">Engerman Lecture</span>
-    <span class="tag">Development</span>
-    <span class="tag">American Economy</span>
-  </p>
-</article>
+        <p>
+          <strong>Notes:</strong> Economic history lecture. Hornbeck is an economic historian and applied-micro economist whose research focuses on the historical development of the American economy, including why some places and people become wealthier while others remain poorer.
+        </p>
 
-    <article class="small-card">
-      <h3>Politics and Markets Project Fall Panel</h3>
+        <p>
+          <span class="tag">Economic History</span>
+          <span class="tag">Engerman Lecture</span>
+          <span class="tag">Development</span>
+          <span class="tag">American Economy</span>
+        </p>
+      </div>
+    </article>
 
-      <p>
-        <strong>Title:</strong> TBD
-      </p>
+    <article class="upcoming-card">
+      <div class="upcoming-thumb">
+        Poster coming soon
+      </div>
 
-      <p>
-        <strong>Speakers / Panel:</strong> TBD
-      </p>
+      <div class="upcoming-body">
+        <h3>Politics and Markets Project Fall Panel</h3>
 
-      <p>
-        <strong>Date:</strong> TBD
-      </p>
+        <p>
+          <strong>Title:</strong> TBD
+        </p>
 
-      <p>
-        <strong>Time:</strong> TBD
-      </p>
+        <p>
+          <strong>Speakers / Panel:</strong> TBD
+        </p>
 
-      <p>
-        <strong>Location:</strong> TBD
-      </p>
+        <p>
+          <strong>Date:</strong> TBD
+        </p>
 
-      <p>
-        <strong>Notes:</strong> Fall semester panel for the Politics and Markets Project. More details, poster, and related materials will be posted here when available.
-      </p>
+        <p>
+          <strong>Time:</strong> TBD
+        </p>
 
-      <p>
-        <span class="tag">Politics and Markets</span>
-        <span class="tag">Panel</span>
-        <span class="tag">Fall Semester</span>
-      </p>
+        <p>
+          <strong>Location:</strong> TBD
+        </p>
+
+        <p>
+          <strong>Notes:</strong> Fall semester panel for the Politics and Markets Project. More details, poster, and related materials will be posted here when available.
+        </p>
+
+        <p>
+          <span class="tag">Politics and Markets</span>
+          <span class="tag">Panel</span>
+          <span class="tag">Fall Semester</span>
+        </p>
+      </div>
+    </article>
+
+    <article class="upcoming-card">
+      <div class="upcoming-thumb">
+        Event image coming soon
+      </div>
+
+      <div class="upcoming-body">
+        <h3>OYSTER Club Event</h3>
+
+        <p>
+          <strong>Title:</strong> TBD
+        </p>
+
+        <p>
+          <strong>Speaker / Guests:</strong> TBD
+        </p>
+
+        <p>
+          <strong>Date:</strong> TBD
+        </p>
+
+        <p>
+          <strong>Time:</strong> TBD
+        </p>
+
+        <p>
+          <strong>Location:</strong> TBD
+        </p>
+
+        <p>
+          <strong>Notes:</strong> Possible OYSTER Club gathering, extra lecture, discussion, film night, or special event. Details will be posted here when available.
+        </p>
+
+        <p>
+          <span class="tag">OYSTER Club</span>
+          <span class="tag">Discussion</span>
+          <span class="tag">Special Event</span>
+        </p>
+      </div>
     </article>
 
   </div>

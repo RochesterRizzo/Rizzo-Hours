@@ -1,4 +1,4 @@
-# Prof. Rizzo Office Hours Site
+# Professor Rizzo's Office Hours Site
 
 This is a simple static website. It has one file: `index.html`.
 

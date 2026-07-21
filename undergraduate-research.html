@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Undergraduate Research Opportunities | Pr. Rizzo</title>
+  <meta name="description" content="Undergraduate research opportunities, research ideas, student projects, course-related research, and external research opportunities in economics.">
+
+  <style>
+    :root {
+      --ink: #1b1b1b;
+      --muted: #5e5e5e;
+      --cream: #fbf7ef;
+      --paper: #fffdf8;
+      --clay: #9b4d2e;
+      --clay-dark: #6e321c;
+      --sage: #667761;
+      --sage-light: #edf3e9;
+      --sand: #e9d8b5;
+      --line: #d8cbb4;
+      --blue: #174c70;
+      --gold: #f2c86b;
+      --rose: #f2d7cd;
+      --green: #cfe3c7;
+      --lavender: #e1d9f0;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--ink);
+      background: linear-gradient(180deg, #efe6d3 0%, #e7ded0 100%);
+      line-height: 1.55;
+    }
+
+    .page {
+      max-width: 1160px;
+      margin: 0 auto;
+      min-height: 100vh;
+      background: var(--cream);
+      box-shadow: 0 0 28px rgba(0,0,0,.14);
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--clay-dark), var(--clay));
+      color: white;
+      padding: 42px 34px 34px;
+      border-bottom: 8px solid var(--sand);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: clamp(2.1rem, 5vw, 4rem);
+      line-height: 1.05;
+      letter-spacing: .3px;
+    }
+
+    header p {
+      margin: 14px 0 0;
+      max-width: 920px;
+      font-size: 1.18rem;
+    }
+
+    main { padding: 28px 34px 46px; }
+    a { color: var(--blue); font-weight: 700; }
+
+    .back {
+      margin: 0 0 22px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: .98rem;
+    }
+
+    .back a { text-decoration: none; }
+    .back a:hover { text-decoration: underline; }
+
+    .intro-note {
+      background: white;
+      border: 1px solid var(--line);
+      border-left: 9px solid var(--sage);
+      border-radius: 14px;
+      padding: 18px 20px;
+      margin-bottom: 22px;
+      box-shadow: 0 2px 10px rgba(0,0,0,.04);
+    }
+
+    .intro-note h2 {
+      margin: 0 0 8px;
+      color: var(--clay-dark);
+      font-size: 1.45rem;
+    }
+
+    .intro-note p { margin: 0; font-size: 1.05rem; }
+
+    .nav-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 18px 0 26px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .nav-strip a {
+      display: inline-block;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 8px 12px;
+      color: var(--blue);
+      text-decoration: none;
+      font-size: .94rem;
+    }
+
+    .nav-strip a:hover { background: var(--sage-light); text-decoration: underline; }
+    section { margin-bottom: 28px; }
+
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      border-bottom: 2px solid var(--line);
+      padding-bottom: 8px;
+      margin-bottom: 16px;
+    }
+
+    .section-header h2 {
+      margin: 0;
+      color: var(--clay-dark);
+      font-size: 1.65rem;
+      line-height: 1.15;
+    }
+
+    .section-header .label {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--muted);
+      font-size: .9rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+    }
+
+    .featured-grid { display: grid; grid-template-columns: 1.25fr .75fr; gap: 18px; }
+    .card-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+
+    .feature-card, .side-card, .research-card, .opportunity-card, .edit-box {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      box-shadow: 0 2px 10px rgba(0,0,0,.045);
+    }
+
+    .feature-card { padding: 20px 22px; border-top: 7px solid var(--clay); }
+    .side-card { padding: 18px 20px; border-top: 7px solid var(--sage); }
+
+    .feature-card h3, .side-card h3, .research-card h3, .opportunity-card h3 {
+      margin: 0 0 8px;
+      color: var(--blue);
+      line-height: 1.2;
+    }
+
+    .feature-card h3 { font-size: 1.45rem; }
+    .research-card { padding: 18px 20px; border-left: 7px solid var(--sage); }
+    .research-card.featured { border-left-color: var(--clay); background: #fffaf3; }
+    .research-card ul { margin: 10px 0 0; padding-left: 22px; }
+    .research-card li { margin-bottom: 8px; }
+
+    .opportunity-list { display: grid; grid-template-columns: 1fr; gap: 14px; }
+
+    .opportunity-card {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      overflow: hidden;
+    }
+
+    .opportunity-marker {
+      background: var(--sage-light);
+      border-right: 1px solid var(--line);
+      min-height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 12px;
+      color: var(--sage);
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      font-size: .88rem;
+    }
+
+    .opportunity-body { padding: 17px 20px; }
+
+    .date-line {
+      margin: 0 0 8px;
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      font-size: .92rem;
+    }
+
+    .tag {
+      display: inline-block;
+      border-radius: 999px;
+      padding: 4px 9px;
+      margin: 4px 6px 0 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: .82rem;
+      font-weight: 800;
+      color: #222;
+      background: var(--gold);
+    }
+
+    .tag.sage { background: var(--green); }
+    .tag.rose { background: var(--rose); }
+    .tag.lav { background: var(--lavender); }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 13px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--clay-dark);
+      color: white;
+      border-radius: 8px;
+      padding: 9px 12px;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: .94rem;
+    }
+
+    .button.light {
+      background: white;
+      color: var(--blue);
+      border: 1px solid var(--line);
+    }
+
+    .button:hover { text-decoration: underline; }
+
+    .edit-box { padding: 18px 20px; background: #fffefb; }
+    .edit-box h3 { margin: 0 0 8px; color: var(--clay-dark); }
+    .edit-box pre {
+      margin: 12px 0 0;
+      white-space: pre-wrap;
+      overflow-x: auto;
+      background: #f3eee4;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 13px;
+      font-family: Consolas, Monaco, monospace;
+      font-size: .9rem;
+      line-height: 1.4;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 18px 34px;
+      background: #efe7d8;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: .95rem;
+    }
+
+    @media (max-width: 850px) {
+      main { padding: 24px 18px 36px; }
+      header { padding: 32px 20px 28px; }
+      .featured-grid, .card-grid, .opportunity-card { grid-template-columns: 1fr; }
+      .opportunity-marker { border-right: 0; border-bottom: 1px solid var(--line); min-height: 72px; }
+      .section-header { display: block; }
+      .section-header .label { display: block; margin-top: 3px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <h1>Undergraduate Research Opportunities</h1>
+      <p>Research ideas, class-linked projects, independent student work, and opportunities around and beyond the University of Rochester.</p>
+    </header>
+
+    <main>
+      <p class="back"><a href="index.html">← Back to Office Hours & Student Information</a></p>
+
+      <div class="intro-note">
+        <h2>What this page is for</h2>
+        <p>This page is a working list of research ideas and opportunities for undergraduate students. Very motivated students who can demonstrate a record of independent follow-through on projects are welcome to talk with me about possible research work.</p>
+      </div>
+
+      <nav class="nav-strip" aria-label="Page sections">
+        <a href="#rizzo-research">Pr. Rizzo’s Research Ideas</a>
+        <a href="#course-projects">Course-Linked Projects</a>
+        <a href="#student-owned">Student-Owned Projects</a>
+        <a href="#university">Around the University</a>
+        <a href="#external">Outside Opportunities</a>
+        <a href="#how-to-edit">How to Update</a>
+      </nav>
+
+      <section id="rizzo-research">
+        <div class="section-header"><h2>Pr. Rizzo’s Research Ideas</h2><span class="label">Start here</span></div>
+
+        <div class="featured-grid">
+          <article class="feature-card">
+            <h3>Research Project Support</h3>
+            <p>My interests and work are focused on the economics of higher education and various topics in environmental economics. Current or former undergraduates interested in these areas may find projects here worth developing into research assistance, independent research, class projects, presentations, or longer written work.</p>
+            <p><span class="tag">Higher Education</span><span class="tag sage">Environmental Economics</span><span class="tag rose">Student Research</span></p>
+          </article>
+          <article class="side-card">
+            <h3>Best fit</h3>
+            <p>These ideas are best for students who can work independently, keep track of details, read carefully, and make steady progress without needing constant supervision.</p>
+          </article>
+        </div>
+
+        <div class="card-grid" style="margin-top:16px;">
+          <article class="research-card featured">
+            <h3>Economics of Higher Education</h3>
+            <ul>
+              <li>Net tuition prices, room and board, and the real meaning of college affordability.</li>
+              <li>The sharp decline in community college enrollments.</li>
+              <li>A revisitation of the Bennett Hypothesis.</li>
+              <li>An apportionment analysis of rising college tuition, net pricing, and expenditures.</li>
+              <li>Grade inflation, degree inflation, and labor market outcomes.</li>
+              <li>University administration changes over time and student outcomes.</li>
+              <li>University attendance and the development of critical thinking skills.</li>
+            </ul>
+          </article>
+
+          <article class="research-card featured">
+            <h3>Environmental Economics</h3>
+            <ul>
+              <li>A primer on the expected economic costs of climate change.</li>
+              <li>Real estate values and proximity to renewable-energy projects.</li>
+              <li>The energy transition challenge.</li>
+              <li>Futures contracts, betting markets, and environmental policy.</li>
+              <li>Does it pay for universities to go green?</li>
+              <li>Revisiting Julian Simon-style resource research.</li>
+              <li>War and the environment.</li>
+              <li>LEED design and environmental outcomes.</li>
+            </ul>
+          </article>
+
+          <article class="research-card">
+            <h3>Birds, Habitat, and Environmental Policy</h3>
+            <ul>
+              <li>Market mechanisms, habitat banking, biodiversity offsets, and payments for ecosystem services.</li>
+              <li>Property-rights arrangements and governance structures for bird habitats.</li>
+              <li>Polycentric governance and adaptive co-management in avian conservation.</li>
+              <li>Zoning regulations, minimum lot sizes, sprawl, habitat fragmentation, and bird abundance.</li>
+              <li>Birding access, green space, mental-health benefits, and environmental justice.</li>
+              <li>Choice experiments and willingness-to-pay for bird habitat characteristics.</li>
+              <li>Hedonic pricing, urban green infrastructure, bird species richness, and property values.</li>
+              <li>Conservation easements, bird diversity, and spillover effects.</li>
+            </ul>
+          </article>
+
+          <article class="research-card">
+            <h3>The Fall and Rise of Craft Beer</h3>
+            <ul>
+              <li>Craft breweries and local economic development, including jobs, tourism, and local business revenues.</li>
+              <li>The environmental footprint of craft beer production.</li>
+              <li>Taxes, licensing, zoning, and the growth of the craft beer industry.</li>
+              <li>Craft breweries, social capital, community cohesion, and civic engagement.</li>
+            </ul>
+          </article>
+
+          <article class="research-card">
+            <h3>Birds and Brews</h3>
+            <ul>
+              <li>The economic and environmental interactions between craft breweries and bird conservation efforts.</li>
+              <li>Craft brewery location decisions, bird habitats, and local economic development.</li>
+              <li>Bird-friendly certification, sustainability labels, and market-based conservation incentives.</li>
+              <li>Ecosystem services in the craft beer supply chain.</li>
+              <li>Craft beer and birding events as tools for community engagement and environmental stewardship.</li>
+            </ul>
+          </article>
+
+          <article class="research-card">
+            <h3>Sports Economics and Other Topics</h3>
+            <ul>
+              <li>The impact of winning or losing athletic competitions and championships on later life outcomes.</li>
+              <li>The comparative incidence of child abuse in Scouts, churches, schools, and society.</li>
+              <li>Anxiety and mental health as drivers of DI takeup increases.</li>
+              <li>The faculty tax.</li>
+              <li>Win-win government reforms.</li>
+              <li>Gun-control legislation and disparate impact.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="course-projects">
+        <div class="section-header"><h2>Course-Linked Projects</h2><span class="label">Class work that can become research</span></div>
+        <div class="opportunity-list">
+          <article class="opportunity-card">
+            <div class="opportunity-marker">CCE</div>
+            <div class="opportunity-body">
+              <h3>Center for Community Engagement Partnerships</h3>
+              <p class="date-line">Possible classes: Environmental Economics · Money, Credit and Banking · Sports Economics</p>
+              <p>The Center for Community Engagement may create opportunities to partner with local programs, including possible student expenses or small stipends for resource-grant projects. This could fit student consulting projects in Environmental Economics, Econ 211, or Sports Economics.</p>
+              <p><span class="tag sage">Community Engagement</span><span class="tag">Course Project</span></p>
+              <div class="button-row"><a class="button" href="https://www.rochester.edu/college/cce/about/partner-with-us.php" target="_blank" rel="noopener noreferrer">CCE Partner Page</a></div>
+            </div>
+          </article>
+
+          <article class="opportunity-card">
+            <div class="opportunity-marker">Course Design</div>
+            <div class="opportunity-body">
+              <h3>Course Improvement Opportunities</h3>
+              <p class="date-line">Possible funding: Teaching Center Student Course Development Projects</p>
+              <p>Students interested in helping redesign and improve aspects of the Economic Way of Thinking course or Environmental Economics course may be able to work through Teaching Center-funded summer course-development projects.</p>
+              <p><span class="tag rose">Teaching Innovation</span><span class="tag sage">Summer</span></p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="student-owned">
+        <div class="section-header"><h2>Student-Owned Research Ideas</h2><span class="label">For students with their own questions</span></div>
+        <div class="card-grid">
+          <article class="research-card">
+            <h3>Independent Research Topic Template</h3>
+            <p>Add student-driven research ideas here. These can begin as class papers, senior projects, data exercises, literature reviews, or independent questions that deserve more careful work.</p>
+            <p><span class="tag">Student-Owned</span><span class="tag sage">Independent Work</span></p>
+          </article>
+          <article class="research-card">
+            <h3>What makes a topic promising?</h3>
+            <p>A good undergraduate research topic usually has a clear question, some way to find evidence, and a realistic scope. The best projects are smaller, sharper, and more disciplined than students first imagine.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="university">
+        <div class="section-header"><h2>Research Opportunities Around the University</h2><span class="label">UR and nearby opportunities</span></div>
+        <div class="opportunity-list">
+          <article class="opportunity-card">
+            <div class="opportunity-marker">Simon</div>
+            <div class="opportunity-body">
+              <h3>Data-Driven RA Opportunity at the Simon School</h3>
+              <p class="date-line">Skills: R, Python, Stata, data cleaning, geographic data</p>
+              <p>Professor Elena Prager has looked for research assistants for data projects on job commuting patterns and tech-worker career trajectories. These projects involve data merges, geographic data, and cleaning raw CSV or JSON data into usable form.</p>
+              <p><span class="tag sage">Research Assistant</span><span class="tag lav">Data</span><span class="tag">Simon School</span></p>
+            </div>
+          </article>
+
+          <article class="opportunity-card">
+            <div class="opportunity-marker">RA</div>
+            <div class="opportunity-body">
+              <h3>RA Opportunity for Students, Including First Years</h3>
+              <p class="date-line">Example project: gangs and education in Chicago public schools</p>
+              <p>Some student research projects need undergraduate help with detail-oriented data work. One example involved categorizing gangs in Chicago and merging GIS school-location data to school outcomes such as attendance, enrollment, suspensions, and expulsions.</p>
+              <p><span class="tag sage">Research Assistant</span><span class="tag">First-Year Friendly</span><span class="tag lav">GIS / Data</span></p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="external">
+        <div class="section-header"><h2>Outside Research Opportunities</h2><span class="label">Beyond Rochester</span></div>
+        <div class="opportunity-list">
+          <article class="opportunity-card">
+            <div class="opportunity-marker">External</div>
+            <div class="opportunity-body">
+              <h3>Economics Conferences and Submission Dates</h3>
+              <p class="date-line">Use for: student papers, posters, presentations, and conference deadlines</p>
+              <p>Add links here to conferences, undergraduate paper competitions, poster sessions, summer workshops, and external research opportunities.</p>
+              <p><span class="tag">Conference</span><span class="tag sage">External</span></p>
+              <div class="button-row"><a class="button light" href="PASTE-LINK-HERE">Add Link</a></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="how-to-edit">
+        <div class="section-header"><h2>How to Update This Page</h2><span class="label">For Pr. Rizzo</span></div>
+        <div class="edit-box">
+          <h3>To add a new research idea</h3>
+          <p>Copy one full card, paste it where you want it, and edit the title, description, tags, and links.</p>
+          <pre>&lt;article class="research-card"&gt;
+  &lt;h3&gt;New Research Topic Title&lt;/h3&gt;
+  &lt;p&gt;
+    Short description of the question, why it matters, and what a student might actually do.
+  &lt;/p&gt;
+  &lt;p&gt;
+    &lt;span class="tag"&gt;Topic Tag&lt;/span&gt;
+    &lt;span class="tag sage"&gt;Method / Area&lt;/span&gt;
+  &lt;/p&gt;
+&lt;/article&gt;</pre>
+        </div>
+
+        <div class="edit-box" style="margin-top:14px;">
+          <h3>To add a new opportunity</h3>
+          <pre>&lt;article class="opportunity-card"&gt;
+  &lt;div class="opportunity-marker"&gt;Label&lt;/div&gt;
+  &lt;div class="opportunity-body"&gt;
+    &lt;h3&gt;Opportunity Title&lt;/h3&gt;
+    &lt;p class="date-line"&gt;Deadline: TBD · Skills: TBD&lt;/p&gt;
+    &lt;p&gt;
+      Short description of the opportunity.
+    &lt;/p&gt;
+    &lt;p&gt;
+      &lt;span class="tag sage"&gt;Research Assistant&lt;/span&gt;
+      &lt;span class="tag"&gt;Undergraduate&lt;/span&gt;
+    &lt;/p&gt;
+    &lt;div class="button-row"&gt;
+      &lt;a class="button" href="PASTE-LINK-HERE"&gt;Details&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/article&gt;</pre>
+        </div>
+      </section>
+    </main>
+
+    <footer><p>Pr. Rizzo · Office Hours & Student Information · <a href="index.html">Return home</a></p></footer>
+  </div>
+</body>
+</html>

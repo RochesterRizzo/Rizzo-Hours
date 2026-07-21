@@ -89,24 +89,28 @@
     .quick-card strong { font-size: 1.08rem; }
 
     .schedule-wrap {
-      padding: 22px;
+      padding: 12px;
       background: var(--navy);
+      border-radius: 10px;
+      margin-bottom: 18px;
+      overflow-x: auto;
     }
 
     .schedule {
       display: grid;
-      grid-template-columns: 168px repeat(5, 1fr);
+      grid-template-columns: 118px repeat(5, 1fr);
       border: 2px solid var(--navy);
       background: white;
+      min-width: 740px;
     }
 
     .corner, .day, .time, .slot {
       border: 1px solid var(--navy);
-      min-height: 68px;
+      min-height: 44px;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 10px;
+      padding: 6px;
       text-align: center;
     }
 
@@ -117,17 +121,17 @@
 
     .time {
       justify-content: flex-start;
-      font-size: 1.05rem;
+      font-size: .82rem;
       font-weight: 500;
       text-align: left;
     }
 
-    .day { font-size: 1.18rem; }
+    .day { font-size: .92rem; }
 
     .slot {
       background: #fff;
-      font-size: 1rem;
-      line-height: 1.25;
+      font-size: .78rem;
+      line-height: 1.18;
     }
 
     .class { background: var(--blue); color: white; }
@@ -135,8 +139,8 @@
     .meeting { background: var(--red); color: white; }
     .research { background: var(--blue); color: white; }
 
-    .tall { min-height: 126px; }
-    .very-tall { min-height: 190px; }
+    .tall { min-height: 82px; }
+    .very-tall { min-height: 120px; }
 
     main {
       padding: 22px;
@@ -162,9 +166,26 @@
       font-size: 1.03rem;
     }
 
+    .home-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.65fr) minmax(320px, .85fr);
+      gap: 20px;
+      align-items: start;
+    }
+
+    .left-column,
+    .right-column {
+      min-width: 0;
+    }
+
+    .resources-panel {
+      position: sticky;
+      top: 14px;
+    }
+
     .grid {
       display: grid;
-      grid-template-columns: 1.2fr .8fr;
+      grid-template-columns: 1fr;
       gap: 20px;
     }
 
@@ -192,10 +213,12 @@
       background: white;
       border: 1px solid var(--line);
       border-radius: 8px;
-      padding: 12px 14px;
+      padding: 11px 12px;
       color: #043ea5;
       font-weight: 700;
       text-decoration: none;
+      line-height: 1.25;
+      font-size: .96rem;
     }
 
     .links a:hover, .button:hover {
@@ -234,9 +257,19 @@
     footer p { margin: 5px 0; }
 
     @media (max-width: 900px) {
-      .quick-bar, .grid, footer { grid-template-columns: 1fr; }
-      .schedule-wrap { overflow-x: auto; }
-      .schedule { min-width: 920px; }
+      .quick-bar, .home-layout, .grid, footer { grid-template-columns: 1fr; }
+
+      .resources-panel {
+        position: static;
+      }
+
+      .links {
+        grid-template-columns: 1fr;
+      }
+
+      .schedule {
+        min-width: 740px;
+      }
     }
   </style>
 </head>
@@ -287,7 +320,11 @@
 
 </div>
 
-    <div class="schedule-wrap">
+    
+    <main>
+      <div class="home-layout">
+        <div class="left-column">
+          <div class="schedule-wrap">
       <div class="schedule" role="table" aria-label="Weekly schedule">
         <div class="corner" role="columnheader"></div>
         <div class="day" role="columnheader">Monday</div>
@@ -333,14 +370,14 @@
       </div>
     </div>
 
-    <main>
+          
       <div class="notice">
         <h2>Current update</h2>
         <p>Office hours resume in the Fall semester on Monday, August 31, 2026. Schedule varies by week; check this page before coming.</p>
       </div>
 
-      <div class="grid">
-        <section class="updates">
+          <div class="grid">
+            <section class="updates">
           <h2>Lodestars and updates</h2>
           <article>
   <p class="date">Impartial Spectating the Semiquincentennial </p>
@@ -402,8 +439,11 @@
   </article>
           
         </section>
+          </div>
+        </div>
 
-        <section>
+        <div class="right-column">
+          <section class="resources-panel">
           <h2>Resources, Events, Motivation</h2>
           <div class="links">
             <a href="whats-on-tap.html" aria-label="What's on tap weekly discussion ideas?">What's on Tap?</a>
@@ -419,6 +459,7 @@
             <a href="becoming-worth-betting-on.html" aria-label="Become Worth Betting On">Become Worth Betting On (Job Markets, Character and Impact)</a>
           </div>
         </section>
+        </div>
       </div>
     </main>
 

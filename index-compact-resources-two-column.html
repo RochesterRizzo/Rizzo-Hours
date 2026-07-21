@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pr. Rizzo's Office Hours</title>
+  <meta name="description" content="Pr. Rizzo's office hours, economics department news and events, special events, letter of recommendation guidelines and rules, job and internship informatin, grade school thoughts and resources, advising and other admin resources.">
+  <style>
+    :root {
+      --navy: #063a66;
+      --blue: #08007a;
+      --orange: #ff965f;
+      --green: #389b68;
+      --red: #d40000;
+      --lav: #b5a4cc;
+      --ink: #111;
+      --paper: #f7f7f7;
+      --line: #d7d7d7;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: #e9edf2;
+    }
+
+    .page {
+      max-width: 1180px;
+      margin: 0 auto;
+      min-height: 100vh;
+      background: white;
+      box-shadow: 0 0 24px rgba(0,0,0,.12);
+    }
+
+    header {
+      background: var(--navy);
+      color: white;
+      padding: 22px 26px 16px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: clamp(1.6rem, 3.2vw, 2.4rem);
+      letter-spacing: .5px;
+    }
+
+    header p {
+      margin: 10px 0 0;
+      font-size: 1.05rem;
+    }
+
+    header a { color: white; font-weight: 700; }
+
+    .quick-bar {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      padding: 16px 22px;
+      background: #f4f6f8;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .quick-card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 12px 14px;
+      min-height: 92px;
+    }
+
+    .quick-card h2 {
+      font-size: .86rem;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      margin: 0 0 8px;
+      color: #555;
+    }
+
+    .quick-card p {
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.35;
+    }
+
+    .quick-card strong { font-size: 1.08rem; }
+
+    .schedule-wrap {
+      padding: 12px;
+      background: var(--navy);
+      border-radius: 10px;
+      margin-bottom: 18px;
+      overflow-x: auto;
+    }
+
+    .schedule {
+      display: grid;
+      grid-template-columns: 118px repeat(5, 1fr);
+      border: 2px solid var(--navy);
+      background: white;
+      min-width: 740px;
+    }
+
+    .corner, .day, .time, .slot {
+      border: 1px solid var(--navy);
+      min-height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6px;
+      text-align: center;
+    }
+
+    .corner, .day, .time {
+      background: var(--orange);
+      font-weight: 700;
+    }
+
+    .time {
+      justify-content: flex-start;
+      font-size: .82rem;
+      font-weight: 500;
+      text-align: left;
+    }
+
+    .day { font-size: .92rem; }
+
+    .slot {
+      background: #fff;
+      font-size: .78rem;
+      line-height: 1.18;
+    }
+
+    .class { background: var(--blue); color: white; }
+    .office { background: var(--green); color: white; }
+    .meeting { background: var(--red); color: white; }
+    .research { background: var(--blue); color: white; }
+
+    .tall { min-height: 82px; }
+    .very-tall { min-height: 120px; }
+
+    main {
+      padding: 22px;
+    }
+
+    .notice {
+      border-left: 8px solid var(--red);
+      background: #fff7f7;
+      padding: 16px 18px;
+      margin-bottom: 22px;
+      border-radius: 8px;
+    }
+
+    .notice h2 {
+      margin: 0 0 8px;
+      color: #a00000;
+      font-size: 1.35rem;
+    }
+
+    .notice p {
+      margin: 0;
+      line-height: 1.45;
+      font-size: 1.03rem;
+    }
+
+    .home-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.65fr) minmax(320px, .85fr);
+      gap: 20px;
+      align-items: start;
+    }
+
+    .left-column,
+    .right-column {
+      min-width: 0;
+    }
+
+    .resources-panel {
+      position: sticky;
+      top: 14px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    section {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 18px;
+      background: var(--paper);
+    }
+
+    section h2 {
+      margin: 0 0 12px;
+      font-size: 1.25rem;
+      color: var(--navy);
+    }
+
+    .links {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .links a, .button {
+      display: block;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 11px 12px;
+      color: #043ea5;
+      font-weight: 700;
+      text-decoration: none;
+      line-height: 1.25;
+      font-size: .96rem;
+    }
+
+    .links a:hover, .button:hover {
+      text-decoration: underline;
+      background: #f9fbff;
+    }
+
+    .updates article {
+      border-top: 1px solid var(--line);
+      padding-top: 12px;
+      margin-top: 12px;
+    }
+
+    .updates article:first-of-type {
+      border-top: 0;
+      padding-top: 0;
+      margin-top: 0;
+    }
+
+    .date {
+      font-weight: 700;
+      color: #555;
+      font-size: .92rem;
+    }
+
+    footer {
+      margin-top: 22px;
+      padding: 18px 22px;
+      background: var(--lav);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      font-size: 1.03rem;
+    }
+
+    footer p { margin: 5px 0; }
+
+    @media (max-width: 900px) {
+      .quick-bar, .home-layout, .grid, footer { grid-template-columns: 1fr; }
+
+      .resources-panel {
+        position: static;
+      }
+
+      .links {
+        grid-template-columns: 1fr;
+      }
+
+      .schedule {
+        min-width: 740px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <h1>Pr. Rizzo’s Office Hours & Student Information</h1>
+      <p>Fall 2026.  <span style="color: #ffd166; font-weight: 700; ">Week of Aug 31 - Sept 4.</span> Check daily at <a href="http://tiny.cc/RizzoHours">tiny.cc/RizzoHours</a>. Text any time.</p>
+    </header>
+
+   <div class="quick-bar" aria-label="Key office hour information">
+     
+  <div class="quick-card">
+    <h2>Nerd Club Lunch Bunch</h2>
+    <p>
+      <strong>Mon 11:30–12:45</strong><br>
+      Bring lunch/snack. Tables between Meliora and Harkness.<br>
+      <em style="color: #2e8b57; font-weight: 700;">Intellectual Free for All</em>
+    </p>
+  </div>
+
+  <div class="quick-card">
+    <h2>Inside Office Hours</h2>
+    <p>
+      <strong>Tue 12:30–1:30</strong><br>
+      236 Harkness<br>
+      <em>Class/advising prioritized</em>
+    </p>
+  </div>
+
+  <div class="quick-card">
+    <h2>Outdoor Office Hours</h2>
+    <p>
+      <strong>Wed 11:30–12:45</strong><br>
+      Tables between Meliora and Harkness<br>
+      <em>Class/advising prioritized</em>
+    </p>
+  </div>
+
+  <div class="quick-card">
+    <h2>Contact</h2>
+    <p>
+      <strong>Call/Text:</strong> 585-478-2677<br>
+      <strong>Email:</strong> <a href="mailto:rizzo.liberty@gmail.com">rizzo.liberty@gmail.com</a>
+    </p>
+  </div>
+
+</div>
+
+    
+    <main>
+      <div class="home-layout">
+        <div class="left-column">
+          <div class="schedule-wrap">
+      <div class="schedule" role="table" aria-label="Weekly schedule">
+        <div class="corner" role="columnheader"></div>
+        <div class="day" role="columnheader">Monday</div>
+        <div class="day" role="columnheader">Tuesday</div>
+        <div class="day" role="columnheader">Wednesday</div>
+        <div class="day" role="columnheader">Thursday</div>
+        <div class="day" role="columnheader">Friday</div>
+
+        <div class="time">9:00 to 9:50</div>
+        <div class="slot class">Eco 108<br>(Goergen 101)</div>
+        <div class="slot"></div>
+        <div class="slot class">Eco 108<br>(Goergen 101)</div>
+        <div class="slot"></div>
+        <div class="slot class">Eco 108<br>(Goergen 101)</div>
+
+        <div class="time">10:25 to 11:15</div>
+        <div class="slot class">Eco 108<br>(Dewey 1101)</div>
+        <div class="slot"></div>
+        <div class="slot class">Eco 108<br>(Dewey 1101)</div>
+        <div class="slot"></div>
+        <div class="slot class">Eco 108<br>(Dewey 1101)</div>
+
+        <div class="time tall">11:30 to 12:45</div>
+        <div class="slot office tall">Lunch Bunch Discussions<br>Bring LUNCH/Snack<br>(Picnic tables b/w Meliora and Harkness)</div>
+        <div class="slot class tall">Eco 238<br>(B&L 106)<br>11:05 to 12:30</div>
+        <div class="slot office tall">Office Hours<br>(Picnic tables b/w Meliora and Harkness)</div>
+        <div class="slot class tall">Eco 238<br>(B&L 106)<br>11:05 to 12:30</div>
+        <div class="slot meeting tall">TA Meetings</div>
+
+        <div class="time">12:30 to 1:30</div>
+        <div class="slot"></div>
+        <div class="slot office">Office Hours<br>(236 Harkness)</div>
+        <div class="slot"></div>
+        <div class="slot research">Research/Seminar Meetings<br>(236 Harkness)</div>
+        <div class="slot meeting"></div>
+
+        <div class="time">2:00 to 3:00</div>
+        <div class="slot meeting">TA Meetings</div>
+        <div class="slot"></div>
+        <div class="slot"></div>
+        <div class="slot research"></div>
+        <div class="slot"></div>
+      </div>
+    </div>
+
+          
+      <div class="notice">
+        <h2>Current update</h2>
+        <p>Office hours resume in the Fall semester on Monday, August 31, 2026. Schedule varies by week; check this page before coming.</p>
+      </div>
+
+          <div class="grid">
+            <section class="updates">
+          <h2>Lodestars and updates</h2>
+          <article>
+  <p class="date">Impartial Spectating the Semiquincentennial </p>
+
+  <p>
+    <strong>This year is not just America's 250th birthday; it is the 250th birthday of <em>The Wealth of Nations</em>. But here is a reflection not on that book, but on the message that preceded it, from <em>The Theory of Moral Sentiments</em>. May you all strive to be good faith humans.</strong>
+  </p>
+
+  <p>
+    Happiness was more important to Adam Smith than anything in economics. In some ways, <em>The Wealth of Nations</em> was a side project. For Smith, wealth is not valuable for its own sake. Wealth is good because it enables people to pursue meaningful lives and make deep connections with other people. Contrary to Smith’s reputation, he believed one of the most important things in life is love.
+  </p>
+
+  <p>
+    Smith had little regard for the fleeting happiness that comes from cheap thrills and the instant gratification that many people wrongly associate with free markets. He was interested in longer-term Aristotelian happiness. It has two main ingredients. Neither of them is money, and both are related to love.
+  </p>
+
+  <p>
+    As Smith put it in <em>The Theory of Moral Sentiments</em>, <strong>“Man naturally desires, not only to be loved, but to be lovely.”</strong> He uses those words differently than we do today, but the ideas are timeless.
+  </p>
+
+  <p>
+    To love, in Smithian terms, is to be the type of person who is able to feel love. To be lovely, in normal 18th century usage, means worthy of being loved. A good person has the empathy to feel love, and the character to deserve it in return. The two concepts are intertwined.
+  </p>
+
+  <p>
+    Feeling love takes empathy, which is Smith’s eternal theme. To love means being kind and giving to those you love. It means being a good listener. It means saying sorry and meaning it. It means forgiving human shortcomings, and having the grace to not take slights personally. It means helping people when they need it, and being able to ask for help when you need it. It means both giving and taking, without ulterior motives.
+  </p>
+
+  <p>
+    Deep friendships are not transactional. There must be genuine concern for the other person’s well-being. If people are selfish, is it really friendship?
+  </p>
+
+  <p>
+    There are many different types of love, not just romantic love. There is also love between friends, and between family, and between parents and children. Smith had a number of deep, lifelong friendships that he valued above all else. Most of Smith’s thought focuses on this type of love.
+  </p>
+
+  <p>
+    A life filled with Smithian love sounds nice, but it is incomplete. One must also be lovely. Again, that means worthy of being loved. A lovely person, for Smith, is a virtuous person. They keep their word, are quick to help, and are quick to forgive. They are honest and reliable. They lift people up when they are feeling down, and gently bring them back to Earth if they are a little too exuberant. A lovely person is fun when the occasion calls for it, and is serious when the occasion calls for that.
+  </p>
+
+  <p>
+    Loveliness cannot be faked. Adoration feels nice, but a person who lies about their accomplishments, or who befriends other people only to take advantage of them, knows he is a fraud. His friends don’t love him; they love a false idea of him. That is a blow to self-esteem severe enough to prevent someone from being truly happy.
+  </p>
+
+  <p>
+    Being lovely is a process, not an end result. It takes work, maintenance, and long-term self-improvement. Putting in all this effort is more than a life’s work. It is its own form of loveliness.
+  </p>
+
+  <p>
+    Smith had an adult’s view of materialism. He didn’t worship Mammon, nor did he condemn material wealth. He had a nuanced view that saw prosperity as giving people the means to pursue the important things in life: <strong>to love and be lovely.</strong>
+  </p>
+</article>
+
+  <article>
+    <p class="date">Updates</p>
+    <p>
+      Other office hour updates.
+    </p>
+  </article>
+          
+        </section>
+          </div>
+        </div>
+
+        <div class="right-column">
+          <section class="resources-panel">
+          <h2>Resources, Events, Motivation</h2>
+          <div class="links">
+            <a href="whats-on-tap.html" aria-label="What's on tap weekly discussion ideas?">What's on Tap?</a>
+            <a href="outdoor-hours-location.html" aria-label="Where are the outside office hours located?">Outside OH Location</a>
+            <a href="oyster-events.html" aria-label="Oyster club and special events">OYSTER Club and Special Events</a>
+            <a href="econ-bulletin.html" aria-label="Economics bulletin board jobs internships and summer programs">Economics Bulletin Board (Internships, Careers, Programs)</a>
+            <a href="undergraduate-research.html" aria-label="Undergraduate research opportunities">Undergraduate Research Opportunities</a>
+            <a href="letters.html" aria-label="Letters of recommendation">Letters of Recommendation</a>
+            <a href="#" aria-label="Economics department information">Economics Department Information</a>
+            <a href="#" aria-label="Econ graduate school">Econ Graduate School</a>
+            <a href="#" aria-label="Advising forms and paperwork">Advising Forms and Paperwork</a>
+            <a href="#" aria-label="Office hour information">Office Hour Information</a>
+            <a href="becoming-worth-betting-on.html" aria-label="Become Worth Betting On">Become Worth Betting On (Job Markets, Character and Impact)</a>
+          </div>
+        </section>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div>
+        <p><strong>OH times, department events, job/grad school info:</strong></p>
+        <p><a href="http://tiny.cc/RizzoHours">http://tiny.cc/RizzoHours</a></p>
+        <p>* Schedule will vary by week. Check website for update.</p>
+      </div>
+      <div>
+        <p><strong>Mobile:</strong> 585-478-2677</p>
+        <p><strong>Zoom:</strong> <a href="https://rochester.zoom.us/my/wintercow20">https://rochester.zoom.us/my/wintercow20</a></p>
+        <p><strong>E-mail:</strong> <a href="mailto:rizzo.liberty@gmail.com">rizzo.liberty@gmail.com</a></p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

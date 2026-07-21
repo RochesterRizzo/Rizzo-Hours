@@ -1,0 +1,899 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Economics Department Information | Pr. Rizzo</title>
+  <meta name="description" content="University of Rochester economics department information, economics majors, financial economics, transfer credit, faculty, research, careers, salaries, and student resources.">
+
+  <!--
+  HOW TO UPDATE THIS PAGE
+
+  This is Pr. Rizzo's student-facing Economics Department information page.
+
+  To update official department links:
+  - Search for: id="official-links"
+  - Edit the href values in the link cards.
+
+  To update the major descriptions:
+  - Search for: id="majors"
+  - Each major is one <article class="major-card">...</article>.
+  - Copy/paste a full major-card to create a new one.
+  - The official department page should remain the source of truth.
+
+  To update faculty research:
+  - Search for: id="faculty-research"
+  - Each faculty profile is one <details class="research-profile">...</details>.
+  - Copy/paste a full details block to add a person.
+  - Edit the <summary>, tags, and bullet list.
+
+  To update career/salary information:
+  - Search for: id="careers"
+  - Use official sources like BLS, AEA, department pages, Greene Center, etc.
+
+  Do not put private student information in this file. HTML comments do not show on the page,
+  but they are still visible in public page source.
+  -->
+
+  <style>
+    :root {
+      --navy: #052f4f;
+      --river: #0f5e7a;
+      --yellow: #ffd166;
+      --orange: #e97838;
+      --cream: #fbf6e8;
+      --paper: #ffffff;
+      --mist: #edf4f6;
+      --sage: #5b7f69;
+      --lav: #e8e1f4;
+      --line: #d7d7d7;
+      --ink: #121212;
+      --muted: #555;
+      --red: #b00020;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: #e9edf2;
+      line-height: 1.55;
+    }
+
+    .page {
+      max-width: 1180px;
+      margin: 0 auto;
+      min-height: 100vh;
+      background: var(--cream);
+      box-shadow: 0 0 26px rgba(0,0,0,.14);
+    }
+
+    header {
+      background:
+        linear-gradient(135deg, rgba(5,47,79,.96), rgba(15,94,122,.94)),
+        var(--navy);
+      color: white;
+      padding: 40px 34px 34px;
+      border-bottom: 8px solid var(--yellow);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: clamp(2rem, 5vw, 3.8rem);
+      line-height: 1.05;
+      letter-spacing: .3px;
+    }
+
+    header p {
+      max-width: 900px;
+      margin: 12px 0 0;
+      font-size: 1.16rem;
+    }
+
+    main { padding: 26px 34px 46px; }
+
+    a { color: #064ca5; font-weight: 800; }
+
+    .back {
+      margin: 0 0 18px;
+      font-size: .96rem;
+    }
+
+    .back a { text-decoration: none; }
+    .back a:hover { text-decoration: underline; }
+
+    .nav-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 18px 0 24px;
+    }
+
+    .nav-strip a {
+      display: inline-block;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 8px 12px;
+      color: #064ca5;
+      text-decoration: none;
+      font-size: .94rem;
+    }
+
+    .nav-strip a:hover { background: var(--mist); text-decoration: underline; }
+
+    .notice {
+      border-left: 9px solid var(--orange);
+      background: white;
+      padding: 17px 19px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,.04);
+    }
+
+    .notice h2 {
+      margin: 0 0 8px;
+      color: var(--navy);
+      font-size: 1.45rem;
+    }
+
+    .notice p { margin: 0; }
+
+    section { margin-bottom: 28px; }
+
+    .section-title {
+      border-bottom: 3px solid #cfdbc7;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+    }
+
+    .section-title h2 {
+      margin: 0;
+      color: var(--navy);
+      font-size: 1.7rem;
+      line-height: 1.15;
+    }
+
+    .section-title p {
+      margin: 5px 0 0;
+      color: var(--muted);
+    }
+
+    .link-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .link-card,
+    .major-card,
+    .career-card,
+    .research-profile,
+    .plain-card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,.04);
+    }
+
+    .link-card {
+      padding: 16px 17px;
+      text-decoration: none;
+      display: block;
+      color: var(--ink);
+      border-top: 6px solid var(--river);
+    }
+
+    .link-card:hover {
+      background: #f9fcff;
+      text-decoration: none;
+      transform: translateY(-1px);
+    }
+
+    .link-card strong {
+      color: #064ca5;
+      display: block;
+      font-size: 1.06rem;
+      margin-bottom: 5px;
+    }
+
+    .link-card span {
+      color: var(--muted);
+      font-weight: 500;
+      font-size: .94rem;
+    }
+
+    .major-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .major-card {
+      padding: 18px 19px;
+      border-top: 8px solid var(--river);
+    }
+
+    .major-card.ba { border-top-color: var(--sage); }
+    .major-card.bs { border-top-color: var(--navy); }
+    .major-card.fin { border-top-color: var(--orange); }
+
+    .major-card h3 {
+      margin: 0 0 8px;
+      color: var(--navy);
+      font-size: 1.32rem;
+      line-height: 1.2;
+    }
+
+    .major-card h4 {
+      margin: 14px 0 5px;
+      color: #333;
+      font-size: .92rem;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+    }
+
+    .major-card ul {
+      margin: 6px 0 0;
+      padding-left: 22px;
+    }
+
+    .major-card li { margin-bottom: 5px; }
+
+    .tag {
+      display: inline-block;
+      border-radius: 999px;
+      background: var(--yellow);
+      color: #222;
+      padding: 4px 9px;
+      margin: 4px 6px 0 0;
+      font-size: .82rem;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .tag.green { background: #cfe7d2; }
+    .tag.blue { background: #d7ebf5; }
+    .tag.orange { background: #ffd5bd; }
+    .tag.lav { background: var(--lav); }
+
+    .essay-card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 22px 24px;
+      box-shadow: 0 2px 10px rgba(0,0,0,.04);
+      border-left: 10px solid var(--orange);
+    }
+
+    .essay-card h3 {
+      margin: 0 0 10px;
+      color: var(--navy);
+      font-size: 1.45rem;
+    }
+
+    .essay-card p { margin: 0 0 12px; }
+    .essay-card p:last-child { margin-bottom: 0; }
+
+    .faculty-intro {
+      background: white;
+      border: 1px solid var(--line);
+      border-left: 10px solid var(--sage);
+      border-radius: 12px;
+      padding: 18px 20px;
+      margin-bottom: 16px;
+      box-shadow: 0 2px 10px rgba(0,0,0,.04);
+    }
+
+    .faculty-intro h3 {
+      margin: 0 0 8px;
+      color: var(--navy);
+    }
+
+    .research-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0 0 14px;
+    }
+
+    .research-nav a {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: .88rem;
+      text-decoration: none;
+    }
+
+    .research-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    details.research-profile {
+      overflow: hidden;
+    }
+
+    details.research-profile summary {
+      cursor: pointer;
+      padding: 16px 18px;
+      font-weight: 900;
+      color: var(--navy);
+      font-size: 1.1rem;
+      list-style-position: inside;
+      background: #fff;
+    }
+
+    details.research-profile[open] summary {
+      border-bottom: 1px solid var(--line);
+      background: var(--mist);
+    }
+
+    .profile-body {
+      padding: 16px 20px 18px;
+    }
+
+    .profile-body p {
+      margin: 0 0 10px;
+    }
+
+    .profile-body ul {
+      margin: 8px 0 0;
+      padding-left: 22px;
+    }
+
+    .profile-body li {
+      margin-bottom: 8px;
+    }
+
+    .career-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .career-card {
+      padding: 18px 19px;
+      border-top: 7px solid var(--river);
+    }
+
+    .career-card h3 {
+      margin: 0 0 8px;
+      color: var(--navy);
+      font-size: 1.2rem;
+    }
+
+    .big-number {
+      font-size: 2rem;
+      line-height: 1;
+      font-weight: 900;
+      color: var(--orange);
+      margin: 4px 0 6px;
+    }
+
+    .plain-card {
+      padding: 18px 20px;
+    }
+
+    .plain-card h3 {
+      margin: 0 0 8px;
+      color: var(--navy);
+    }
+
+    footer {
+      background: #e7e0d3;
+      border-top: 1px solid var(--line);
+      padding: 18px 34px;
+      font-size: .95rem;
+    }
+
+    @media (max-width: 920px) {
+      main { padding: 22px 18px 36px; }
+      header { padding: 32px 20px 28px; }
+      .link-grid,
+      .major-grid,
+      .career-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+
+    <header>
+      <h1>Economics Department Information</h1>
+      <p>Major requirements, department links, transfer-credit rules, faculty research, and career information for University of Rochester economics students.</p>
+    </header>
+
+    <main>
+
+      <p class="back">
+        <a href="index.html">← Back to Office Hours & Student Information</a>
+      </p>
+
+      <div class="notice">
+        <h2>Use the official department pages as the source of truth</h2>
+        <p>
+          This page is a readable student guide. Degree rules, transfer-credit rules, advising assignments, course lists, and approval processes can change. Always verify details on the official Economics Department website before making registration or graduation decisions.
+        </p>
+      </div>
+
+      <nav class="nav-strip" aria-label="Page sections">
+        <a href="#official-links">Official Links</a>
+        <a href="#majors">New Majors</a>
+        <a href="#financial-econ">What is Financial Economics?</a>
+        <a href="#faculty-research">Faculty Research</a>
+        <a href="#careers">Careers and Salaries</a>
+        <a href="#what-else">What Else Belongs Here?</a>
+      </nav>
+
+      <section id="official-links">
+        <div class="section-title">
+          <h2>Official Department Links</h2>
+          <p>Start here when you need the current rule, form, page, or faculty directory.</p>
+        </div>
+
+        <div class="link-grid">
+          <a class="link-card" href="https://www.sas.rochester.edu/eco/" target="_blank" rel="noopener noreferrer">
+            <strong>Economics Department Website</strong>
+            <span>Main department homepage for news, undergraduate programs, graduate program, research, and events.</span>
+          </a>
+
+          <a class="link-card" href="https://www.sas.rochester.edu/eco/undergraduate/major.html" target="_blank" rel="noopener noreferrer">
+            <strong>Major Requirements</strong>
+            <span>Official page for economics and financial economics major requirements.</span>
+          </a>
+
+          <a class="link-card" href="https://www.sas.rochester.edu/eco/undergraduate/advising.html" target="_blank" rel="noopener noreferrer">
+            <strong>Transfer Credit Policies</strong>
+            <span>Transfer-credit approvals and advising assignments for economics and financial economics majors.</span>
+          </a>
+
+          <a class="link-card" href="https://www.sas.rochester.edu/eco/people/faculty/index.html" target="_blank" rel="noopener noreferrer">
+            <strong>Faculty Directory</strong>
+            <span>Faculty names, fields, offices, email addresses, websites, and research interests.</span>
+          </a>
+
+          <a class="link-card" href="https://www.sas.rochester.edu/eco/undergraduate/faculty-advising.html" target="_blank" rel="noopener noreferrer">
+            <strong>Faculty Advising</strong>
+            <span>Faculty advising hours and advising contacts.</span>
+          </a>
+
+          <a class="link-card" href="https://www.sas.rochester.edu/eco/undergraduate/career/index.html" target="_blank" rel="noopener noreferrer">
+            <strong>Careers and Graduate School</strong>
+            <span>Department page for economics careers, graduate school, and preparation.</span>
+          </a>
+        </div>
+      </section>
+
+      <section id="majors">
+        <div class="section-title">
+          <h2>New Economics Majors</h2>
+          <p>Readable summary of the new BA/BS structure and the BS in Financial Economics. Verify details with the official department page.</p>
+        </div>
+
+        <div class="major-grid">
+
+          <article class="major-card ba">
+            <h3>BA in Economics</h3>
+            <p><span class="tag green">Flexible</span><span class="tag">Applied electives</span></p>
+
+            <h4>Core</h4>
+            <ul>
+              <li>ECON 108</li>
+              <li>ECON 207</li>
+              <li>ECON 209</li>
+              <li>ECON 232: Data Science for Economics</li>
+            </ul>
+
+            <h4>Electives</h4>
+            <ul>
+              <li>Five economics electives at the 200-level or above.</li>
+              <li>Three open electives.</li>
+              <li>Two from a curated applied list such as behavioral, labor, education, public, development, globalization, trade, international macro, Freakonomics, or senior seminar.</li>
+            </ul>
+
+            <h4>Allied Field and Math</h4>
+            <ul>
+              <li>Two allied-field courses under the existing BA-style rules.</li>
+              <li>First class in the calculus sequence: AP Calc, MTH 141, MTH 161, or MTH 171.</li>
+            </ul>
+          </article>
+
+          <article class="major-card bs">
+            <h3>BS in Economics</h3>
+            <p><span class="tag blue">More quantitative</span><span class="tag">Advanced electives</span></p>
+
+            <h4>Core</h4>
+            <ul>
+              <li>ECON 108</li>
+              <li>ECON 207</li>
+              <li>ECON 209</li>
+              <li>ECON 230 or equivalent: MTH 203 or STT 190</li>
+              <li>ECON 231W</li>
+            </ul>
+
+            <h4>Electives</h4>
+            <ul>
+              <li>Five economics electives at the 200-level or above.</li>
+              <li>Three open electives.</li>
+              <li>Two from a curated advanced list such as Advanced Micro, Advanced Macro, Game Theory, Fair Allocation, Trade, International Macro, Behavioral, Financial Econometrics, or Senior Seminar.</li>
+            </ul>
+
+            <h4>Allied Field and Math</h4>
+            <ul>
+              <li>Two allied-field courses.</li>
+              <li>Complete calculus sequence: MTH 141–143, MTH 161–162, or MTH 171–172.</li>
+            </ul>
+          </article>
+
+          <article class="major-card fin">
+            <h3>BS in Financial Economics</h3>
+            <p><span class="tag orange">Finance + economics</span><span class="tag blue">STEM-style training</span></p>
+
+            <h4>Economics Core</h4>
+            <ul>
+              <li>ECON 108, 207, 209</li>
+              <li>ECON 230 or equivalent</li>
+              <li>ECON 231W</li>
+            </ul>
+
+            <h4>Financial Economics Core</h4>
+            <ul>
+              <li>FIN 205</li>
+              <li>FIN 206</li>
+              <li>ACC 201</li>
+              <li>ECON 211: Money, Credit, and Modern Financial Institutions</li>
+            </ul>
+
+            <h4>Electives and Allied Fields</h4>
+            <ul>
+              <li>Three economics electives, including one from a curated advanced list.</li>
+              <li>Two allied-field courses across selected finance, accounting, data science, computer science, statistics, math, political science, and business-policy courses.</li>
+              <li>Complete calculus sequence.</li>
+            </ul>
+          </article>
+
+        </div>
+
+        <div class="plain-card" style="margin-top:16px;">
+          <h3>Notes on transition rules</h3>
+          <p>
+            Calculus classes are pre-major requirements and are not subject to overlap requirements. Statistics classes will be subject to standard overlap rules. In special cases, ECON 232 may substitute for ECON 230. The originally supplied summary described the new majors as pending NYS approval, so students should verify the current implementation status with the department.
+          </p>
+        </div>
+      </section>
+
+      <section id="financial-econ">
+        <div class="section-title">
+          <h2>What is Financial Economics?</h2>
+          <p>Financial economics is not simply “business finance.” It is economics applied to risk, time, uncertainty, information, assets, and institutions.</p>
+        </div>
+
+        <article class="essay-card">
+          <h3>Financial Economics at Rochester</h3>
+
+          <p>
+            Financial economics is the application of rigorous economic theory to the behavior of financial markets, assets, and institutions. It asks the questions economists have always asked: how do agents make decisions under scarcity and uncertainty, how do prices aggregate dispersed information, and how do incentives shape behavior? It then directs those questions toward some of the most data-rich and consequential terrain in social science: the pricing of risk, the structure of capital, and the movement of money through time.
+          </p>
+
+          <p>
+            Few fields in economics can match financial economics for the density of its theoretical achievements and the directness with which those achievements changed the world. Expected utility theory, portfolio theory, the Capital Asset Pricing Model, the Efficient Market Hypothesis, options pricing, and the Black-Scholes model were not merely academic contributions. They were deployed, tested against real markets, and repeatedly disciplined by real-world evidence and real money.
+          </p>
+
+          <p>
+            What makes financial economics distinctively economics rather than merely finance is that its methods and ambitions remain those of the economist: building models from first principles, deriving testable implications, and asking what the results reveal about human behavior and market structure broadly.
+          </p>
+
+          <p>
+            Rochester’s BS in Financial Economics takes that intellectual tradition seriously. The degree adds corporate finance, investments, accounting, and money and modern financial institutions to a common economics core, while allowing students to build toward quantitative modeling, institutional and regulatory analysis, financial econometrics, data science, AI, machine learning, fintech, crypto, options pricing, international finance, and related areas.
+          </p>
+
+          <p>
+            The signal to the world is not simply that a student has learned some finance vocabulary. Done right, financial economics signals the ability to build a model, stress-test an argument, compare counterfactuals, reason under uncertainty, and understand markets as institutions shaped by information, incentives, and rules.
+          </p>
+        </article>
+      </section>
+
+      <section id="faculty-research">
+        <div class="section-title">
+          <h2>Examples of Economics Faculty Research</h2>
+          <p>Use this as a navigable introduction to what economists at Rochester actually study.</p>
+        </div>
+
+        <div class="faculty-intro">
+          <h3>Rochester economics is research with consequence</h3>
+          <p>
+            Rochester faculty publish at the highest levels of economics and work on questions that shape scholarship, policy, and practice: trade and tariffs, labor markets, work from home, education, health, environmental exposure, voting and information aggregation, taxation, macroeconomics, financial econometrics, public economics, and the institutions that govern opportunity.
+          </p>
+        </div>
+
+        <div class="research-nav" aria-label="Faculty research quick links">
+          <a href="#alessandria">Alessandria</a>
+          <a href="#bils">Bils</a>
+          <a href="#bagga">Bagga</a>
+          <a href="#figlio">Figlio</a>
+          <a href="#hill">Hill</a>
+          <a href="#kahn">Kahn</a>
+          <a href="#parro">Parro</a>
+          <a href="#sleet">Sleet</a>
+          <a href="#vrioni">Vrioni</a>
+          <a href="#singleton">Singleton</a>
+          <a href="#barelli">Barelli</a>
+          <a href="#crema">Crema</a>
+          <a href="#chaumont">Chaumont</a>
+          <a href="#kochov">Kochov</a>
+        </div>
+
+        <div class="research-list">
+
+          <details class="research-profile" id="alessandria" open>
+            <summary>George Alessandria — Global trade shocks, tariffs, and supply chains</summary>
+            <div class="profile-body">
+              <p><span class="tag">International Trade</span><span class="tag blue">Macroeconomics</span></p>
+              <ul>
+                <li>Studies global trade shocks and how disruptions reshape global supply chains.</li>
+                <li>Recent work on the “tariff tax cut” asks what happens when tariff revenue is used for fiscal reform rather than simple transfers.</li>
+                <li>The key economic question is not merely whether tariffs are costly, but how revenues are used and how other countries respond.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="research-profile" id="bils">
+            <summary>Mark Bils — Macro, prices, welfare, population, and measurement</summary>
+            <div class="profile-body">
+              <p><span class="tag">Macroeconomics</span><span class="tag blue">Measurement</span></p>
+              <ul>
+                <li>Bridges micro- and macroeconomics by asking what lies underneath aggregate trends.</li>
+                <li>Research examines price and wage adjustment, new goods, inflation measurement, leisure technology, and attachment to the workforce.</li>
+                <li>Recent work on population and welfare argues that a rigid focus on GDP per capita can miss large human welfare gains from more people living decent lives.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="research-profile" id="bagga">
+            <summary>Sadhika Bagga — Work from home and the labor market</summary>
+            <div class="profile-body">
+              <p><span class="tag green">Labor</span><span class="tag">Macroeconomics</span></p>
+              <ul>
+                <li>Studies how COVID-era remote work reshaped quitting, job changing, hiring, and wage patterns.</li>
+                <li>Work from home became valuable enough that workers may accept lower pay for the flexibility.</li>
+                <li>Students entering the labor market need to understand how amenities, flexibility, and benefits change compensation and career paths.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="research-profile" id="figlio">
+            <summary>David Figlio — Education, health, social policy, and human capital</summary>
+            <div class="profile-body">
+              <p><span class="tag green">Education</span><span class="tag blue">Human Capital</span></p>
+              <ul>
+                <li>Works on how education, health, and social policy shape long-term human capital development.</li>
+                <li>Research has studied immigrant peer exposure, school report cards and housing markets, early health conditions, and later educational outcomes.</li>
+                <li>His work is a model of how applied economics can connect careful identification to policy-relevant questions.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="research-profile" id="hill">
+            <summary>Elaine Hill — Health, environment, inequality, and exposure</summary>
+            <div class="profile-body">
+              <p><span class="tag green">Environmental Economics</span><span class="tag">Health Economics</span></p>
+              <ul>
+                <li>Studies how environmental exposure and energy development affect health, housing, pregnancy, opioids, and inequality.</li>
+                <li>Work in the HEEL lab has examined fracking, infant health, asthma, water quality, opioids, overdose, COVID, long COVID, rural residents, and racial minorities.</li>
+                <li>This is economics as empirical public health, environmental policy, and distributional analysis.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="research-profile" id="kahn">
+            <summary>Lisa Kahn — Recessions, skills, careers, and the future of work</summary>
+            <div class="profile-body">
+              <p><span class="tag green">Labor</span><span class="tag blue">Careers</span></p>
+              <ul>
+                <li>Studies how recessions, COVID-19, and technological change reshape jobs, skills, wages, and the value of education.</li>
+                <li>Research on graduating during a recession shows large initial earnings losses that persist over time.</li>
+                <li>Her work helps students think seriously about recession-proofing, skills, job postings, education demands, and changing labor-market requirements.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="research-profile" id="parro">
+            <summary>Fernando Parro — International trade and the China shock</summary>
+            <div class="profile-body">
+              <p><span class="tag">International Trade</span><span class="tag blue">General Equilibrium</span></p>
+              <ul>
+                <li>Specialist in international trade and general-equilibrium modeling.</li>
+                <li>Work on the China trade shock uses dynamic models across states and sectors to quantify manufacturing job losses and welfare gains from lower-cost imports.</li>
+                <li>This research illustrates the central economic discipline of weighing gains, losses, adjustment, and counterfactuals at the same time.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="research-profile" id="sleet">
+            <summary>Christopher Sleet — Macroeconomics, public economics, and optimal taxation</summary>
+            <div class="profile-body">
+              <p><span class="tag">Public Economics</span><span class="tag blue">Macro Theory</span></p>
+              <ul>
+                <li>Works on macroeconomics, public economics, tax policy design, computational methods, and dynamic contract theory.</li>
+                <li>Research on optimal taxation of income-generating choice models workers as choosing bundles of attributes: sector, hours, location, gig/full-time status, rural/urban, and more.</li>
+                <li>The policy implication is that tax systems should account for the actual margins people use when choosing how to make a living.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="research-profile" id="vrioni">
+            <summary>Iris Vrioni — Education, bias, health access, and institutional design</summary>
+            <div class="profile-body">
+              <p><span class="tag green">Education</span><span class="tag">Health</span></p>
+              <ul>
+                <li>Uses real administrative and experimental data to show how design, bias, and cost shape education and health outcomes.</li>
+                <li>Research on math competitions examines how evaluators misjudge talent even when performance is comparable.</li>
+                <li>Other work studies contraception cost-sharing, take-up, method choice, unwanted pregnancies, birth rates, and projected savings.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="research-profile" id="singleton">
+            <summary>John Singleton — School boards, charter schools, funding formulas, and access</summary>
+            <div class="profile-body">
+              <p><span class="tag green">Education</span><span class="tag">Public Economics</span></p>
+              <ul>
+                <li>Studies how institutional rules and policy levers reshape school access, equity, and outcomes.</li>
+                <li>Research on school boards uses ballot-order variation to show how board composition changes policy.</li>
+                <li>Work on charter-school funding examines how cost-adjusted funding can affect charter supply, equity, and effectiveness.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="research-profile" id="barelli">
+            <summary>Paulo Barelli — Game theory, elections, and information aggregation</summary>
+            <div class="profile-body">
+              <p><span class="tag lav">Game Theory</span><span class="tag blue">Political Economy</span></p>
+              <ul>
+                <li>Works in economic theory and game theory.</li>
+                <li>Recent work asks whether large elections aggregate voters’ private information as if society had full information.</li>
+                <li>The result: the “wisdom of crowds” is not automatic. Voting systems and information environments have to be designed to aggregate knowledge well.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="research-profile" id="crema">
+            <summary>Angela Crema — Education, labor, empirical IO, peer effects, and discrimination</summary>
+            <div class="profile-body">
+              <p><span class="tag green">Education</span><span class="tag">Labor</span><span class="tag blue">Empirical IO</span></p>
+              <ul>
+                <li>Works on economics of education, labor economics, and empirical industrial organization.</li>
+                <li>Research on peer effects in college applications asks how high school peers influence college-application behavior.</li>
+                <li>Research on motion pictures uses machine learning to examine racial identity, selection, revenue, and producer screening.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="research-profile" id="chaumont">
+            <summary>Gaston Chaumont — Macroeconomics, investor sentiment, and self-fulfilling beliefs</summary>
+            <div class="profile-body">
+              <p><span class="tag">Macroeconomics</span><span class="tag orange">Financial Markets</span></p>
+              <ul>
+                <li>Studies macroeconomics and the power of investor sentiment.</li>
+                <li>Work inspired by GameStop asks whether a sudden belief in a struggling company’s future can actually improve its survival odds.</li>
+                <li>This is a way to think about sunspots, self-fulfilling prophecies, and financial-market narratives that can move real outcomes.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="research-profile" id="kochov">
+            <summary>Asen Kochov — Decision theory, uncertainty, and unknown unknowns</summary>
+            <div class="profile-body">
+              <p><span class="tag lav">Theory</span><span class="tag blue">Decision Theory</span></p>
+              <ul>
+                <li>Develops tools for modeling decisions under uncertainty in ways closer to how real people face them.</li>
+                <li>Research formalizes how to make choices when you cannot even list all possible future states.</li>
+                <li>This is especially relevant for students choosing majors and careers in a world shaped by AI, climate change, trade, and political instability.</li>
+              </ul>
+            </div>
+          </details>
+
+        </div>
+      </section>
+
+      <section id="careers">
+        <div class="section-title">
+          <h2>Careers and Salaries</h2>
+          <p>Economics is not a single job title. It is a way to reason with models, evidence, uncertainty, incentives, and tradeoffs.</p>
+        </div>
+
+        <div class="career-grid">
+          <article class="career-card">
+            <h3>Economists</h3>
+            <div class="big-number">$115,440</div>
+            <p>
+              2024 median annual pay for economists according to the Bureau of Labor Statistics.
+            </p>
+            <p><span class="tag blue">Research</span><span class="tag">Policy</span><span class="tag">Data</span></p>
+          </article>
+
+          <article class="career-card">
+            <h3>Common adjacent paths</h3>
+            <p>
+              Economics students often move into consulting, finance, data analytics, policy analysis, law, graduate school, business analytics, research assistance, market research, and public-sector work.
+            </p>
+            <p><span class="tag green">Broad major</span><span class="tag orange">Skills matter</span></p>
+          </article>
+
+          <article class="career-card">
+            <h3>Comparable BLS occupations</h3>
+            <p>
+              BLS lists related occupations such as actuaries, budget analysts, data scientists, financial analysts, market research analysts, operations research analysts, statisticians, and political scientists.
+            </p>
+            <p><span class="tag">Math</span><span class="tag blue">Writing</span><span class="tag green">Computation</span></p>
+          </article>
+        </div>
+
+        <div class="plain-card" style="margin-top:16px;">
+          <h3>What students should infer</h3>
+          <p>
+            The major by itself is not magic. The labor-market signal is strongest when economics is paired with evidence: strong grades in serious classes, econometrics, statistics, programming, writing, research, internships, and an ability to explain counterfactuals clearly.
+          </p>
+
+          <div class="link-grid" style="margin-top:12px;">
+            <a class="link-card" href="https://www.bls.gov/ooh/life-physical-and-social-science/economists.htm" target="_blank" rel="noopener noreferrer">
+              <strong>BLS: Economists</strong>
+              <span>Median pay, job outlook, education, duties, and related occupations.</span>
+            </a>
+            <a class="link-card" href="https://www.aeaweb.org/resources/students/careers" target="_blank" rel="noopener noreferrer">
+              <strong>AEA: Careers in Economics</strong>
+              <span>Economics career resources from the American Economic Association.</span>
+            </a>
+            <a class="link-card" href="https://www.sas.rochester.edu/eco/undergraduate/career/index.html" target="_blank" rel="noopener noreferrer">
+              <strong>UR Economics: Careers and Graduate School</strong>
+              <span>Official department resources for preparing for careers and graduate training.</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="what-else">
+        <div class="section-title">
+          <h2>What Else This Page Should Eventually Include</h2>
+          <p>Useful additions once you have time.</p>
+        </div>
+
+        <div class="major-grid">
+          <article class="plain-card">
+            <h3>Declaration checklist</h3>
+            <p>A short “how to declare” section with the official declaration form, GPA requirement reminder, and what students should bring or check before declaring.</p>
+          </article>
+
+          <article class="plain-card">
+            <h3>Course sequencing map</h3>
+            <p>A simple semester-by-semester map showing when to take 108, 207, 209, calculus, statistics, econometrics, and electives.</p>
+          </article>
+
+          <article class="plain-card">
+            <h3>Student FAQ</h3>
+            <p>Answers to recurring questions: BA vs BS, financial economics vs economics, transfer credit, overlap rules, allied fields, graduate school preparation, and what to do if a course is full.</p>
+          </article>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>
+        Pr. Rizzo · Office Hours & Student Information · <a href="index.html">Return home</a>
+      </p>
+    </footer>
+
+  </div>
+</body>
+</html>

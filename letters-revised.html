@@ -1,0 +1,636 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Letters of Recommendation | Pr. Rizzo</title>
+  <meta name="description" content="Guidelines for students requesting letters of recommendation from Pr. Rizzo.">
+
+  <!--
+  HOW TO UPDATE THIS PAGE
+
+  This page is intentionally firm. The goal is not to discourage serious students;
+  the goal is to teach what a serious recommendation letter is and to protect the
+  value of letters written for students who have earned them.
+
+  To edit the main argument:
+  - Search for: id="serious-act"
+
+  To edit what my letters can speak to:
+  - Search for: id="what-my-letters-do"
+
+  To edit the character/evidence/fit section:
+  - Search for: id="character-fit"
+
+  To edit the distinction between a recommendation letter and a basic reference:
+  - Search for: id="letter-vs-reference"
+
+  To edit the quick triage section:
+  - Search for: id="before-you-ask"
+
+  To edit the request checklist:
+  - Search for: id="request-packet"
+
+  To edit cases where I am not the right recommender:
+  - Search for: id="not-right-recommender"
+
+  To edit the administrative limits:
+  - Search for: id="website-limits"
+
+  Do not put private student information in this file. HTML comments are not visible on the webpage,
+  but they are still public in the page source.
+  -->
+
+  <style>
+    :root {
+      --ink: #151515;
+      --muted: #5c5c5c;
+      --paper: #fffaf0;
+      --cream: #f6ecd8;
+      --charcoal: #1f2933;
+      --brick: #9a3412;
+      --brick-dark: #6f2410;
+      --blue: #123d5a;
+      --blue-soft: #e8f2f6;
+      --gold: #f2c14e;
+      --gold-soft: #fff2c7;
+      --green: #4f6f52;
+      --green-soft: #edf5ea;
+      --red-soft: #f9dddd;
+      --line: #dccdb3;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: linear-gradient(135deg, rgba(31,41,51,.10), rgba(154,52,18,.10)), #e9dfcf;
+      line-height: 1.55;
+    }
+
+    .page {
+      max-width: 1120px;
+      min-height: 100vh;
+      margin: 0 auto;
+      background: var(--paper);
+      box-shadow: 0 0 26px rgba(0,0,0,.16);
+    }
+
+    header {
+      background: var(--charcoal);
+      color: white;
+      padding: 42px 34px 36px;
+      border-bottom: 8px solid var(--gold);
+    }
+
+    header h1 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2.1rem, 5vw, 4rem);
+      line-height: 1.05;
+      letter-spacing: .2px;
+    }
+
+    header p {
+      margin: 14px 0 0;
+      max-width: 900px;
+      font-size: 1.16rem;
+      color: #f5f5f5;
+    }
+
+    main { padding: 28px 34px 46px; }
+
+    a { color: var(--blue); font-weight: 800; }
+
+    .back { margin: 0 0 20px; font-size: .96rem; }
+    .back a { text-decoration: none; }
+    .back a:hover { text-decoration: underline; }
+
+    .lede {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 18px;
+      margin-bottom: 22px;
+    }
+
+    .manifesto,
+    .quick-verdict,
+    .wide-card,
+    .rule-card,
+    .quote-card,
+    .check-item {
+      box-shadow: 0 2px 12px rgba(0,0,0,.045);
+    }
+
+    .manifesto {
+      background: white;
+      border: 1px solid var(--line);
+      border-left: 10px solid var(--brick);
+      border-radius: 14px;
+      padding: 22px 24px;
+    }
+
+    .manifesto h2 {
+      margin: 0 0 10px;
+      color: var(--brick-dark);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.8rem;
+    }
+
+    .manifesto p { margin: 0 0 12px; font-size: 1.07rem; }
+    .manifesto p:last-child { margin-bottom: 0; }
+
+    .quick-verdict {
+      background: var(--gold-soft);
+      border: 1px solid #e5c56d;
+      border-radius: 14px;
+      padding: 20px 22px;
+    }
+
+    .quick-verdict h2 {
+      margin: 0 0 10px;
+      color: var(--charcoal);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.45rem;
+    }
+
+    .verdict-row {
+      border-top: 1px solid rgba(0,0,0,.16);
+      padding: 11px 0;
+    }
+
+    .verdict-row:first-of-type { border-top: 0; }
+
+    .verdict-row strong {
+      display: block;
+      color: var(--brick-dark);
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      font-size: .82rem;
+      margin-bottom: 3px;
+    }
+
+    .nav-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 20px 0 26px;
+    }
+
+    .nav-strip a {
+      display: inline-block;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 8px 12px;
+      color: var(--blue);
+      text-decoration: none;
+      font-size: .94rem;
+    }
+
+    .nav-strip a:hover { background: var(--blue-soft); text-decoration: underline; }
+
+    section { margin-bottom: 28px; }
+
+    .section-title {
+      border-bottom: 3px solid var(--line);
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+    }
+
+    .section-title h2 {
+      margin: 0;
+      color: var(--charcoal);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.75rem;
+      line-height: 1.12;
+    }
+
+    .section-title p {
+      margin: 5px 0 0;
+      color: var(--muted);
+      font-size: .98rem;
+    }
+
+    .rules-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .rule-card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 18px 20px;
+    }
+
+    .rule-card.critical { border-top: 7px solid var(--brick); }
+    .rule-card.good { border-top: 7px solid var(--green); }
+    .rule-card.blue { border-top: 7px solid var(--blue); }
+    .rule-card.gold { border-top: 7px solid var(--gold); }
+
+    .rule-card h3 {
+      margin: 0 0 8px;
+      color: var(--blue);
+      font-size: 1.22rem;
+      line-height: 1.2;
+    }
+
+    .rule-card p { margin: 0 0 10px; }
+    .rule-card p:last-child { margin-bottom: 0; }
+
+    .wide-card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 20px 22px;
+    }
+
+    .wide-card.warning {
+      border-left: 10px solid var(--brick);
+      background: #fff7f2;
+    }
+
+    .wide-card.good {
+      border-left: 10px solid var(--green);
+      background: #fbfff9;
+    }
+
+    .wide-card.blue {
+      border-left: 10px solid var(--blue);
+      background: #f7fbff;
+    }
+
+    .wide-card h3 {
+      margin: 0 0 8px;
+      color: var(--brick-dark);
+      font-size: 1.28rem;
+    }
+
+    .wide-card.good h3 { color: var(--green); }
+    .wide-card.blue h3 { color: var(--blue); }
+
+    .checklist {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .check-item {
+      display: grid;
+      grid-template-columns: 38px 1fr;
+      gap: 11px;
+      align-items: start;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 14px 16px;
+    }
+
+    .number {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--charcoal);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: .92rem;
+    }
+
+    .check-item h3 {
+      margin: 0 0 4px;
+      color: var(--blue);
+      font-size: 1.08rem;
+    }
+
+    .check-item p { margin: 0; }
+
+    .tag {
+      display: inline-block;
+      border-radius: 999px;
+      padding: 4px 9px;
+      margin: 5px 6px 0 0;
+      background: var(--gold);
+      color: #222;
+      font-weight: 900;
+      font-size: .82rem;
+      white-space: nowrap;
+    }
+
+    .tag.red { background: var(--red-soft); }
+    .tag.green { background: var(--green-soft); }
+    .tag.blue { background: var(--blue-soft); }
+
+    .quote-card {
+      background: var(--blue-soft);
+      border: 1px solid #c9dce5;
+      border-left: 10px solid var(--blue);
+      border-radius: 14px;
+      padding: 20px 22px;
+    }
+
+    .quote-card h3 {
+      margin: 0 0 8px;
+      color: var(--blue);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.35rem;
+    }
+
+    .quote-card blockquote {
+      margin: 0;
+      padding: 0;
+      color: #202020;
+      font-size: 1.02rem;
+    }
+
+    .final-card {
+      background: var(--charcoal);
+      color: white;
+      border-radius: 14px;
+      padding: 22px 24px;
+      border-bottom: 8px solid var(--gold);
+    }
+
+    .final-card h2 {
+      margin: 0 0 8px;
+      color: white;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.65rem;
+    }
+
+    .final-card p { margin: 0 0 10px; }
+    .final-card p:last-child { margin-bottom: 0; }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 18px 34px;
+      background: var(--cream);
+      font-size: .95rem;
+    }
+
+    @media (max-width: 850px) {
+      main { padding: 24px 18px 36px; }
+      header { padding: 32px 20px 28px; }
+      .lede, .rules-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <h1>Letters of Recommendation</h1>
+      <p>A recommendation letter is not a favor, a formality, or a credentialing ritual. It is a serious statement of judgment, credibility, and trust.</p>
+    </header>
+
+    <main>
+      <p class="back"><a href="index.html">← Back to Office Hours & Student Information</a></p>
+
+      <div class="lede">
+        <article class="manifesto" id="serious-act">
+          <h2>A recommendation letter is a serious act</h2>
+          <p>A strong letter is not generic praise. It is an argument. It says, with evidence, that a student has demonstrated qualities worth trusting: judgment, seriousness, independence, intellectual tenacity, honesty, resilience, and the ability to do work that matters.</p>
+          <p>When I write a letter, I am putting my name behind my assessment of you. That name has value only if I refuse to spend it cheaply. I will not write vague praise, inflate ordinary performance, or make claims unsupported by evidence.</p>
+          <p>The rules below are not meant to protect my convenience first. They exist to protect the value of a real recommendation letter — for you, for the people reading it, and for every student whose serious work deserves to be taken seriously.</p>
+        </article>
+
+        <aside class="quick-verdict" id="before-you-ask">
+          <h2>Before you ask</h2>
+          <div class="verdict-row"><strong>Do I know you?</strong>A transcript reports grades. A letter requires knowledge of your work, judgment, seriousness, and character.</div>
+          <div class="verdict-row"><strong>Have I seen evidence?</strong>I need concrete work, conduct, writing, research, TA performance, office-hour discussion, or sustained intellectual engagement.</div>
+          <div class="verdict-row"><strong>Does the opportunity merit a letter?</strong>Not every application, internal box, or low-stakes institutional hoop deserves a full faculty recommendation.</div>
+        </aside>
+      </div>
+
+      <nav class="nav-strip" aria-label="Page sections">
+        <a href="#what-my-letters-do">What My Letters Do</a>
+        <a href="#character-fit">Character, Evidence, Fit</a>
+        <a href="#letter-vs-reference">Letter vs. Reference</a>
+        <a href="#request-packet">What to Send Me</a>
+        <a href="#not-right-recommender">Not the Right Recommender</a>
+        <a href="#website-limits">Website Limits</a>
+        <a href="#priority">Priority</a>
+      </nav>
+
+      <section id="what-my-letters-do">
+        <div class="section-title">
+          <h2>What My Letters Can Do Well</h2>
+          <p>The best recommendation letters require a good match between professor, student, opportunity, and evidence.</p>
+        </div>
+
+        <div class="rules-grid">
+          <article class="rule-card good">
+            <h3>I can write best for students whose work I have actually seen</h3>
+            <p>I am best positioned to write for students who have taken serious economics courses with me, written substantial work, participated thoughtfully in office hours or discussion, worked as TAs or research assistants, or shown unusual independence, judgment, resilience, seriousness, or intellectual courage.</p>
+            <p><span class="tag green">Observed Work</span><span class="tag blue">Specific Evidence</span></p>
+          </article>
+
+          <article class="rule-card good">
+            <h3>I can speak to intellectual habits, not just performance</h3>
+            <p>My strongest letters usually speak to how you think: whether you ask better questions, revise your views, handle hard material, write clearly, argue honestly, recover from mistakes, and keep working when nobody is applauding.</p>
+            <p><span class="tag green">Judgment</span><span class="tag">Tenacity</span></p>
+          </article>
+
+          <article class="rule-card blue">
+            <h3>I am useful when the reader needs a real assessment</h3>
+            <p>If the opportunity needs someone to explain how you reason, work, argue, improve, and take responsibility for serious intellectual tasks, I may be a good fit. If it only needs someone to certify that you are pleasant or in good standing, I may not be the best recommender.</p>
+            <p><span class="tag blue">Matching Problem</span></p>
+          </article>
+
+          <article class="rule-card critical">
+            <h3>I will not write ornamental letters</h3>
+            <p>A decorative letter helps nobody. Readers can tell when a letter is thin. A weak, vague, or inflated letter does not merely fail to help; it can reveal that the recommender had little to say.</p>
+            <p><span class="tag red">No Ornament</span><span class="tag">No Inflation</span></p>
+          </article>
+        </div>
+      </section>
+
+      <section id="character-fit">
+        <div class="section-title">
+          <h2>Character, Evidence, and Fit</h2>
+          <p>Grades matter. They are not the whole story. Serious letters live in the space beyond the transcript.</p>
+        </div>
+
+        <article class="quote-card">
+          <h3>What serious letters try to document</h3>
+          <blockquote>
+            Character matters a lot more than your GPA. Recent research identifies broad occupational personality requirements such as intellectual tenacity and social adjustment: persistence, initiative, analytical thinking, independence, emotional regulation, cooperation, concern for others, and stress tolerance. These are the kinds of traits serious letters try to document when there is real evidence for them.
+          </blockquote>
+        </article>
+
+        <div class="rules-grid" style="margin-top:16px;">
+          <article class="rule-card good">
+            <h3>Evidence is the difference between praise and credibility</h3>
+            <p>“Excellent student” is cheap if it is unsupported. “This student did X, under Y conditions, in a way that revealed Z” is different. A real letter requires the second kind of knowledge.</p>
+          </article>
+
+          <article class="rule-card good">
+            <h3>Fit matters both ways</h3>
+            <p>You are choosing a recommender; I am deciding whether I can serve as one honestly. The right match depends on what the opportunity requires and what I can truthfully say from direct evidence.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="letter-vs-reference">
+        <div class="section-title">
+          <h2>Recommendation Letter vs. Basic Reference</h2>
+          <p>Not every request requires the same kind of response.</p>
+        </div>
+
+        <div class="rules-grid">
+          <article class="rule-card blue">
+            <h3>A recommendation letter</h3>
+            <p>A recommendation letter is a written argument on your behalf. It requires evidence, judgment, care, and time. It should add information that a transcript, resume, or form cannot provide.</p>
+            <p><span class="tag blue">Argument</span><span class="tag green">Evidence</span></p>
+          </article>
+
+          <article class="rule-card gold">
+            <h3>A basic reference</h3>
+            <p>A basic reference is much simpler: confirming that you took a class, performed well, worked responsibly, or are in good standing. Some campus roles and routine applications may need only that. If so, provide my contact information rather than asking for a full letter.</p>
+            <p><span class="tag">Reference</span><span class="tag blue">Lighter Touch</span></p>
+          </article>
+        </div>
+      </section>
+
+      <section id="request-packet">
+        <div class="section-title">
+          <h2>What Your Request Must Include</h2>
+          <p>Because a strong letter depends on evidence, every serious request must arrive with the materials needed to write one.</p>
+        </div>
+
+        <div class="checklist">
+          <article class="check-item">
+            <div class="number">1</div>
+            <div>
+              <h3>What you are applying for</h3>
+              <p>Include the opportunity name, deadline, purpose, and why it is worth a serious faculty letter.</p>
+            </div>
+          </article>
+
+          <article class="check-item">
+            <div class="number">2</div>
+            <div>
+              <h3>Why you are asking me</h3>
+              <p>Explain what I can truthfully say about you that another recommender could not say as well.</p>
+            </div>
+          </article>
+
+          <article class="check-item">
+            <div class="number">3</div>
+            <div>
+              <h3>Two original work samples</h3>
+              <p>All requests must include two samples of assignments you wrote for me, or correspondence you had with me. These must be original versions, not post-graded GPT-polished versions. I reserve the right to attach student work to the letter so readers can corroborate what I say.</p>
+            </div>
+          </article>
+
+          <article class="check-item">
+            <div class="number">4</div>
+            <div>
+              <h3>Submission links, deadlines, and instructions</h3>
+              <p>Include the correct links, deadlines, and submission instructions. If there are more than four separate websites, reduce the list before asking or explain why the situation is unusual.</p>
+            </div>
+          </article>
+
+          <article class="check-item">
+            <div class="number">5</div>
+            <div>
+              <h3>Relevant context</h3>
+              <p>Remind me of the courses, assignments, office-hour conversations, TA work, research work, or other evidence that should inform the letter. Do not assume I will remember every detail from a large class.</p>
+            </div>
+          </article>
+
+          <article class="check-item">
+            <div class="number">6</div>
+            <div>
+              <h3>Enough lead time</h3>
+              <p>I write letters in bits and chunks while thinking about your work. The more time I have, the better the letter can be. Last-minute requests are usually not possible.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="not-right-recommender">
+        <div class="section-title">
+          <h2>When I Am Not the Right Recommender</h2>
+          <p>This is not punishment. It is matching. A bad match produces a bad letter.</p>
+        </div>
+
+        <div class="rules-grid">
+          <article class="rule-card critical">
+            <h3>If I do not know you</h3>
+            <p>If I do not know you, at best I can summarize what my classes are like and how you performed in them. That is not much more information than your transcript already provides.</p>
+          </article>
+
+          <article class="rule-card critical">
+            <h3>For routine non-academic box checking</h3>
+            <p>I generally do not write full personal letters for residential life, Take Five, e5, study abroad, student organizations, tour guides, peer advising, and similar non-graduate-school or non-professional requests. If someone needs a basic academic reference, provide my contact information.</p>
+          </article>
+
+          <article class="rule-card critical">
+            <h3>For institutional theater</h3>
+            <p>Some opportunities do not merit a full faculty recommendation. If the letter is mostly credential inflation, a low-value hoop, or an exercise in making ordinary campus participation look more selective than it is, I may decline.</p>
+          </article>
+
+          <article class="rule-card critical">
+            <h3>For slam-dunk cases where letters are not needed</h3>
+            <p>If the opportunity does not genuinely require a substantive letter, or if the application is already decided by objective criteria, I may decline rather than manufacture unnecessary prose.</p>
+          </article>
+
+          <article class="rule-card critical">
+            <h3>For ranking-motivated transfer requests</h3>
+            <p>If your transfer request is motivated solely by rankings, I am not likely to write the letter. Transfer letters for students I do not know well will not be written and will be lower priority than letters for students committed to the academic mission here.</p>
+          </article>
+
+          <article class="rule-card critical">
+            <h3>For claims I cannot honestly make</h3>
+            <p>I will not opine on work ethic, character, cooperation, leadership, judgment, or resilience unless I have legitimate evidence. I will not write things merely because they would be nice for you to have in the file.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="website-limits">
+        <div class="section-title">
+          <h2>Website and Form Limits</h2>
+          <p>The limit exists to protect letter quality, not merely to reduce inconvenience.</p>
+        </div>
+
+        <article class="wide-card warning">
+          <h3>Time spent fighting portals is time not spent thinking about the student</h3>
+          <p>A strong letter requires attention: thinking about the student’s work, the opportunity, the evidence, the right claims to make, and the right claims not to make. That work is valuable. It should not be displaced by repetitive portal administration.</p>
+          <p>An increasing number of applications now require separate emails, website registrations, recommender profiles, address fields, institution fields, Likert-scale evaluations, duplicative surveys, and upload procedures. I write letters for many students across many applications. The administrative burden has become large enough to damage the work itself.</p>
+          <p>For that reason, I will submit to a maximum of <strong>four total websites</strong> for a student unless we have discussed an unusual situation in advance. If a site asks for extensive survey responses that duplicate what is already in the letter, I may answer “N/A.” If a site asks me to judge issues I cannot legitimately assess, I will not make those claims.</p>
+          <p><span class="tag red">Maximum Four Websites</span><span class="tag">No Repetitive Surveys</span><span class="tag blue">Quality Control</span></p>
+        </article>
+      </section>
+
+      <section id="priority">
+        <div class="section-title">
+          <h2>Priority and Final Judgment</h2>
+          <p>Time is limited, so priority has to be explicit.</p>
+        </div>
+
+        <article class="wide-card good">
+          <h3>Economics majors and academically serious requests come first</h3>
+          <p>Priority in letter writing will be given to Economics majors, serious graduate-school and professional opportunities, and requests connected to the academic mission of the University. Other requests may be declined even when they are not unreasonable in the abstract.</p>
+        </article>
+
+        <article class="final-card" style="margin-top:16px;">
+          <h2>The standard</h2>
+          <p>I will write only when I can write with evidence, specificity, and credibility.</p>
+          <p>If I say yes, I am taking the request seriously. If I say no, it is because the evidence, match, timing, opportunity, or administrative burden does not support the kind of letter a serious student should want written on their behalf.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer><p>Pr. Rizzo · Office Hours & Student Information · <a href="index.html">Return home</a></p></footer>
+  </div>
+</body>
+</html>

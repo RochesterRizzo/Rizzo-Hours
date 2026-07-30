@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rochester Economics Alumni Network | Pr. Rizzo</title>
+  <meta name="description" content="A searchable student-facing directory of selected University of Rochester economics alumni willing to engage with current students.">
+
+  <!--
+  HOW TO UPDATE THIS PAGE
+
+  File name: alumni-network.html
+
+  Privacy recommendation:
+  - Do not publish personal email addresses on this public GitHub Pages site unless alumni explicitly consent.
+  - Best default: list alumni profiles publicly and route contact through Pr. Rizzo or a UR-only form/sheet.
+  - Put actual private contact details in a UR-authenticated Google Sheet, Blackboard item, Box folder, or form.
+
+  To add an alumni profile:
+  - Search for: id="alumniDirectory"
+  - Copy one full <article class="alumni-card">...</article> block.
+  - Paste it inside the alumni-directory div.
+  - Edit data-year, data-career, data-field, data-name, and the visible text.
+
+  To change the private directory/contact link:
+  - Search for: PASTE-UR-ONLY-LINK-HERE
+  - Replace it with the UR-only Google Sheet/Form/Box/Blackboard link.
+  -->
+
+  <style>
+    :root {
+      --navy: #063a66;
+      --blue: #123d5a;
+      --gold: #f2c14e;
+      --orange: #ff965f;
+      --green: #389b68;
+      --ink: #111;
+      --muted: #555;
+      --paper: #f7f7f7;
+      --line: #d7d7d7;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: #e9edf2;
+      line-height: 1.55;
+    }
+    .page {
+      max-width: 1180px;
+      margin: 0 auto;
+      min-height: 100vh;
+      background: white;
+      box-shadow: 0 0 24px rgba(0,0,0,.12);
+    }
+    header {
+      background: var(--navy);
+      color: white;
+      padding: 42px 34px 36px;
+      border-bottom: 8px solid var(--gold);
+    }
+    header h1 {
+      margin: 0;
+      font-size: clamp(2.05rem, 5vw, 3.8rem);
+      line-height: 1.05;
+    }
+    header p {
+      max-width: 920px;
+      margin: 12px 0 0;
+      font-size: 1.13rem;
+    }
+    main { padding: 28px 34px 46px; }
+    a { color: #043ea5; font-weight: 800; }
+    .back { margin: 0 0 20px; font-size: .96rem; }
+    .back a { text-decoration: none; }
+    .back a:hover { text-decoration: underline; }
+    .notice {
+      border-left: 9px solid var(--orange);
+      background: #fff7f2;
+      border-radius: 12px;
+      border-top: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      padding: 18px 20px;
+      margin-bottom: 22px;
+    }
+    .notice h2 { margin: 0 0 8px; color: var(--navy); font-size: 1.45rem; }
+    .notice p { margin: 0 0 8px; }
+    .notice p:last-child { margin-bottom: 0; }
+    .nav-strip { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0 26px; }
+    .nav-strip a {
+      display: inline-block;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 8px 12px;
+      color: #043ea5;
+      text-decoration: none;
+      font-size: .94rem;
+    }
+    .nav-strip a:hover { background: #f9fbff; text-decoration: underline; }
+    section {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 20px;
+      background: var(--paper);
+      margin-bottom: 24px;
+    }
+    section h2 { margin: 0 0 12px; color: var(--navy); font-size: 1.45rem; }
+    .intro-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 16px;
+    }
+    .mini-card, .alumni-card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 11px;
+      padding: 15px 17px;
+      box-shadow: 0 2px 10px rgba(0,0,0,.04);
+    }
+    .mini-card h3, .alumni-card h3 { margin: 0 0 7px; color: var(--blue); font-size: 1.12rem; }
+    .mini-card p, .alumni-card p { margin: 0 0 8px; }
+    .tools {
+      display: grid;
+      grid-template-columns: 1fr 180px 220px;
+      gap: 12px;
+      align-items: end;
+      background: #eef4f8;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+    .tools label { display: block; font-weight: 900; color: var(--navy); margin-bottom: 5px; font-size: .93rem; }
+    .tools input, .tools select {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-size: 1rem;
+      background: white;
+    }
+    .count { grid-column: 1 / -1; margin: 0; color: var(--muted); font-size: .94rem; }
+    .alumni-directory { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    .alumni-card { border-top: 7px solid var(--green); }
+    .alumni-card .meta { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 10px; }
+    .tag {
+      display: inline-block;
+      border-radius: 999px;
+      background: #eef4f8;
+      border: 1px solid #d5e4ec;
+      color: var(--navy);
+      padding: 4px 8px;
+      font-size: .82rem;
+      font-weight: 900;
+    }
+    .tag.year { background: #fff2c7; border-color: #e5c56d; color: #4b3800; }
+    .tag.career { background: #e8f6ee; border-color: #c9e5d4; color: #24593c; }
+    .button {
+      display: inline-block;
+      background: var(--navy);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-weight: 900;
+      margin-top: 8px;
+    }
+    .button.secondary { background: white; color: var(--navy); border: 1px solid var(--line); }
+    .no-results {
+      display: none;
+      background: #fff7f7;
+      border: 1px solid #efb2b2;
+      border-radius: 12px;
+      padding: 16px;
+      margin-top: 12px;
+    }
+    footer { margin-top: 22px; padding: 18px 34px; background: #b5a4cc; font-size: 1rem; }
+    footer p { margin: 5px 0; }
+    @media (max-width: 900px) {
+      main { padding: 24px 18px 36px; }
+      header { padding: 32px 20px 28px; }
+      .intro-grid, .alumni-directory, .tools { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <h1>Rochester Economics Alumni Network</h1>
+      <p>Selected University of Rochester economics alumni willing to help serious students think about careers, graduate school, internships, research, policy, finance, consulting, technology, law, and public service.</p>
+    </header>
+
+    <main>
+      <p class="back"><a href="index.html">← Back to Office Hours & Student Information</a></p>
+
+      <div class="notice">
+        <h2>Use this like a serious person</h2>
+        <p>This page is intended to help current University of Rochester students learn from alumni who have volunteered to be useful. Do not scrape, mass email, cold-spam, or share contact information outside the University community.</p>
+        <p>The public version of this page should not list private email addresses unless alumni explicitly consent. Use the contact method listed for each person.</p>
+      </div>
+
+      <nav class="nav-strip" aria-label="Page sections">
+        <a href="#how-it-works">How It Works</a>
+        <a href="#directory">Search Directory</a>
+        <a href="#student-rules">Student Rules</a>
+        <a href="#join">Alumni: Join the List</a>
+      </nav>
+
+      <section id="how-it-works">
+        <h2>How This Works</h2>
+        <p>This is a student-facing alumni directory. The goal is not networking theater. The goal is to help students learn what real paths look like after Rochester economics and to connect serious students with alumni who are willing to be generous with their time.</p>
+
+        <div class="intro-grid">
+          <article class="mini-card"><h3>Search by class year</h3><p>Find alumni by graduation year or cohort. Useful for seeing how careers unfold over time.</p></article>
+          <article class="mini-card"><h3>Search by career</h3><p>Filter by finance, consulting, policy, law, technology, graduate school, academia, data, nonprofit work, entrepreneurship, and more.</p></article>
+          <article class="mini-card"><h3>Contact appropriately</h3><p>Some alumni may allow direct contact. Others should be contacted through Pr. Rizzo or a UR-only form.</p></article>
+        </div>
+      </section>
+
+      <section id="directory">
+        <h2>Searchable Alumni Directory</h2>
+
+        <div class="tools">
+          <div>
+            <label for="alumniSearch">Search alumni</label>
+            <input id="alumniSearch" type="search" placeholder="Try: 2018, finance, law, consulting, PhD, data, policy">
+          </div>
+          <div>
+            <label for="yearFilter">Class year</label>
+            <select id="yearFilter">
+              <option value="">All years</option>
+              <option value="2020s">2020s</option>
+              <option value="2010s">2010s</option>
+              <option value="2000s">2000s</option>
+              <option value="1990s">1990s</option>
+              <option value="older">Older</option>
+            </select>
+          </div>
+          <div>
+            <label for="careerFilter">Career field</label>
+            <select id="careerFilter">
+              <option value="">All careers</option>
+              <option value="finance">Finance</option>
+              <option value="consulting">Consulting</option>
+              <option value="technology">Technology / Data</option>
+              <option value="policy">Policy / Government</option>
+              <option value="law">Law</option>
+              <option value="graduate-school">Graduate School / PhD</option>
+              <option value="business">Business / Entrepreneurship</option>
+              <option value="nonprofit">Nonprofit / Public Service</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <p class="count" id="alumniCount">Showing all alumni profiles.</p>
+        </div>
+
+        <div class="alumni-directory" id="alumniDirectory">
+          <article class="alumni-card" data-name="Sample Finance Alumni" data-year="2010s" data-career="finance" data-field="finance investment banking asset management markets">
+            <h3>Sample Alumni Name</h3>
+            <div class="meta"><span class="tag year">Class of 2018</span><span class="tag career">Finance</span><span class="tag">New York</span></div>
+            <p><strong>Current role:</strong> Associate, investment management firm.</p>
+            <p><strong>Rochester path:</strong> Economics major; internships in finance; senior research project on markets.</p>
+            <p><strong>Willing to discuss:</strong> Finance recruiting, first jobs, interviewing, internships, moving to New York, and how economics shows up in markets work.</p>
+            <p><strong>Contact:</strong> Contact through Pr. Rizzo or use the UR-only alumni contact sheet.</p>
+          </article>
+
+          <article class="alumni-card" data-name="Sample Policy Alumni" data-year="2020s" data-career="policy" data-field="policy government public service research economics">
+            <h3>Sample Alumni Name</h3>
+            <div class="meta"><span class="tag year">Class of 2022</span><span class="tag career">Policy / Government</span><span class="tag">Washington, DC</span></div>
+            <p><strong>Current role:</strong> Research analyst at a policy organization.</p>
+            <p><strong>Rochester path:</strong> Economics major; undergraduate research; policy internship.</p>
+            <p><strong>Willing to discuss:</strong> Policy jobs, research assistant work, graduate school preparation, writing samples, and how to build useful quantitative skills.</p>
+            <p><strong>Contact:</strong> Contact through Pr. Rizzo or use the UR-only alumni contact sheet.</p>
+          </article>
+
+          <article class="alumni-card" data-name="Sample Technology Alumni" data-year="2010s" data-career="technology" data-field="technology data analytics product economics">
+            <h3>Sample Alumni Name</h3>
+            <div class="meta"><span class="tag year">Class of 2015</span><span class="tag career">Technology / Data</span><span class="tag">Remote / West Coast</span></div>
+            <p><strong>Current role:</strong> Data/product role at a technology company.</p>
+            <p><strong>Rochester path:</strong> Economics plus statistics and programming; campus projects; early analytics work.</p>
+            <p><strong>Willing to discuss:</strong> Data skills, product analytics, coding, how to translate economics into technology work, and what students should build now.</p>
+            <p><strong>Contact:</strong> Contact through Pr. Rizzo or use the UR-only alumni contact sheet.</p>
+          </article>
+
+          <article class="alumni-card" data-name="Sample Graduate School Alumni" data-year="2020s" data-career="graduate-school" data-field="phd predoc economics graduate school research">
+            <h3>Sample Alumni Name</h3>
+            <div class="meta"><span class="tag year">Class of 2021</span><span class="tag career">Graduate School / PhD</span><span class="tag">Economics Research</span></div>
+            <p><strong>Current role:</strong> Predoc or PhD student in economics or a related field.</p>
+            <p><strong>Rochester path:</strong> Economics major; RA work; math/statistics; thesis or substantial research project.</p>
+            <p><strong>Willing to discuss:</strong> Predocs, PhD applications, math preparation, research life, statements of purpose, and whether graduate school is the right fit.</p>
+            <p><strong>Contact:</strong> Contact through Pr. Rizzo or use the UR-only alumni contact sheet.</p>
+          </article>
+        </div>
+
+        <div class="no-results" id="noResults">No alumni match that search. Try a broader term such as finance, policy, data, law, consulting, PhD, or a decade.</div>
+
+        <p style="margin-top:16px;">
+          <a class="button" href="PASTE-UR-ONLY-LINK-HERE" target="_blank" rel="noopener noreferrer">Open UR-Only Contact Form / Directory</a>
+          <a class="button secondary" href="mailto:rizzo.liberty@gmail.com?subject=Rochester%20Economics%20Alumni%20Network">Ask Pr. Rizzo About an Alumni Contact</a>
+        </p>
+      </section>
+
+      <section id="student-rules">
+        <h2>Student Rules</h2>
+        <div class="intro-grid">
+          <article class="mini-card"><h3>Do not spam</h3><p>Write to one or two relevant people with a specific reason. Do not mass email alumni.</p></article>
+          <article class="mini-card"><h3>Do your homework first</h3><p>Know who they are, what they do, and why their path is relevant before asking for time.</p></article>
+          <article class="mini-card"><h3>Ask for advice, not extraction</h3><p>Do not ask strangers to “get you a job.” Ask thoughtful questions and respect their time.</p></article>
+        </div>
+      </section>
+
+      <section id="join">
+        <h2>Alumni: Join the List</h2>
+        <p>Rochester economics alumni willing to talk with serious students can be added to this page. The public page can list only professional summary information, while direct contact details can remain behind a UR-only form or directory.</p>
+        <p><a class="button" href="mailto:rizzo.liberty@gmail.com?subject=Join%20Rochester%20Economics%20Alumni%20Network">Email Pr. Rizzo to be added</a></p>
+      </section>
+    </main>
+
+    <footer><p>Pr. Rizzo · Rochester Economics Alumni Network · <a href="index.html">Return home</a></p></footer>
+  </div>
+
+  <script>
+    const searchInput = document.getElementById("alumniSearch");
+    const yearFilter = document.getElementById("yearFilter");
+    const careerFilter = document.getElementById("careerFilter");
+    const cards = Array.from(document.querySelectorAll("#alumniDirectory .alumni-card"));
+    const alumniCount = document.getElementById("alumniCount");
+    const noResults = document.getElementById("noResults");
+    function normalize(text) { return text.toLowerCase().trim(); }
+    function updateAlumni() {
+      const query = normalize(searchInput.value);
+      const year = yearFilter.value;
+      const career = careerFilter.value;
+      let visible = 0;
+      cards.forEach(card => {
+        const text = normalize(card.innerText + " " + card.dataset.name + " " + card.dataset.year + " " + card.dataset.career + " " + card.dataset.field);
+        const yearMatch = !year || card.dataset.year === year;
+        const careerMatch = !career || card.dataset.career === career;
+        const textMatch = !query || text.includes(query);
+        const show = yearMatch && careerMatch && textMatch;
+        card.style.display = show ? "" : "none";
+        if (show) visible += 1;
+      });
+      alumniCount.textContent = (!query && !year && !career) ? "Showing all alumni profiles." : "Showing " + visible + " of " + cards.length + " alumni profiles.";
+      noResults.style.display = visible === 0 ? "block" : "none";
+    }
+    searchInput.addEventListener("input", updateAlumni);
+    yearFilter.addEventListener("change", updateAlumni);
+    careerFilter.addEventListener("change", updateAlumni);
+  </script>
+</body>
+</html>

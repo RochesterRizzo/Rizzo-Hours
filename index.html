@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -166,6 +166,77 @@
       font-size: 1.03rem;
     }
 
+    .weekly-feature {
+      margin-bottom: 22px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-top: 6px solid var(--navy);
+      border-radius: 10px;
+      background: var(--paper);
+    }
+
+    .weekly-kicker {
+      margin: 0 0 4px;
+      color: #555;
+      font-size: .92rem;
+      font-weight: 700;
+    }
+
+    .weekly-feature h2 {
+      margin: 0;
+      color: var(--navy);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.4rem;
+      line-height: 1.2;
+    }
+
+    .weekly-sections {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 5px 20px;
+      margin: 13px 0 0;
+      padding: 0;
+      list-style: none;
+      font-size: .93rem;
+      line-height: 1.35;
+    }
+
+    .weekly-sections li::before {
+      content: "•";
+      margin-right: 7px;
+      color: var(--red);
+      font-weight: 800;
+    }
+
+    .weekly-feature-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .weekly-feature .button {
+      display: inline-block;
+      width: auto;
+      padding: 10px 14px;
+    }
+
+    .weekly-feature .button-primary {
+      background: var(--navy);
+      border-color: var(--navy);
+      color: white;
+    }
+
+    .weekly-feature .button-secondary {
+      background: white;
+      border-color: var(--navy);
+      color: var(--navy);
+    }
+
+    .weekly-feature .button:hover {
+      text-decoration: underline;
+    }
+
     .home-layout {
       display: grid;
       grid-template-columns: minmax(0, 1.65fr) minmax(320px, .85fr);
@@ -259,6 +330,8 @@
     @media (max-width: 900px) {
       .quick-bar, .home-layout, .grid, footer { grid-template-columns: 1fr; }
 
+      .weekly-sections { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
       .resources-panel {
         position: static;
       }
@@ -270,6 +343,10 @@
       .schedule {
         min-width: 740px;
       }
+    }
+
+    @media (max-width: 600px) {
+      .weekly-sections { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -376,6 +453,27 @@
         <p>Office hours resume in the Fall semester on Monday, August 31, 2026. Schedule varies by week; check this page before coming.</p>
       </div>
 
+      <section class="weekly-feature" aria-labelledby="weekly-feature-title">
+        <h2 id="weekly-feature-title">Weekly Course Updates</h2>
+        <p class="weekly-kicker">ECON 108 / EWOT · Fall 2026</p>
+        <ul class="weekly-sections" aria-label="Course update sections">
+          <li>Course timing and readings</li>
+          <li>Assignments and due dates</li>
+          <li>Exam information</li>
+          <li>Recitation information</li>
+          <li>Other class admin, TA hours</li>
+          <li>Upcoming Special Events</li>
+          <li>Supply-Demand Mechanics Lab</li>
+          <li>Chart of the Week</li>
+          <li>Photo of the Week</li>
+          <li>Film, music, cultural item of the Week</li>
+        </ul>
+        <div class="weekly-feature-actions">
+          <a class="button button-primary" href="weekly/ewot/fall-2026/">ECON 108 / EWOT updates</a>
+          <a class="button button-secondary" href="weekly/">All course updates</a>
+        </div>
+      </section>
+
           <div class="grid">
             <section class="updates">
           <h2>Lodestars and updates</h2>
@@ -446,6 +544,7 @@
           <section class="resources-panel">
           <h2>Resources, Events, Motivation</h2>
           <div class="links">
+            <a href="weekly/" aria-label="Weekly course updates and archive">Weekly Course Updates</a>
             <a href="whats-on-tap.html" aria-label="What's on tap weekly discussion ideas?">What's on Tap?</a>
             <a href="outdoor-hours-location.html" aria-label="Where are the outside office hours located?">Outside OH Location</a>
             <a href="oyster-events.html" aria-label="Oyster club and special events">OYSTER Club and Special Events</a>

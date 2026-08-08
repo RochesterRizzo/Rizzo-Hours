@@ -20,16 +20,10 @@
       --blue-link: #043ea5;
       --soft-blue: #eef6ff;
       --soft-gold: #fff8df;
-      --soft-green: #f2fbf6;
     }
 
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
@@ -66,31 +60,13 @@
       font-size: 1.15rem;
     }
 
-    header a {
-      color: white;
-      font-weight: 700;
-    }
+    header a { color: white; font-weight: 700; }
+    main { padding: 26px 32px 44px; }
+    a { color: var(--blue-link); font-weight: 700; }
 
-    main {
-      padding: 26px 32px 44px;
-    }
-
-    a {
-      color: var(--blue-link);
-      font-weight: 700;
-    }
-
-    .back {
-      margin: 0 0 20px;
-    }
-
-    .back a {
-      text-decoration: none;
-    }
-
-    .back a:hover {
-      text-decoration: underline;
-    }
+    .back { margin: 0 0 20px; }
+    .back a { text-decoration: none; }
+    .back a:hover { text-decoration: underline; }
 
     .notice {
       border-left: 8px solid var(--orange);
@@ -106,14 +82,8 @@
       font-size: 1.4rem;
     }
 
-    .notice p {
-      margin: 0 0 10px;
-      font-size: 1.04rem;
-    }
-
-    .notice p:last-child {
-      margin-bottom: 0;
-    }
+    .notice p { margin: 0 0 10px; font-size: 1.04rem; }
+    .notice p:last-child { margin-bottom: 0; }
 
     .nav-strip {
       display: flex;
@@ -133,10 +103,7 @@
       font-size: .95rem;
     }
 
-    .nav-strip a:hover {
-      background: var(--soft-blue);
-      text-decoration: underline;
-    }
+    .nav-strip a:hover { background: var(--soft-blue); text-decoration: underline; }
 
     section {
       border: 1px solid var(--line);
@@ -146,30 +113,9 @@
       margin-bottom: 22px;
     }
 
-    section h2 {
-      margin: 0 0 12px;
-      color: var(--navy);
-      font-size: 1.42rem;
-    }
-
-    section h3 {
-      margin: 0 0 8px;
-      color: #333;
-      font-size: 1.16rem;
-    }
-
-    p {
-      margin-top: 0;
-    }
-
-    ul {
-      margin-top: 8px;
-      padding-left: 24px;
-    }
-
-    li {
-      margin-bottom: 9px;
-    }
+    section h2 { margin: 0 0 12px; color: var(--navy); font-size: 1.42rem; }
+    section h3 { margin: 0 0 8px; color: #333; font-size: 1.16rem; }
+    p { margin-top: 0; }
 
     .event-card {
       background: white;
@@ -181,13 +127,11 @@
 
     .event-main {
       display: grid;
-      grid-template-columns: minmax(0, 1.15fr) minmax(280px, .85fr);
+      grid-template-columns: minmax(0, 1.1fr) minmax(300px, .9fr);
       gap: 0;
     }
 
-    .event-text {
-      padding: 20px;
-    }
+    .event-text { padding: 20px; }
 
     .event-poster {
       background: #111;
@@ -195,28 +139,26 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      min-height: 260px;
+      min-height: 360px;
     }
 
-    .event-poster img {
+    .event-poster img, .upcoming-thumb img, .archive-thumb img {
       width: 100%;
       height: 100%;
-      object-fit: contain;
       display: block;
     }
+
+    .event-poster img, .upcoming-thumb img { object-fit: contain; }
+    .archive-thumb img { object-fit: cover; }
 
     .event-title {
       margin: 0 0 8px;
       color: var(--navy);
-      font-size: 1.55rem;
+      font-size: 1.65rem;
       line-height: 1.15;
     }
 
-    .event-subtitle {
-      margin: 0 0 14px;
-      color: var(--muted);
-      font-weight: 700;
-    }
+    .event-subtitle { margin: 0 0 14px; color: var(--muted); font-weight: 700; }
 
     .meta-grid {
       display: grid;
@@ -252,12 +194,7 @@
       white-space: nowrap;
     }
 
-    .button-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 14px;
-    }
+    .button-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
 
     .button {
       display: inline-block;
@@ -269,140 +206,61 @@
       font-weight: 700;
     }
 
-    .button.secondary {
-      background: var(--green);
+    .button.secondary { background: var(--green); }
+    .button.light { background: white; color: var(--blue-link); border: 1px solid var(--line); }
+    .button:hover { text-decoration: underline; }
+
+    .grid-three {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
     }
 
-    .button.light {
-      background: white;
-      color: var(--blue-link);
-      border: 1px solid var(--line);
-    }
-
-    .button:hover {
-      text-decoration: underline;
-    }
-
-.grid-three {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
-}
-
-.upcoming-card {
-  background: white;
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.upcoming-thumb {
-  background: #111;
-  min-height: 190px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ddd;
-  text-align: center;
-  padding: 18px;
-  font-weight: 700;
-}
-
-.upcoming-thumb img {
-  width: 100%;
-  height: 100%;
-  max-height: 280px;
-  object-fit: contain;
-  display: block;
-}
-
-.upcoming-body {
-  padding: 16px 18px;
-}
-
-.upcoming-body h3 {
-  color: var(--navy);
-  margin: 0 0 8px;
-}
-
-    .small-card {
+    .upcoming-card {
       background: white;
       border: 1px solid var(--line);
       border-radius: 10px;
-      padding: 16px 18px;
+      overflow: hidden;
     }
 
-    .small-card h3 {
-      color: var(--navy);
+    .upcoming-thumb {
+      background: #111;
+      min-height: 190px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ddd;
+      text-align: center;
+      padding: 18px;
+      font-weight: 700;
     }
 
-    .archive-list {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
-}
+    .upcoming-thumb img { max-height: 280px; }
+    .upcoming-body { padding: 16px 18px; }
+    .upcoming-body h3 { color: var(--navy); margin: 0 0 8px; }
 
-.archive-item {
-  background: white;
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  overflow: hidden;
-  display: grid;
-  grid-template-columns: 180px 1fr;
-}
+    .archive-list { display: grid; grid-template-columns: 1fr; gap: 16px; }
 
-.archive-thumb {
-  background: #111;
-  border-right: 1px solid var(--line);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 220px;
-}
-
-.archive-thumb img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.archive-body {
-  padding: 16px 18px;
-}
-
-.archive-item h3 {
-  color: var(--navy);
-  margin: 0 0 5px;
-}
-
-.archive-item .date {
-  color: var(--muted);
-  font-weight: 700;
-  margin: 0 0 8px;
-  font-size: .92rem;
-}
-
-@media (max-width: 700px) {
-  .archive-item {
-    grid-template-columns: 1fr;
-  }
-
-  .archive-thumb {
-    border-right: 0;
-    border-bottom: 1px solid var(--line);
-    max-height: 360px;
-  }
-
-  .archive-thumb img {
-    object-fit: contain;
-  }
-}
-
-    .archive-item h3 {
-      color: var(--navy);
-      margin-bottom: 5px;
+    .archive-item {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 180px 1fr;
     }
+
+    .archive-thumb {
+      background: #111;
+      border-right: 1px solid var(--line);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 220px;
+    }
+
+    .archive-body { padding: 16px 18px; }
+    .archive-item h3 { color: var(--navy); margin: 0 0 5px; }
 
     .archive-item .date {
       color: var(--muted);
@@ -419,34 +277,18 @@
     }
 
     @media (max-width: 840px) {
-      main {
-        padding: 22px 18px 34px;
-      }
-
-      header {
-        padding: 28px 18px 24px;
-      }
-
-      section {
-        padding: 16px;
-      }
-
-           .event-main,
-      .grid-two,
-      .meta-grid {
-        grid-template-columns: 1fr;
-      }
-      .event-poster {
-        border-left: 0;
-        border-top: 1px solid var(--line);
-      }
+      main { padding: 22px 18px 34px; }
+      header { padding: 28px 18px 24px; }
+      section { padding: 16px; }
+      .event-main, .grid-three, .meta-grid { grid-template-columns: 1fr; }
+      .event-poster { border-left: 0; border-top: 1px solid var(--line); }
     }
 
     @media (max-width: 700px) {
-  .grid-three {
-    grid-template-columns: 1fr;
-  }
-}
+      .archive-item { grid-template-columns: 1fr; }
+      .archive-thumb { border-right: 0; border-bottom: 1px solid var(--line); max-height: 360px; }
+      .archive-thumb img { object-fit: contain; }
+    }
   </style>
 </head>
 
@@ -460,15 +302,11 @@
 
     <main>
 
-      <p class="back">
-        <a href="index.html">← Back to Office Hours & Student Information</a>
-      </p>
+      <p class="back"><a href="index.html">← Back to Office Hours & Student Information</a></p>
 
       <div class="notice">
         <h2>Current Events and Announcements</h2>
-        <p>
-          This page collects special events, extra lectures, OYSTER Club gatherings, posters, slides, and related materials. Events here are usually outside normal class meetings and are open to interested students unless otherwise noted.
-        </p>
+        <p>This page collects special events, extra lectures, OYSTER Club gatherings, posters, slides, and related materials. Events here are usually outside normal class meetings and are open to interested students unless otherwise noted.</p>
       </div>
 
       <nav class="nav-strip" aria-label="Page sections">
@@ -485,52 +323,33 @@
           <div class="event-main">
 
             <div class="event-text">
-              <h3 class="event-title">Ding Dong the Climate Witch is Dead?</h3>
-              <p class="event-subtitle">
-                Squalls squashed the Eastern Sorceress: will they come for the West?
-              </p>
+              <h3 class="event-title">After Shocks: Adaptation and Growth through Volatile Times</h3>
+              <p class="event-subtitle">This year’s Engerman Lecture, delivered by Richard Hornbeck of the University of Chicago.</p>
 
               <div class="meta-grid">
-                <div class="meta">
-                  <strong>Speaker</strong>
-                  Professor Michael Rizzo
-                </div>
-
-                <div class="meta">
-                  <strong>Date</strong>
-                  Monday, 10/30
-                </div>
-
-                <div class="meta">
-                  <strong>Time</strong>
-                  7:30pm
-                </div>
-
-                <div class="meta">
-                  <strong>Location</strong>
-                  Wegmans 1400
-                </div>
+                <div class="meta"><strong>Speaker</strong>Richard Hornbeck, University of Chicago</div>
+                <div class="meta"><strong>Date</strong>Wednesday, September 16</div>
+                <div class="meta"><strong>Time</strong>5:00 PM</div>
+                <div class="meta"><strong>Location</strong>Morey 321</div>
               </div>
 
-              <p>
-                A public lecture on climate economics, catastrophe rhetoric, adaptation, resilience, and how to think clearly about environmental risk without drowning in doombubbles.
-              </p>
+              <p>The lecture will be delivered by <a href="https://www.chicagobooth.edu/faculty/directory/h/richard-hornbeck" target="_blank" rel="noopener noreferrer">Richard Hornbeck</a> of the University of Chicago. The talk is entitled <strong>“After Shocks: Adaptation and Growth through Volatile Times.”</strong></p>
 
               <p>
-                <span class="tag">Climate</span>
-                <span class="tag">Environmental Economics</span>
-                <span class="tag">Public Lecture</span>
-                <span class="tag">Open to All</span>
+                <span class="tag">Engerman Lecture</span>
+                <span class="tag">Economic History</span>
+                <span class="tag">Adaptation</span>
+                <span class="tag">Growth</span>
+                <span class="tag">Open to Interested Students</span>
               </p>
 
-              <div class="button-row">
-                <a class="button" href="ding-dong-climate-witch-poster.png">View Poster</a>
-                <a class="button secondary" href="Ding-Dong-Climate-Witch-compressed-under-25MB.pptx">Download Slides</a>
-              </div>
+              <div class="button-row"><a class="button" href="poster-files/engerman-hornbeck-after-shocks-poster.png">View Poster</a></div>
             </div>
 
             <div class="event-poster">
-              <img src="ding-dong-climate-witch-poster.png" alt="Poster for Ding Dong the Climate Witch is Dead, a lecture by Professor Michael Rizzo.">
+              <a href="poster-files/engerman-hornbeck-after-shocks-poster.png">
+                <img src="poster-files/engerman-hornbeck-after-shocks-poster.png" alt="Poster for Richard Hornbeck's Engerman Lecture, After Shocks: Adaptation and Growth through Volatile Times.">
+              </a>
             </div>
 
           </div>
@@ -538,274 +357,115 @@
       </section>
 
       <section id="upcoming">
-  <h2>Upcoming Events</h2>
+        <h2>Upcoming Events</h2>
 
-  <div class="grid-three">
+        <div class="grid-three">
 
-    <article class="upcoming-card">
-      <div class="upcoming-thumb">
-        Poster coming soon
-      </div>
+          <article class="upcoming-card">
+            <div class="upcoming-thumb">
+              <a href="poster-files/engerman-hornbeck-after-shocks-poster.png">
+                <img src="poster-files/engerman-hornbeck-after-shocks-poster.png" alt="Poster for Richard Hornbeck's Engerman Lecture, After Shocks.">
+              </a>
+            </div>
 
-      <div class="upcoming-body">
-        <h3>Engerman Lecture</h3>
+            <div class="upcoming-body">
+              <h3>Engerman Lecture</h3>
+              <p><strong>Title:</strong> After Shocks: Adaptation and Growth through Volatile Times</p>
+              <p><strong>Speaker:</strong> <a href="https://www.chicagobooth.edu/faculty/directory/h/richard-hornbeck" target="_blank" rel="noopener noreferrer">Richard Hornbeck</a>, University of Chicago</p>
+              <p><strong>Date:</strong> Wednesday, September 16</p>
+              <p><strong>Time:</strong> 5:00 PM</p>
+              <p><strong>Location:</strong> Morey 321</p>
+              <p><span class="tag">Economic History</span><span class="tag">Engerman Lecture</span><span class="tag">Adaptation</span></p>
+              <div class="button-row"><a class="button light" href="poster-files/engerman-hornbeck-after-shocks-poster.png">View Poster</a></div>
+            </div>
+          </article>
 
-        <p>
-          <strong>Title:</strong> TBD
-        </p>
+          <article class="upcoming-card">
+            <div class="upcoming-thumb">Poster coming soon</div>
+            <div class="upcoming-body">
+              <h3>Politics and Markets Project Fall Panel</h3>
+              <p><strong>Title:</strong> TBD</p>
+              <p><strong>Speakers / Panel:</strong> TBD</p>
+              <p><strong>Date:</strong> TBD</p>
+              <p><strong>Time:</strong> TBD</p>
+              <p><strong>Location:</strong> TBD</p>
+              <p><strong>Notes:</strong> Fall semester panel for the Politics and Markets Project. More details, poster, and related materials will be posted here when available.</p>
+              <p><span class="tag">Politics and Markets</span><span class="tag">Panel</span><span class="tag">Fall Semester</span></p>
+            </div>
+          </article>
 
-        <p>
-          <strong>Speaker:</strong>
-          <a href="https://www.chicagobooth.edu/faculty/directory/h/richard-hornbeck" target="_blank" rel="noopener noreferrer">Richard Hornbeck</a>,
-          John P. Gould Professor of Economics and Neubauer Family Faculty Fellow, University of Chicago Booth School of Business
-        </p>
+          <article class="upcoming-card">
+            <div class="upcoming-thumb">Event image coming soon</div>
+            <div class="upcoming-body">
+              <h3>OYSTER Club Event</h3>
+              <p><strong>Title:</strong> TBD</p>
+              <p><strong>Speaker / Guests:</strong> TBD</p>
+              <p><strong>Date:</strong> TBD</p>
+              <p><strong>Time:</strong> TBD</p>
+              <p><strong>Location:</strong> TBD</p>
+              <p><strong>Notes:</strong> Possible OYSTER Club gathering, extra lecture, discussion, film night, or special event. Details will be posted here when available.</p>
+              <p><span class="tag">OYSTER Club</span><span class="tag">Discussion</span><span class="tag">Special Event</span></p>
+            </div>
+          </article>
 
-        <p>
-          <strong>Date:</strong> Wednesday, September 16
-        </p>
-
-        <p>
-          <strong>Time:</strong> TBD
-        </p>
-
-        <p>
-          <strong>Location:</strong> TBD
-        </p>
-
-        <p>
-          <strong>Notes:</strong> Economic history lecture. Hornbeck is an economic historian and applied-micro economist whose research focuses on the historical development of the American economy, including why some places and people become wealthier while others remain poorer.
-        </p>
-
-        <p>
-          <span class="tag">Economic History</span>
-          <span class="tag">Engerman Lecture</span>
-          <span class="tag">Development</span>
-          <span class="tag">American Economy</span>
-        </p>
-      </div>
-    </article>
-
-    <article class="upcoming-card">
-<div class="upcoming-thumb">
-  <a href="poster-files/PMP.jpg">
-    <img src="poster-files/PMP.jpg" alt="Poster for the Politics and Markets Project fall panel.">
-  </a>
-</div>
-      <div class="upcoming-body">
-        <h3>Politics and Markets Project Fall Panel</h3>
-
-        <p>
-          <strong>Title:</strong> TBD
-        </p>
-
-        <p>
-          <strong>Speakers / Panel:</strong> TBD
-        </p>
-
-        <p>
-          <strong>Date: Wednesday, November 4th</strong> 
-        </p>
-
-        <p>
-          <strong>Time: 7:30pm to 9:00pm </strong> 
-        </p>
-
-        <p>
-          <strong>Location: Wegmans 1400</strong> 
-        </p>
-
-        <p>
-  <strong>Follow:</strong>
-  <a href="https://www.instagram.com/pmprochester/" target="_blank" rel="noopener noreferrer">Politics and Markets Project on Instagram</a>
-</p>
-
-           <p>
-          <strong>Notes: </strong> The Politics and Markets Project at Rochester brings students and faculty together to examine how political institutions, markets, incentives, and public policy shape one another. Events are meant to be intellectually serious but accessible: a place to think across economics, political science, history, law, and public life without reducing hard questions to slogans.
-
-        </p>
-
-     
-        <p>
-          <span class="tag">Politics and Markets</span>
-          <span class="tag">Panel</span>
-          <span class="tag">Fall Semester</span>
-        </p>
-      </div>
-    </article>
-
-    <article class="upcoming-card">
-      <div class="upcoming-thumb">
-        Event image coming soon
-      </div>
-
-      <div class="upcoming-body">
-        <h3>OYSTER Club Event</h3>
-
-        <p>
-          <strong>Title:</strong> TBD
-        </p>
-
-        <p>
-          <strong>Speaker / Guests:</strong> TBD
-        </p>
-
-        <p>
-          <strong>Date:</strong> TBD
-        </p>
-
-        <p>
-          <strong>Time:</strong> TBD
-        </p>
-
-        <p>
-          <strong>Location:</strong> TBD
-        </p>
-
-        <p>
-          <strong>Notes:</strong> Possible OYSTER Club gathering, extra lecture, discussion, film night, or special event. Details will be posted here when available.
-        </p>
-
-        <p>
-          <span class="tag">OYSTER Club</span>
-          <span class="tag">Discussion</span>
-          <span class="tag">Special Event</span>
-        </p>
-      </div>
-    </article>
-
-  </div>
-</section>
+        </div>
+      </section>
 
       <section id="archive">
-  <h2>Past Events / Materials</h2>
+        <h2>Past Events / Materials</h2>
 
-  <div class="archive-list">
+        <div class="archive-list">
 
-    <article class="archive-item">
-      <div class="archive-thumb">
-        <a href="engerman-margo-poster.png">
-          <img src="engerman-margo-poster.png" alt="Poster for Robert Margo Engerman Talk, From the Artisan Shop to the Mechanized Factory.">
-        </a>
-      </div>
+          <article class="archive-item">
+            <div class="archive-thumb"><a href="poster-files/engerman-margo-poster.png"><img src="poster-files/engerman-margo-poster.png" alt="Poster for Robert Margo Engerman Talk, From the Artisan Shop to the Mechanized Factory."></a></div>
+            <div class="archive-body">
+              <h3>From the Artisan Shop to the Mechanized Factory</h3>
+              <p class="date">Wednesday, October 15, 2025 · 5:00 PM · Morey 321</p>
+              <p><strong>Speaker:</strong> Robert Margo</p>
+              <p><strong>Event:</strong> Engerman Lecture</p>
+              <p><strong>Topic:</strong> Inanimate power and the transformation of American manufacturing, 1820 to 1900.</p>
+              <p><span class="tag">Economic History</span><span class="tag">Engerman Lecture</span><span class="tag">Manufacturing</span></p>
+              <div class="button-row"><a class="button light" href="poster-files/engerman-margo-poster.png">View Poster</a></div>
+            </div>
+          </article>
 
-      <div class="archive-body">
-        <h3>From the Artisan Shop to the Mechanized Factory</h3>
-        <p class="date">Wednesday, October 15, 2025 · 5:00 PM · Morey 321</p>
+          <article class="archive-item">
+            <div class="archive-thumb"><a href="poster-files/robots-ai-pmp-poster.png"><img src="poster-files/robots-ai-pmp-poster.png" alt="Poster for Politics and Markets Project panel, The Robots Are Coming: Will AI Take Your Job?"></a></div>
+            <div class="archive-body">
+              <h3>The Robots Are Coming: Will AI Take Your Job?</h3>
+              <p class="date">Wednesday, November 5, 2025 · 7:30–9:00 PM · Wegmans 1400</p>
+              <p><strong>Event:</strong> Politics and Markets Project panel discussion</p>
+              <p><strong>Moderator:</strong> Prof. David Primo</p>
+              <p><strong>Topic:</strong> AI, labor markets, occupational disruption, automation, and the future of work.</p>
+              <p><span class="tag">Politics and Markets</span><span class="tag">AI</span><span class="tag">Labor Markets</span><span class="tag">Panel</span></p>
+              <div class="button-row"><a class="button light" href="poster-files/robots-ai-pmp-poster.png">View Poster</a></div>
+            </div>
+          </article>
 
-        <p>
-          <strong>Speaker:</strong> Robert Margo
-        </p>
+          <article class="archive-item">
+            <div class="archive-thumb"><a href="poster-files/ding-dong-climate-witch-poster.png"><img src="poster-files/ding-dong-climate-witch-poster.png" alt="Poster for Ding Dong the Climate Witch is Dead, a lecture by Professor Michael Rizzo."></a></div>
+            <div class="archive-body">
+              <h3>Ding Dong the Climate Witch is Dead?</h3>
+              <p class="date">Monday, 10/30 · 7:30 PM · Wegmans 1400</p>
+              <p><strong>Speaker:</strong> Professor Michael Rizzo</p>
+              <p><strong>Topic:</strong> Climate economics, catastrophe rhetoric, adaptation, resilience, and environmental tradeoffs.</p>
+              <p><span class="tag">Climate</span><span class="tag">Environmental Economics</span><span class="tag">Public Lecture</span></p>
+              <div class="button-row"><a class="button light" href="poster-files/ding-dong-climate-witch-poster.png">View Poster</a><a class="button light" href="ding-dong-climate-witch-slides.pptx">Slides</a></div>
+            </div>
+          </article>
 
-        <p>
-          <strong>Event:</strong> Engerman Lecture
-        </p>
-
-        <p>
-          <strong>Topic:</strong> Inanimate power and the transformation of American manufacturing, 1820 to 1900.
-        </p>
-
-        <p>
-          <span class="tag">Economic History</span>
-          <span class="tag">Engerman Lecture</span>
-          <span class="tag">Manufacturing</span>
-        </p>
-
-        <div class="button-row">
-          <a class="button light" href="engerman-margo-poster.png">View Poster</a>
         </div>
-      </div>
-    </article>
-
-    <article class="archive-item">
-      <div class="archive-thumb">
-        <a href="robots-ai-pmp-poster.png">
-          <img src="robots-ai-pmp-poster.png" alt="Poster for Politics and Markets Project panel, The Robots Are Coming: Will AI Take Your Job?">
-        </a>
-      </div>
-
-      <div class="archive-body">
-        <h3>The Robots Are Coming: Will AI Take Your Job?</h3>
-        <p class="date">Wednesday, November 5, 2025 · 7:30–9:00 PM · Wegmans 1400</p>
-
-        <p>
-          <strong>Event:</strong> Politics and Markets Project panel discussion
-        </p>
-
-        <p>
-          <strong>Moderator:</strong> Prof. David Primo
-        </p>
-
-        <p>
-          <strong>Topic:</strong> AI, labor markets, occupational disruption, automation, and the future of work.
-        </p>
-
-        <p>
-          <span class="tag">Politics and Markets</span>
-          <span class="tag">AI</span>
-          <span class="tag">Labor Markets</span>
-          <span class="tag">Panel</span>
-        </p>
-
-        <div class="button-row">
-          <a class="button light" href="robots-ai-pmp-poster.png">View Poster</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="archive-item">
-      <div class="archive-thumb">
-        <a href="ding-dong-climate-witch-poster.png">
-          <img src="ding-dong-climate-witch-poster.png" alt="Poster for Ding Dong the Climate Witch is Dead, a lecture by Professor Michael Rizzo.">
-        </a>
-      </div>
-
-      <div class="archive-body">
-        <h3>Ding Dong the Climate Witch is Dead?</h3>
-        <p class="date">Monday, 10/30 · 7:30 PM · Wegmans 1400</p>
-
-        <p>
-          <strong>Speaker:</strong> Professor Michael Rizzo
-        </p>
-
-        <p>
-          <strong>Topic:</strong> Climate economics, catastrophe rhetoric, adaptation, resilience, and environmental tradeoffs.
-        </p>
-
-        <p>
-          <span class="tag">Climate</span>
-          <span class="tag">Environmental Economics</span>
-          <span class="tag">Public Lecture</span>
-        </p>
-
-        <div class="button-row">
-          <a class="button light" href="ding-dong-climate-witch-poster.png">View Poster</a>
-          <a class="button light" href="ding-dong-climate-witch-slides.pptx">Slides</a>
-        </div>
-      </div>
-    </article>
-
-  </div>
-</section>
+      </section>
 
       <section id="what-is-oyster">
         <h2>What is OYSTER Club?</h2>
-
-        <p>
-          Our light take on <a href="http://www.scottishphilosophy.org/philosophers/adam-smith/">this</a>.
-        </p>
-
-        <p>
-          The spirit is simple: show up curious, argue in good faith, read things carefully, explain yourself, listen to others, and be willing to think harder than Reddit/X/Instagram/TikTok/discourse usually allows.
-        </p>
+        <p>Our light take on <a href="http://www.scottishphilosophy.org/philosophers/adam-smith/">this</a>.</p>
+        <p>The spirit is simple: show up curious, argue in good faith, read things carefully, explain yourself, listen to others, and be willing to think harder than Reddit/X/Instagram/TikTok/discourse usually allows.</p>
       </section>
 
     </main>
 
-    <footer>
-      <p>
-        Pr. Rizzo · Office Hours & Student Information · <a href="index.html">Return home</a>
-      </p>
-    </footer>
+    <footer><p>Pr. Rizzo · Office Hours & Student Information · <a href="index.html">Return home</a></p></footer>
 
   </div>
 </body>

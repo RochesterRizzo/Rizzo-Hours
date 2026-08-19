@@ -346,6 +346,10 @@ img {
   padding-bottom: clamp(26px, 4vw, 42px);
 }
 
+.issue-masthead--environmental {
+  background: linear-gradient(135deg, #032947, #075a52 62%, #247b5d);
+}
+
 .issue-masthead--archive h1 {
   font-size: clamp(2.15rem, 5vw, 3.65rem);
   line-height: 1.04;
@@ -432,6 +436,13 @@ img {
   border-bottom: 3px solid var(--navy);
 }
 
+.section-source-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.section-source-link:hover { text-decoration: underline; }
+
 .issue-section h3 {
   margin: 24px 0 7px;
   color: var(--navy-deep);
@@ -464,6 +475,34 @@ img {
 
 .source-update li + li {
   margin-top: .45rem;
+}
+
+.source-list__level-1 { margin-left: 1.4rem; }
+.source-list__level-2 { margin-left: 2.8rem; }
+.source-list__level-3 { margin-left: 4.2rem; }
+
+.source-list__marker {
+  color: var(--navy-deep);
+  font-weight: 800;
+}
+
+.source-deadline {
+  padding: 14px 16px;
+  border-left: 7px solid var(--red);
+  background: #fff5f4;
+  font-weight: 700;
+}
+
+.quote-archive {
+  padding: 22px;
+  border: 1px solid #d5c18d;
+  border-radius: 8px;
+  background: #fff9e8;
+}
+
+.quote-archive > p {
+  font-family: var(--serif);
+  font-size: 1.12rem;
 }
 
 .source-update blockquote {

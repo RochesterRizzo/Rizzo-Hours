@@ -9,9 +9,15 @@
 - ECON 211 / Money, Banking & Modern Financial Institutions: `weekly/money-banking/index.html`
 - ECON 224 / Sports Economics: `weekly/sports-economics/index.html`
 - ECON 238 / Environmental Economics: `weekly/environmental-economics/index.html`
-- Reusable update template: `weekly/_templates/ewot-update.html`
-- Individual updates: `weekly/ewot/fall-2026/week-XX/index.html`
-- Images for an update: `weekly/ewot/fall-2026/week-XX/assets/`
+- ECON 238 / Environmental Economics, Fall 2025 archive:
+  `weekly/environmental-economics/fall-2025/index.html`
+- ECON 238 / Environmental Economics, Fall 2026:
+  `weekly/environmental-economics/fall-2026/index.html`
+- EWOT update template: `weekly/_templates/ewot-update.html`
+- Environmental Economics update template:
+  `weekly/_templates/environmental-economics-update.html`
+- Individual updates: `weekly/[course]/fall-2026/week-XX/index.html`
+- Images for an update: `weekly/[course]/fall-2026/week-XX/assets/`
 
 ## Batch workflow
 
@@ -64,9 +70,30 @@ Provide any or all of the following material:
 11. Film, music, cultural item of the Week.
 12. The quotation for “They Said It.”
 
+## Environmental Economics request
+
+> Create the Environmental Economics Week [number] Course Update for [date range].
+
+Send the new material in one batch. The standard Environmental Economics
+structure is:
+
+1. Course timing and readings.
+2. Assignments and due dates.
+3. Course projects.
+4. Other class administration and availability.
+5. Upcoming Special Events.
+6. Some Things That Captured Our Attention.
+7. Chart of the Week.
+8. Photo of the Week.
+9. Film, music, cultural item of the Week.
+10. They Said It.
+
+Sections with no material are omitted from the published update. New headings
+are added only when the supplied material requires them.
+
 ## Publishing steps
 
-1. Create the update from `weekly/_templates/ewot-update.html`.
+1. Create the update from the correct course template in `weekly/_templates/`.
 2. Place it in the correct course, semester, and week directory.
 3. Add the update to the course and semester archive pages, newest first.
 4. Change the homepage block to link directly to the current update.
@@ -75,7 +102,8 @@ Provide any or all of the following material:
 
 ## Fall 2026 first update
 
-The first update starts from `weekly/_templates/ewot-update.html`. It remains
-unlinked until the completed Week 1 content has been reviewed. After approval,
-place it at `weekly/ewot/fall-2026/week-01/index.html`, add it to the Fall 2026
-archive, and change the Office Hours homepage button to link directly to it.
+Each course's first update starts from its course template. It remains unlinked
+until the completed Week 1 content has been reviewed. After approval, place it
+at `weekly/[course]/fall-2026/week-01/index.html`, add it to the Fall 2026
+archive, and change the Office Hours homepage button to link directly to the
+current update when that course should be featured there.

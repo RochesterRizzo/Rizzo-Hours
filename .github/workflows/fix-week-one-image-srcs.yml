@@ -1,0 +1,70 @@
+name: Fix EWOT Week One Image Srcs
+
+on:
+  push:
+    paths:
+      - '.github/workflows/fix-week-one-image-srcs.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out site
+        uses: actions/checkout@v4
+      - name: Replace broken embedded image sources with repo asset paths
+        run: |
+          python3 <<'PY'
+          from pathlib import Path
+          import re
+          p = Path('weekly/ewot/fall-2026/week-01/index.html')
+          html = p.read_text(encoding='utf-8')
+
+          # Make sure images are visible and responsive.
+          style = '''
+    .source-doc img.doc-image,
+    .source-update img.doc-image,
+    img.doc-image {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 18px 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    }
+'''
+          if 'img.doc-image {' not in html and '.source-doc img.doc-image' not in html:
+              html = html.replace('</style>', style + '  </style>')
+
+          replacements = {
+              'Week One update image 1': 'assets/image1.svg',
+              'Week One update image 2': '../../../../Outside_Hours_Location.png',
+              'Week One update image 3': '../../../../poster-files/engerman-hornbeck-after-shocks-poster.png',
+              'Week One update image 4': 'assets/image4.svg',
+              'Week One update image 5': 'assets/image5.svg',
+              'Week One update image 6': 'assets/image6.svg',
+          }
+
+          for alt, src in replacements.items():
+              pattern = r'(<img\b(?=[^>]*alt="' + re.escape(alt) + r'")[^>]*?\bsrc=")[^"]*("[^>]*>)'
+              html, n = re.subn(pattern, r'\1' + src + r'\2', html, flags=re.S)
+              if n == 0:
+                  print('WARNING: no replacement made for', alt)
+
+          # If the prior recovery section exists at bottom, remove it to avoid duplicate images.
+          html = re.sub(r'\s*<section class="issue-section" id="images-restored">.*?</section>\s*(?=</article>)', '\n', html, flags=re.S)
+
+          p.write_text(html, encoding='utf-8')
+          PY
+      - name: Commit patch and remove workflow
+        run: |
+          rm -f .github/workflows/fix-week-one-image-srcs.yml
+          git config user.name "RochesterRizzo"
+          git config user.email "rizzo.liberty@gmail.com"
+          git add weekly/ewot/fall-2026/week-01/index.html .github/workflows/fix-week-one-image-srcs.yml
+          git commit -m "Fix EWOT Week One image sources"
+          git push

@@ -14,69 +14,45 @@ jobs:
     steps:
       - name: Check out site
         uses: actions/checkout@v4
-      - name: Insert missing Week One images
+      - name: Insert Week One images directly into page
         run: |
           python3 <<'PY'
           from pathlib import Path
           p = Path('weekly/ewot/fall-2026/week-01/index.html')
           html = p.read_text(encoding='utf-8')
-
-          style = '''
-    .week-image { margin: 18px 0; }
-    .week-image img { display: block; max-width: 100%; height: auto; border: 1px solid var(--line); border-radius: 8px; background: white; box-shadow: 0 2px 8px rgba(0,0,0,.08); }
-    .week-image.narrow { max-width: 360px; }
-    .week-image.medium { max-width: 560px; }
-    .week-image.wide { max-width: 720px; }
-'''
+          css = """    .week-image { margin: 18px 0; }
+              .week-image img { display: block; max-width: 100%; height: auto; border: 1px solid var(--line); border-radius: 8px; background: white; box-shadow: 0 2px 8px rgba(0,0,0,.08); }
+              .week-image.narrow { max-width: 360px; }
+              .week-image.medium { max-width: 560px; }
+              .week-image.wide { max-width: 720px; }
+          """
           if '.week-image {' not in html:
-              html = html.replace('    .callout { padding: 17px 18px; border-left: 5px solid var(--orange); border-radius: 6px; background: #fff3ec; color: #493128; }\n', '    .callout { padding: 17px 18px; border-left: 5px solid var(--orange); border-radius: 6px; background: #fff3ec; color: #493128; }\n' + style)
-
-          def add_after(marker, block, label):
-              global html
-              if label in html:
-                  return
-              idx = html.find(marker)
-              if idx == -1:
-                  raise SystemExit(f'Missing marker for {label}: {marker[:90]}')
-              pos = idx + len(marker)
-              html = html[:pos] + '\n' + block + '\n' + html[pos:]
-
-          add_after(
-              '<p>Submit your assignments on Blackboard under “Weekly Updates and Assignments 2026” then to “Week One Class Update and Assignment” and then you click each particular assignment to access the submission box.</p>',
-              '''<figure class="week-image wide" id="bb-week-one-assignment-image"><img src="assets/image1.svg" alt="Blackboard screenshot showing Weekly Assignments and Class Updates 2026, including Week One Class Update and Assignments."></figure>''',
-              'id="bb-week-one-assignment-image"'
-          )
-
-          add_after(
-              '<p>We walk over to the picnic tables right after the 10:25 class gets out (I may run up to my office first to grab extra folding chairs). Folks tend to drop in at all times from anywhere from 2 minutes to 75 minutes, so we hope to see you outside of class.</p>',
-              '''<figure class="week-image wide" id="outside-hours-map-image"><img src="../../../../Outside_Hours_Location.png" alt="Map showing the outdoor office hours location near Meliora Hall."></figure>''',
-              'id="outside-hours-map-image"'
-          )
-
-          add_after(
-              '<p><strong>Where:</strong> Morey 321</p>',
-              '''<figure class="week-image narrow" id="engerman-poster-image"><img src="../../../../poster-files/engerman-hornbeck-after-shocks-poster.png" alt="Poster for Richard Hornbeck, After Shocks: Adaptation and Growth through Volatile Times, Engerman Lecture."></figure>''',
-              'id="engerman-poster-image"'
-          )
-
-          add_after(
-              'a very large share of American teenagers are not allowed much autonomy at all.”</p>',
-              '''<figure class="week-image wide" id="chart-of-week-image"><img src="assets/image4.svg" alt="Chart of the Week: American children are not allowed to go to many places without an adult."></figure>''',
-              'id="chart-of-week-image"'
-          )
-
-          add_after(
-              'Cartographers slipped these tiny illustrations into the maps right before retiring, leaving them quietly behind. How they managed to get past Swisstopo’s notoriously strict inspections is still a complete mystery.”</p>',
-              '''<figure class="week-image medium" id="photo-of-week-image"><img src="assets/image5.svg" alt="Photo of the Week: Swiss topographic map with hidden drawings."></figure>''',
-              'id="photo-of-week-image"'
-          )
-
-          add_after(
-              'What has happened to the freedom our kids used to enjoy? And what does that mean for what happens here at college and beyond?</p>',
-              '''<figure class="week-image narrow" id="book-video-week-image"><img src="assets/image6.svg" alt="Book of the Week: Restoring Childhood by Peter Gray."></figure>''',
-              'id="book-video-week-image"'
-          )
-
+              html = html.replace('</style>', css + '\n  </style>')
+          image_section = '''
+          <section class="issue-section" id="images-restored">
+            <h2>Images and Visuals from This Update</h2>
+            <figure class="week-image wide" id="bb-week-one-assignment-image">
+              <img src="assets/image1.svg" alt="Blackboard screenshot showing Weekly Assignments and Class Updates 2026, including Week One Class Update and Assignments.">
+            </figure>
+            <figure class="week-image wide" id="outside-hours-map-image">
+              <img src="../../../../Outside_Hours_Location.png" alt="Map showing the outdoor office hours location near Meliora Hall.">
+            </figure>
+            <figure class="week-image narrow" id="engerman-poster-image">
+              <img src="../../../../poster-files/engerman-hornbeck-after-shocks-poster.png" alt="Poster for Richard Hornbeck, After Shocks: Adaptation and Growth through Volatile Times, Engerman Lecture.">
+            </figure>
+            <figure class="week-image wide" id="chart-of-week-image">
+              <img src="assets/image4.svg" alt="Chart of the Week: American children are not allowed to go to many places without an adult.">
+            </figure>
+            <figure class="week-image medium" id="photo-of-week-image">
+              <img src="assets/image5.svg" alt="Photo of the Week: Swiss topographic map with hidden drawings.">
+            </figure>
+            <figure class="week-image narrow" id="book-video-week-image">
+              <img src="assets/image6.svg" alt="Book of the Week: Restoring Childhood by Peter Gray.">
+            </figure>
+          </section>
+          '''
+          if 'id="images-restored"' not in html:
+              html = html.replace('</article>', image_section + '\n      </article>', 1)
           p.write_text(html, encoding='utf-8')
           PY
       - name: Commit patch and remove workflow
@@ -85,5 +61,5 @@ jobs:
           git config user.name "RochesterRizzo"
           git config user.email "rizzo.liberty@gmail.com"
           git add weekly/ewot/fall-2026/week-01/index.html .github/workflows/patch-week-one-inline-images.yml
-          git commit -m "Insert missing EWOT Week One inline images"
+          git commit -m "Insert EWOT Week One images directly into page"
           git push

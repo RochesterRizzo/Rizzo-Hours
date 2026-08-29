@@ -14,159 +14,43 @@ jobs:
     steps:
       - name: Check out site
         uses: actions/checkout@v4
-      - name: Restore full attention section and quote title
+      - name: Patch attention and quote sections
         run: |
           python3 <<'PY'
           from pathlib import Path
-          import re, zlib, base64
+          import re, textwrap
           p = Path('weekly/ewot/fall-2026/week-01/index.html')
           html = p.read_text(encoding='utf-8')
-          data = """
-            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
-            YqWi5BQkgCV9AHpScZrasXG0UhIXa+tC3Lu3EE5GAJlXKAe3wq1TpNajyi
-            V+FK8CPmuFp6dbR+GbErTvbkTHDHLDfKn1/mJhGwFkQi8FnbBHmzhuHLqgx
-            HJYVj06cZoAJpB00lvBw9oKszET0o5DqOadoT0xFda63lTKQuHHyir/uWh
-            RsNgPKafz9eXpe27cPn+bGP4iuuTXuDKq/KdCBoaeapfjE+zpNo52beU12
-            NDM9uTlfIH1J8ZDv90rq+OOWPrBmve/hvmqtPygMkP7c8gZz72+bTC411Qc
-            +AYn/+KEOEV92joKBj3BRw5R5bqWLUqUjeRN/1kH58lmRFZboF4bNIMSTy
-            h17ZUcfsNb7jXF5+krwZKnBYOzUnFxSJBZBx/F/QIpdygKTjUWC+0WCIBXx
-            tw/f++3LiLCOMLUiiAAeoEnPaTLewNbCJWCI4spxwJMmOeSBPx+pqpqRYDy
-            91srYLjgmpTAAdydhmVEhl6e4Az4jpqeDHyiOEp9G60jDeKnk29wIIUMI7
-            2SDyW1S4j/AFkrNl7F5cva6m3SDPdSFQf9rSrMoL/aSFYEhzqgbAn5jdUn
-            KA0EBQOIAgdcc6rX0Gkc777klayxlBACEUyccDlT0GPIefGl9pZhZdxptx
-            jOt/KpizNvyFAvth35mk/PgqHpMJYFizLlGK8pFO5D1PDEKR4dNe3A4dVY
-            sfh5iZWCvRJTmEyVU6WaGP61pCclMKO4n9w1dL0NcgxTQr6yoovrCcI64
-            nbufZ/Tffx+ddUwMDz6motP7K3d40/tSs4r4zeKy3XIXLiVrDdt/i6CKGe
-            EWC4YRmA8QzB5D2zz7KT0w6dL+ztcFtbaCUtwscs8YElQ+9D4ZIyvFj6k1
-            qkpaTE3KZuUhY8jKoUA+B9KQNCnkUmmt4i3lzvzIiMDEExPNyDpJPftLKk
-            ZVdTa75huHz0yn/AAxpJDJxErgdjqhn+mVsWjajm3rl+FljKrItrXWyOpI
-            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
-            py9qebdlaMxvX7DfSv8q8fsaD2//Z
-          """
-          section = zlib.decompress(base64.b64decode(''.join(data.split()))).decode('utf-8')
+          section = textwrap.dedent(r'''
+            <section class="issue-section source-update" id="attention">
+              <h2>Some Items That Caught Our Attention</h2>
+              <p><strong>Wanna Get An A?</strong> <a href="https://academic.oup.com/sleep/advance-article-abstract/doi/10.1093/sleep/zsae062/7619522?login=false&utm_source=substack&utm_medium=email" target="_blank" rel="noopener noreferrer">Try this</a>.</p>
+              <p><strong>Wanna Get An A?</strong> <a href="https://www.nber.org/papers/w32550?utm_campaign=ntwh&utm_medium=email&utm_source=ntwg19" target="_blank" rel="noopener noreferrer">Try this too</a>,</p>
+              <p><strong>Minimum Wages are Not Magic Wands, Episode 38775782:</strong> “<a href="https://www.nber.org/papers/w35628" target="_blank" rel="noopener noreferrer">We find adverse – rather than beneficial –</a> effects of minimum wages on the employment, hours, and earnings of initially-employed low-wage workers in poor and low-income families. … the adverse effects for poor and low-income low-wage workers <strong>help explain why minimum wages do not reduce poverty.</strong>”</p>
+              <p><strong>Ban Data Centers …</strong> <a href="https://www.noahpinion.blog/p/banning-data-centers-would-blow-up" target="_blank" rel="noopener noreferrer">and blow up the economy</a>: “The big danger is that data center bans will choke off the main engine of U.S. growth, throwing a lot of Americans out of their jobs and putting a hole in Americans’ retirement savings. But before I talk about that, I should talk about why I think limitations on data centers aren’t actually a crazy idea. …”</p>
+              <p><strong>Do You Need to Be a Billionaire to Live Your Dreams?</strong> “<a href="https://kk.org/thetechnium/a-billion-dollars/?ref=thebrowser.com" target="_blank" rel="noopener noreferrer">I am reminded of a scene in the movie Wall Street</a> where Bud, the protagonist, is working in a high-paying finance job he hates so that he can make a million dollars, retire and ride a motorcycle across China. The inside joke is that you don’t need to work on Wall Street, or to make a million dollars, to buy a motorcycle to cross China. You could easily do that whole trip for $2,000 dollars, saved from a short summer stint working at Costco … The bottleneck for most dreams is not financial. It’s a lack of confidence, willingness to take a risk, and face failure, or a lack of imagination of what is possible with current resources. If you want to write a novel you don’t need capital — you need discipline and 1,000 words a day. If you want to start a consultancy you need expertise and a first client, not a war chest. A lack of money is a convenient thing to blame because it feels concrete, but it’s rarely the actual blocker for achievements.”</p>
+              <p>“Bloomberg reports <strong>over a quarter of Gen-Z investors consider sports betting part of their long-term financial strategy,</strong> with 52% apparently moving their investment funds into sports bets. Ah yes, the new investment strat known as “DraftKings.” Now, you might not be shocked to find out that placing 6-leg parlays isn’t a sound substitute for investing in blue-chip stocks.<strong>”</strong></p>
+              <p><strong>Building</strong> <a href="https://www.piratewires.com/p/cameron-schiller-rangeview-el-segundo-manufacturing" target="_blank" rel="noopener noreferrer"><strong>at 26</strong></a></p>
+              <p><strong>Legal Plunder, Gavin Newsome and Poop Diapers:</strong> Any sufficiently evolved regulatory regime will devolve into a system of legal plunder backed by a system of faux morality used to disguise it as safety and justice. Who could be against having newborns get diapers, do you hate babies? I must, because this is not access, this is theft. baby2baby, the nonprofit set to guzzle this largesse on a no bid/no shop contract is run by norah wienstein who sits on the board of california partners project with, wait for it, jennifer siebel newsom. and the costs are multiples of what you’d pay on amazon or costco. <a href="https://x.com/realpeteyb123/status/2052921811998765526?s=46&t=rP_x4WxKKRnOl80Iz5e13g" target="_blank" rel="noopener noreferrer">it’s legal plunder to favor a crony</a>. California is about to spend $20 million of taxpayer money to give 100,000 newborns 400 diapers each through Baby2Baby.</p>
+              <p>Do the math with me:<br>100,000 babies × 400 diapers = 40 million diapers<br>$20,000,000 ÷ 40,000,000 = $0.50 per diaper!!!!!</p>
+              <p>Now walk into any Costco in California and you can buy the same quality diapers for .12 to .15 cents each! That’s $48 to $60 for 400 diapers. So the state is paying 8–10x more per diaper than a regular family buying in bulk. They could’ve just handed every low-income new mom $100 cash and told her to go to Costco. She’d get more diapers, better ones if she wanted, and still have money left for formula, wipes, or whatever the hell she actually needs. But nah… that wouldn’t let Gavin and his connected “nonprofit” girls running the show there cut ribbons, take photos, do galas and be friends with celebrities and brag about the “first-in-the-nation” program while skimming their cut for “administration” and “partnerships.”</p>
+              <p><strong>Not on Your Bingo Card?</strong> “<a href="https://www.nber.org/papers/w35193" target="_blank" rel="noopener noreferrer">Our results show</a> that within a socioeconomically vulnerable population, Black adults outlive Whites.”</p>
+              <p><strong>Someone Else Should Pay I Guess:</strong> “When asked if they would support just a $1 monthly fee on their electricity bill to fight climate change, only 47 percent say they would while almost as many (43 percent) are opposed. Even at this level, opposition is greater than support among working-class voters. When the proposed fee is increased to $20, overall voter support plummets to 26 percent with 60 percent opposed. At $40, it is 19 percent support to 69 percent opposition; at $75 it is 15 percent vs. 72 percent; and at $100 it is 7:1 against (77 percent to 11 percent) paying such a fee to combat climate change.”</p>
+              <p><strong>The Gals are Superior, Jigsaw Puzzle Edition:</strong> “recently learned about the world jigsaw puzzle championship, which is the first sport i've found where mixed genders compete and men do okay <a href="https://x.com/coldhealing/status/1839313069639610810?t=qTZ8EwC5G3DzFjV7Xbzcjw&s=03" target="_blank" rel="noopener noreferrer">but women usually win.</a>“</p>
+              <p><strong>In China,</strong> <a href="https://x.com/berthofmanecon/status/1837296838052913547?utm_source=substack&utm_medium=email" target="_blank" rel="noopener noreferrer">the smarter you are</a>, <strong>the LESS entrepreneurial you are</strong></p>
+              <p><strong>Are Robots and</strong> <a href="https://splittinginfinity.substack.com/p/tech-im-skeptical-of-and-why" target="_blank" rel="noopener noreferrer"><strong>Asteroid Mining Overrated</strong></a>?</p>
+              <p><strong>Against Brokenist Economics:</strong> “<a href="https://www.noahpinion.blog/p/americas-political-economy-is-pretty" target="_blank" rel="noopener noreferrer">Roughly speaking</a>, we have three major political movements — the MAGA right, the socialist left, and the “woke” left. But none of these seems especially interested in the kind of smart, reasonable policies that would significantly improve the material well-being of regular Americans. Their economic programs are all pretty bad.”</p>
+              <p><strong>JEP Symposium</strong> <a href="https://www.aeaweb.org/issues/857?to=19958" target="_blank" rel="noopener noreferrer">on Tariff Economics</a></p>
+              <p><strong>So, Are We Leaving the Labor Force or Not?</strong> A <a href="https://everywheremillionaire.substack.com/p/another-reason-the-labor-share-keeps?utm_source=substack&utm_medium=email" target="_blank" rel="noopener noreferrer">revisionist take</a> on whether the labor force participation rate is really falling, or whether it is a relic of statistical and tax policy (not unlike the Tax Act of 1986).</p>
+              <p><strong>The Free-Market Success of …</strong> “<a href="https://brandondonnelly.com/the-market-logic-of-japanese-rail?utm_source=substack&utm_medium=email" target="_blank" rel="noopener noreferrer">The Japanese rail</a> model seems to work so well because (1) most of the network is private, (2) liberal land-use policies have allowed Japan's urban centres to develop enough density to properly support the use of rail, and (3) the rail operators make money in a bunch of other ways beyond rail. They're typically also in the business of real estate.”</p>
+              <p><strong>The End of Universities:</strong> “The problems cited in the report will be familiar to readers of The Free Press, as they include nontransparent admissions standards, grade inflation, a culture that forces self-censorship, and outrageous tuition pricing. This year, George Washington University—hardly in the top tier of selective schools—started charging a sticker price approaching $100,000 a year for the privilege of studying there.” "I’d like to make some predictions about how higher education in America is going to muddle through. The bottom line is that it will not be pretty, or for that matter efficient, but 20 years from now, the basic product will still be recognizable. You will not be happy with it, and it will not be happy with you. We will all still be talking about it, because it will remain a major mechanism for doling out good jobs, mating opportunities, and social status. …Since our institutions of higher education are so imperfect to begin with, that gives them a kind of robustness. They can get a bit worse without it ending the world or ruining the next generation. Society will advance in other ways." <a href="https://www.thefp.com/p/tyler-cowen-college-wont-get-fixed" target="_blank" rel="noopener noreferrer">Have a nice day</a>.</p>
+              <p style="text-align:center">* * * * *</p>
+            </section>
+          ''')
           pattern = r'<section[^>]*id="attention"[^>]*>[\s\S]*?</section>'
           html, n = re.subn(pattern, section, html, count=1)
           if n != 1:
-              raise SystemExit('attention section replacement failed: ' + str(n))
+              raise SystemExit(f'attention replacement failed: {n}')
           html = html.replace('<li><a href="#quote">The Meaning of an Education</a></li>', '<li><a href="#quote">Quote of the Week</a></li>')
           html = html.replace('<h2>The Meaning of an Education</h2>', '<h2>Quote of the Week</h2>')
           p.write_text(html, encoding='utf-8')

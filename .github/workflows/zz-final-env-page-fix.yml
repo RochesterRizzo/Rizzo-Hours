@@ -1,0 +1,59 @@
+name: ZZ Final Env Page Fix
+
+on:
+  push:
+    paths:
+      - '.github/workflows/zz-final-env-page-fix.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Final page fix and cleanup
+        run: |
+          python3 <<'PY'
+          from pathlib import Path
+          import re
+          p = Path('weekly/environmental-economics/fall-2026/week-01/index.html')
+          html = p.read_text(encoding='utf-8')
+          if '.source-update font {' not in html:
+              style = '''
+    .issue-content { max-width: 900px; }
+    .source-update { font-family: Arial, Helvetica, sans-serif; }
+    .source-update p, .source-update li { font-family: Arial, Helvetica, sans-serif !important; font-size: 1.04rem !important; line-height: 1.62 !important; }
+    .source-update font { font-family: inherit !important; font-size: inherit !important; }
+    .source-update h2 { font-size: clamp(1.8rem, 3vw, 2.45rem); }
+    .source-update img.doc-image { display:block; max-width:100%; height:auto; max-height:820px; margin:1.35rem auto; object-fit:contain; border:1px solid var(--line); border-radius:8px; background:white; }
+    #photo img.doc-image { max-height: 940px; }
+    #quote .closing-quote { font-size: clamp(1.45rem, 3vw, 2rem) !important; line-height:1.45 !important; }
+'''
+              html = html.replace('</style>', style + '  </style>') if '</style>' in html else html.replace('</head>', '<style>'+style+'</style></head>')
+          reps = {
+            'assets/chart-cumulative.png':'https://ourworldindata.org/grapher/cumulative-area-burnt-by-wildfires-last-year.png?time=2026&country=~Europe%20%28excluding%20Russia%29',
+            'assets/chart-comparison.png':'https://ourworldindata.org/grapher/cumulative-area-burnt-by-wildfires-last-year.png?time=2026&country=FRA~ESP~DEU~PRT~GBR~ITA',
+            'assets/photo-book-toilets.jpg':'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Dublin_-_Marsh%27s_Library_-_20230428140225.jpg/960px-Dublin_-_Marsh%27s_Library_-_20230428140225.jpg',
+            'assets/lewis-clark-nature.jpg':'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Goodale_Cutoff_Idaho.jpg/960px-Goodale_Cutoff_Idaho.jpg',
+            'https://ourworldindata.org/grapher/cumulative-area-burnt-by-wildfires-last-year.svg?time=2026&country=~Europe%20%28excluding%20Russia%29':'https://ourworldindata.org/grapher/cumulative-area-burnt-by-wildfires-last-year.png?time=2026&country=~Europe%20%28excluding%20Russia%29',
+            'https://ourworldindata.org/grapher/cumulative-area-burnt-by-wildfires-last-year.svg?time=2026&country=FRA~ESP~DEU~PRT~GBR~ITA':'https://ourworldindata.org/grapher/cumulative-area-burnt-by-wildfires-last-year.png?time=2026&country=FRA~ESP~DEU~PRT~GBR~ITA',
+            'https://commons.wikimedia.org/wiki/Special:Redirect/file/Marsh%27s_Library%2C_Dublin%2C_Ireland_%2852532609306%29.jpg':'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Dublin_-_Marsh%27s_Library_-_20230428140225.jpg/960px-Dublin_-_Marsh%27s_Library_-_20230428140225.jpg'
+          }
+          for a,b in reps.items(): html = html.replace(a,b)
+          quote = '''<section class="issue-section source-update" id="quote">
+<h2>Quote of the Week</h2>
+<p class="source-subhead"><strong>Bob Marley and the Wailers, “Redemption Song”</strong></p>
+<p class="closing-quote">“Emancipate yourselves from mental slavery. None but ourselves can free”</p>
+<p>― Bob Marley and the Wailers, Redemption Song</p>
+</section>'''
+          html = re.sub(r'<section class="issue-section source-update" id="quote">.*?</section>', quote, html, flags=re.S)
+          p.write_text(html, encoding='utf-8')
+          PY
+          rm -f .github/workflows/patch-env-week-one-readability.yml .github/workflows/patch-env-week-one-assets.yml .github/workflows/patch-env-week-one-final-media.yml .github/workflows/patch-env-week-one-quote-only.yml .github/workflows/cleanup-env-week-one-workflows.yml .github/workflows/remove-env-temp-workflows-final.yml .github/workflows/patch-env-week-one-final-clean.yml .github/workflows/zz-final-env-cleanup.yml .github/workflows/zz-final-env-page-fix.yml
+          git config user.name "RochesterRizzo"
+          git config user.email "rizzo.liberty@gmail.com"
+          git add weekly/environmental-economics/fall-2026/week-01/index.html .github/workflows
+          git commit -m "Final fix Environmental Week One page" || exit 0
+          git push

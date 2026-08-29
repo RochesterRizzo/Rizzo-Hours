@@ -1,0 +1,40 @@
+name: Patch Environmental Week One Quote Only
+
+on:
+  push:
+    paths:
+      - '.github/workflows/patch-env-week-one-quote-only.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out site
+        uses: actions/checkout@v4
+      - name: Patch quote only
+        run: |
+          python3 <<'PY'
+          from pathlib import Path
+          import re
+          p = Path('weekly/environmental-economics/fall-2026/week-01/index.html')
+          html = p.read_text(encoding='utf-8')
+          quote = '''<section class="issue-section source-update" id="quote">
+<h2>Quote of the Week</h2>
+<p class="source-subhead"><strong>Bob Marley and the Wailers, “Redemption Song”</strong></p>
+<p class="closing-quote">“Emancipate yourselves from mental slavery. None but ourselves can free”</p>
+<p>― Bob Marley and the Wailers, Redemption Song</p>
+</section>'''
+          html = re.sub(r'<section class="issue-section source-update" id="quote">.*?</section>', quote, html, flags=re.S)
+          p.write_text(html, encoding='utf-8')
+          PY
+      - name: Commit patch and remove workflow
+        run: |
+          rm -f .github/workflows/patch-env-week-one-quote-only.yml
+          git config user.name "RochesterRizzo"
+          git config user.email "rizzo.liberty@gmail.com"
+          git add weekly/environmental-economics/fall-2026/week-01/index.html .github/workflows/patch-env-week-one-quote-only.yml
+          git commit -m "Update Environmental Week One quote excerpt"
+          git push

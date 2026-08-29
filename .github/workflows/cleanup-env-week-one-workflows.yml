@@ -1,0 +1,27 @@
+name: Cleanup Environmental Week One Workflows
+
+on:
+  push:
+    paths:
+      - '.github/workflows/cleanup-env-week-one-workflows.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Remove temporary Environmental workflows
+        run: |
+          rm -f .github/workflows/patch-env-week-one-readability.yml \
+                .github/workflows/patch-env-week-one-assets.yml \
+                .github/workflows/patch-env-week-one-final-media.yml \
+                .github/workflows/patch-env-week-one-quote-only.yml \
+                .github/workflows/cleanup-env-week-one-workflows.yml
+          git config user.name "RochesterRizzo"
+          git config user.email "rizzo.liberty@gmail.com"
+          git add .github/workflows
+          git commit -m "Remove temporary Environmental Week One workflows" || exit 0
+          git push

@@ -1,0 +1,67 @@
+name: Fix Environmental Week One Media Final
+
+on:
+  push:
+    paths:
+      - '.github/workflows/fix-env-media-final.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out site
+        uses: actions/checkout@v4
+      - name: Download stable local media and clean formatting
+        run: |
+          set -e
+          mkdir -p weekly/environmental-economics/fall-2026/week-01/assets
+          python3 <<'PY'
+          from pathlib import Path
+          import urllib.request
+          assets = Path('weekly/environmental-economics/fall-2026/week-01/assets')
+          downloads = {
+              'chart-cumulative.jpg': 'https://ourworldindata.org/grapher/cumulative-area-burnt-by-wildfires-last-year.png?time=2026&country=~Europe%20%28excluding%20Russia%29',
+              'chart-comparison.jpg': 'https://ourworldindata.org/grapher/cumulative-area-burnt-by-wildfires-last-year.png?time=2026&country=FRA~ESP~DEU~PRT~GBR~ITA',
+              'book-toilets.jpg': 'https://commons.wikimedia.org/wiki/Special:Redirect/file/Dublin_-_Marsh%27s_Library_-_20230428135752.jpg',
+              'nature-lewis-clark.jpg': 'https://www.nps.gov/lecl/learn/nature/images/montage-1b_2.jpg',
+          }
+          opener = urllib.request.build_opener()
+          opener.addheaders = [('User-Agent','Mozilla/5.0 Rizzo-Hours media fetch')]
+          for name, url in downloads.items():
+              data = opener.open(url, timeout=30).read()
+              if len(data) < 5000:
+                  raise RuntimeError(f'{name} download too small: {len(data)} bytes')
+              (assets / name).write_bytes(data)
+          html_path = Path('weekly/environmental-economics/fall-2026/week-01/index.html')
+          html = html_path.read_text(encoding='utf-8')
+          html = html.replace('src="https://ourworldindata.org/grapher/cumulative-area-burnt-by-wildfires-last-year.svg?time=2026&country=~Europe%20%28excluding%20Russia%29"','src="assets/chart-cumulative.jpg"')
+          html = html.replace('src="https://ourworldindata.org/grapher/cumulative-area-burnt-by-wildfires-last-year.svg?time=2026&country=FRA~ESP~DEU~PRT~GBR~ITA"','src="assets/chart-comparison.jpg"')
+          html = html.replace('src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Marsh%27s_Library%2C_Dublin%2C_Ireland_%2852532609306%29.jpg"','src="assets/book-toilets.jpg"')
+          html = html.replace('src="https://nationalzoo.si.edu/sites/default/files/styles/1400x700_scale_and_crop/public/media/image/elephant-trails-aerial-view.jpg"','src="assets/nature-lewis-clark.jpg"')
+          html = html.replace('src="assets/image01.jpg"','src="../../../../Outside_Hours_Location.png"')
+          html = html.replace('src="assets/image02.jpg"','src="../../../../poster-files/engerman-hornbeck-after-shocks-poster.png"')
+          style = '''
+  <style>
+    .source-update { font-family: Arial, Helvetica, sans-serif; font-size: 1.03rem; line-height: 1.62; }
+    .source-update font, .source-update span { font-family: Arial, Helvetica, sans-serif !important; }
+    .source-update p, .source-update li { font-family: Arial, Helvetica, sans-serif !important; font-size: 1.03rem !important; line-height: 1.62 !important; }
+    .source-update h2 { font-family: Georgia, "Times New Roman", serif; }
+    .source-update img.doc-image { display:block; width:auto; max-width:100%; height:auto; max-height:760px; margin:1.35rem auto; object-fit:contain; border:1px solid #d4dbe1; border-radius:6px; background:#fff; }
+    .source-update .closing-quote { font-family: Georgia, "Times New Roman", serif !important; font-size:1.35rem !important; line-height:1.55 !important; }
+  </style>'''
+          import re
+          html = re.sub(r'\s*<style>\s*\.source-update img\.doc-image.*?</style>', style, html, count=1, flags=re.S)
+          html = html.replace('“Emancipate yourselves from mental slavery. None but ourselves can free”','“Emancipate yourselves from mental slavery. None but ourselves can free our minds.”')
+          html_path.write_text(html, encoding='utf-8')
+          PY
+      - name: Commit patch and remove workflow
+        run: |
+          rm -f .github/workflows/fix-env-media-final.yml
+          git config user.name "RochesterRizzo"
+          git config user.email "rizzo.liberty@gmail.com"
+          git add weekly/environmental-economics/fall-2026/week-01/index.html weekly/environmental-economics/fall-2026/week-01/assets .github/workflows/fix-env-media-final.yml
+          git commit -m "Fix Environmental Week One media rendering"
+          git push

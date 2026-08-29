@@ -2,8 +2,8 @@ name: Final Environmental Week One Repair
 
 on:
   push:
-    branches:
-      - main
+    paths:
+      - '.github/workflows/final-env-repair.yml'
 
 permissions:
   contents: write
@@ -33,12 +33,11 @@ jobs:
               'src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Marsh%27s_Library%2C_Dublin%2C_Ireland_%2852532609306%29.jpg"': 'src="https://commons.wikimedia.org/wiki/Special:FilePath/Dublin_-_Marsh%27s_Library_-_20230428135752.jpg"',
               'src="https://nationalzoo.si.edu/sites/default/files/styles/1400x700_scale_and_crop/public/media/image/elephant-trails-aerial-view.jpg"': 'src="https://www.nps.gov/lecl/learn/nature/images/montage-1b_2.jpg"',
           }
-          for old, new in replacements.items():
-              html = html.replace(old, new)
-          html = re.sub(r'src="/mnt/data/env_build/(https://ourworldindata\.org/grapher/cumulative-area-burnt-by-wildfires-last-year\.png\?time=2026&country=~Europe%20%28excluding%20Russia%29)"', r'src="\1"', html)
-          html = re.sub(r'src="/mnt/data/env_build/(https://ourworldindata\.org/grapher/cumulative-area-burnt-by-wildfires-last-year\.png\?time=2026&country=FRA~ESP~DEU~PRT~GBR~ITA)"', r'src="\1"', html)
-          html = re.sub(r'src="/mnt/data/env_build/(https://commons\.wikimedia\.org/wiki/Special:FilePath/Dublin_-_Marsh%27s_Library_-_20230428135752\.jpg)"', r'src="\1"', html)
-          html = re.sub(r'src="/mnt/data/env_build/(https://www\.nps\.gov/lecl/learn/nature/images/montage-1b_2\.jpg)"', r'src="\1"', html)
+          for old, new in replacements.items(): html = html.replace(old, new)
+          html = html.replace('/mnt/data/env_build/https://ourworldindata.org/grapher/cumulative-area-burnt-by-wildfires-last-year.png?time=2026&amp;country=~Europe%20%28excluding%20Russia%29','https://ourworldindata.org/grapher/cumulative-area-burnt-by-wildfires-last-year.png?time=2026&amp;country=~Europe%20%28excluding%20Russia%29')
+          html = html.replace('/mnt/data/env_build/https://ourworldindata.org/grapher/cumulative-area-burnt-by-wildfires-last-year.png?time=2026&amp;country=FRA~ESP~DEU~PRT~GBR~ITA','https://ourworldindata.org/grapher/cumulative-area-burnt-by-wildfires-last-year.png?time=2026&amp;country=FRA~ESP~DEU~PRT~GBR~ITA')
+          html = html.replace('/mnt/data/env_build/https://commons.wikimedia.org/wiki/Special:FilePath/Dublin_-_Marsh%27s_Library_-_20230428135752.jpg','https://commons.wikimedia.org/wiki/Special:FilePath/Dublin_-_Marsh%27s_Library_-_20230428135752.jpg')
+          html = html.replace('/mnt/data/env_build/https://www.nps.gov/lecl/learn/nature/images/montage-1b_2.jpg','https://www.nps.gov/lecl/learn/nature/images/montage-1b_2.jpg')
           style = '''
   <style>
     .issue-content { max-width: 830px; }
@@ -70,9 +69,4 @@ jobs:
           git config user.name "RochesterRizzo"
           git config user.email "rizzo.liberty@gmail.com"
           git add weekly/environmental-economics/fall-2026/week-01/index.html .github/workflows/final-env-repair.yml
-          if git diff --cached --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "Repair Environmental Week One page from source export"
-            git push
-          fi
+          if git diff --cached --quiet; then echo "No changes"; else git commit -m "Repair Environmental Week One page from source export"; git push; fi

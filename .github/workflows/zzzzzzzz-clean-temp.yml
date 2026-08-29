@@ -1,0 +1,22 @@
+name: ZZZZZZZZ Clean Temp
+
+on:
+  push:
+    paths:
+      - '.github/workflows/zzzzzzzz-clean-temp.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          rm -f .github/workflows/patch-env-week-one-readability.yml .github/workflows/patch-env-week-one-assets.yml .github/workflows/patch-env-week-one-final-media.yml .github/workflows/patch-env-week-one-quote-only.yml .github/workflows/cleanup-env-week-one-workflows.yml .github/workflows/remove-env-temp-workflows-final.yml .github/workflows/patch-env-week-one-final-clean.yml .github/workflows/zz-final-env-cleanup.yml .github/workflows/zz-final-env-page-fix.yml .github/workflows/zz-check-do-not-run.yml .github/workflows/zz-remove-check-noop.yml .github/workflows/zz-final-remove-all-temp.yml .github/workflows/zzzz-final-page-fix-and-clean.yml .github/workflows/zzzzzz-clean-temp.yml .github/workflows/zzzzzzz-clean-temp.yml .github/workflows/zzzzzzzz-clean-temp.yml
+          git config user.name "RochesterRizzo"
+          git config user.email "rizzo.liberty@gmail.com"
+          git add .github/workflows
+          git commit -m "Delete remaining temporary workflows" || exit 0
+          git push

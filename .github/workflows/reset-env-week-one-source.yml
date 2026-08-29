@@ -56,3 +56,4 @@ jobs:
           git add weekly/environmental-economics/fall-2026/week-01/index.html .github/workflows/reset-env-week-one-source.yml .github/workflows/patch-env-html-media-direct.yml
           git commit -m "Reset Environmental Week One media from source export"
           git push
+# trigger

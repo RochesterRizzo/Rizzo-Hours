@@ -1,4 +1,4 @@
-name: Final Environmental Week One Repair
+name: Unwrap Environmental Week One Static Page
 
 on:
   push:
@@ -9,64 +9,34 @@ permissions:
   contents: write
 
 jobs:
-  repair:
+  unwrap:
     runs-on: ubuntu-latest
     steps:
       - name: Check out site
         uses: actions/checkout@v4
-      - name: Repair Environmental Week One page from source export
+      - name: Replace loader with static page
         run: |
+          set -e
           python3 <<'PY'
           from pathlib import Path
-          import re
+          import re, base64, gzip
           p = Path('weekly/environmental-economics/fall-2026/week-01/index.html')
           html = p.read_text(encoding='utf-8')
-          replacements = {
-              'src="/mnt/data/env_build/../../../../Outside_Hours_Location.png"': 'src="../../../../Outside_Hours_Location.png"',
-              'src="/mnt/data/env_build/../../../../poster-files/engerman-hornbeck-after-shocks-poster.png"': 'src="../../../../poster-files/engerman-hornbeck-after-shocks-poster.png"',
-              'src="assets/image01.jpg"': 'src="../../../../Outside_Hours_Location.png"',
-              'src="assets/image02.jpg"': 'src="../../../../poster-files/engerman-hornbeck-after-shocks-poster.png"',
-              'src="assets/chart-cumulative.jpg"': 'src="https://ourworldindata.org/grapher/cumulative-area-burnt-by-wildfires-last-year.png?time=2026&country=~Europe%20%28excluding%20Russia%29"',
-              'src="assets/chart-comparison.jpg"': 'src="https://ourworldindata.org/grapher/cumulative-area-burnt-by-wildfires-last-year.png?time=2026&country=FRA~ESP~DEU~PRT~GBR~ITA"',
-              'src="assets/book-toilets.jpg"': 'src="https://commons.wikimedia.org/wiki/Special:FilePath/Dublin_-_Marsh%27s_Library_-_20230428135752.jpg"',
-              'src="assets/nature-lewis-clark.jpg"': 'src="https://www.nps.gov/lecl/learn/nature/images/montage-1b_2.jpg"',
-              'src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Marsh%27s_Library%2C_Dublin%2C_Ireland_%2852532609306%29.jpg"': 'src="https://commons.wikimedia.org/wiki/Special:FilePath/Dublin_-_Marsh%27s_Library_-_20230428135752.jpg"',
-              'src="https://nationalzoo.si.edu/sites/default/files/styles/1400x700_scale_and_crop/public/media/image/elephant-trails-aerial-view.jpg"': 'src="https://www.nps.gov/lecl/learn/nature/images/montage-1b_2.jpg"',
-          }
-          for old, new in replacements.items(): html = html.replace(old, new)
-          html = html.replace('/mnt/data/env_build/https://ourworldindata.org/grapher/cumulative-area-burnt-by-wildfires-last-year.png?time=2026&amp;country=~Europe%20%28excluding%20Russia%29','https://ourworldindata.org/grapher/cumulative-area-burnt-by-wildfires-last-year.png?time=2026&amp;country=~Europe%20%28excluding%20Russia%29')
-          html = html.replace('/mnt/data/env_build/https://ourworldindata.org/grapher/cumulative-area-burnt-by-wildfires-last-year.png?time=2026&amp;country=FRA~ESP~DEU~PRT~GBR~ITA','https://ourworldindata.org/grapher/cumulative-area-burnt-by-wildfires-last-year.png?time=2026&amp;country=FRA~ESP~DEU~PRT~GBR~ITA')
-          html = html.replace('/mnt/data/env_build/https://commons.wikimedia.org/wiki/Special:FilePath/Dublin_-_Marsh%27s_Library_-_20230428135752.jpg','https://commons.wikimedia.org/wiki/Special:FilePath/Dublin_-_Marsh%27s_Library_-_20230428135752.jpg')
-          html = html.replace('/mnt/data/env_build/https://www.nps.gov/lecl/learn/nature/images/montage-1b_2.jpg','https://www.nps.gov/lecl/learn/nature/images/montage-1b_2.jpg')
-          style = '''
-  <style>
-    .issue-content { max-width: 830px; }
-    .source-update { font-family: Arial, Helvetica, sans-serif; font-size: 1.04rem; line-height: 1.62; }
-    .source-update font, .source-update span { font-family: Arial, Helvetica, sans-serif !important; }
-    .source-update p, .source-update li { font-family: Arial, Helvetica, sans-serif !important; font-size: 1.04rem !important; line-height: 1.62 !important; }
-    .source-update h2 { margin-top: 2.3rem; color: var(--navy-deep); font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.65rem, 3vw, 2.25rem); border-bottom: 3px solid var(--green); padding-bottom: .4rem; }
-    .source-update h2:first-child { margin-top: 0; }
-    .source-update blockquote { margin: 1.2rem 0; padding: .85rem 1.2rem; border-left: 6px solid var(--green); background: #f4fbf6; }
-    .source-update img.doc-image, .source-update img { display: block; max-width: 100%; height: auto; max-height: 820px; margin: 1.3rem auto 2rem; border: 1px solid var(--line); border-radius: 8px; background: white; box-shadow: 0 2px 8px rgba(3,41,71,.10); object-fit: contain; }
-    .source-update a { overflow-wrap: anywhere; }
-    .source-update ul, .source-update ol { padding-left: 1.45rem; }
-    .source-update li + li { margin-top: .35rem; }
-    .quote-archive blockquote { font-family: Georgia, "Times New Roman", serif !important; font-size: 1.35rem !important; background: #fff9e8; border-left-color: #d5a63a; }
-    @media (max-width: 760px) { .source-update { font-size: 1rem; } .source-update p, .source-update li { font-size: 1rem !important; } }
-  </style>'''
-          html = re.sub(r'\s*<style>.*?</style>', style, html, count=1, flags=re.S)
-          start = html.find('<p>Old pirates, yes, they rob I</p>')
-          end = html.find('<p><em>― Bob Marley and the Wailers, Redemption Song</em></p>')
-          if start != -1 and end != -1:
-              end += len('<p><em>― Bob Marley and the Wailers, Redemption Song</em></p>')
-              quote = '<h2 id="quote">Quote of the Week</h2>\n<div class="quote-archive"><p><strong>Bob Marley and the Wailers, “Redemption Song”</strong></p><blockquote>“Emancipate yourselves from mental slavery.”</blockquote><p>― Bob Marley and the Wailers, Redemption Song</p></div>'
-              html = html[:start] + quote + html[end:]
-          p.write_text(html, encoding='utf-8')
+          m = re.search(r"const b64='([^']+)'", html)
+          if not m:
+              raise SystemExit('No embedded b64 loader found')
+          static = gzip.decompress(base64.b64decode(m.group(1))).decode('utf-8')
+          if 'WEEKLY' not in static or 'Eco 238' not in static:
+              raise SystemExit('Decoded content did not look like the Environmental update')
+          p.write_text(static, encoding='utf-8')
           PY
-      - name: Commit repair and remove workflow
+      - name: Commit static page and remove workflow
         run: |
           rm -f .github/workflows/final-env-repair.yml
+          rm -f .github/workflows/patch-env-html-media-direct.yml
+          rm -f .github/workflows/reset-env-week-one-source.yml
           git config user.name "RochesterRizzo"
           git config user.email "rizzo.liberty@gmail.com"
-          git add weekly/environmental-economics/fall-2026/week-01/index.html .github/workflows/final-env-repair.yml
-          if git diff --cached --quiet; then echo "No changes"; else git commit -m "Repair Environmental Week One page from source export"; git push; fi
+          git add weekly/environmental-economics/fall-2026/week-01/index.html .github/workflows/final-env-repair.yml .github/workflows/patch-env-html-media-direct.yml .github/workflows/reset-env-week-one-source.yml
+          git commit -m "Publish Environmental Week One static page"
+          git push

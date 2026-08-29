@@ -1,0 +1,23 @@
+name: ZZ Final Env Cleanup
+
+on:
+  push:
+    paths:
+      - '.github/workflows/zz-final-env-cleanup.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Cleanup all temporary env workflows
+        run: |
+          rm -f .github/workflows/patch-env-week-one-readability.yml .github/workflows/patch-env-week-one-assets.yml .github/workflows/patch-env-week-one-final-media.yml .github/workflows/patch-env-week-one-quote-only.yml .github/workflows/cleanup-env-week-one-workflows.yml .github/workflows/remove-env-temp-workflows-final.yml .github/workflows/patch-env-week-one-final-clean.yml .github/workflows/zz-final-env-cleanup.yml
+          git config user.name "RochesterRizzo"
+          git config user.email "rizzo.liberty@gmail.com"
+          git add .github/workflows
+          git commit -m "Clean up temporary env workflows" || exit 0
+          git push

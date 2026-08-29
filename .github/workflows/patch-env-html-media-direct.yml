@@ -1,4 +1,4 @@
-name: Patch Environmental HTML Media Direct
+name: Reset Environmental Week One From Source
 
 on:
   push:
@@ -7,49 +7,94 @@ permissions:
   contents: write
 
 jobs:
-  patch:
+  reset:
     runs-on: ubuntu-latest
     steps:
       - name: Check out site
         uses: actions/checkout@v4
-      - name: Patch HTML media refs and readability
+      - name: Reset page media and readability
         run: |
           python3 <<'PY'
           from pathlib import Path
           import re
           p = Path('weekly/environmental-economics/fall-2026/week-01/index.html')
           html = p.read_text(encoding='utf-8')
-          repl = {
+          replacements = {
             'src="assets/image01.jpg"': 'src="../../../../Outside_Hours_Location.png"',
             'src="assets/image02.jpg"': 'src="../../../../poster-files/engerman-hornbeck-after-shocks-poster.png"',
-            'src="assets/chart-cumulative.jpg"': 'src="https://ourworldindata.org/grapher/cumulative-area-burnt-by-wildfires-last-year.png?time=2026&country=~Europe%20%28excluding%20Russia%29"',
-            'src="assets/chart-comparison.jpg"': 'src="https://ourworldindata.org/grapher/cumulative-area-burnt-by-wildfires-last-year.png?time=2026&country=FRA~ESP~DEU~PRT~GBR~ITA"',
-            'src="assets/book-toilets.jpg"': 'src="https://commons.wikimedia.org/wiki/Special:FilePath/Dublin_-_Marsh%27s_Library_-_20230428135752.jpg"',
-            'src="assets/nature-lewis-clark.jpg"': 'src="https://www.nps.gov/lecl/learn/nature/images/montage-1b_2.jpg"',
-            'src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Marsh%27s_Library%2C_Dublin%2C_Ireland_%2852532609306%29.jpg"': 'src="https://commons.wikimedia.org/wiki/Special:FilePath/Dublin_-_Marsh%27s_Library_-_20230428135752.jpg"',
-            'src="https://nationalzoo.si.edu/sites/default/files/styles/1400x700_scale_and_crop/public/media/image/elephant-trails-aerial-view.jpg"': 'src="https://www.nps.gov/lecl/learn/nature/images/montage-1b_2.jpg"',
+            'src="assets/europe-wildfire-cumulative.png"': 'src="https://ourworldindata.org/grapher/cumulative-area-burnt-by-wildfires-last-year.png?time=2026&country=~Europe%20%28excluding%20Russia%29"',
+            'src="assets/europe-wildfire-comparison.jpg"': 'src="https://ourworldindata.org/grapher/cumulative-area-burnt-by-wildfires-last-year.png?time=2026&country=FRA~ESP~DEU~PRT~GBR~ITA"',
+            'src="assets/book-toilets.jpg"': 'src="https://upload.wikimedia.org/wikipedia/commons/1/17/Dublin_-_Marsh%27s_Library_-_20230428135752.jpg"',
+            'src="assets/lewis-and-clark-nature.jpg"': 'src="https://www.nps.gov/lecl/learn/nature/images/montage-1b_2.jpg"',
+            'src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Marsh%27s_Library%2C_Dublin%2C_Ireland_%2852532609306%29.jpg"': 'src="https://upload.wikimedia.org/wikipedia/commons/1/17/Dublin_-_Marsh%27s_Library_-_20230428135752.jpg"',
+            'src="https://commons.wikimedia.org/wiki/Special:FilePath/Dublin_-_Marsh%27s_Library_-_20230428135752.jpg"': 'src="https://upload.wikimedia.org/wikipedia/commons/1/17/Dublin_-_Marsh%27s_Library_-_20230428135752.jpg"',
+            'src="https://ourworldindata.org/grapher/cumulative-area-burnt-by-wildfires-last-year.svg?time=2026&country=~Europe%20%28excluding%20Russia%29"': 'src="https://ourworldindata.org/grapher/cumulative-area-burnt-by-wildfires-last-year.png?time=2026&country=~Europe%20%28excluding%20Russia%29"',
+            'src="https://ourworldindata.org/grapher/cumulative-area-burnt-by-wildfires-last-year.svg?time=2026&country=FRA~ESP~DEU~PRT~GBR~ITA"': 'src="https://ourworldindata.org/grapher/cumulative-area-burnt-by-wildfires-last-year.png?time=2026&country=FRA~ESP~DEU~PRT~GBR~ITA"',
+            'src="https://nationalzoo.si.edu/sites/default/files/styles/1400x700_scale_and_crop/public/media/image/elephant-trails-aerial-view.jpg"': 'src="https://www.nps.gov/lecl/learn/nature/images/montage-1b_2.jpg"'
           }
-          for a,b in repl.items():
-              html = html.replace(a,b)
+          for old, new in replacements.items():
+              html = html.replace(old, new)
           style = '''
   <style>
-    .source-update { font-family: Arial, Helvetica, sans-serif; font-size: 1.05rem; line-height: 1.65; }
-    .source-update font, .source-update span { font-family: Arial, Helvetica, sans-serif !important; }
-    .source-update p, .source-update li { font-family: Arial, Helvetica, sans-serif !important; font-size: 1.05rem !important; line-height: 1.65 !important; }
-    .source-update h2 { font-family: Georgia, "Times New Roman", serif; }
-    .source-update img.doc-image { display:block; width:auto; max-width:100%; height:auto; max-height:760px; margin:1.35rem auto; object-fit:contain; border:1px solid #d4dbe1; border-radius:6px; background:#fff; }
-    .source-update .closing-quote { font-family: Georgia, "Times New Roman", serif !important; font-size:1.35rem !important; line-height:1.55 !important; }
+    .doc-source {
+      max-width: 790px;
+      color: #18212a;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.05rem;
+      line-height: 1.62;
+    }
+    .doc-source p,
+    .doc-source li,
+    .doc-source font,
+    .doc-source span {
+      font-family: Arial, Helvetica, sans-serif !important;
+    }
+    .doc-source p,
+    .doc-source li {
+      font-size: 1.05rem !important;
+      line-height: 1.62 !important;
+    }
+    .doc-source b,
+    .doc-source strong { font-weight: 800; }
+    .doc-source a { overflow-wrap: anywhere; }
+    .doc-source img.doc-image {
+      display: block;
+      width: auto;
+      max-width: 100%;
+      height: auto;
+      max-height: 760px;
+      margin: 1.35rem auto;
+      object-fit: contain;
+      border: 1px solid #d4dbe1;
+      border-radius: 6px;
+      background: #fff;
+    }
+    .doc-source .closing-quote {
+      margin: 1.25rem 0;
+      padding: 22px 26px;
+      border-left: 6px solid #075a52;
+      background: #fff9e8;
+      font-family: Georgia, "Times New Roman", serif !important;
+      font-size: 1.35rem !important;
+      line-height: 1.55 !important;
+    }
+    .doc-source #quote h2 {
+      margin-top: 42px;
+      padding-bottom: 10px;
+      border-bottom: 3px solid var(--navy);
+      color: var(--navy-deep);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(1.65rem, 3vw, 2.35rem);
+    }
   </style>'''
           html = re.sub(r'\s*<style>.*?</style>', style, html, count=1, flags=re.S)
-          html = html.replace('“Emancipate yourselves from mental slavery. None but ourselves can free”','“Emancipate yourselves from mental slavery. None but ourselves can free our minds.”')
-          html = html.replace('“Emancipate yourselves from mental slavery.”','“Emancipate yourselves from mental slavery. None but ourselves can free our minds.”')
           p.write_text(html, encoding='utf-8')
           PY
-      - name: Commit patch and remove workflow
+      - name: Commit reset and remove workflow
         run: |
           rm -f .github/workflows/patch-env-html-media-direct.yml
           git config user.name "RochesterRizzo"
           git config user.email "rizzo.liberty@gmail.com"
           git add weekly/environmental-economics/fall-2026/week-01/index.html .github/workflows/patch-env-html-media-direct.yml
-          git commit -m "Fix Environmental Week One broken media refs"
+          git commit -m "Reset Environmental Week One from source export"
           git push

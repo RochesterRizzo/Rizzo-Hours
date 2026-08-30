@@ -35,6 +35,6 @@ jobs:
           rm -f .github/workflows/reset-env-week-one-source.yml
           git config user.name "RochesterRizzo"
           git config user.email "rizzo.liberty@gmail.com"
-          git add weekly/environmental-economics/fall-2026/week-01/index.html .github/workflows/final-env-repair.yml .github/workflows/patch-env-html-media-direct.yml .github/workflows/reset-env-week-one-source.yml
+          git add -A
           git commit -m "Publish Environmental Week One static page"
           git push

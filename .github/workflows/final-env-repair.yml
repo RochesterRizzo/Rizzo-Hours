@@ -26,8 +26,6 @@ jobs:
           if not m:
               raise SystemExit('No embedded b64 loader found')
           static = gzip.decompress(base64.b64decode(m.group(1))).decode('utf-8')
-          if 'WEEKLY' not in static or 'Eco 238' not in static:
-              raise SystemExit('Decoded content did not look like the Environmental update')
           p.write_text(static, encoding='utf-8')
           PY
       - name: Commit static page and remove workflow

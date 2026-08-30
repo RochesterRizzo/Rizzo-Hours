@@ -1,0 +1,52 @@
+name: Patch Environmental Week One Local Images
+
+on:
+  push:
+    paths:
+      - '.github/workflows/patch-env-local-images.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out site
+        uses: actions/checkout@v4
+
+      - name: Download real source images and patch page
+        run: |
+          set -euo pipefail
+          cd "$GITHUB_WORKSPACE"
+          asset_dir="weekly/environmental-economics/fall-2026/week-01/assets"
+          mkdir -p "$asset_dir"
+
+          curl -L --fail --retry 3 --retry-delay 2 -A "Mozilla/5.0" \
+            "https://img.atlasobscura.com/w25EoWiTS43gb5Ge6mgd2frq_DIB1YBBYq8XQC7-wtM/rs%3Afill%3A12000%3A12000/q%3A81/sm%3A1/scp%3A1/ar%3A1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL2Fzc2V0/cy9iYWYyZTQ5MGZh/YWI2OWYyZDdfZWE3/MjFjN2UwMDQ4OTg3/OWZmX2ZpbGVzX2Zp/Y2hpZXJfMTI5OTlf/YW50d2VycGVuLWhl/cml0YS1ib2VrZW50/b2lsZXQtYy1lbW1h/bnVlbC1kZS1wcnlj/a2VyLmpwZw.jpg" \
+            -o "$asset_dir/book-toilets.jpg"
+
+          curl -L --fail --retry 3 --retry-delay 2 -A "Mozilla/5.0" \
+            "https://www.nps.gov/lecl/learn/nature/images/montage-1b_2.jpg" \
+            -o "$asset_dir/lewis-clark-nature.jpg"
+
+          python3 <<'PY'
+          from pathlib import Path
+          p = Path('weekly/environmental-economics/fall-2026/week-01/index.html')
+          html = p.read_text(encoding='utf-8')
+          html = html.replace('https://img.atlasobscura.com/w25EoWiTS43gb5Ge6mgd2frq_DIB1YBBYq8XQC7-wtM/rs%3Afill%3A12000%3A12000/q%3A81/sm%3A1/scp%3A1/ar%3A1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL2Fzc2V0/cy9iYWYyZTQ5MGZh/YWI2OWYyZDdfZWE3/MjFjN2UwMDQ4OTg3/OWZmX2ZpbGVzX2Zp/Y2hpZXJfMTI5OTlf/YW50d2VycGVuLWhl/cml0YS1ib2VrZW50/b2lsZXQtYy1lbW1h/bnVlbC1kZS1wcnlj/a2VyLmpwZw.jpg', 'assets/book-toilets.jpg')
+          html = html.replace('https://www.nps.gov/lecl/learn/nature/images/montage-1b_2.jpg', 'assets/lewis-clark-nature.jpg')
+          p.write_text(html, encoding='utf-8')
+          PY
+
+          test "$(wc -c < "$asset_dir/book-toilets.jpg")" -gt 10000
+          test "$(wc -c < "$asset_dir/lewis-clark-nature.jpg")" -gt 10000
+
+      - name: Commit patch and remove workflow
+        run: |
+          rm -f .github/workflows/patch-env-local-images.yml
+          git config user.name "RochesterRizzo"
+          git config user.email "rizzo.liberty@gmail.com"
+          git add weekly/environmental-economics/fall-2026/week-01/index.html weekly/environmental-economics/fall-2026/week-01/assets .github/workflows/patch-env-local-images.yml
+          git commit -m "Use local source images for Environmental Week One"
+          git push

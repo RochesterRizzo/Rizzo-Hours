@@ -1,0 +1,65 @@
+name: Add major switch note
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/add-major-switch-note.yml
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Add major switching note
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path('econ-dept.html')
+          text = path.read_text(encoding='utf-8')
+
+          marker = 'Switching from an existing economics major?'
+          if marker not in text:
+              target = '''        </div>
+      </section>
+
+      <section id="course-options">'''
+              replacement = '''        </div>
+
+        <div class="plain-card" style="margin-top:16px;">
+          <h3>Switching from an existing economics major?</h3>
+          <p>If you are already declared in an economics major and want to move into one of the new majors, please first use the College’s <a href="https://secure1.rochester.edu/ccas/rc-change-form.php" target="_blank" rel="noopener noreferrer">change form</a> to drop your existing major.</p>
+          <p style="margin-top:10px;">After talking the new program over with Professor Rizzo, use the regular <a href="https://secure1.rochester.edu/registrar/applications/major-minor-declaration.php" target="_blank" rel="noopener noreferrer">major declaration form</a> to declare the new program.</p>
+        </div>
+      </section>
+
+      <section id="course-options">'''
+              if target not in text:
+                  raise SystemExit('Target insertion point not found; econ-dept.html was not changed.')
+              text = text.replace(target, replacement, 1)
+              path.write_text(text, encoding='utf-8')
+
+          workflow = Path('.github/workflows/add-major-switch-note.yml')
+          if workflow.exists():
+              workflow.unlink()
+          PY
+
+      - name: Commit patch
+        run: |
+          git config user.name "RochesterRizzo"
+          git config user.email "rizzo.liberty@gmail.com"
+          git add econ-dept.html .github/workflows/add-major-switch-note.yml
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Add switching-major declaration note"
+            git push
+          fi

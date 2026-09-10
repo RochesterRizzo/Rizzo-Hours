@@ -124,6 +124,10 @@ Bring lunch/snack.<br>
 </div>
 </div>
 <main>
+<a id="edgeworth-reminder" class="research-alert" href="econ-bulletin.html#edgeworth" hidden style="display:none">
+<strong>ECONOMIC CONSULTING — EDGEWORTH RSVP DEADLINE OCTOBER 16</strong>
+<span>Register by Friday, October 16 at noon EST for Inside Edgeworth: Monday, October 19, 4–5 PM EST on Zoom. Internships, full-time opportunities, résumé tips, and interview advice. Click for registration and the flyer.</span>
+</a>
 <a class="event-highlight" href="oyster-events.html#featured" style="text-decoration:none;color:inherit">
 <div>
 <small>Featured Event · Wednesday, September 16</small>
@@ -299,5 +303,21 @@ Bring lunch/snack.<br>
 </footer>
 </div>
 <script>document.querySelectorAll('[data-expires]').forEach(function(item){if(new Date()>=new Date(item.dataset.expires+'T00:00:00'))item.remove();});</script>
+<script>
+(function () {
+  var notice = document.getElementById('edgeworth-reminder');
+  function updateEdgeworthReminder() {
+    var now = Date.now();
+    // Start one week ahead in Rochester local time; stop at noon local time
+    // on deadline day so no student sees an invitation after the deadline.
+    var visible = now >= Date.parse('2026-10-09T00:00:00-04:00') &&
+                  now < Date.parse('2026-10-16T12:00:00-04:00');
+    notice.hidden = !visible;
+    notice.style.display = visible ? 'block' : 'none';
+  }
+  updateEdgeworthReminder();
+  setInterval(updateEdgeworthReminder, 60000);
+}());
+</script>
 </body>
 </html>

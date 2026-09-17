@@ -54,6 +54,9 @@ main{padding:22px}
 @keyframes researchPulse{0%,100%{box-shadow:0 0 0 0 rgba(212,0,0,0);transform:scale(1)}
 50%{box-shadow:0 0 0 5px rgba(212,0,0,.16);transform:scale(1.006)}
 }
+.bbq-reminder{animation:bbqFlash 2s ease-in-out infinite}
+.bbq-reminder .button{margin-top:10px;margin-right:6px}
+@keyframes bbqFlash{0%,100%{background:#fff0f0;border-color:#c40000;box-shadow:0 0 0 0 rgba(212,0,0,0)}50%{background:#ffcaca;border-color:#ff0000;box-shadow:0 0 0 5px rgba(212,0,0,.22)}}
 .weekly{border-top:6px solid var(--n)}
 h2{margin:0 0 10px;color:var(--n);font-size:1.25rem}
 .weekly ul{display:grid;grid-template-columns:repeat(3,1fr);gap:5px 20px;padding:0;list-style:none;font-size:.92rem}
@@ -87,13 +90,13 @@ footer{padding:18px 22px;background:#b5a4cc;display:grid;grid-template-columns:1
 <div class="page">
 <header>
 <h1>Pr. Rizzo’s Office Hours &amp; Student Information</h1>
-<p>Fall 2026. <span style="color:#ffd166;font-weight:700">Week of Sept 14 - Sept 18.</span> Check daily at <a href="http://tiny.cc/RizzoHours">tiny.cc/RizzoHours</a>. Text any time.</p>
+<p>Fall 2026. <span style="color:#ffd166;font-weight:700">Week of Sept 21 - Sept 25.</span> Check daily at <a href="http://tiny.cc/RizzoHours">tiny.cc/RizzoHours</a>. Text any time.</p>
 </header>
 <div class="quick">
 <div class="q">
 <h2>Nerd Club Lunch Bunch</h2>
 <p>
-<strong>Mon Sept. 14 · 11:30–12:45</strong>
+<strong>Mon Sept. 21 · 11:30–12:45</strong>
 <br>Tables between Meliora and Harkness<br>
 Bring lunch/snack.<br>
 <em>Intellectual Free for All</em>
@@ -102,19 +105,18 @@ Bring lunch/snack.<br>
 <div class="q">
 <h2>Inside Office Hours</h2>
 <p>
-<strong>Tue Sept. 15 · 12:30–1:30</strong>
+<strong>Tue Sept. 22 · 12:30–1:30</strong>
 <br>236 Harkness<br>
 <em>Class/advising prioritized</em>
 </p>
 </div>
 <div class="q">
-<h2>Wednesday Office Hours + Engerman</h2>
+<h2>Wednesday Office Hours — TBD</h2>
 <p>
-<strong>Wed Sept. 16 · 4:00 PM</strong>
-<br><strong>Edwin Fauver Stadium</strong><br>
-Rochester vs. St. John Fisher field hockey<br>
-<em>Watch the first half with us, then we walk together to the Engerman Lecture in Morey 321.</em><br>
-<a href="https://uofrathletics.com/sports/field-hockey/schedule/2026" target="_blank" rel="noopener noreferrer">Field hockey schedule</a>
+<strong>Wed Sept. 23 · TBD</strong>
+<br>I have a faculty meeting during our usual office hours.<br>
+<em>I MAY be able to add hours from <strong>2:00–3:00 PM</strong>, but this is very tentative — not confirmed.</em><br>
+<strong>Please check back next week for an update before making plans.</strong>
 </p>
 </div>
 <div class="q">
@@ -126,17 +128,22 @@ Rochester vs. St. John Fisher field hockey<br>
 </div>
 </div>
 <main>
+<div class="research-alert bbq-reminder">
+<strong>DON’T FORGET TO RSVP — DINOSAUR BBQ + TRADE WAR!</strong>
+<span>Join us Tuesday, September 29: Joe Steinberg’s “Trade War: The View from Across Lake America!” at 6:00–7:00 PM in Morey 321, followed by Dinosaur Bar-B-Que at 7:00–8:30 PM in Morey’s Rettner Gallery. <strong>RSVP for food by Friday, September 25 so we can get the food count right!</strong></span>
+<a class="button" href="https://form.jotform.com/262586026121048" target="_blank" rel="noopener noreferrer">RSVP for Dinosaur BBQ</a>
+<a class="button" href="oyster-events.html#trade-war">Event details &amp; poster</a>
+</div>
 <a id="edgeworth-reminder" class="research-alert" href="econ-bulletin.html#edgeworth" hidden style="display:none">
 <strong>ECONOMIC CONSULTING — EDGEWORTH RSVP DEADLINE OCTOBER 16</strong>
 <span>Register by Friday, October 16 at noon EST for Inside Edgeworth: Monday, October 19, 4–5 PM EST on Zoom. Internships, full-time opportunities, résumé tips, and interview advice. Click for registration and the flyer.</span>
 </a>
 <a class="event-highlight" href="oyster-events.html#featured" style="text-decoration:none;color:inherit">
 <div>
-<small>Featured Event · Wednesday, September 16</small>
+<small>Recent Event · Wednesday, September 16</small>
 <h2>Richard Hornbeck · Engerman Lecture</h2>
 <p class="event-title">“After Shocks: Adaptation and Growth through Volatile Times”</p>
 <p><strong>5:00 PM · Morey 321</strong><br>Richard Hornbeck, University of Chicago</p>
-<div class="event-office"><strong>Office hours start at Fauver:</strong> Meet at Edwin Fauver Stadium at 4:00 PM for the Rochester–St. John Fisher field hockey game. We will watch the first half together, then walk over to Morey 321 for the 5:00 PM Engerman Lecture.</div>
 <span class="button">Full event details &amp; poster</span>
 </div>
 <span class="poster"><img src="poster-files/engerman-hornbeck-after-shocks-poster.png" alt="Poster for Richard Hornbeck's Engerman Lecture, After Shocks: Adaptation and Growth through Volatile Times."></span>
@@ -195,8 +202,7 @@ Rochester vs. St. John Fisher field hockey<br>
 <div class="meeting">TA Meetings</div>
 <div>
 </div>
-<div>
-</div>
+<div style="background:#fff4d6;color:#5c3900">Wednesday OH: TBD<br>2–3 PM only a very tentative possibility<br>Check back next week</div>
 <div>
 </div>
 <div>
@@ -204,14 +210,14 @@ Rochester vs. St. John Fisher field hockey<br>
 <div class="time">4:00 to 5:00</div>
 <div></div>
 <div></div>
-<div class="office">Office Hours<br>Fauver Stadium<br>Field Hockey → Engerman</div>
+<div class="meeting">Faculty meeting<br>Office Hours TBD</div>
 <div></div>
 <div></div>
 </div>
 </div>
 <div class="notice">
 <h2>Current update</h2>
-<p>Monday office hours are outside from 11:30–12:45. Tuesday office hours are 12:30–1:30 in Harkness 236. On Wednesday, September 16, meet at <strong>Edwin Fauver Stadium at 4:00 PM</strong> for Rochester field hockey vs. St. John Fisher. We will watch the first half together, then walk over to Richard Hornbeck’s 5:00 PM Engerman Lecture in Morey 321.</p>
+<p><strong>Week of September 21–25:</strong> Monday office hours are outside from 11:30–12:45 at the tables between Meliora and Harkness. Tuesday office hours are 12:30–1:30 in Harkness 236. <strong>Wednesday, September 23: TBD.</strong> Unfortunately, I have a faculty meeting scheduled during our usual office hours. I <strong>MAY</strong> add hours from <strong>2:00–3:00 PM</strong>, but that is a <strong>very tentative possibility, not a confirmed time</strong>. Please check back next week for an update before making plans.</p>
 </div>
 <section class="weekly">
 <h2>Weekly Course Updates</h2>

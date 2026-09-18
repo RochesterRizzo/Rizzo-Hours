@@ -76,6 +76,16 @@ h2{margin:0 0 10px;color:var(--n);font-size:1.25rem}
 .resources{position:sticky;top:14px}
 .links{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
 .links a{display:block}
+.mooings{margin:0 0 16px;padding:15px;border:1px solid #d8c9a8;border-left:7px solid #4b1f2a;border-radius:10px;background:linear-gradient(135deg,#fffdf7,#f6ead4)}
+.mooings__eyebrow{font-size:.74rem;font-weight:900;letter-spacing:.11em;text-transform:uppercase;color:#8b2635;margin:0 0 3px}
+.mooings h3{font:700 1.28rem Georgia,"Times New Roman",serif;color:#3b1620;margin:0 0 5px}
+.mooings__intro{font-size:.9rem;line-height:1.42;color:#4b4541;margin:0 0 12px}
+.mooing-card{display:block;border-top:1px solid #d8c9a8;padding-top:11px;color:#111;text-decoration:none}
+.mooing-card:hover h4{text-decoration:underline}
+.mooing-card h4{margin:0 0 5px;color:#063a66;font-size:1.02rem}
+.mooing-card .hook{display:block;font-weight:800;line-height:1.35;margin-bottom:5px}
+.mooing-card .summary{display:block;font-size:.88rem;line-height:1.42;color:#4e4e4e}
+.mooing-card .listen{display:inline-block;margin-top:8px;color:#8b2635;font-size:.83rem;font-weight:900;text-transform:uppercase;letter-spacing:.04em}
 .updates p{line-height:1.45}
 footer{padding:18px 22px;background:#b5a4cc;display:grid;grid-template-columns:1fr 1fr;gap:16px}
 @media(prefers-reduced-motion:reduce){.research-alert{animation:none}
@@ -279,6 +289,20 @@ Bring lunch/snack.<br>
 <aside>
 <section class="resources">
 <h2>Resources, Events, Motivation</h2>
+
+<div class="mooings">
+<p class="mooings__eyebrow">Audio essays &amp; conversations</p>
+<h3>Wintercow’s Mooings</h3>
+<p class="mooings__intro">Short, strange, occasionally combative economics conversations built from things that come up in class, office hours, experiments, and the wider world.</p>
+
+<a class="mooing-card" href="https://rochesterrizzo.github.io/Wintercow-s-Mooing/" target="_blank" rel="noopener noreferrer">
+<h4>The Crab Pot</h4>
+<span class="hook">Why would anyone pay to punish the person contributing the most?</span>
+<span class="summary">Start with monkeys throwing cucumbers, move through public-goods experiments in Oman, then follow the trail into crabpotism, social mobility, innovation, taxation, and the enormous long-run consequences of tiny changes in economic growth.</span>
+<span class="listen">Open the episode →</span>
+</a>
+</div>
+
 <div class="links">
 <a href="weekly/">Weekly Course Updates</a>
 <a href="whats-on-tap.html">What's on Tap?</a>

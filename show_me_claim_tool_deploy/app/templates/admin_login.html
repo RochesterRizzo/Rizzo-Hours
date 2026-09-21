@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}SHOW ME Admin{% endblock %}
+{% block content %}
+<section class="narrow">
+  <div class="eyebrow">INSTRUCTOR</div>
+  <h1>Admin access</h1>
+  <form method="post" class="form-card">
+    <label>Admin key<input type="password" name="key" required autofocus></label>
+    <button class="button primary" type="submit">Open dashboard</button>
+  </form>
+</section>
+{% endblock %}

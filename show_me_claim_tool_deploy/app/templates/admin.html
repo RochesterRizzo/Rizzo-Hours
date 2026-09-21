@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}SHOW ME Admin{% endblock %}
+{% block content %}
+<section class="admin-head">
+  <div>
+    <div class="eyebrow">INSTRUCTOR DASHBOARD</div>
+    <h1>SHOW ME reservations</h1>
+  </div>
+  <div class="actions">
+    <a class="button" href="{{ url_for('admin_export') }}">Export CSV</a>
+    <form method="post" action="{{ url_for('admin_logout') }}"><button class="button subtle" type="submit">Log out</button></form>
+  </div>
+</section>
+
+<section class="admin-section">
+  <h2>Active student reservations</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Student</th><th>Email</th><th>Topic</th><th>Receipt</th><th>Management</th><th></th></tr></thead>
+      <tbody>
+      {% for c in claims %}
+        <tr>
+          <td>{{ c.name }}</td><td>{{ c.email }}</td>
+          <td>{% if c.topic_id %}<strong>{{ c.topic_id }}</strong> — {{ c.topic_title }}{% else %}<strong>CUSTOM</strong> — {{ c.custom_title }}{% endif %}</td>
+          <td><code>{{ c.receipt }}</code></td>
+          <td><a href="{{ url_for('manage', token=c.manage_token) }}">open</a></td>
+          <td><form method="post" onsubmit="return confirm('Release this claim?');"><input type="hidden" name="claim_id" value="{{ c.id }}"><input type="hidden" name="action" value="release"><button class="link-button" type="submit">release</button></form></td>
+        </tr>
+      {% else %}<tr><td colspan="6">No active claims yet.</td></tr>{% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="admin-section">
+  <h2>Topic status</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>ID</th><th>Category</th><th>Topic</th><th>Status</th></tr></thead>
+      <tbody>
+      {% for t in topics %}
+        <tr><td>{{ t.id }}</td><td>{{ t.category }}</td><td>{{ t.title }}</td><td>{% if t.claim_id %}Claimed by {{ t.claimant_name }}{% else %}Available{% endif %}</td></tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+{% endblock %}

@@ -1,4 +1,4 @@
-# SHOW ME Claim Tool — Railway deployment wrapper
+# SHOW ME Claim Tool — Railway deployment
 
 Railway root directory: `/show_me_claim_tool_deploy`
 
@@ -10,4 +10,4 @@ Required environment variables:
 
 Mount a persistent Railway volume at `/data`.
 
-The Dockerfile unpacks `show_me_claim_tool.zip`, installs dependencies, and starts the Flask app with gunicorn.
+The Dockerfile now builds directly from the unpacked source in `app/`; no ZIP archive is required.

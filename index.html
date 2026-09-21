@@ -76,6 +76,20 @@ h2{margin:0 0 10px;color:var(--n);font-size:1.25rem}
 .resources{position:sticky;top:14px}
 .links{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
 .links a{display:block}
+.rochester-week{margin:0 0 16px;border:1px solid #b8c8d8;border-top:6px solid var(--n);border-radius:10px;background:#f7fbff;overflow:hidden}
+.rochester-week__head{padding:12px 14px 10px;background:#eef6ff;border-bottom:1px solid #c8d8e8}
+.rochester-week__eyebrow{margin:0 0 3px;font-size:.72rem;font-weight:900;letter-spacing:.1em;text-transform:uppercase;color:#666}
+.rochester-week h3{margin:0;color:var(--n);font-size:1.18rem}
+.rochester-week__range{margin:4px 0 0;font-size:.82rem;color:#555}
+.rochester-week__scroll{max-height:255px;overflow-y:auto;scrollbar-gutter:stable}
+.rochester-pick{display:block;padding:10px 14px;border-bottom:1px solid #dbe5ee;color:#111;text-decoration:none;background:#fff}
+.rochester-pick:hover{background:#f0f7fc}
+.rochester-pick:last-child{border-bottom:0}
+.rochester-pick__day{display:block;font-size:.7rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:#9b2c2c;margin-bottom:2px}
+.rochester-pick strong{display:block;color:#063a66;font-size:.92rem;line-height:1.25}
+.rochester-pick span{display:block;margin-top:2px;font-size:.8rem;line-height:1.3;color:#555}
+.rochester-week__all{display:block;padding:10px 14px;background:var(--n);color:#fff;text-decoration:none;font-weight:800;text-align:center;font-size:.88rem}
+.rochester-week__all:hover{text-decoration:underline}
 .mooings{margin:0 0 16px;padding:15px;border:1px solid #d8c9a8;border-left:7px solid #4b1f2a;border-radius:10px;background:linear-gradient(135deg,#fffdf7,#f6ead4)}
 .mooings__eyebrow{font-size:.74rem;font-weight:900;letter-spacing:.11em;text-transform:uppercase;color:#8b2635;margin:0 0 3px}
 .mooings h3{font:700 1.28rem Georgia,"Times New Roman",serif;color:#3b1620;margin:0 0 5px}
@@ -289,6 +303,43 @@ Bring lunch/snack.<br>
 <aside>
 <section class="resources">
 <h2>Resources, Events, Motivation</h2>
+
+<div class="rochester-week">
+<div class="rochester-week__head">
+<p class="rochester-week__eyebrow">Staff Picks</p>
+<h3>This Week at Rochester</h3>
+<p class="rochester-week__range">Thu Sept. 24 → Thu Oct. 1</p>
+</div>
+<div class="rochester-week__scroll">
+<a class="rochester-pick" href="this-week-at-rochester/#sat-sports">
+<span class="rochester-pick__day">Saturday</span>
+<strong>Huge home sports day</strong>
+<span>Field hockey, volleyball, men’s soccer and women’s soccer all at home.</span>
+</a>
+<a class="rochester-pick" href="this-week-at-rochester/#eastman-virtuosi">
+<span class="rochester-pick__day">Saturday</span>
+<strong>Eastman Virtuosi I</strong>
+<span>7:30 PM · Kilbourn Hall</span>
+</a>
+<a class="rochester-pick" href="this-week-at-rochester/#language-city">
+<span class="rochester-pick__day">Monday</span>
+<strong>Language City</strong>
+<span>Endangered languages, migration and the multilingual city.</span>
+</a>
+<a class="rochester-pick" href="this-week-at-rochester/#tedx">
+<span class="rochester-pick__day">Wednesday</span>
+<strong>TEDxURochester: reHuman</strong>
+<span>2:30–6:30 PM · Wilson Commons</span>
+</a>
+<a class="rochester-pick" href="this-week-at-rochester/#edelman">
+<span class="rochester-pick__day">Thursday</span>
+<strong>Alan Edelman · MIT</strong>
+<span>3:30 PM · Hylan 101</span>
+</a>
+</div>
+<a class="rochester-week__all" href="this-week-at-rochester/">Full Thursday → Thursday calendar →</a>
+</div>
+
 
 <div class="mooings">
 <p class="mooings__eyebrow">Audio essays &amp; conversations</p>

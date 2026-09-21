@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}Manage My SHOW MEs{% endblock %}
+{% block content %}
+<section class="narrow">
+  <div class="eyebrow">PRIVATE MANAGEMENT PAGE</div>
+  <h1>{{ student.name }}</h1>
+  <p class="lede">You may hold two active reservations. Releasing a numbered topic returns it to the class immediately.</p>
+
+  {% if claims %}
+    {% for c in claims %}
+    <article class="manage-card">
+      {% if c.topic_id %}
+        <div class="topic-id">{{ c.topic_id }} · {{ c.category }}</div>
+        <h2>{{ c.topic_title }}</h2>
+        <p>{{ c.topic_prompt }}</p>
+      {% else %}
+        <div class="topic-id">CUSTOM SHOW ME</div>
+        <h2>{{ c.custom_title }}</h2>
+        <form method="post" class="inline-edit">
+          <input type="hidden" name="claim_id" value="{{ c.id }}">
+          <input type="hidden" name="action" value="edit_custom">
+          <label>Question<textarea name="custom_title" rows="2" required>{{ c.custom_title }}</textarea></label>
+          <label>Plan<textarea name="custom_plan" rows="3" required>{{ c.custom_plan }}</textarea></label>
+          <button class="button" type="submit">Update custom topic</button>
+        </form>
+      {% endif %}
+      <div class="receipt-line">Receipt: <code>{{ c.receipt }}</code></div>
+      <form method="post" onsubmit="return confirm('Release this reservation?');">
+        <input type="hidden" name="claim_id" value="{{ c.id }}">
+        <input type="hidden" name="action" value="release">
+        <button class="button danger" type="submit">Release reservation</button>
+      </form>
+    </article>
+    {% endfor %}
+  {% else %}
+    <div class="empty">You have no active reservations.</div>
+  {% endif %}
+
+  {% if claims|length < 2 %}
+    <a class="button primary big" href="{{ url_for('index') }}">Choose another SHOW ME</a>
+  {% endif %}
+</section>
+{% endblock %}

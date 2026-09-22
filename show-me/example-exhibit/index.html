@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Example SHOW ME Exhibit | ECON 238</title>
+<style>
+:root{--navy:#063a66;--green:#18794e;--gold:#966300;--ink:#18212a;--muted:#667085;--line:#d9e0e7;--bg:#f3f6f9}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink)}
+.wrap{max-width:960px;margin:auto;background:#fff;min-height:100vh;box-shadow:0 0 24px #0002}
+header{background:#063a66;color:white;padding:34px 28px}.kicker{text-transform:uppercase;letter-spacing:.1em;font-weight:900;font-size:.76rem;color:#cce6fa}
+h1{font-size:clamp(2rem,5vw,4rem);margin:5px 0 8px;letter-spacing:-.035em}header p{max-width:720px;line-height:1.5;margin:0}
+main{padding:24px 28px 48px}.block{margin:25px 0}.block h2{color:#063a66;border-bottom:3px solid #063a66;padding-bottom:7px}
+.demo{border:1px solid var(--line);border-radius:12px;padding:18px;background:#fafbfc}
+.chart{display:grid;grid-template-columns:120px 1fr;gap:10px;align-items:center;margin:14px 0}.bar{height:30px;background:#d8e8f4;border-radius:5px;position:relative}.bar span{display:block;height:100%;background:#0b639c;border-radius:5px}.lab{font-weight:800}.note{font-size:.86rem;color:var(--muted)}
+.labels{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.label{padding:12px;border-radius:9px;border:1px solid var(--line)}.label strong{display:block;color:#18794e}
+code{background:#eef2f6;padding:2px 5px;border-radius:4px}
+a.btn{display:inline-block;background:#063a66;color:#fff;text-decoration:none;font-weight:900;padding:10px 13px;border-radius:8px}
+@media(max-width:650px){.labels{grid-template-columns:1fr}.chart{grid-template-columns:90px 1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<div class="kicker">TECHNICAL DEMONSTRATION · NOT A STUDENT PROJECT</div>
+<h1>What a Working SHOW ME Exhibit Looks Like</h1>
+<p>This page exists to show the architecture of a strong exhibit and to give the Museum a permanent test object. The numbers below are deliberately synthetic; they are not environmental findings.</p>
+</header>
+<main>
+<p><a class="btn" href="../museum/">← BACK TO THE MUSEUM</a></p>
+
+<section class="block">
+<h2>THE QUESTION</h2>
+<p>Can the visitor tell, in one sentence, exactly what is being made visible?</p>
+<div class="demo"><strong>Demo question:</strong> If a model starts at an index value of 100, how much does the outcome move when we change two assumptions?</div>
+</section>
+
+<section class="block">
+<h2>SHOW ME</h2>
+<p>The central result should be visible before the visitor reads a wall of prose.</p>
+<div class="demo">
+<div class="chart"><div class="lab">Baseline</div><div class="bar"><span style="width:100%"></span></div></div>
+<div class="chart"><div class="lab">Change A</div><div class="bar"><span style="width:82%"></span></div></div>
+<div class="chart"><div class="lab">Change B</div><div class="bar"><span style="width:61%"></span></div></div>
+<p class="note">Synthetic example only: 100 → 82 → 61. The point is the presentation structure, not the values.</p>
+</div>
+</section>
+
+<section class="block">
+<h2>NOW CHANGE SOMETHING</h2>
+<p>Do not stop at one answer. Move assumptions, parameters, scenarios, populations, technologies, time horizons, or other meaningful inputs and show what happens.</p>
+<div class="demo"><strong>Variation 1:</strong> change one assumption while holding the rest fixed.<br><strong>Variation 2:</strong> change a second assumption or compare a competing scenario on the same scale.</div>
+</section>
+
+<section class="block">
+<h2>WHAT ARE WE ACTUALLY LOOKING AT?</h2>
+<p>Explain the mechanism and scale. What caused the result to move? What is large, small, surprising, or sensitive? What does the graph not establish?</p>
+</section>
+
+<section class="block">
+<h2>OPEN THE HOOD</h2>
+<div class="labels">
+<div class="label"><strong>OBSERVED DATA</strong>What came directly from measured or recorded data?</div>
+<div class="label"><strong>PUBLISHED MODEL RESULT</strong>What came directly from somebody else's published model or paper?</div>
+<div class="label"><strong>YOUR CALCULATION</strong>What did you calculate from those inputs?</div>
+<div class="label"><strong>YOUR COUNTERFACTUAL</strong>What scenario did you construct by changing an assumption or input?</div>
+</div>
+<p>Then provide sources, units, assumptions, calculations/code, and a brief account of what AI helped you find, build, check, or revise.</p>
+</section>
+
+<section class="block">
+<h2>WHY THIS COUNTS AS A WORKING TEST EXHIBIT</h2>
+<p>It has a public URL, a stable page, a clear question, a visual, two changed assumptions, interpretation, and an open-the-hood section. A real student exhibit should replace the synthetic demonstration with serious environmental-economics evidence and analysis.</p>
+</section>
+</main>
+</div>
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SHOW ME Museum | ECON 238</title>
+<meta name="description" content="The ECON 238 SHOW ME Museum: student-built environmental economics exhibits.">
+<style>
+:root{--navy:#063a66;--navy2:#0b4f84;--green:#18794e;--gold:#966300;--red:#b00020;--ink:#17212b;--muted:#667085;--line:#d9e0e7;--bg:#eef2f6;--card:#fff}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink)}
+a{color:inherit}
+.wrap{max-width:1240px;margin:auto;background:#fff;min-height:100vh;box-shadow:0 0 28px #0002}
+.hero{background:linear-gradient(135deg,var(--navy),#0c5e97);color:#fff;padding:34px 30px 30px}
+.kicker{font-size:.78rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:#cce7fb}
+.hero h1{font-size:clamp(2.5rem,6vw,5rem);margin:4px 0 8px;letter-spacing:-.045em}
+.hero p{max-width:850px;font-size:1.08rem;line-height:1.5;margin:0}
+.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.btn{display:inline-block;padding:11px 15px;border-radius:8px;text-decoration:none;font-weight:900;background:#fff;color:var(--navy)}
+.btn.alt{background:#f2c14e;color:#3c2a00}.btn.dark{background:var(--navy);color:#fff}.btn.outline{background:#fff;border:1px solid #aeb8c3;color:var(--navy)}
+main{padding:24px 30px 52px}
+.notice{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 0 22px}
+.notice>div{padding:14px;border:1px solid var(--line);border-radius:12px;background:#fafbfc}
+.notice strong{display:block;color:var(--navy);margin-bottom:3px}
+.preflight{border:3px solid var(--green);border-radius:14px;padding:18px 20px;margin:22px 0;background:#f4fbf7}
+.preflight h2{margin:0 0 8px;color:#0d5f3a}.checkrow{display:flex;gap:14px;flex-wrap:wrap;font-weight:800}.checkrow span{background:#fff;border:1px solid #a9d1ba;border-radius:8px;padding:8px 10px}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:24px 0 16px}
+.toolbar input,.toolbar select{padding:11px;border:1px solid #b8c2cc;border-radius:8px;font-size:1rem;background:#fff}
+.toolbar input{flex:1;min-width:240px}
+.stats{font-weight:800;color:var(--muted);margin-left:auto}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.card{border:1px solid var(--line);border-radius:13px;background:var(--card);overflow:hidden;display:flex;flex-direction:column;min-height:340px}
+.card-cover{aspect-ratio:16/9;background:#dce8f2;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.card-cover img{width:100%;height:100%;object-fit:cover;display:block}
+.example-cover{padding:18px;text-align:center;background:linear-gradient(135deg,#e8f1f8,#fff7df)}
+.example-cover b{font-size:1.3rem;color:var(--navy)}
+.card-body{padding:15px;display:flex;flex-direction:column;flex:1}
+.badges{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:7px}.badge{font-size:.72rem;font-weight:900;text-transform:uppercase;letter-spacing:.05em;padding:4px 7px;border-radius:999px;background:#e8eef4;color:var(--navy)}.badge.own{background:#fff0cc;color:#705000}
+.card h3{margin:2px 0 7px;font-size:1.12rem}.hook{line-height:1.43;font-size:.92rem;margin:0 0 14px;color:#344054}.meta{font-size:.8rem;color:var(--muted);margin-top:auto;padding-top:10px}.enter{display:inline-block;margin-top:11px;background:var(--navy);color:#fff;text-decoration:none;font-weight:900;padding:9px 11px;border-radius:8px;text-align:center}
+.empty{grid-column:1/-1;padding:28px;border:1px dashed #aeb8c3;border-radius:12px;text-align:center;color:var(--muted)}
+.section{margin-top:34px;border-top:4px solid var(--navy);padding-top:18px}.section h2{color:var(--navy);margin:0 0 12px}
+.faq details{border:1px solid var(--line);border-radius:9px;margin:8px 0;background:#fff}.faq summary{cursor:pointer;padding:12px 14px;font-weight:900;color:var(--navy)}.faq details div{padding:0 14px 14px;line-height:1.5}
+.backup{border:4px solid var(--red);background:#fff6f7;border-radius:14px;padding:20px;margin-top:32px}.backup h2{color:var(--red);margin:0 0 8px}.backup ol{line-height:1.55;margin-bottom:8px}
+footer{padding:20px 30px;background:#f6f8fa;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+@media(max-width:960px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:720px){.notice,.grid{grid-template-columns:1fr}.stats{width:100%;margin-left:0}.hero,main,footer{padding-left:18px;padding-right:18px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+<div class="kicker">ECON 238 · Environmental Economics · Fall 2026</div>
+<h1>SHOW ME Museum</h1>
+<p>Our virtual environmental-economics hallway: two exhibits from every student, one chosen from the class list and one created by the student.</p>
+<div class="hero-actions">
+<a class="btn alt" href="https://github.com/RochesterRizzo/Rizzo-Hours/issues/new?template=show-me-museum.yml">SUBMIT / UPDATE MY EXHIBIT</a>
+<a class="btn" href="../">CLAIM / CHECK MY TOPICS</a>
+<a class="btn" href="../example-exhibit/">VIEW THE TEST EXHIBIT</a>
+</div>
+</header>
+
+<main>
+<div class="notice">
+<div><strong>Two Museum entries per student</strong>One CLASS LIST exhibit + one MY OWN exhibit.</div>
+<div><strong>Resubmitting updates</strong>Submit the same slot again and your newer accepted entry replaces the old one.</div>
+<div><strong>The bot checks your links</strong>Dead, private, repository-only, and malformed links are rejected before they enter the Museum.</div>
+</div>
+
+<section class="preflight">
+<h2>BEFORE YOU SUBMIT</h2>
+<p>Open both URLs in a private/incognito browser window. If you cannot see them without logging in, neither can the Museum.</p>
+<div class="checkrow"><span>✓ PAGE LOADS</span><span>✓ COVER IMAGE LOADS</span><span>✓ EXACT EXHIBIT PAGE</span></div>
+<p style="margin-bottom:0"><a class="btn dark" href="https://github.com/RochesterRizzo/Rizzo-Hours/issues/new?template=show-me-museum.yml">SUBMIT / UPDATE MY EXHIBIT →</a></p>
+</section>
+
+<div class="toolbar">
+<input id="search" type="search" placeholder="Search exhibits, topics, categories, or GitHub users…">
+<select id="filter">
+<option value="">All exhibits</option>
+<option value="CLASS LIST">Class-list exhibits</option>
+<option value="Student-Created">Student-created exhibits</option>
+</select>
+<div class="stats" id="stats">Loading Museum…</div>
+</div>
+
+<div class="grid" id="grid">
+<article class="card" data-example="1">
+<div class="card-cover example-cover"><b>EXAMPLE<br>ANATOMY OF A SHOW ME</b></div>
+<div class="card-body">
+<div class="badges"><span class="badge">Example</span><span class="badge">Technical test</span></div>
+<h3>What a Working SHOW ME Exhibit Looks Like</h3>
+<p class="hook">A deliberately simple technical exhibit showing the required structure, labels, visual hierarchy, and “open the hood” section.</p>
+<div class="meta">Built by the course · Does not count as a student submission</div>
+<a class="enter" href="../example-exhibit/">ENTER EXHIBIT →</a>
+</div>
+</article>
+</div>
+
+<section class="section">
+<h2>How Museum submission works</h2>
+<p><strong>1.</strong> Finish your public exhibit. <strong>2.</strong> Click <strong>SUBMIT / UPDATE MY EXHIBIT</strong>. <strong>3.</strong> Choose CLASS LIST or MY OWN. <strong>4.</strong> Paste the exact public page URL, cover-image URL, title, and hook. <strong>5.</strong> Submit the GitHub form.</p>
+<p>The Museum automation verifies that your class-list topic belongs to your GitHub account, or that you have an active student-created topic. It then checks that your exhibit and cover image are actually public. If everything passes, it adds your card automatically and leaves a confirmation receipt on your GitHub issue.</p>
+</section>
+
+<section class="section faq" id="faq">
+<h2>Troubleshooting FAQ</h2>
+
+<details><summary>My exhibit says 404.</summary><div>GitHub Pages can take a minute or two to publish after a change. Wait briefly and refresh. If it still fails, confirm that Pages is enabled and that you are using the public webpage URL rather than a repository/file URL.</div></details>
+
+<details><summary>It works for me, but the Museum submission rejects it.</summary><div>Open the exact URL in a private/incognito window. If you are asked to sign in, or if the page only works while you are logged into GitHub, it is not public.</div></details>
+
+<details><summary>The bot says I submitted a GitHub repository instead of a webpage.</summary><div>A URL beginning with <strong>github.com/...</strong> is usually the repository or file view. The Museum needs the actual published site, normally something like <strong>https://username.github.io/repository/...</strong>.</div></details>
+
+<details><summary>My cover image is broken.</summary><div>Open the cover-image URL directly in a private/incognito window. You should see only the image. GitHub filenames are case-sensitive: <strong>Graph.PNG</strong> and <strong>graph.png</strong> are different files.</div></details>
+
+<details><summary>My webpage loads, but some images inside it are missing.</summary><div>Check every image path and filename, especially capitalization. Do not link to files that exist only on your laptop. All exhibit assets need to live in the public repository/site.</div></details>
+
+<details><summary>I submitted the wrong URL, title, hook, or cover image.</summary><div>Submit the same exhibit slot again. A new accepted CLASS LIST submission replaces your old CLASS LIST entry; a new accepted MY OWN submission replaces your old MY OWN entry. You do not need anyone to delete the old card first.</div></details>
+
+<details><summary>I accidentally submitted my CLASS LIST exhibit as MY OWN, or vice versa.</summary><div>Submit it again using the correct exhibit type. The automation checks your topic reservation and will place it into the correct slot once the submission is valid.</div></details>
+
+<details><summary>The Museum still shows my old version.</summary><div>The submission bot can finish before GitHub Pages republishes the site. Refresh after a minute or two. Your GitHub confirmation issue is the authoritative receipt that the update was accepted.</div></details>
+
+<details><summary>The bot says my class-list Topic ID does not belong to me.</summary><div>Return to the SHOW ME topic-claim page and check the exact Topic ID you reserved. The Museum will only accept the numbered topic currently claimed by your GitHub account.</div></details>
+
+<details><summary>The bot says it cannot find my student-created topic.</summary><div>You must first use <strong>Create a Topic on My Own</strong> on the SHOW ME claim page. Once that reservation exists under the same GitHub account, submit the finished MY OWN exhibit again.</div></details>
+
+<details><summary>I changed my exhibit after submitting it. Do I have to submit again?</summary><div>If the URL stays exactly the same, your live webpage updates automatically and the Museum card does not need to change. Resubmit only if the Museum title, hook, cover image, or public URL needs to change.</div></details>
+
+<details><summary>I cannot get GitHub working and the deadline is arriving.</summary><div>Use the emergency backup procedure immediately. Do not lose a deadline fighting a technical problem.</div></details>
+</section>
+
+<section class="backup">
+<h2>EMERGENCY BACKUP — IF THE PUBLIC PAGE WILL NOT WORK</h2>
+<p><strong>A technical problem is not a reason to miss the deadline.</strong></p>
+<ol>
+<li>Export your finished exhibit as a <strong>PDF</strong>.</li>
+<li>Upload that PDF to the <strong>SHOW ME Museum Backup</strong> submission on Blackboard before the deadline.</li>
+<li>In the Blackboard submission include your <strong>GitHub username</strong>, <strong>exhibit title</strong>, whether it is <strong>CLASS LIST</strong> or <strong>MY OWN</strong>, your <strong>repository URL</strong>, and the <strong>public webpage URL you were trying to publish</strong>.</li>
+<li>Your Blackboard submission time becomes your technical-backup timestamp. Repair the public version afterward and then submit/update it to the Museum.</li>
+</ol>
+<p><strong>Do not email the professor or TAs merely to preserve the deadline.</strong> Use the Blackboard backup first; that is what it is for.</p>
+</section>
+</main>
+
+<footer>
+<strong>SHOW ME Museum · ECON 238 Environmental Economics</strong><br>
+The Museum is an index. Student exhibits remain hosted on their own public pages.
+</footer>
+</div>
+
+<script>
+let data={students:{}};
+const grid=document.getElementById('grid');
+const example=grid.innerHTML;
+const search=document.getElementById('search');
+const filter=document.getElementById('filter');
+const stats=document.getElementById('stats');
+
+function esc(v){return String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
+function safeUrl(v){try{const u=new URL(v);return ['http:','https:'].includes(u.protocol)?u.href:'#'}catch(e){return '#'}}
+
+function entries(){
+  const out=[];
+  for(const [user,slots] of Object.entries(data.students||{})){
+    for(const slot of ['LIST','OWN']){
+      if(slots && slots[slot]) out.push(slots[slot]);
+    }
+  }
+  return out;
+}
+
+function render(){
+  const all=entries();
+  const q=search.value.trim().toLowerCase();
+  const f=filter.value;
+  const shown=all.filter(e=>{
+    const type=e.slot==='LIST'?'CLASS LIST':'Student-Created';
+    const hay=[e.title,e.hook,e.github_user,e.topic_id,e.category,type].join(' ').toLowerCase();
+    return (!q||hay.includes(q)) && (!f||type===f);
+  }).sort((a,b)=>(a.title||'').localeCompare(b.title||''));
+
+  const students=new Set(all.map(e=>e.github_user)).size;
+  const listN=all.filter(e=>e.slot==='LIST').length;
+  const ownN=all.filter(e=>e.slot==='OWN').length;
+  stats.textContent=all.length+' student exhibits · '+students+' students · '+listN+' list · '+ownN+' own';
+
+  let html=example;
+  if(shown.length){
+    html+=shown.map(e=>{
+      const own=e.slot==='OWN';
+      const type=own?'Student-Created':'Class List';
+      const img=safeUrl(e.cover_url);
+      const url=safeUrl(e.url);
+      return '<article class="card">'+
+        '<div class="card-cover"><img loading="lazy" src="'+esc(img)+'" alt=""></div>'+
+        '<div class="card-body">'+
+        '<div class="badges"><span class="badge '+(own?'own':'')+'">'+esc(type)+'</span><span class="badge">'+esc(e.category||'')+'</span></div>'+
+        '<h3>'+esc(e.title)+'</h3>'+
+        '<p class="hook">'+esc(e.hook)+'</p>'+
+        '<div class="meta">@'+esc(e.github_user)+(e.topic_id?' · '+esc(e.topic_id):'')+'</div>'+
+        '<a class="enter" href="'+esc(url)+'" target="_blank" rel="noopener">ENTER EXHIBIT →</a>'+
+        '</div></article>';
+    }).join('');
+  } else if(all.length && (q||f)){
+    html+='<div class="empty">No student exhibits match this filter.</div>';
+  } else if(!all.length){
+    html+='<div class="empty"><strong>The Museum is ready.</strong><br>Student exhibits will appear here automatically as they are accepted.</div>';
+  }
+  grid.innerHTML=html;
+}
+
+async function load(){
+  try{
+    const r=await fetch('submissions.json?v='+Date.now(),{cache:'no-store'});
+    if(!r.ok) throw new Error('HTTP '+r.status);
+    data=await r.json();
+    render();
+  }catch(err){
+    stats.textContent='Museum database temporarily unavailable';
+    grid.innerHTML=example+'<div class="empty">The exhibit index could not be loaded. Refresh the page shortly.</div>';
+  }
+}
+search.addEventListener('input',render);
+filter.addEventListener('change',render);
+load();
+setInterval(load,60000);
+</script>
+</body>
+</html>

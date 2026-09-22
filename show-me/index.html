@@ -10,7 +10,7 @@
 .wrap{max-width:1180px;margin:auto;background:#fff;min-height:100vh;box-shadow:0 0 24px #0002}
 header{background:var(--navy);color:#fff;padding:34px 28px 30px}header h1{font-size:clamp(2.2rem,5vw,4.5rem);margin:0;letter-spacing:-.04em}
 header p{max-width:820px;font-size:1.1rem;line-height:1.5;margin:10px 0 0}.tag{font-weight:800;letter-spacing:.12em;font-size:.8rem;text-transform:uppercase;color:#cfe8ff}
-main{padding:24px 28px 48px}.rules{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px}.rule{border:1px solid var(--line);border-radius:12px;padding:14px;background:#fafbfc}.rule strong{display:block;color:var(--navy);margin-bottom:4px}
+main{padding:24px 28px 48px}.claim-help{border:3px solid var(--navy);border-radius:12px;padding:15px 17px;margin:0 0 18px;background:#f3f8fc}.claim-help strong{color:var(--navy)}.claim-help ol{margin:8px 0 0 20px;padding:0;line-height:1.5}.rules{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px}.rule{border:1px solid var(--line);border-radius:12px;padding:14px;background:#fafbfc}.rule strong{display:block;color:var(--navy);margin-bottom:4px}
 .custom{border:3px solid var(--gold);background:#fffaf0;border-radius:14px;padding:18px;margin:16px 0 22px}.custom h2{margin:0 0 6px;color:#7a5100}
 .button{display:inline-block;background:var(--navy);color:#fff;text-decoration:none;padding:10px 14px;border-radius:8px;font-weight:800;border:0;cursor:pointer}.button.custom-btn{background:var(--gold)}.button.release{background:#fff;color:var(--red);border:1px solid #e7aab6;padding:7px 10px;font-size:.82rem}
 .toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}.toolbar input,.toolbar select{padding:11px;border:1px solid #b8c2cc;border-radius:8px;font-size:1rem}.toolbar input{flex:1;min-width:240px}.count{margin-left:auto;align-self:center;font-weight:700;color:var(--muted)}
@@ -24,6 +24,7 @@ footer{background:#f6f8fa;border-top:1px solid var(--line);padding:20px 28px;col
 <body><div class="wrap">
 <header><div class="tag">ECON 238 · Environmental Economics · Fall 2026</div><h1>SHOW ME</h1><p>You will complete <strong>two</strong> SHOW ME investigations: <strong>one topic of your own</strong> and <strong>one topic from the class list</strong>. Numbered topics are first-come, first-served.</p></header>
 <main>
+<div class="claim-help"><strong>HOW A CLAIM WORKS — TWO CLICKS</strong><ol><li>Click <strong>CLAIM THIS → GITHUB</strong> below.</li><li>GitHub opens in a new tab with the claim already filled in. <strong>Do not change the title.</strong> Click <strong>Submit new issue</strong>.</li><li>Wait about 10 seconds for the bot to post <strong>CLAIM CONFIRMED</strong>. Then close that GitHub tab. This page stays open and refreshes automatically.</li></ol></div>
 <p style="margin:0 0 18px"><a class="button" href="museum/">ENTER THE SHOW ME MUSEUM →</a></p>
 <div class="rules">
 <div class="rule"><strong>One + one</strong>You must complete one student-created investigation and one investigation from the class list.</div>
@@ -34,8 +35,8 @@ footer{background:#f6f8fa;border-top:1px solid var(--line);padding:20px 28px;col
 <section class="custom">
 <h2>Create a Topic on My Own — REQUIRED</h2>
 <p>Every student must create <strong>one SHOW ME investigation of their own</strong>. This is one of your two required projects.</p>
-<a class="button custom-btn" id="custom-link" href="#">CREATE MY OWN TOPIC</a>
-<a class="button release" id="release-custom" href="#">Release my custom topic</a>
+<a class="button custom-btn" id="custom-link" href="#" target="_blank" rel="noopener">CREATE MY OWN TOPIC → GITHUB</a>
+<a class="button release" id="release-custom" href="#" target="_blank" rel="noopener">Release my custom topic</a>
 </section>
 
 <div class="toolbar">
@@ -95,8 +96,8 @@ function render(){
       <p>${t.prompt}</p>
       <div class="status">${c?'CLAIMED by @'+c.claimed_by:'AVAILABLE'}</div>
       <div class="actions">
-        ${c?'<a class="button release" href="'+rel+'">Release</a>':'<a class="button" href="'+claim+'">CLAIM THIS</a>'}
-        <span class="note">${c?'Only the current holder can release it.':'GitHub will confirm the reservation.'}</span>
+        ${c?'<a class="button release" target="_blank" rel="noopener" href="'+rel+'">Release</a>':'<a class="button" target="_blank" rel="noopener" href="'+claim+'">CLAIM THIS → GITHUB</a>'}
+        <span class="note">${c?'Only the current holder can release it.':'GitHub opens in a new tab; click Submit new issue and wait for CLAIM CONFIRMED.'}</span>
       </div>
     </article>`
   }).join('');

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SHOW ME Topic Claim | ECON 238</title>
+<style>
+:root{--navy:#063a66;--green:#18794e;--gold:#8a5b00;--red:#b00020;--ink:#15202b;--muted:#667085;--line:#d9e0e7;--bg:#eef2f6}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink)}
+.wrap{max-width:1180px;margin:auto;background:#fff;min-height:100vh;box-shadow:0 0 24px #0002}
+header{background:var(--navy);color:#fff;padding:34px 28px 30px}header h1{font-size:clamp(2.2rem,5vw,4.5rem);margin:0;letter-spacing:-.04em}
+header p{max-width:820px;font-size:1.1rem;line-height:1.5;margin:10px 0 0}.tag{font-weight:800;letter-spacing:.12em;font-size:.8rem;text-transform:uppercase;color:#cfe8ff}
+main{padding:24px 28px 48px}.rules{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px}.rule{border:1px solid var(--line);border-radius:12px;padding:14px;background:#fafbfc}.rule strong{display:block;color:var(--navy);margin-bottom:4px}
+.custom{border:3px solid var(--gold);background:#fffaf0;border-radius:14px;padding:18px;margin:16px 0 22px}.custom h2{margin:0 0 6px;color:#7a5100}
+.button{display:inline-block;background:var(--navy);color:#fff;text-decoration:none;padding:10px 14px;border-radius:8px;font-weight:800;border:0;cursor:pointer}.button.custom-btn{background:var(--gold)}.button.release{background:#fff;color:var(--red);border:1px solid #e7aab6;padding:7px 10px;font-size:.82rem}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}.toolbar input,.toolbar select{padding:11px;border:1px solid #b8c2cc;border-radius:8px;font-size:1rem}.toolbar input{flex:1;min-width:240px}.count{margin-left:auto;align-self:center;font-weight:700;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.card{border:1px solid var(--line);border-left:7px solid var(--green);border-radius:10px;padding:15px;background:#fff}.card.claimed{border-left-color:#9aa4ae;background:#f7f8f9}
+.id{font-size:.78rem;font-weight:900;letter-spacing:.08em;color:var(--navy)}.cat{font-size:.75rem;text-transform:uppercase;color:var(--muted);font-weight:700;margin-left:8px}.card h3{margin:5px 0 7px;font-size:1.05rem}.card p{font-size:.9rem;line-height:1.4;margin:0 0 12px}.status{font-size:.82rem;font-weight:800;margin-bottom:9px;color:var(--green)}.claimed .status{color:#606a73}.actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.note{font-size:.82rem;color:var(--muted)}
+.custom-list{margin-top:30px;border-top:3px solid var(--navy);padding-top:16px}.custom-item{padding:10px 0;border-bottom:1px solid var(--line)}
+footer{background:#f6f8fa;border-top:1px solid var(--line);padding:20px 28px;color:var(--muted);font-size:.9rem}
+@media(max-width:760px){.rules,.grid{grid-template-columns:1fr}.count{width:100%;margin-left:0}}
+</style>
+</head>
+<body><div class="wrap">
+<header><div class="tag">ECON 238 · Environmental Economics · Fall 2026</div><h1>SHOW ME</h1><p>Choose two investigations. Numbered topics are first-come, first-served. You may use <strong>Create a Topic on My Own</strong> for one of your two investigations.</p></header>
+<main>
+<div class="rules">
+<div class="rule"><strong>Two total</strong>You may hold no more than two active investigations.</div>
+<div class="rule"><strong>First completed claim wins</strong>If someone beats you to a numbered topic, choose another.</div>
+<div class="rule"><strong>One custom topic allowed</strong>The custom option never closes, but each student may use it once.</div>
+</div>
+
+<section class="custom">
+<h2>Create a Topic on My Own</h2>
+<p>Have a better SHOW ME idea? Use this for <strong>one</strong> of your two investigations.</p>
+<a class="button custom-btn" id="custom-link" href="#">CREATE MY OWN TOPIC</a>
+<a class="button release" id="release-custom" href="#">Release my custom topic</a>
+</section>
+
+<div class="toolbar">
+<input id="search" placeholder="Search the investigations…">
+<select id="category"><option value="">All categories</option></select>
+<button class="button" id="refresh">Refresh claims</button>
+<div class="count" id="count"></div>
+</div>
+
+<div class="grid" id="grid"><p>Loading topics…</p></div>
+
+<section class="custom-list">
+<h2>Student-created investigations</h2>
+<div id="custom-list">None yet.</div>
+</section>
+</main>
+<footer>Claiming uses your GitHub account as the receipt. Click a claim button, submit the pre-filled GitHub issue, and the system will confirm or reject the reservation automatically.</footer>
+</div>
+
+<script>
+const REPO='RochesterRizzo/Rizzo-Hours';
+let topics=[],claims={claims:{},custom:[]};
+const enc=encodeURIComponent;
+function issueUrl(title,body){return 'https://github.com/'+REPO+'/issues/new?title='+enc(title)+'&body='+enc(body)}
+document.getElementById('custom-link').href=issueUrl('CUSTOM SHOW ME','Topic title:\n\nWhat I plan to show:\n\n');
+document.getElementById('release-custom').href=issueUrl('RELEASE CUSTOM','Submit this request to release your current custom SHOW ME topic.');
+
+async function load(){
+  const bust='?v='+Date.now();
+  [topics,claims]=await Promise.all([
+    fetch('topics.json'+bust).then(r=>r.json()),
+    fetch('claims.json'+bust).then(r=>r.json())
+  ]);
+  populate();
+  render();
+}
+function populate(){
+  const s=document.getElementById('category');
+  if(s.options.length>1)return;
+  [...new Set(topics.map(t=>t.category))].sort().forEach(c=>{
+    const o=document.createElement('option');o.value=c;o.textContent=c;s.appendChild(o)
+  });
+}
+function render(){
+  const q=document.getElementById('search').value.toLowerCase();
+  const cat=document.getElementById('category').value;
+  const list=topics.filter(t=>(!cat||t.category===cat)&&(!q||(`${t.id} ${t.title} ${t.prompt} ${t.category}`).toLowerCase().includes(q)));
+  const n=Object.keys(claims.claims||{}).length;
+  document.getElementById('count').textContent=n+' claimed · '+(topics.length-n)+' available';
+  document.getElementById('grid').innerHTML=list.map(t=>{
+    const c=(claims.claims||{})[t.id];
+    const claim=issueUrl('CLAIM '+t.id,'I am claiming '+t.id+': '+t.title+'.\n\nSubmit this issue without changing the title.');
+    const rel=issueUrl('RELEASE '+t.id,'Submit this request only if you are the student who currently holds '+t.id+'.');
+    return `<article class="card ${c?'claimed':''}">
+      <div><span class="id">${t.id}</span><span class="cat">${t.category}</span></div>
+      <h3>${t.title}</h3>
+      <p>${t.prompt}</p>
+      <div class="status">${c?'CLAIMED by @'+c.claimed_by:'AVAILABLE'}</div>
+      <div class="actions">
+        ${c?'<a class="button release" href="'+rel+'">Release</a>':'<a class="button" href="'+claim+'">CLAIM THIS</a>'}
+        <span class="note">${c?'Only the current holder can release it.':'GitHub will confirm the reservation.'}</span>
+      </div>
+    </article>`
+  }).join('');
+
+  const custom=(claims.custom||[]).filter(x=>x.active!==false);
+  document.getElementById('custom-list').innerHTML=custom.length
+    ? custom.map(x=>'<div class="custom-item"><strong>'+x.title+'</strong> — @'+x.claimed_by+'<br><span class="note">'+(x.description||'')+'</span></div>').join('')
+    : 'None yet.';
+}
+document.getElementById('search').addEventListener('input',render);
+document.getElementById('category').addEventListener('change',render);
+document.getElementById('refresh').addEventListener('click',load);
+load();
+setInterval(load,30000);
+</script>
+</body></html>

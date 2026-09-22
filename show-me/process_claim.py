@@ -10,10 +10,8 @@ RESULT_PATH = ROOT / "request-result.json"
 def finish(success, message):
     RESULT_PATH.write_text(json.dumps({"success": success, "message": message}, indent=2), encoding="utf-8")
 
-def active_count(claims, user):
-    n = sum(1 for v in claims.get("claims", {}).values() if v.get("claimed_by") == user)
-    n += sum(1 for v in claims.get("custom", []) if v.get("claimed_by") == user and v.get("active", True))
-    return n
+def own_numbered(claims, user):
+    return next((tid for tid, v in claims.get("claims", {}).items() if v.get("claimed_by") == user), None)
 
 def own_custom(claims, user):
     return next((v for v in claims.get("custom", []) if v.get("claimed_by") == user and v.get("active", True)), None)
@@ -35,17 +33,18 @@ now = datetime.now(timezone.utc).isoformat()
 m = re.fullmatch(r"CLAIM\s+([A-Z]+-\d+)", title, re.I)
 if m:
     tid = m.group(1).upper()
+    existing = own_numbered(claims, user)
     if tid not in topics:
         finish(False, f"I could not find **{tid}** in the SHOW ME topic list.")
     elif tid in claims["claims"]:
         owner = claims["claims"][tid]["claimed_by"]
         finish(False, f"**{tid}** has already been claimed by **@{owner}**. Choose another available investigation.")
-    elif active_count(claims, user) >= 2:
-        finish(False, "You already have two active SHOW ME investigations. Release one before claiming another.")
+    elif existing:
+        finish(False, f"You already have your one required topic from the class list: **{existing}**. Release it before choosing a different numbered topic.")
     else:
         claims["claims"][tid] = {"claimed_by": user, "claimed_at": now}
         CLAIMS_PATH.write_text(json.dumps(claims, indent=2, sort_keys=True) + "\n", encoding="utf-8")
-        finish(True, f"**CLAIM CONFIRMED:** {tid} — {topics[tid]['title']} is reserved for **@{user}**. Save this issue as your receipt.")
+        finish(True, f"**CLAIM CONFIRMED:** {tid} — {topics[tid]['title']} is reserved for **@{user}**. This is your required topic from the class list. Save this issue as your receipt.")
 else:
     m = re.fullmatch(r"RELEASE\s+([A-Z]+-\d+)", title, re.I)
     if m:
@@ -58,19 +57,17 @@ else:
         else:
             del claims["claims"][tid]
             CLAIMS_PATH.write_text(json.dumps(claims, indent=2, sort_keys=True) + "\n", encoding="utf-8")
-            finish(True, f"**{tid}** has been released and is available again.")
+            finish(True, f"**{tid}** has been released and is available again. You still need one topic from the class list.")
     elif title.upper() == "CUSTOM SHOW ME":
-        if active_count(claims, user) >= 2:
-            finish(False, "You already have two active SHOW ME investigations. Release one before creating a custom topic.")
-        elif own_custom(claims, user):
-            finish(False, "You already used your one **Create a Topic on My Own** slot.")
+        if own_custom(claims, user):
+            finish(False, "You already have your required **Create a Topic on My Own** investigation. Release it before replacing it with a different custom topic.")
         else:
             tm = re.search(r"(?im)^\s*Topic title:\s*(.+?)\s*$", body)
             dm = re.search(r"(?ims)^\s*What I plan to show:\s*(.+?)(?:\n\s*\n|\Z)", body)
             custom_title = tm.group(1).strip() if tm else ""
             description = dm.group(1).strip() if dm else ""
             if not custom_title or not description:
-                finish(False, "For a custom investigation, fill in both **Topic title:** and **What I plan to show:**, then submit a new request.")
+                finish(False, "For your own investigation, fill in both **Topic title:** and **What I plan to show:**, then submit a new request.")
             else:
                 cid = f"CUSTOM-{user}"
                 claims["custom"].append({
@@ -82,14 +79,14 @@ else:
                     "active": True
                 })
                 CLAIMS_PATH.write_text(json.dumps(claims, indent=2, sort_keys=True) + "\n", encoding="utf-8")
-                finish(True, f"**CUSTOM TOPIC CONFIRMED:** {custom_title} is reserved for **@{user}** and counts as one of your two SHOW ME investigations.")
+                finish(True, f"**CUSTOM TOPIC CONFIRMED:** {custom_title} is reserved for **@{user}**. This is your required student-created SHOW ME investigation.")
     elif title.upper() == "RELEASE CUSTOM":
         item = own_custom(claims, user)
         if not item:
-            finish(False, "You do not currently have an active custom SHOW ME investigation.")
+            finish(False, "You do not currently have an active student-created SHOW ME investigation.")
         else:
             item["active"] = False
             CLAIMS_PATH.write_text(json.dumps(claims, indent=2, sort_keys=True) + "\n", encoding="utf-8")
-            finish(True, "Your custom SHOW ME investigation has been released. You may now create a different custom topic.")
+            finish(True, "Your student-created SHOW ME investigation has been released. You still need to create one topic of your own.")
     else:
         finish(False, "This issue was not recognized as a SHOW ME reservation request.")

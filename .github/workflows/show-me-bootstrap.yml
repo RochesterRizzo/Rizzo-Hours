@@ -1,16 +1,16 @@
-name: Bootstrap SHOW ME topics
+name: Sync SHOW ME topics
 
 on:
   push:
     paths:
+      - 'show_me_claim_tool_deploy/app/topics.json'
       - '.github/workflows/show-me-bootstrap.yml'
-      - 'show_me_claim_tool_deploy/show_me_claim_tool.zip'
 
 permissions:
   contents: write
 
 jobs:
-  extract:
+  sync:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -18,18 +18,14 @@ jobs:
           ref: main
           fetch-depth: 0
 
-      - name: Extract current topic list
-        run: |
-          rm -rf /tmp/showme
-          mkdir -p /tmp/showme
-          unzip -q show_me_claim_tool_deploy/show_me_claim_tool.zip -d /tmp/showme
-          cp /tmp/showme/show_me_claim_tool/topics.json show-me/topics.json
+      - name: Sync topic list
+        run: cp show_me_claim_tool_deploy/app/topics.json show-me/topics.json
 
       - name: Save topic list
         run: |
           if ! git diff --quiet -- show-me/topics.json; then
-            git config user.name "SHOW ME Bootstrap Bot"
-            git config user.email "show-me-bootstrap@users.noreply.github.com"
+            git config user.name "SHOW ME Topic Bot"
+            git config user.email "show-me-topic-bot@users.noreply.github.com"
             git add show-me/topics.json
             git commit -m "Refresh SHOW ME topic list"
             git push origin HEAD:main

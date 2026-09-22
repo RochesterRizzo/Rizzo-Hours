@@ -29,7 +29,7 @@ main{padding:24px 30px 52px}
 .toolbar input{flex:1;min-width:240px}
 .stats{font-weight:800;color:var(--muted);margin-left:auto}
 .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
-.card{border:1px solid var(--line);border-radius:13px;background:var(--card);overflow:hidden;display:flex;flex-direction:column;min-height:340px}
+.card{border:1px solid var(--line);border-radius:13px;background:var(--card);overflow:hidden;display:flex;flex-direction:column;min-height:340px}.card[data-example="1"]{border:3px solid var(--navy);box-shadow:0 6px 18px #063a6622}
 .card-cover{aspect-ratio:16/9;background:#dce8f2;overflow:hidden;display:flex;align-items:center;justify-content:center}
 .card-cover img{width:100%;height:100%;object-fit:cover;display:block}
 .example-cover{padding:18px;text-align:center;background:linear-gradient(135deg,#e8f1f8,#fff7df)}
@@ -55,7 +55,7 @@ footer{padding:20px 30px;background:#f6f8fa;border-top:1px solid var(--line);col
 <div class="hero-actions">
 <a class="btn alt" href="https://github.com/RochesterRizzo/Rizzo-Hours/issues/new?template=show-me-museum.yml">SUBMIT / UPDATE MY EXHIBIT</a>
 <a class="btn" href="../">CLAIM / CHECK MY TOPICS</a>
-<a class="btn" href="../example-exhibit/">VIEW THE TEST EXHIBIT</a>
+<a class="btn" href="../example-exhibit/">VIEW THE CLIMATE EXAMPLE</a>
 </div>
 </header>
 
@@ -85,13 +85,13 @@ footer{padding:20px 30px;background:#f6f8fa;border-top:1px solid var(--line);col
 
 <div class="grid" id="grid">
 <article class="card" data-example="1">
-<div class="card-cover example-cover"><b>EXAMPLE<br>ANATOMY OF A SHOW ME</b></div>
+<div class="card-cover"><img src="../example-exhibit/cmip-us-net-zero.svg" alt="CMIP7 U.S. net-zero climate example chart"></div>
 <div class="card-body">
-<div class="badges"><span class="badge">Example</span><span class="badge">Technical test</span></div>
-<h3>What a Working SHOW ME Exhibit Looks Like</h3>
-<p class="hook">A deliberately simple technical exhibit showing the required structure, labels, visual hierarchy, and “open the hood” section.</p>
-<div class="meta">Built by the course · Does not count as a student submission</div>
-<a class="enter" href="../example-exhibit/">ENTER EXHIBIT →</a>
+<div class="badges"><span class="badge" style="background:#f2c14e;color:#3c2a00">FEATURED EXAMPLE</span><span class="badge">Climate &amp; Models</span></div>
+<h3>If the U.S. went net-zero, how much would global warming change?</h3>
+<p class="hook">If the rest of the world stays on the same path, U.S. net-zero alone changes end-of-century warming only modestly in this illustrative CMIP7 comparison.</p>
+<div class="meta">Course example · Does not count as a student submission</div>
+<a class="enter" href="../example-exhibit/">VIEW EXAMPLE →</a>
 </div>
 </article>
 </div>

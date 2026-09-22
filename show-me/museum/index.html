@@ -23,7 +23,7 @@ main{padding:24px 30px 52px}
 .notice>div{padding:14px;border:1px solid var(--line);border-radius:12px;background:#fafbfc}
 .notice strong{display:block;color:var(--navy);margin-bottom:3px}
 .preflight{border:3px solid var(--green);border-radius:14px;padding:18px 20px;margin:22px 0;background:#f4fbf7}
-.preflight h2{margin:0 0 8px;color:#0d5f3a}.checkrow{display:flex;gap:14px;flex-wrap:wrap;font-weight:800}.checkrow span{background:#fff;border:1px solid #a9d1ba;border-radius:8px;padding:8px 10px}
+.preflight h2{margin:0 0 8px;color:#0d5f3a}.submission{border:3px solid var(--navy);border-radius:14px;padding:20px;margin:22px 0;background:#f7fbff}.submission h2{margin:0 0 6px;color:var(--navy)}.submission .step{font-weight:800;color:var(--red);margin:0 0 14px}.submit-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.submit-field{display:flex;flex-direction:column;gap:5px}.submit-field.full{grid-column:1/-1}.submit-field label{font-weight:800;color:var(--navy)}.submit-field input,.submit-field select,.submit-field textarea{font:inherit;padding:10px 11px;border:1px solid #aeb8c3;border-radius:8px;background:#fff}.submit-field textarea{min-height:82px;resize:vertical}.submit-note{font-size:.88rem;color:var(--muted);line-height:1.45}.submission button{margin-top:14px;border:0;cursor:pointer}.checkrow{display:flex;gap:14px;flex-wrap:wrap;font-weight:800}.checkrow span{background:#fff;border:1px solid #a9d1ba;border-radius:8px;padding:8px 10px}
 .toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:24px 0 16px}
 .toolbar input,.toolbar select{padding:11px;border:1px solid #b8c2cc;border-radius:8px;font-size:1rem;background:#fff}
 .toolbar input{flex:1;min-width:240px}
@@ -43,7 +43,7 @@ main{padding:24px 30px 52px}
 .backup{border:4px solid var(--red);background:#fff6f7;border-radius:14px;padding:20px;margin-top:32px}.backup h2{color:var(--red);margin:0 0 8px}.backup ol{line-height:1.55;margin-bottom:8px}
 footer{padding:20px 30px;background:#f6f8fa;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
 @media(max-width:960px){.grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:720px){.notice,.grid{grid-template-columns:1fr}.stats{width:100%;margin-left:0}.hero,main,footer{padding-left:18px;padding-right:18px}}
+@media(max-width:720px){.notice,.grid,.submit-grid{grid-template-columns:1fr}.submit-field.full{grid-column:auto}.stats{width:100%;margin-left:0}.hero,main,footer{padding-left:18px;padding-right:18px}}
 </style>
 </head>
 <body>
@@ -53,7 +53,7 @@ footer{padding:20px 30px;background:#f6f8fa;border-top:1px solid var(--line);col
 <h1>SHOW ME Museum</h1>
 <p>Our virtual environmental-economics hallway: two exhibits from every student, one chosen from the class list and one created by the student.</p>
 <div class="hero-actions">
-<a class="btn alt" href="https://github.com/RochesterRizzo/Rizzo-Hours/issues/new?template=show-me-museum.yml">SUBMIT / UPDATE MY EXHIBIT</a>
+<a class="btn alt" href="#submit">SUBMIT / UPDATE MY EXHIBIT</a>
 <a class="btn" href="../">CLAIM / CHECK MY TOPICS</a>
 <a class="btn" href="../example-exhibit/">VIEW THE CLIMATE EXAMPLE</a>
 </div>
@@ -70,7 +70,46 @@ footer{padding:20px 30px;background:#f6f8fa;border-top:1px solid var(--line);col
 <h2>BEFORE YOU SUBMIT</h2>
 <p>Open both URLs in a private/incognito browser window. If you cannot see them without logging in, neither can the Museum.</p>
 <div class="checkrow"><span>✓ PAGE LOADS</span><span>✓ COVER IMAGE LOADS</span><span>✓ EXACT EXHIBIT PAGE</span></div>
-<p style="margin-bottom:0"><a class="btn dark" href="https://github.com/RochesterRizzo/Rizzo-Hours/issues/new?template=show-me-museum.yml">SUBMIT / UPDATE MY EXHIBIT →</a></p>
+<p style="margin-bottom:0"><a class="btn dark" href="#submit">SUBMIT / UPDATE MY EXHIBIT →</a></p>
+</section>
+
+
+<section class="submission" id="submit">
+<h2>Submit / update an exhibit</h2>
+<p class="step">Fill this out HERE. GitHub is only the final confirmation click.</p>
+<div class="submit-grid">
+<div class="submit-field">
+<label for="m-type">Exhibit type</label>
+<select id="m-type">
+<option value="CLASS LIST — my required topic from the class list">CLASS LIST — my required topic from the class list</option>
+<option value="MY OWN — my required student-created topic">MY OWN — my required student-created topic</option>
+</select>
+</div>
+<div class="submit-field">
+<label for="m-topic">Class-list Topic ID</label>
+<input id="m-topic" placeholder="Example: CLIM-03">
+<div class="submit-note">Leave blank for MY OWN.</div>
+</div>
+<div class="submit-field full">
+<label for="m-title">Exhibit title</label>
+<input id="m-title" placeholder="Short title for the Museum card">
+</div>
+<div class="submit-field full">
+<label for="m-url">Exact public exhibit URL</label>
+<input id="m-url" type="url" placeholder="https://username.github.io/repository/exhibit/">
+</div>
+<div class="submit-field full">
+<label for="m-cover">Public cover-image URL</label>
+<input id="m-cover" type="url" placeholder="https://username.github.io/repository/images/cover.png">
+</div>
+<div class="submit-field full">
+<label for="m-hook">One-sentence hook</label>
+<textarea id="m-hook" placeholder="One sentence that makes someone want to click the exhibit."></textarea>
+</div>
+</div>
+<button class="btn dark" id="museum-submit" type="button">CONTINUE TO GITHUB →</button>
+<p class="submit-note"><strong>What happens next:</strong> GitHub opens in a new tab with everything already filled in. Do not change the title or headings. Click <strong>Submit new issue</strong>. Wait about 10–20 seconds for the bot to post <strong>MUSEUM ADDED</strong> or <strong>MUSEUM UPDATED</strong>. Then close the GitHub tab and refresh the Museum.</p>
+<div id="museum-form-error" style="color:#b00020;font-weight:800;margin-top:8px"></div>
 </section>
 
 <div class="toolbar">
@@ -98,7 +137,7 @@ footer{padding:20px 30px;background:#f6f8fa;border-top:1px solid var(--line);col
 
 <section class="section">
 <h2>How Museum submission works</h2>
-<p><strong>1.</strong> Finish your public exhibit. <strong>2.</strong> Click <strong>SUBMIT / UPDATE MY EXHIBIT</strong>. <strong>3.</strong> Choose CLASS LIST or MY OWN. <strong>4.</strong> Paste the exact public page URL, cover-image URL, title, and hook. <strong>5.</strong> Submit the GitHub form.</p>
+<p><strong>1.</strong> Finish your public exhibit. <strong>2.</strong> Fill out the Museum form above. <strong>3.</strong> Click <strong>CONTINUE TO GITHUB</strong>. <strong>4.</strong> GitHub opens with the submission already filled in. <strong>5.</strong> Click <strong>Submit new issue</strong> and wait for the confirmation comment.</p>
 <p>The Museum automation verifies that your class-list topic belongs to your GitHub account, or that you have an active student-created topic. It then checks that your exhibit and cover image are actually public. If everything passes, it adds your card automatically and leaves a confirmation receipt on your GitHub issue.</p>
 </section>
 
@@ -150,6 +189,39 @@ The Museum is an index. Student exhibits remain hosted on their own public pages
 </div>
 
 <script>
+
+const REPO='RochesterRizzo/Rizzo-Hours';
+const enc=encodeURIComponent;
+function museumIssueUrl(title,body){
+  return 'https://github.com/'+REPO+'/issues/new?title='+enc(title)+'&body='+enc(body);
+}
+document.getElementById('museum-submit').addEventListener('click',()=>{
+  const type=document.getElementById('m-type').value;
+  const topic=document.getElementById('m-topic').value.trim().toUpperCase();
+  const title=document.getElementById('m-title').value.trim();
+  const url=document.getElementById('m-url').value.trim();
+  const cover=document.getElementById('m-cover').value.trim();
+  const hook=document.getElementById('m-hook').value.trim();
+  const err=document.getElementById('museum-form-error');
+  err.textContent='';
+  if(type.startsWith('CLASS LIST') && !topic){err.textContent='Enter your class-list Topic ID.';return;}
+  if(!title||!url||!cover||!hook){err.textContent='Complete the title, exhibit URL, cover-image URL, and hook.';return;}
+  const body=[
+    '### Exhibit type','',type,'',
+    '### Class-list Topic ID','',topic,'',
+    '### Exhibit title','',title,'',
+    '### Exact public exhibit URL','',url,'',
+    '### Cover-image URL','',cover,'',
+    '### One-sentence hook','',hook,'',
+    '### Preflight check','',
+    '- [x] I opened the exact exhibit URL in a private/incognito window and it loaded without a login.',
+    '- [x] I opened the cover-image URL directly and the image loaded.',
+    '- [x] This is the exact exhibit page, not my repository, profile, or portfolio homepage.'
+  ].join('\n');
+  const issueTitle='MUSEUM SUBMISSION: '+title;
+  window.open(museumIssueUrl(issueTitle,body),'_blank','noopener');
+});
+
 let data={students:{}};
 const grid=document.getElementById('grid');
 const example=grid.innerHTML;

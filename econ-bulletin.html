@@ -149,6 +149,7 @@
 
       <nav class="nav-strip" aria-label="Page sections">
         <a href="#featured">Featured</a>
+        <a href="#tfas-2027">TFAS Summer Internships · Apply by Nov. 5</a>
         <a href="#bbrr">Braddock Bay Raptor Research · Spring 2027</a>
         <a href="#edgeworth">Edgeworth · Oct. 19 · RSVP Oct. 16</a>
         <a href="#active">Active Opportunities</a>
@@ -236,6 +237,26 @@
         </div>
 
         <div class="opportunity-list" id="opportunityList">
+          <article class="opportunity" id="tfas-2027" data-category="internship summer" data-tags="tfas fund american studies summer 2027 internship public policy economics washington dc george mason university scholarships housing government journalism communications international affairs business november 5">
+            <div class="flyer-thumb">TFAS<br>SUMMER 2027<br>WASHINGTON, D.C.<br>INTERNSHIPS</div>
+            <div class="opportunity-body">
+              <h3>TFAS Academic Internship Program — Summer 2027</h3>
+              <p class="date-line">June 2–July 31, 2027 · Washington, D.C. · Internship / Summer Program</p>
+              <p>The Fund for American Studies offers eight weeks combining a <strong>guaranteed internship, credit-bearing George Mason University courses, and furnished housing</strong>, plus professional development, site briefings, and networking.</p>
+              <p>Economics students should look at the <a href="https://www.dcinternships.org/program/public-policy-economics-academic-internship-program-in-washington-dc/">Public Policy &amp; Economics track</a>. Other tracks cover international affairs, journalism and communications, and business and government relations.</p>
+              <p style="color:#b00020"><strong>Early application deadline: November 5, 2026.</strong></p>
+              <p><strong>Scholarships:</strong> TFAS advertises more than 80 full scholarships and hundreds of partial awards. Program fees apply; submit your scholarship request with your admissions application.</p>
+              <p><strong>Eligibility:</strong> At least 18 years old, a high-school graduate, and at least one completed semester of undergraduate study at an accredited college or university.</p>
+              <p><strong>Other deadlines:</strong> January 8, 2027 (priority); February 8, 2027 (final). Applicants needing a J-1 visa have an October 8, 2026 deadline; see TFAS admissions for international eligibility.</p>
+              <p><span class="tag green">Internship</span><span class="tag blue">Summer 2027</span><span class="tag orange">Scholarships</span></p>
+              <div class="button-row">
+                <a class="button" href="https://summer.apply.dcinternships.org/" target="_blank" rel="noopener noreferrer">Apply for Summer 2027</a>
+                <a class="button secondary" href="https://www.dcinternships.org/admissions/" target="_blank" rel="noopener noreferrer">Admissions &amp; Scholarships</a>
+                <a class="button light" href="https://tfas.api.451.io/v2/notifications/viewer/email/BB8883F4345F426FB0FC8CB4C92C96B7" target="_blank" rel="noopener noreferrer">TFAS Announcement</a>
+              </div>
+              <p style="margin-top:14px">Questions: <a href="mailto:admissions@tfas.org">admissions@TFAS.org</a> · <a href="tel:2029860384">202.986.0384</a></p>
+            </div>
+          </article>
 <article class="opportunity" id="edgeworth" data-category="event" data-tags="economic consulting edgeworth jobs internship full time recruiting resume interviews economics mathematics statistics data science october 2026">
 <div class="flyer-thumb"><a href="bulletin-files/edgeworth-info-session-2026-10-19.pdf" style="color:white">INSIDE EDGEWORTH<br>OCTOBER 19, 2026<br>View flyer (PDF)</a></div>
 <div class="opportunity-body"><h3>Inside Edgeworth – The Work, the People, the Culture</h3>
@@ -295,6 +316,7 @@
 
       <section id="summer">
         <h2>Summer Programs</h2>
+        <p><a href="#tfas-2027"><strong>TFAS Academic Internship Program — Summer 2027:</strong></a> Eight weeks in Washington, D.C., with an internship, courses, housing, and scholarship opportunities. Early deadline: November 5, 2026.</p>
         <p>Use this section for recurring summer programs, research experiences, policy institutes, economics training programs, and programs students should know about early.</p>
         <div class="archive-note"><strong>Update strategy:</strong> When summer postings are active, put them in “Active Opportunities.” After deadlines pass, move them here or into the archive so students can plan for next year.</div>
       </section>
@@ -411,7 +433,7 @@
         const cardCategory = card.dataset.category || "";
         const searchableText = normalize(card.innerText + " " + (card.dataset.tags || ""));
         const matchesQuery = !query || searchableText.includes(query);
-        const matchesCategory = category === "all" || cardCategory === category;
+        const matchesCategory = category === "all" || cardCategory.split(/\s+/).includes(category);
 
         if (matchesQuery && matchesCategory) {
           card.style.display = "";

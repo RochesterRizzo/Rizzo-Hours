@@ -1,4 +1,9 @@
 {
-  "claims": {},
+  "claims": {
+    "CLIM-16": {
+      "claimed_at": "2026-09-23T20:07:47.322924+00:00",
+      "claimed_by": "mscholz3-svg"
+    }
+  },
   "custom": []
 }

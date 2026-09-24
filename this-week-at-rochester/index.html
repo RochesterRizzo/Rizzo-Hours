@@ -5,79 +5,134 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>This Week at Rochester · Rizzo Hours</title>
 <style>
-:root{--n:#063a66;--o:#ff965f;--r:#d40000;--l:#d7d7d7}
+:root{--n:#063a66;--o:#ff965f;--r:#b21f2d;--g:#2f7d57;--l:#d7d7d7;--ink:#171717}
 *{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#e9edf2;color:#111}
+body{margin:0;font-family:Arial,sans-serif;background:#e9edf2;color:var(--ink)}
 .page{max-width:1020px;margin:auto;background:#fff;min-height:100vh;box-shadow:0 0 24px #0002}
-header{background:var(--n);color:#fff;padding:24px}
+header{background:var(--n);color:#fff;padding:26px 24px}
 header h1{margin:0;font-size:clamp(1.8rem,4vw,2.8rem)}
-header p{margin:8px 0 0}
-header a{color:#fff}
+header p{margin:8px 0 0;line-height:1.45}
 main{padding:22px}
+a{color:#064fa3}
 .picks{border:1px solid #c8d8e8;border-top:7px solid var(--n);border-radius:12px;background:#f7fbff;padding:18px;margin-bottom:24px}
-.picks h2{margin:0 0 12px;color:var(--n)}
-.pick{padding:11px 0;border-top:1px solid #dce6ef}
+.picks h2{margin:0 0 5px;color:var(--n)}
+.picks>p{margin:0 0 12px;color:#555}
+.pick{padding:12px 0;border-top:1px solid #dce6ef}
 .pick:first-of-type{border-top:0}
-.pick small{font-weight:900;text-transform:uppercase;letter-spacing:.07em;color:#9b2c2c}
-.pick h3{margin:3px 0;color:#063a66}
-.day{margin:26px 0 8px;padding-bottom:6px;border-bottom:3px solid var(--o);color:var(--n)}
+.pick small,.label{font-size:.72rem;font-weight:900;text-transform:uppercase;letter-spacing:.07em;color:var(--r)}
+.pick h3{margin:3px 0 5px;font-size:1.06rem}
+.pick h3 a{color:var(--n);text-decoration:none}
+.pick h3 a:hover{text-decoration:underline}
+.pick p{margin:0;line-height:1.42;color:#444}
+.day{margin:28px 0 10px;padding-bottom:6px;border-bottom:3px solid var(--o);color:var(--n);font-size:1.35rem}
 .event{border:1px solid var(--l);border-radius:9px;padding:13px 15px;margin:10px 0;background:#fafafa}
-.event b{color:var(--n)}
+.event .label{display:block;margin-bottom:4px}
+.event h3{font-size:1rem;margin:0 0 5px;line-height:1.3}
+.event h3 a{color:var(--n);text-decoration:none}
+.event h3 a:hover{text-decoration:underline}
+.event p{margin:4px 0;line-height:1.4}
+.flag{display:inline-block;font-size:.72rem;font-weight:900;letter-spacing:.04em;text-transform:uppercase;padding:3px 6px;border-radius:4px;background:#e8f4ec;color:#1e6743;margin-right:5px}
+.flag.ticket{background:#fff0dd;color:#8a4700}.flag.rsvp{background:#fff5cc;color:#745500}.flag.warn{background:#ffe1e1;color:#8e0000}
+.source-health{margin-top:30px;border:1px solid #ddd;border-left:7px solid #777;border-radius:9px;background:#f6f6f6;padding:16px}
+.source-health h2{margin:0 0 8px;color:#444}
+.source-health li{margin:7px 0;line-height:1.4}
 .back{display:inline-block;margin-top:26px;background:var(--n);color:#fff;text-decoration:none;padding:10px 13px;border-radius:8px;font-weight:700}
+@media(max-width:650px){main{padding:15px}.event,.picks{padding:14px}header{padding:22px 18px}}
 </style>
 </head>
 <body>
 <div class="page">
 <header>
 <h1>This Week at Rochester</h1>
-<p>Thursday, September 24 → Thursday, October 1, 2026 · A selective guide to things worth noticing across the University of Rochester.</p>
+<p><strong>Thursday, September 24 → Thursday, October 1, 2026</strong><br>A selective guide to lectures, music, sports, performances, art, and campus oddities worth leaving your room for.</p>
 </header>
 <main>
 <section class="picks">
 <h2>Staff Picks</h2>
-<div class="pick" id="sat-sports"><small>Saturday</small><h3>Huge home sports day</h3><div>Field hockey, UAA volleyball, men’s soccer and women’s soccer stack up across the day.</div></div>
-<div class="pick" id="eastman-virtuosi"><small>Saturday</small><h3>Eastman Virtuosi I</h3><div>7:30 PM · Kilbourn Hall.</div></div>
-<div class="pick" id="language-city"><small>Monday</small><h3>Language City</h3><div>5:00 PM · Humanities Center. Endangered languages, migration and the multilingual city.</div></div>
-<div class="pick" id="tedx"><small>Wednesday</small><h3>TEDxURochester: reHuman</h3><div>2:30–6:30 PM · Wilson Commons May Room.</div></div>
-<div class="pick" id="edelman"><small>Thursday</small><h3>Alan Edelman · MIT</h3><div>3:30 PM · Hylan 101. Wing Lecture.</div></div>
+<p>Seven things especially worth noticing this week.</p>
+<div class="pick" id="hugo-mccloud"><small>Saturday · Art / Talk</small><h3><a href="https://mag.rochester.edu/event/meet-the-artist-hugo-mccloud/" target="_blank" rel="noopener noreferrer">Meet the Artist: Hugo McCloud</a></h3><p>Noon at MAG. The artist behind MAG’s new exhibition talks about paintings made with materials including single-use plastic, foil, and tar paper. <strong>FREE · registration required.</strong></p></div>
+<div class="pick" id="sat-sports"><small>Saturday · Sports</small><h3><a href="https://uofrathletics.com/sports/2026/8/4/2026-uaa-round-robin-1.aspx" target="_blank" rel="noopener noreferrer">A ridiculous home-sports pileup</a></h3><p>Field hockey vs. Tufts at 10; volleyball vs. Chicago at 11 and Carnegie Mellon at 1; men’s soccer vs. York at 12:30; women’s soccer vs. Misericordia at 3.</p></div>
+<div class="pick" id="eastman-virtuosi"><small>Saturday · Music</small><h3><a href="https://www.esm.rochester.edu/esm-event/faculty-artist-series-eastman-virtuosi-i/" target="_blank" rel="noopener noreferrer">Eastman Virtuosi I</a></h3><p>7:30 PM, Kilbourn Hall. Eastman faculty performing with outstanding students. <strong>TICKETED · livestream available.</strong></p></div>
+<div class="pick" id="synthposium"><small>Sunday · Music / Technology</small><h3><a href="https://events.rochester.edu/event/synthposium-day-2" target="_blank" rel="noopener noreferrer">Synthposium: Moog, Chowning, and the history of synthesis</a></h3><p>1–3 PM, Computer Studies Building 616. Michelle Moog-Koussa and electronic-music pioneer John Chowning. <strong>FREE.</strong></p></div>
+<div class="pick" id="language-city"><small>Monday · Talk</small><h3><a href="https://events.rochester.edu/event/language-city-the-fight-to-preserve-endangered-mother-tongues-in-new-york-and-beyond" target="_blank" rel="noopener noreferrer">Language City</a></h3><p>5 PM, Humanities Center. New York’s astonishing linguistic diversity, endangered mother tongues, migration, and the project that mapped 700+ languages in NYC.</p></div>
+<div class="pick" id="trade-war"><small>Tuesday · Economics</small><h3><a href="https://www.sas.rochester.edu/eco/" target="_blank" rel="noopener noreferrer">The U.S.–Canada Trade War</a></h3><p>6–7 PM, Morey 321, with a reception afterward. The Economics Department’s featured event for September 29.</p></div>
+<div class="pick" id="tedx"><small>Wednesday · Talks</small><h3><a href="https://events.rochester.edu/event/tedx-university-of-rochester" target="_blank" rel="noopener noreferrer">TEDxURochester: reHuman</a></h3><p>2:30–6:30 PM, Wilson Commons May Room. Student-organized talks on the human side of design, innovation, and creativity. <strong>FREE.</strong></p></div>
 </section>
 
 <h2 class="day">Thursday, September 24</h2>
-<div class="event"><b>Data Bloom: Data Visualization with RStudio</b> · 3:00–4:30 PM · Virtual.</div>
-<div class="event"><b>Stan van Rompay, organ</b> · 7:00 PM · Christ Church · Free.</div>
-<div class="event"><b>Composers’ Concert</b> · 7:30 PM · Hatch Recital Hall · Free.</div>
+<div class="event"><span class="label">Talks / Lectures</span><h3><a href="https://events.rochester.edu/event/coffee-with-homer" target="_blank" rel="noopener noreferrer">Coffee with Homer</a></h3><p><strong>9:00 AM · Wilson Commons 409.</strong> An informal conversation about Homer’s <em>Iliad</em>.</p></div>
+<div class="event"><span class="label">Talks / Workshops</span><h3><a href="https://events.rochester.edu/event/data-bloom-data-visualization-with-rstudio" target="_blank" rel="noopener noreferrer">Data Bloom: Data Visualization with RStudio</a></h3><p><strong>3:00–4:30 PM · Virtual.</strong> River Campus Libraries workshop on building visualizations in RStudio. <span class="flag rsvp">Register</span></p></div>
+<div class="event"><span class="label">Arts / Other</span><h3><a href="https://events.rochester.edu/event/fall-2026-writers-lounge" target="_blank" rel="noopener noreferrer">Fall Writer’s Lounge</a></h3><p><strong>5:00–7:00 PM · Rush Rhees Library, Humanities Center Lounge.</strong> Casual writing, conversation, feedback, and refreshments.</p></div>
+<div class="event"><span class="label">Music</span><h3><a href="https://www.esm.rochester.edu/esm-event/student-degree-recital-stan-van-rompay-organ/" target="_blank" rel="noopener noreferrer">Stan van Rompay, organ</a></h3><p><strong>7:00 PM · Christ Church.</strong> Student degree recital. <span class="flag">Free</span></p></div>
+<div class="event"><span class="label">Music</span><h3><a href="https://events.rochester.edu/event/esl-rochester-fringe-festival-composers-concert-featuring-eastman-student-composers" target="_blank" rel="noopener noreferrer">Composers’ Concert: Eastman Student Composers</a></h3><p><strong>7:30–8:45 PM · Hatch Recital Hall.</strong> New music written entirely by Eastman student composers. <span class="flag">Free</span></p></div>
+<div class="event"><span class="label">Theater / Dance</span><h3><a href="https://rochesterfringe.com/tickets-and-shows/biodances-20th-anniversary" target="_blank" rel="noopener noreferrer">BIODANCE’s 20th Anniversary</a></h3><p><strong>8:00 PM · School of the Arts, Allen Main Stage.</strong> Anniversary repertory, new work, returning performers, and multimedia collaboration. <span class="flag ticket">$15</span></p></div>
 
 <h2 class="day">Friday, September 25</h2>
-<div class="event"><b>GIDS-AI Fall Research Symposium</b> · 2:00–3:00 PM · Wegmans 1400.</div>
-<div class="event"><b>SAB Premiere Event: Primetime</b> · 6:20–10:00 PM.</div>
+<div class="event"><span class="label">Talks / Lectures</span><h3><a href="https://events.rochester.edu/event/global-citizenship-from-the-rust-belt-education-labor-and-south-asia" target="_blank" rel="noopener noreferrer">Global Citizenship from the Rust Belt: Education, Labor, and South Asia</a></h3><p><strong>Noon–7:00 PM · Humanities Center Conference Room D.</strong> Interdisciplinary conference connecting Rochester, labor, education, and South Asia. <span class="flag">Free</span></p></div>
+<div class="event"><span class="label">Talks / Lectures</span><h3><a href="https://events.rochester.edu/event/reimagining-peer-review-mini-symposium" target="_blank" rel="noopener noreferrer">Reimagining Peer Review Mini-Symposium</a></h3><p><strong>1:00–4:00 PM · SMD Lower Adolph Auditorium.</strong> How scholarly peer review might be redesigned. <span class="flag rsvp">Register</span></p></div>
+<div class="event"><span class="label">Talks / Lectures</span><h3><a href="https://events.rochester.edu/event/giids-ai-fall-research-symposium-benjamin-castaneda-and-sean-crowell" target="_blank" rel="noopener noreferrer">GIDS-AI Fall Research Symposium</a></h3><p><strong>2:00–3:00 PM · Wegmans 1400 + livestream.</strong> Benjamín Castañeda on AI-enabled point-of-care ultrasound and Sean Crowell on machine learning for greenhouse-gas remote sensing.</p></div>
+<div class="event"><span class="label">Other Campus Events</span><h3><a href="https://events.rochester.edu/event/iso-community-resource-fair-985" target="_blank" rel="noopener noreferrer">ISO Community Resource Fair</a></h3><p><strong>2:00–4:00 PM · Feldman Ballroom, Douglass Commons.</strong> Community organizations, resources, refreshments, and raffle. <span class="flag">Free</span></p></div>
+<div class="event"><span class="label">Theater / Dance</span><h3><a href="https://events.rochester.edu/event/krumping-workshop-with-vil" target="_blank" rel="noopener noreferrer">Krumping Workshop with VIL</a></h3><p><strong>4:00–5:00 PM · Todd Theater, Sloan Studio.</strong> Workshop with Elton Ward (VIL). <span class="flag">Free</span></p></div>
+<div class="event"><span class="label">Other Campus Events</span><h3><a href="https://ccc.rochester.edu/sab/rsvp_boot?id=1967810" target="_blank" rel="noopener noreferrer">SAB Premiere Event: <em>Primetime</em></a></h3><p><strong>6:20–10:00 PM.</strong> Bus from Rush Rhees to Regal Eastview for the movie’s release-day screening. <span class="flag rsvp">CCC sign-in / registration</span></p></div>
+<div class="event"><span class="label">Music</span><h3><a href="https://www.esm.rochester.edu/esm-event/student-degree-recital-kevin-jin-clarinet/" target="_blank" rel="noopener noreferrer">Kevin Jin, clarinet</a></h3><p><strong>6:30 PM · Hatch Recital Hall.</strong> Student degree recital; livestream available. <span class="flag">Free</span></p></div>
+<div class="event"><span class="label">Music / Comedy</span><h3><a href="https://www.esm.rochester.edu/esm-event/2026-esl-rochester-fringe-festival-comedy-headliner-pete-davidson/" target="_blank" rel="noopener noreferrer">Rochester Fringe Headliner: Pete Davidson</a></h3><p><strong>8:00 PM · Kodak Hall at Eastman Theatre.</strong> <span class="flag ticket">Ticketed</span></p></div>
 
 <h2 class="day">Saturday, September 26</h2>
-<div class="event"><b>Field Hockey vs. Tufts</b> · Home · 10:00 AM · Fauver Stadium.</div>
-<div class="event"><b>UAA Volleyball</b> · Home · Chicago 11:00 AM; Carnegie Mellon 1:00 PM · Palestra.</div>
-<div class="event"><b>Men’s Soccer vs. York (Pa.)</b> · Home · 12:30 PM.</div>
-<div class="event"><b>Women’s Soccer vs. Misericordia</b> · Home · 3:00 PM · Fauver Stadium.</div>
-<div class="event"><b>Eastman Virtuosi I</b> · 7:30 PM · Kilbourn Hall.</div>
+<div class="event"><span class="label">Sports</span><h3><a href="https://uofrathletics.com/sports/field-hockey/schedule/2026?grid=true" target="_blank" rel="noopener noreferrer">Field Hockey vs. Tufts</a></h3><p><strong>HOME · 10:00 AM · Edwin Fauver Stadium.</strong></p></div>
+<div class="event"><span class="label">Sports</span><h3><a href="https://uofrathletics.com/sports/2026/8/4/2026-uaa-round-robin-1.aspx" target="_blank" rel="noopener noreferrer">UAA Volleyball Round Robin #1</a></h3><p><strong>HOME · Louis Alexander Palestra.</strong> Rochester vs. Chicago at <strong>11:00 AM</strong>; Rochester vs. Carnegie Mellon at <strong>1:00 PM</strong>.</p></div>
+<div class="event"><span class="label">Arts / Talks</span><h3><a href="https://mag.rochester.edu/event/meet-the-artist-hugo-mccloud/" target="_blank" rel="noopener noreferrer">Meet the Artist: Hugo McCloud</a></h3><p><strong>Noon–1:00 PM · Memorial Art Gallery Auditorium.</strong> Conversation with McCloud and curator Timothy Peterson. <span class="flag">Free</span><span class="flag rsvp">Registration required</span></p></div>
+<div class="event"><span class="label">Sports</span><h3><a href="https://uofrathletics.com/sports/mens-soccer/schedule/2026?grid=true" target="_blank" rel="noopener noreferrer">Men’s Soccer vs. York (Pa.)</a></h3><p><strong>HOME · 12:30 PM · Edwin Fauver Stadium.</strong></p></div>
+<div class="event"><span class="label">Other Campus Events</span><h3><a href="https://ccc.rochester.edu/iso/rsvp_boot?id=1968414" target="_blank" rel="noopener noreferrer">ISO Rockin’ Tastebuds: Mooncake Making</a></h3><p><strong>2:00–3:00 PM.</strong> Hands-on mooncake workshop with mung bean, matcha, and taro fillings. <span class="flag">Free</span><span class="flag rsvp">RSVP required</span></p></div>
+<div class="event"><span class="label">Sports</span><h3><a href="https://uofrathletics.com/sports/womens-soccer/schedule/2026?grid=true" target="_blank" rel="noopener noreferrer">Women’s Soccer vs. Misericordia</a></h3><p><strong>HOME · 3:00 PM · Edwin Fauver Stadium.</strong></p></div>
+<div class="event"><span class="label">Music</span><h3><a href="https://www.esm.rochester.edu/esm-event/faculty-artist-series-eastman-virtuosi-i/" target="_blank" rel="noopener noreferrer">Eastman Virtuosi I</a></h3><p><strong>7:30 PM · Kilbourn Hall.</strong> Faculty Artist Series; livestream available. <span class="flag ticket">Ticketed</span></p></div>
+<div class="event"><span class="label">Music</span><h3><a href="https://www.esm.rochester.edu/esm-event/opening-night-dvoraks-new-world-symphony/" target="_blank" rel="noopener noreferrer">RPO Opening Night: Dvořák’s <em>New World Symphony</em></a></h3><p><strong>7:30 PM · Kodak Hall.</strong> Andreas Delfs conducts; Leila Josefowicz, violin; music by Michael Torke, John Adams, and Dvořák. <span class="flag ticket">Ticketed</span></p></div>
 
 <h2 class="day">Sunday, September 27</h2>
-<div class="event"><b>Volleyball vs. Case Western Reserve</b> · Home · 10:00 AM · Palestra.</div>
-<div class="event"><b>Going for Baroque</b> · 1:30 and 3:00 PM · Memorial Art Gallery · Free.</div>
+<div class="event"><span class="label">Sports</span><h3><a href="https://uofrathletics.com/sports/2026/8/4/2026-uaa-round-robin-1.aspx" target="_blank" rel="noopener noreferrer">Volleyball vs. Case Western Reserve</a></h3><p><strong>HOME · 10:00 AM · Louis Alexander Palestra.</strong></p></div>
+<div class="event"><span class="label">Theater / Dance</span><h3><a href="https://events.rochester.edu/event/breaking-workshop-with-swazi" target="_blank" rel="noopener noreferrer">Breaking Workshop with SWAZI</a></h3><p><strong>11:00 AM–noon · Spurrier Gym.</strong> Workshop with Zakhele “SWAZI” Grabowski, a member of Dynamic Rockers and USA Breaking’s youth program. <span class="flag">Free</span></p></div>
+<div class="event"><span class="label">Arts / Other</span><h3><a href="https://events.rochester.edu/event/hispanic-heritage-celebration-day-2026" target="_blank" rel="noopener noreferrer">Hispanic Heritage Celebration Day</a></h3><p><strong>Noon–4:00 PM · Memorial Art Gallery.</strong> Community and cultural tables, music, dance, and presentations. <span class="flag">Free for everyone</span></p></div>
+<div class="event"><span class="label">Music / Technology</span><h3><a href="https://events.rochester.edu/event/synthposium-day-2" target="_blank" rel="noopener noreferrer">Synthposium Day 2</a></h3><p><strong>1:00–3:00 PM · Computer Studies Building 616.</strong> Michelle Moog-Koussa on the Moog legacy and John Chowning on synthesis and electronic music. <span class="flag">Free</span></p></div>
+<div class="event"><span class="label">Music</span><h3><a href="https://www.esm.rochester.edu/esm-event/going-for-baroque-57/" target="_blank" rel="noopener noreferrer">Going for Baroque</a></h3><p><strong>1:30 PM and 3:00 PM · Memorial Art Gallery.</strong> Short weekly organ mini-recitals. <span class="flag">Free</span></p></div>
 
 <h2 class="day">Monday, September 28</h2>
-<div class="event"><b>Language City</b> · 5:00–6:00 PM · Humanities Center Conference Room D.</div>
-<div class="event"><b>Eastman Philharmonia</b> · 7:30 PM · Kodak Hall · Free.</div>
+<div class="event"><span class="label">Talks / Lectures</span><h3><a href="https://events.rochester.edu/event/department-of-biology-seminar-4740" target="_blank" rel="noopener noreferrer">Biology Seminar: Mary Mullins</a></h3><p><strong>Noon–1:00 PM · Hutchison 140.</strong> “Integrator transcriptional repression and BMP signaling in early vertebrate development.”</p></div>
+<div class="event"><span class="label">Talks / Lectures</span><h3><a href="https://events.rochester.edu/event/language-city-the-fight-to-preserve-endangered-mother-tongues-in-new-york-and-beyond" target="_blank" rel="noopener noreferrer">Language City: The Fight to Preserve Endangered Mother Tongues</a></h3><p><strong>5:00–6:00 PM · Humanities Center Conference Room D.</strong> Linguistic diversity, migration, and endangered languages in New York and beyond.</p></div>
+<div class="event"><span class="label">Talks / Lectures</span><h3><a href="https://events.rochester.edu/event/indigenous-veneration-of-dionysos-in-pre-roman-southern-italy" target="_blank" rel="noopener noreferrer">Discerning Dionysos</a></h3><p><strong>5:00–6:30 PM · Hawkins-Carlson Room.</strong> Indigenous veneration of Dionysos in pre-Roman southern Italy. <em>Conflicts with Language City.</em></p></div>
+<div class="event"><span class="label">Music</span><h3><a href="https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-09-20" target="_blank" rel="noopener noreferrer">Eastman Philharmonia</a></h3><p><strong>7:30 PM · Kodak Hall at Eastman Theatre.</strong> <span class="flag">Free</span> Livestream available.</p></div>
 
 <h2 class="day">Tuesday, September 29</h2>
-<div class="event"><b>Tuesday Pipes</b> · 12:10 PM · Christ Church · Free.</div>
-<div class="event"><b>Taco Tuesday with a Trustee</b> · 6:00–7:30 PM.</div>
+<div class="event"><span class="label">Music</span><h3><a href="https://www.esm.rochester.edu/organ/events/tuesday-pipes/" target="_blank" rel="noopener noreferrer">Tuesday Pipes</a></h3><p><strong>12:10 PM · Christ Church.</strong> Lunchtime organ recital. <span class="flag">Free</span></p></div>
+<div class="event"><span class="label">Talks / Lectures</span><h3><a href="https://events.rochester.edu/event/convents-in-context-understanding-the-strict-rule-followed-by-sixteenth-century-conceptionist-nuns-by-claire-becker" target="_blank" rel="noopener noreferrer">Convents in Context</a></h3><p><strong>12:30–2:00 PM · Humanities Center Conference Room D.</strong> Claire Becker on the strict rule followed by sixteenth-century Conceptionist nuns.</p></div>
+<div class="event"><span class="label">Talks / Economics</span><h3><a href="https://www.sas.rochester.edu/eco/" target="_blank" rel="noopener noreferrer">The U.S.–Canada Trade War</a></h3><p><strong>6:00–7:00 PM · Morey 321.</strong> Economics Department event; reception follows.</p></div>
+<div class="event"><span class="label">Other Campus Events</span><h3><a href="https://ccc.rochester.edu/arce/rsvp_boot?id=1965565" target="_blank" rel="noopener noreferrer">Taco Tuesday with a Trustee: Evans Lam ’83, ’84S (MBA)</a></h3><p><strong>6:00–7:30 PM · Carol Simon Hall, Lam bizHub.</strong> Conversation on leadership, careers, internships, and student success, with a taco bar. <span class="flag">Free</span><span class="flag rsvp">RSVP required; deadline Sept. 24 at 5 PM</span></p></div>
+<div class="event"><span class="label">Music</span><h3><a href="https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-09-20" target="_blank" rel="noopener noreferrer">Matthew Luca, organ</a></h3><p><strong>7:00 PM · St. Paul’s Episcopal Church.</strong> Student degree recital. <span class="flag">Free</span></p></div>
+<div class="event"><span class="label">Music</span><h3><a href="https://boxoffice.esm.rochester.edu/theatre/events/" target="_blank" rel="noopener noreferrer">Faculty Artist Series: Brock Tjosvold with Kyrsten Chambers Jones and Ryan Hardcastle</a></h3><p><strong>7:30 PM · Hatch Recital Hall.</strong> <em>Across Time and Space</em>, a recital connecting music, poetry, migration, and storytelling. <span class="flag ticket">Ticketed</span> Livestream available.</p></div>
 
 <h2 class="day">Wednesday, September 30</h2>
-<div class="event"><b>TEDxURochester: reHuman</b> · 2:30–6:30 PM · Wilson Commons May Room · Free.</div>
-<div class="event"><b>Alan Edelman: Make Mathematics Your Playground</b> · 3:30–4:30 PM · Hutchison 140.</div>
-<div class="event"><b>Women’s Soccer vs. RIT</b> · Home · 5:00 PM · Fauver Stadium.</div>
+<div class="event"><span class="label">Talks / Workshops</span><h3><a href="https://events.rochester.edu/event/data-bloom-composing-stories-with-data-and-viz-in-tableau-2397" target="_blank" rel="noopener noreferrer">Data Bloom: Composing Stories with Data and Viz in Tableau</a></h3><p><strong>11:00 AM–12:30 PM · Virtual.</strong> River Campus Libraries workshop. <span class="flag rsvp">Register</span></p></div>
+<div class="event"><span class="label">Talks / Lectures</span><h3><a href="https://events.rochester.edu/event/tedx-university-of-rochester" target="_blank" rel="noopener noreferrer">TEDxURochester: reHuman</a></h3><p><strong>2:30–6:30 PM · Wilson Commons May Room.</strong> Student-organized talks centered on humanity, design, innovation, and creativity. <span class="flag">Free</span></p></div>
+<div class="event"><span class="label">Talks / Lectures</span><h3><a href="https://events.rochester.edu/event/alan-edelmans-wing-lectures-mit" target="_blank" rel="noopener noreferrer">Alan Edelman (MIT): “Make Mathematics Your Playground”</a></h3><p><strong>3:30–4:30 PM · Hutchison 140.</strong> First of Edelman’s G. Milton Wing Lectures.</p></div>
+<div class="event"><span class="label">Sports</span><h3><a href="https://uofrathletics.com/sports/womens-soccer/schedule/2026?grid=true" target="_blank" rel="noopener noreferrer">Women’s Soccer vs. RIT</a></h3><p><strong>HOME · 5:00 PM · Edwin Fauver Stadium.</strong></p></div>
+<div class="event"><span class="label">Talks / Lectures</span><h3><a href="https://www.sas.rochester.edu/jst/" target="_blank" rel="noopener noreferrer">Is Any Embryo an “Unborn Child”? The Ancient Jewish Debate</a></h3><p><strong>5:00–6:30 PM · Hawkins-Carlson Room, Rush Rhees Library.</strong> Center for Jewish Studies event on ancient Jewish debates over embryo status.</p></div>
 
 <h2 class="day">Thursday, October 1</h2>
-<div class="event"><b>Meliora Weekend begins.</b></div>
-<div class="event"><b>Alan Edelman: Symmetric Spaces, Random Matrix Theory, and Numerical Linear Algebra</b> · 3:30–4:30 PM · Hylan 101.</div>
+<div class="event"><span class="label">Other Campus Events</span><h3><a href="https://www.rochester.edu/melioraweekend/" target="_blank" rel="noopener noreferrer">Meliora Weekend begins</a></h3><p><strong>October 1–4.</strong> Alumni, family, reunion, academic, and performance programming begins Thursday; many headline events fall Friday–Sunday. <span class="flag rsvp">Registration</span></p></div>
+<div class="event"><span class="label">Talks / Lectures</span><h3><a href="https://events.rochester.edu/event/hhbe-grand-rounds-a-century-of-american-psychiatry-through-the-eyes-of-one-family" target="_blank" rel="noopener noreferrer">A Century of American Psychiatry Through the Eyes of One Family</a></h3><p><strong>Noon–1:00 PM · SMD 2-6424 + livestream.</strong> Health Humanities and Bioethics Grand Rounds.</p></div>
+<div class="event"><span class="label">Talks / Lectures</span><h3><a href="https://events.rochester.edu/event/cs-seminar-series-frank-ferraro" target="_blank" rel="noopener noreferrer">Computer Science Seminar: Frank Ferraro</a></h3><p><strong>2:00–3:00 PM · Wegmans 1400 + Zoom.</strong> UMBC computer scientist; seminar details are still listed as TBD.</p></div>
+<div class="event"><span class="label">Talks / Lectures</span><h3><a href="https://events.rochester.edu/event/alan-edelmans-wing-lectures-mit-8604" target="_blank" rel="noopener noreferrer">Alan Edelman (MIT): “Symmetric Spaces, Random Matrix Theory, and Numerical Linear Algebra”</a></h3><p><strong>3:30–4:30 PM · Hylan 101.</strong> Second G. Milton Wing Lecture.</p></div>
+<div class="event"><span class="label">Arts / Other</span><h3><a href="https://events.rochester.edu/event/fall-2026-writers-lounge" target="_blank" rel="noopener noreferrer">Fall Writer’s Lounge</a></h3><p><strong>5:00–7:00 PM · Rush Rhees Library, Humanities Center Lounge.</strong> Casual writing and critique session with refreshments.</p></div>
+
+<section class="source-health">
+<h2>Source Health</h2>
+<ul>
+<li><strong>University calendar:</strong> active, but a duplicate listing for Friday’s <em>Reimagining Peer Review</em> incorrectly says <strong>1–4 AM</strong>. The direct event page and River Campus Libraries source confirm <strong>1–4 PM</strong>; that is the time used above.</li>
+<li><strong>Eastman:</strong> active and essential as a separate source. The Cherry Rhodes Celebrity Organ Series concert scheduled for Friday is now explicitly <strong>POSTPONED</strong>, so it is intentionally not promoted here.</li>
+<li><strong>CampusGroups / CCC:</strong> active, but organization landing pages are sometimes stale or thin. Direct RSVP pages remain the more reliable source for events such as Mooncake Making, Primetime, and Taco Tuesday.</li>
+<li><strong>International Theatre Program:</strong> active; no main-stage production falls in this window. <em>Big Love</em> begins October 8.</li>
+<li><strong>Sloan Performing Arts Center:</strong> its venue feed is sparse this week, but Dance and Movement is active elsewhere, including the Friday krumping and Sunday breaking workshops.</li>
+<li><strong>Economics:</strong> active. The department page currently lists the September 25–26 Stockman Alumni Conference and September 29 U.S.–Canada Trade War event.</li>
+</ul>
+</section>
 
 <a class="back" href="../">← Back to Rizzo Hours</a>
 </main>

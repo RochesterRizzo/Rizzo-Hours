@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block title %}{% if custom %}Create a SHOW ME{% else %}Claim {{ topic.id }}{% endif %}{% endblock %}
+{% block content %}
+<section class="narrow">
+  <a class="back" href="{{ url_for('index') }}">← Back to all topics</a>
+
+  {% if custom %}
+    <div class="eyebrow">CREATE A TOPIC ON MY OWN</div>
+    <h1>Build one yourself.</h1>
+    <p class="lede">This option is unlimited across the class, but each student may use it for only one of their two investigations.</p>
+  {% else %}
+    <div class="eyebrow">{{ topic.id }} · {{ topic.category }}</div>
+    <h1>{{ topic.title }}</h1>
+    <p class="lede">{{ topic.prompt }}</p>
+    {% if existing %}
+      <div class="flash error">This topic has already been claimed by {{ display_name(existing.claimant_name) }}.</div>
+    {% endif %}
+  {% endif %}
+
+  {% if custom or not existing %}
+  <form method="post" class="form-card">
+    {% if custom %}
+      <label>
+        Your SHOW ME question
+        <textarea name="custom_title" rows="3" required placeholder="What exactly do you want to SHOW us?"></textarea>
+      </label>
+      <label>
+        What will you change, compare, or construct?
+        <textarea name="custom_plan" rows="4" required placeholder="A sentence or two is enough. Tell us what you plan to manipulate, compare, model, or put in scale."></textarea>
+      </label>
+    {% endif %}
+
+    <div class="two-col">
+      <label>
+        Your name
+        <input name="name" required autocomplete="name">
+      </label>
+      <label>
+        Email
+        <input name="email" type="email" required autocomplete="email">
+      </label>
+    </div>
+
+    <div class="two-col">
+      <label>
+        Section / course
+        <input name="section" placeholder="e.g. ECON 238">
+      </label>
+      <label>
+        Class code
+        <input name="class_code" required autocomplete="off">
+      </label>
+    </div>
+
+    <div class="rule-box">
+      <strong>Two total.</strong> You may hold two active SHOW ME reservations. A custom topic can be one of them, not both.
+    </div>
+
+    <button class="button primary big" type="submit">{% if custom %}Reserve my custom SHOW ME{% else %}Claim {{ topic.id }}{% endif %}</button>
+  </form>
+  {% endif %}
+</section>
+{% endblock %}

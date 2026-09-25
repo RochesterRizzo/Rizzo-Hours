@@ -1,0 +1,54 @@
+name: SHOW ME topic reservations
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: show-me-topic-reservations
+  cancel-in-progress: false
+
+jobs:
+  process:
+    if: >-
+      startsWith(github.event.issue.title, 'CLAIM ') ||
+      startsWith(github.event.issue.title, 'RELEASE ') ||
+      github.event.issue.title == 'CUSTOM SHOW ME' ||
+      github.event.issue.title == 'RELEASE CUSTOM'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Process reservation request
+        run: python show-me/process_claim.py
+
+      - name: Save reservation database
+        run: |
+          if ! git diff --quiet -- show-me/claims.json; then
+            git config user.name "SHOW ME Claim Bot"
+            git config user.email "show-me-claim-bot@users.noreply.github.com"
+            git add show-me/claims.json
+            git commit -m "Update SHOW ME reservations"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+
+      - name: Post receipt and close request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          MESSAGE=$(python -c "import json; print(json.load(open('show-me/request-result.json'))['message'])")
+          gh issue comment "$ISSUE_NUMBER" --body "$MESSAGE"
+          gh issue close "$ISSUE_NUMBER"

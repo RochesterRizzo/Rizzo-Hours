@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+<rect width="1200" height="675" fill="#e8f1f8"/>
+<rect x="40" y="40" width="1120" height="595" rx="26" fill="#ffffff" stroke="#063a66" stroke-width="10"/>
+<text x="600" y="260" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="700" fill="#063a66">SHOW ME</text>
+<text x="600" y="350" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" fill="#18794e">EXAMPLE EXHIBIT</text>
+<text x="600" y="430" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#667085">Technical test of the Museum workflow</text>
+</svg>

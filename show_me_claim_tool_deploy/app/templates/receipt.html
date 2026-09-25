@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}SHOW ME Reserved{% endblock %}
+{% block content %}
+<section class="narrow receipt-page">
+  <div class="success-mark">✓</div>
+  <div class="eyebrow">RESERVATION CONFIRMED</div>
+  <h1>Your SHOW ME is yours.</h1>
+
+  <div class="receipt-card">
+    {% if claim.topic_id %}
+      <div class="topic-id">{{ claim.topic_id }} · {{ claim.category }}</div>
+      <h2>{{ claim.topic_title }}</h2>
+      <p>{{ claim.topic_prompt }}</p>
+    {% else %}
+      <div class="topic-id">CUSTOM SHOW ME</div>
+      <h2>{{ claim.custom_title }}</h2>
+      <p>{{ claim.custom_plan }}</p>
+    {% endif %}
+    <dl>
+      <div><dt>Student</dt><dd>{{ student.name }}</dd></div>
+      <div><dt>Receipt</dt><dd><code>{{ claim.receipt }}</code></dd></div>
+    </dl>
+  </div>
+
+  <div class="important-box">
+    <strong>Save this private management link.</strong>
+    <p>Use it to see both of your reservations, release a topic, or edit your custom topic.</p>
+    <div class="copy-row">
+      <input id="manage-link" readonly value="{{ url_for('manage', token=student.manage_token, _external=True) }}">
+      <button class="button" type="button" data-copy="#manage-link">Copy</button>
+    </div>
+  </div>
+
+  <div class="actions">
+    <a class="button primary" href="{{ url_for('index') }}">Choose my other SHOW ME</a>
+    <a class="button" href="{{ url_for('manage', token=student.manage_token) }}">Manage my reservations</a>
+  </div>
+</section>
+{% endblock %}

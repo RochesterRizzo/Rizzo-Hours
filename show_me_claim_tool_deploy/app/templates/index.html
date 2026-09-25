@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block title %}SHOW ME — Topic Claim{% endblock %}
+{% block content %}
+<section class="hero">
+  <div>
+    <div class="eyebrow">ECO 238 · TOPIC CLAIM</div>
+    <h1>Pick two things worth seeing.</h1>
+    <p class="lede">Numbered SHOW MEs belong to the first student who claims them. You may also create one investigation of your own.</p>
+  </div>
+  <div class="stats">
+    <div><strong>{{ stats.total_topics - stats.standard_claimed }}</strong><span>available</span></div>
+    <div><strong>{{ stats.standard_claimed }}</strong><span>claimed</span></div>
+    <div><strong>{{ stats.students_started }}</strong><span>students started</span></div>
+  </div>
+</section>
+
+<section class="custom-card">
+  <div>
+    <div class="status custom">ALWAYS AVAILABLE</div>
+    <h2>Create a Topic on My Own</h2>
+    <p>Every student may use this option for <strong>one of their two</strong> SHOW ME investigations. Your topic does not block anyone else from creating their own.</p>
+  </div>
+  <a class="button primary" href="{{ url_for('custom_topic') }}">Create mine</a>
+</section>
+
+<section class="toolbar" aria-label="Topic filters">
+  <input id="topic-search" type="search" placeholder="Search topics…" autocomplete="off">
+  <select id="category-filter">
+    <option value="">All categories</option>
+    {% for c in categories %}<option value="{{ c }}">{{ c }}</option>{% endfor %}
+  </select>
+  <button id="available-only" class="button subtle" type="button" aria-pressed="false">Available only</button>
+</section>
+
+<section class="topic-grid" id="topic-grid">
+  {% for t in topics %}
+  <article class="topic-card {% if t.claim_id %}is-claimed{% endif %}" data-title="{{ (t.id ~ ' ' ~ t.title ~ ' ' ~ t.prompt)|lower }}" data-category="{{ t.category }}" data-status="{% if t.claim_id %}claimed{% else %}available{% endif %}">
+    <div class="card-topline">
+      <span class="topic-id">{{ t.id }}</span>
+      {% if t.claim_id %}
+        <span class="status claimed">CLAIMED</span>
+      {% else %}
+        <span class="status available">AVAILABLE</span>
+      {% endif %}
+    </div>
+    <div class="category">{{ t.category }}</div>
+    <h3>{{ t.title }}</h3>
+    <p>{{ t.prompt }}</p>
+    {% if t.claim_id %}
+      <div class="claimed-by">Claimed by {{ display_name(t.claimant_name) }}</div>
+    {% else %}
+      <a class="button" href="{{ url_for('claim_topic', topic_id=t.id) }}">Claim this SHOW ME</a>
+    {% endif %}
+  </article>
+  {% endfor %}
+</section>
+
+<div id="no-results" class="empty" hidden>No SHOW MEs match those filters.</div>
+{% endblock %}

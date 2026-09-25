@@ -1,0 +1,76 @@
+name: SHOW ME Museum submission / update
+description: Submit one finished SHOW ME exhibit to the class Museum, or update an exhibit you already submitted.
+title: "MUSEUM SUBMISSION: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Submit one finished exhibit
+        Use this same form again whenever you need to **update** an existing Museum entry. Your newest accepted submission replaces the older entry in that slot.
+
+        Before submitting, open your exhibit and cover-image URLs in a **private/incognito window**. They must work without logging in.
+
+  - type: dropdown
+    id: exhibit_type
+    attributes:
+      label: Exhibit type
+      description: Every student will eventually submit exactly one of each.
+      options:
+        - CLASS LIST — my required topic from the class list
+        - MY OWN — my required student-created topic
+    validations:
+      required: true
+
+  - type: input
+    id: topic_id
+    attributes:
+      label: Class-list Topic ID
+      description: Required only for your class-list exhibit. Example: CLIM-03, ENERGY-20, RISK-33.
+      placeholder: CLIM-03
+
+  - type: input
+    id: exhibit_title
+    attributes:
+      label: Exhibit title
+      placeholder: A short title a museum visitor would want to click
+    validations:
+      required: true
+
+  - type: input
+    id: exhibit_url
+    attributes:
+      label: Exact public exhibit URL
+      description: Submit the actual public webpage, not your GitHub repository or portfolio homepage.
+      placeholder: https://yourusername.github.io/your-repo/show-me-project/
+    validations:
+      required: true
+
+  - type: input
+    id: cover_url
+    attributes:
+      label: Cover-image URL
+      description: Public URL of the image the Museum should use on your card.
+      placeholder: https://yourusername.github.io/your-repo/images/cover.png
+    validations:
+      required: true
+
+  - type: textarea
+    id: hook
+    attributes:
+      label: One-sentence hook
+      description: One sentence that makes someone want to enter your exhibit.
+      placeholder: "Everyone talks about ______. This exhibit shows what it actually looks like when ______."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Preflight check
+      options:
+        - label: I opened the exact exhibit URL in a private/incognito window and it loaded without a login.
+          required: true
+        - label: I opened the cover-image URL directly and the image loaded.
+          required: true
+        - label: This is the exact exhibit page, not my repository, profile, or portfolio homepage.
+          required: true

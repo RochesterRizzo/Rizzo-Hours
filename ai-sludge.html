@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Sludge: The Politics of Slowing Down a Race Nobody Knows How to Stop | Pr. Rizzo</title>
+  <meta name="description" content="Can the United States actually slow frontier AI, what would a unilateral pause do, and what is Washington most likely to do next?">
+
+  <style>
+    :root {
+      --navy:#063a66;
+      --gold:#ffd166;
+      --green:#2e8b57;
+      --red:#b00020;
+      --ink:#111;
+      --muted:#555;
+      --paper:#f7f7f7;
+      --line:#d7d7d7;
+      --blue:#043ea5;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#e9edf2;line-height:1.58}
+    .page{max-width:980px;margin:0 auto;min-height:100vh;background:#fff;box-shadow:0 0 24px rgba(0,0,0,.12)}
+    header{background:var(--navy);color:#fff;padding:34px 34px 30px}
+    header .eyebrow{font-size:.8rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin:0 0 8px}
+    header h1{margin:0;font:700 clamp(2.2rem,5vw,3.7rem) Georgia,"Times New Roman",serif;line-height:1.03}
+    header .deck{margin:14px 0 0;font-size:1.18rem;max-width:820px}
+    header .date{margin:12px 0 0;font-size:.92rem;color:#dce7f1}
+    main{padding:26px 34px 44px}
+    a{color:var(--blue);font-weight:700}
+    .back{margin:0 0 20px}
+    .summary{border:3px solid var(--navy);border-left:10px solid var(--gold);border-radius:10px;padding:20px 22px;background:#fbfcff;margin-bottom:26px}
+    .summary h2{margin:0 0 8px;color:var(--navy)}
+    .summary ul{margin:8px 0 0;padding-left:22px}
+    .summary li{margin:8px 0}
+    .prediction{border-left:8px solid var(--red);background:#fff7f7;border-radius:8px;padding:17px 18px;margin:22px 0}
+    .prediction strong{color:#8f0019}
+    section{border-top:1px solid var(--line);padding-top:24px;margin-top:28px}
+    h2{color:var(--navy);font-size:1.55rem;margin:0 0 12px}
+    h3{color:#333;margin:22px 0 8px;font-size:1.12rem}
+    p{margin:0 0 14px}
+    ul,ol{padding-left:25px}
+    li{margin-bottom:11px}
+    .hinge{font:700 1.28rem Georgia,"Times New Roman",serif;border-left:6px solid var(--gold);background:#fffaf0;padding:15px 17px;border-radius:7px;margin:20px 0}
+    .counter{border-left:6px solid var(--green);background:#f2fbf6;padding:16px 18px;border-radius:7px;margin:20px 0}
+    .note{color:var(--muted);font-size:.92rem}
+    table{width:100%;border-collapse:collapse;margin:15px 0 20px;background:#fff}
+    th,td{border:1px solid var(--line);padding:10px 11px;text-align:left;vertical-align:top}
+    th{background:#eef4f8;color:var(--navy)}
+    .forecast td:last-child,.forecast th:last-child{text-align:right;white-space:nowrap;font-weight:800}
+    .sources li{margin-bottom:13px}
+    .bottom-line{border:3px solid var(--navy);background:#f4f8fb;padding:20px;border-radius:10px;margin-top:28px}
+    .bottom-line p:last-child{margin-bottom:0}
+    footer{border-top:1px solid var(--line);padding:18px 34px;background:#f4f6f8;font-size:.93rem}
+    @media(max-width:700px){header,main,footer{padding-left:18px;padding-right:18px}th,td{font-size:.9rem;padding:8px}.forecast td:last-child{white-space:normal}}
+  </style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <p class="eyebrow">Hot Discussion · AI, Political Economy &amp; the Knowledge Problem</p>
+    <h1>AI Sludge</h1>
+    <p class="deck"><strong>The Politics of Slowing Down a Race Nobody Knows How to Stop.</strong> Can America actually slow frontier AI? Would a unilateral pause make the world safer—or simply change who reaches the frontier first? And is Washington really likely to stop?</p>
+    <p class="date">September 28, 2026</p>
+  </header>
+
+  <main>
+    <p class="back"><a href="whats-on-tap.html">← Back to What’s on Tap?</a></p>
+
+    <div class="summary">
+      <h2>The short version</h2>
+      <ul>
+        <li><strong>The United States can probably slow large American frontier labs.</strong> Giant training runs use concentrated chips, power, datacenters, financing, and visible infrastructure.</li>
+        <li><strong>That is not the same as slowing AI worldwide.</strong> A unilateral rule binds the firms and researchers inside the jurisdiction most effectively; foreign, offshore, clandestine, or simply less-compliant development is harder to stop.</li>
+        <li><strong>The strategic timing is awkward.</strong> Stanford’s 2026 AI Index says the U.S.–China model-performance gap had narrowed to 2.7% as of March 2026, with U.S. and Chinese models trading the lead at points since early 2025.</li>
+        <li><strong>A pause aimed at compute does not freeze the production function.</strong> Algorithms, post-training, synthetic data, inference-time compute, agents, hardware efficiency, and model distillation can continue improving.</li>
+        <li><strong>The present U.S. policy trajectory is not a general pause.</strong> The June 2026 White House framework created frontier-model benchmarking and voluntary prerelease government access while expressly rejecting mandatory licensing or preclearance; a separate national-security memorandum directs agencies to accelerate access to advanced models.</li>
+        <li><strong>My modal forecast:</strong> Washington adds visible oversight, safety standards, testing, and restrictions on particularly dangerous capabilities while the underlying AI race continues.</li>
+      </ul>
+    </div>
+
+    <div class="prediction">
+      <strong>Forecast, not a measured probability:</strong> through roughly January 2029, I would put about <strong>75%</strong> on continued U.S. acceleration plus visible oversight, <strong>20%</strong> on meaningful restrictions that slow some frontier work without a general pause, and about <strong>5%</strong> on a broad U.S. frontier-AI pause resembling the most aggressive current proposals.
+    </div>
+
+    <section>
+      <h2>1. What exactly are we arguing about?</h2>
+      <p>The immediate trigger is the <strong>Ban Artificial Superintelligence Act</strong>, introduced September 23, 2026 by Sen. Bernie Sanders and Rep. Greg Casar. Their official summary says the proposal would permanently prohibit artificial superintelligence, immediately pause advanced AI development until a new federal regulator establishes safety rules and model-review processes, create a cabinet-level Department of Artificial Intelligence, and pursue international agreements and export controls intended to prevent superintelligence worldwide.</p>
+
+      <p>The same official summary says violations could expose firms to what it calls a “corporate death penalty” and individuals to penalties of up to 20 years in prison. The proposal is therefore not merely disclosure, testing, or liability regulation. It is an attempt to draw a legal boundary around the frontier itself.</p>
+
+      <p>Strip away the personalities and political rhetoric and there are really four separate questions:</p>
+      <ol>
+        <li>How dangerous is frontier AI?</li>
+        <li>Can the United States materially slow it?</li>
+        <li>Can the United States slow <em>global</em> AI rather than merely U.S. AI?</li>
+        <li>Even if a slowdown is theoretically desirable, is Washington actually likely to impose one?</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>2. The strongest case against a broad unilateral slowdown</h2>
+
+      <h3>A. Regulation selects hardest against the actors who obey it</h3>
+      <p>OpenAI, Anthropic, Google, Meta, xAI, major cloud providers, universities, and U.S. datacenters are unusually legible institutions. They have headquarters, employees, lawyers, contracts, power connections, chips, and physical infrastructure. That makes them governable.</p>
+      <p>It also creates an awkward selection effect: a unilateral pause can bind the most visible and compliant developers more tightly than the foreign, clandestine, military, offshore, or deliberately noncompliant actors policymakers may fear most.</p>
+
+      <div class="hinge">The relevant comparison is not “regulated AI” versus “no AI.” It is often “regulated American AI” versus “whatever development continues elsewhere.”</div>
+
+      <h3>B. The U.S. lead is no longer obviously large enough to spend</h3>
+      <p>Stanford’s 2026 AI Index reports that the U.S.–China frontier-model performance gap had “effectively closed”: as of March 2026 the leading U.S. model was 2.7% ahead on the cited Arena measure, with U.S. and Chinese models having traded places near the top since early 2025. Benchmark measures are imperfect, but the basic strategic fact is hard to ignore: China is not obviously many years behind.</p>
+
+      <h3>C. Congress faces a knowledge problem</h3>
+      <p>A rule can define a compute threshold. It cannot freeze the relationship between compute and capability. Better algorithms, better data, better post-training, better inference, better hardware use, distillation, and new architectures can change what a given quantity of compute buys.</p>
+      <p>That means a law must continuously answer a problem that Hayek would immediately recognize: <strong>where, exactly, is the dangerous frontier when the frontier itself is being discovered by decentralized researchers?</strong></p>
+
+      <h3>D. Innovation compounds</h3>
+      <p>The opportunity cost of slowing AI is not merely foregone chatbot revenue. If AI accelerates software, materials science, biology, cyber defense, energy research, logistics, education, or scientific discovery, then a one-year delay can erase discoveries that would themselves have generated later discoveries. The cost may compound.</p>
+
+      <h3>E. Capability and safety are not cleanly separable</h3>
+      <p>More capable systems can create new risks. But more capable systems can also help discover vulnerabilities, monitor networks, automate safety research, improve interpretability, test other models, and design defenses. “Slower capability growth” is therefore not automatically identical to “faster safety progress.” The sign depends on which side improves faster.</p>
+
+      <h3>F. Frontier licensing can become an incumbent moat</h3>
+      <p>Large firms can maintain permanent compliance, security, legal, audit, and government-relations staffs. Small firms cannot. A regime intended to control powerful incumbents can therefore unintentionally make entry more expensive and leave the largest existing firms in an even stronger position.</p>
+
+      <h3>G. Severe penalties change information incentives</h3>
+      <p>If researchers encounter a system that appears to cross a legal line, criminal exposure can increase incentives to compartmentalize, offshore, conceal, lawyer up, or simply avoid certain research areas. That does not make enforcement impossible or undesirable; it means enforcement changes the behavior of the people being regulated and must be included in the analysis.</p>
+
+      <h3>H. AI is not plutonium</h3>
+      <p>Frontier training is currently physical enough to regulate: chips, datacenters, transformers, electricity, and capital leave traces. But the intellectual inputs—algorithms, code, model weights, research techniques, and human capital—are far more portable than nuclear material. The more capability becomes achievable with less compute, the weaker the nuclear-arms-control analogy becomes.</p>
+
+      <h3>I. The central-planning paradox</h3>
+      <p>The strongest AI-doom argument begins with radical uncertainty: humans may not understand the systems they are creating well enough to predict what happens. Yet some pause proposals implicitly ask a new federal regulator to identify the dangerous frontier in advance, distinguish safe from unsafe research, continually update the line as capabilities change, and coordinate strategic rivals worldwide.</p>
+      <p>That is an extraordinary amount of faith in centralized human foresight as the proposed solution to a problem whose premise is the limits of human foresight.</p>
+    </section>
+
+    <section>
+      <h2>3. Can we actually slow it?</h2>
+      <p>Yes—<strong>at least in one important sense.</strong> Governments can make giant American training runs much harder. Frontier datacenters are concentrated and power hungry; the most advanced chips move through relatively narrow supply chains. A government willing to use permits, export controls, chip tracking, cloud regulation, and criminal penalties can impose real friction.</p>
+
+      <p>But the probability falls rapidly as the target changes from “American frontier labs” to “AI capability everywhere.” My rough scenario estimates are:</p>
+
+      <table class="forecast">
+        <tr><th>Outcome under an aggressive U.S. pause</th><th>My rough estimate</th></tr>
+        <tr><td>Substantially stop new giant U.S. training runs</td><td>80–90%</td></tr>
+        <tr><td>Substantially slow U.S. frontier capability progress for 1–2 years</td><td>60–75%</td></tr>
+        <tr><td>U.S. acting largely alone similarly slows worldwide frontier progress</td><td>20–30%</td></tr>
+        <tr><td>U.S. acting alone maintains a meaningful worldwide slowdown for 5+ years</td><td>&lt;10%</td></tr>
+      </table>
+
+      <p class="note">These are judgmental scenario probabilities, not empirical estimates from a forecasting market or statistical model.</p>
+
+      <p>The critical distinction is simple: <strong>America can stop companies that need American permission more easily than it can stop a technological process.</strong></p>
+    </section>
+
+    <section>
+      <h2>4. Did we already shoot ourselves in the foot?</h2>
+      <p>Possibly, in the following narrow sense: once frontier knowledge, open models, research talent, chip-design knowledge, datacenter expertise, and high-level capabilities have diffused widely enough, a unilateral pause becomes strategically more dangerous than it would have been when one country possessed a huge and durable lead.</p>
+
+      <p>That does not mean export controls or safety rules are useless. It means they create incentives. Restrict access to one chip and firms search for another chip. Restrict one training method and researchers search for more efficient training. Restrict one jurisdiction and capital searches for another jurisdiction.</p>
+
+      <p>The economic point is almost boring: <strong>constraints change the direction of innovation.</strong> They do not simply subtract a fixed quantity of innovation from the world.</p>
+
+      <div class="hinge">The nightmare scenario for a unilateral pause is not that AI development stops. It is that compliant American AI development stops disproportionately while the global technological process keeps moving.</div>
+    </section>
+
+    <section>
+      <h2>5. What is Washington actually likely to do?</h2>
+      <p>This is where the current evidence points toward a compromise equilibrium rather than a true stop.</p>
+
+      <p>Public anxiety is real. A Reuters/Ipsos poll published September 22 found 73% of U.S. adults concerned that AI companies were not doing enough to prevent potentially catastrophic consequences, while 55% supported slowing AI development. Those numbers create strong political demand for visible action.</p>
+
+      <p>At the same time, current executive-branch policy is explicitly organized around continued development and national-security adoption. A June 2026 White House order created classified frontier-model cyber benchmarking and a voluntary process for prerelease government access, while stating that it does <strong>not</strong> authorize mandatory government licensing, preclearance, or permitting for new AI models. A separate June national-security memorandum directs agencies to accelerate AI adoption and make advanced frontier models available to national-security personnel “without delay.”</p>
+
+      <p>Those two pressures point toward a politically natural outcome:</p>
+      <ul>
+        <li>more evaluations;</li>
+        <li>more security requirements;</li>
+        <li>more incident reporting;</li>
+        <li>more restrictions around cyber, biological, or autonomous capabilities;</li>
+        <li>more government access and oversight;</li>
+        <li>more international AI-safety diplomacy;</li>
+        <li>and, simultaneously, continued model training, chip deployment, datacenter construction, and military adoption.</li>
+      </ul>
+
+      <p>That is not necessarily “fake regulation.” It is a different objective: <strong>regulate catastrophic externalities without deliberately shutting down the technological production function.</strong></p>
+
+      <table class="forecast">
+        <tr><th>U.S. policy path through roughly Jan. 2029</th><th>My forecast</th></tr>
+        <tr><td>Continued acceleration plus visible safety / oversight measures</td><td>~75%</td></tr>
+        <tr><td>Meaningful restrictions that slow some frontier work, but no general pause</td><td>~20%</td></tr>
+        <tr><td>Broad U.S. frontier-AI pause resembling the aggressive pause proposals</td><td>~5%</td></tr>
+      </table>
+
+      <p>The basic political economy is asymmetric. Continuing private investment requires no grand congressional consensus. Stopping it does.</p>
+    </section>
+
+    <section>
+      <h2>6. The strongest argument for slowing down</h2>
+      <div class="counter">
+        <p><strong>The counterargument deserves to be stated cleanly:</strong> if sufficiently advanced AI carries a material probability of irreversible human catastrophe, then even enormous economic, scientific, and strategic costs may be worth paying to reduce that probability.</p>
+        <p>That argument becomes much stronger if a pause can be international, verifiable, technically enforceable, and long enough to improve control methods before capabilities resume.</p>
+      </div>
+
+      <p>The hinge is not therefore “AI good” versus “AI bad.” It is this:</p>
+
+      <div class="hinge">Does a proposed slowdown actually reduce total catastrophic risk—or does it mainly slow the safest, most visible, most governable developers while leaving enough of the global race intact to produce roughly the same destination under worse strategic conditions?</div>
+
+      <p>That is an empirical and institutional question, not a vibe.</p>
+    </section>
+
+    <div class="bottom-line">
+      <h2>Bottom line</h2>
+      <p>My modal outcome is not a successful American ban on frontier AI. It is a great deal of public language about safety, a thicker layer of oversight and testing, targeted restrictions on especially dangerous capabilities, and continued rapid development underneath it all.</p>
+      <p><strong>In short: America promises not to build recklessly. America keeps building.</strong></p>
+      <p>The unresolved question is whether that combination is enough to manage genuinely catastrophic risks—or whether global coordination eventually becomes unavoidable.</p>
+    </div>
+
+    <section class="sources">
+      <h2>Sources &amp; further reading</h2>
+      <ul>
+        <li><a href="https://www.sanders.senate.gov/press-releases/news-sanders-casar-introduce-legislation-to-create-new-federal-agency-to-ban-artificial-superintelligence-pause-advanced-ai-development/">Sanders &amp; Casar: official summary of the Ban Artificial Superintelligence Act</a> — introduced September 23, 2026.</li>
+        <li><a href="https://hai.stanford.edu/ai-index/2026-ai-index-report/technical-performance">Stanford HAI, 2026 AI Index: Technical Performance</a> — includes the U.S.–China frontier-model performance comparison.</li>
+        <li><a href="https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/">White House, “Promoting Advanced Artificial Intelligence Innovation and Security”</a> — frontier-model benchmarking, voluntary prerelease access, and the explicit no-mandatory-licensing clause.</li>
+        <li><a href="https://www.whitehouse.gov/presidential-actions/2026/06/national-security-presidential-memorandum-nspm-11/">White House NSPM-11: Artificial Intelligence in the National Security Enterprise</a> — directs accelerated adoption and access to advanced models.</li>
+        <li><a href="https://www.reuters.com/world/three-out-four-americans-say-ai-firms-not-doing-enough-prevent-disaster-2026-09-22/">Reuters/Ipsos, September 22, 2026</a> — public opinion on AI risk, oversight, and slowing development.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    Pr. Rizzo · What’s on Tap? · <a href="whats-on-tap.html">Return to discussion page</a> · <a href="index.html">Office Hours home</a>
+  </footer>
+</div>
+</body>
+</html>

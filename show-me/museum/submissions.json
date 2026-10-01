@@ -1,3 +1,18 @@
 {
-  "students": {}
+  "students": {
+    "owenbernsteinsfc-sudo": {
+      "LIST": {
+        "category": "Climate & Models",
+        "cover_url": "https://raw.githubusercontent.com/owenbernsteinsfc-sudo/Aerosol-Masking/refs/heads/main/preview.png",
+        "github_user": "owenbernsteinsfc-sudo",
+        "hook": "Cleaning up air pollution might save lives, but unmasking hidden greenhouse warming could inadvertently trigger a rapid surge in global temperatures.",
+        "issue_number": 23,
+        "slot": "LIST",
+        "submitted_at": "2026-10-01T20:46:23.408392+00:00",
+        "title": "The Aerosol Mask",
+        "topic_id": "CLIM-06",
+        "url": "https://owenbernsteinsfc-sudo.github.io/Aerosol-Masking/"
+      }
+    }
+  }
 }

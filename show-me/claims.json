@@ -33,6 +33,14 @@
       "description": "I want to show when fracking actually loses its climate advantage over coal. Gas emits less CO\u2082 at the power plant, but raw methane is a massive short-term warming driver. My exhibit uses an interactive model to map out the 2.7% methane leak threshold where natural gas equals coal's climate footprint, stacking it against actual field data from major US basins.",
       "id": "CUSTOM-owenbernsteinsfc-sudo",
       "title": "Coal VS Fracking"
+    },
+    {
+      "active": true,
+      "claimed_at": "2026-10-01T21:33:04.089248+00:00",
+      "claimed_by": "wzhang76",
+      "description": "I want to compare how much water a 5-, 10-, and 20-minute shower uses with a standard showerhead versus a WaterSense low-flow showerhead. I also want to estimate the yearly water savings and the possible household cost savings from using a lower-flow showerhead.",
+      "id": "CUSTOM-wzhang76",
+      "title": "How Much Water Does a Shower Actually Use?"
     }
   ]
 }

@@ -25,5 +25,14 @@
       "claimed_by": "LiamSakakeeny"
     }
   },
-  "custom": []
+  "custom": [
+    {
+      "active": true,
+      "claimed_at": "2026-10-01T21:15:06.781220+00:00",
+      "claimed_by": "owenbernsteinsfc-sudo",
+      "description": "I want to show when fracking actually loses its climate advantage over coal. Gas emits less CO\u2082 at the power plant, but raw methane is a massive short-term warming driver. My exhibit uses an interactive model to map out the 2.7% methane leak threshold where natural gas equals coal's climate footprint, stacking it against actual field data from major US basins.",
+      "id": "CUSTOM-owenbernsteinsfc-sudo",
+      "title": "Coal VS Fracking"
+    }
+  ]
 }

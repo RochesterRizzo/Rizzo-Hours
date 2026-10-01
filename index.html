@@ -39,6 +39,12 @@ main{padding:22px}
 .event-highlight .poster{display:block;background:#111;border-radius:8px;overflow:hidden}
 .event-highlight .poster img{display:block;width:100%;height:225px;object-fit:contain}
 .event-highlight .button{margin-top:10px;background:var(--n);color:#fff}
+.coming-event{display:grid;grid-template-columns:minmax(0,1fr) 250px;gap:18px;align-items:center;border:2px solid #b89a4a;border-left:9px solid #b58a16;border-radius:11px;background:linear-gradient(135deg,#fffdf5,#f4f8fc);padding:16px 18px;margin:0 0 22px;box-shadow:0 3px 12px #0001}
+.coming-event small{display:block;color:#7b5c00;font-weight:900;letter-spacing:.09em;text-transform:uppercase;margin-bottom:4px}
+.coming-event h2{font:700 clamp(1.35rem,2.6vw,1.8rem) Georgia,serif;color:var(--n);margin:0 0 7px}
+.coming-event p{margin:5px 0;line-height:1.42}
+.coming-event img{display:block;width:100%;max-height:180px;object-fit:contain;background:#fff;border-radius:7px;border:1px solid #d8d8d8}
+.coming-event .button{margin-top:9px;margin-right:6px;background:var(--n);color:#fff}
 .research-alert{display:block;border:3px solid #c40000;border-radius:10px;background:#fff0f0;color:#770000;padding:13px 16px;margin:0 0 18px;text-decoration:none;box-shadow:0 0 0 rgba(212,0,0,0);animation:researchPulse 2.2s ease-in-out infinite}
 .research-alert strong{display:block;color:#b00000;font-size:1.02rem;letter-spacing:.02em;margin-bottom:4px}
 .research-alert span{color:#5b0000;line-height:1.4}
@@ -104,7 +110,7 @@ h2{margin:0 0 10px;color:var(--n);font-size:1.25rem}
 footer{padding:18px 22px;background:#b5a4cc;display:grid;grid-template-columns:1fr 1fr;gap:16px}
 @media(prefers-reduced-motion:reduce){.research-alert{animation:none}
 }
-@media(max-width:900px){.quick,.layout,footer{grid-template-columns:1fr}.event-highlight{grid-template-columns:1fr}.event-highlight .poster{max-width:260px}.weekly ul{grid-template-columns:repeat(2,1fr)}.resources{position:static}.links{grid-template-columns:1fr}
+@media(max-width:900px){.quick,.layout,footer{grid-template-columns:1fr}.event-highlight,.coming-event{grid-template-columns:1fr}.event-highlight .poster{max-width:260px}.weekly ul{grid-template-columns:repeat(2,1fr)}.resources{position:static}.links{grid-template-columns:1fr}
 }
 @media(max-width:600px){.weekly ul{grid-template-columns:1fr}
 }
@@ -169,6 +175,18 @@ Moderated by <strong>U of R Economics undergraduate Isaac Miller</strong></p>
 <a class="button" href="https://press.uchicago.edu/ucp/books/book/chicago/H/bo248154677.html" target="_blank" rel="noopener noreferrer">About the book</a>
 </div>
 <a class="poster" href="https://press.uchicago.edu/ucp/books/book/chicago/H/bo248154677.html" target="_blank" rel="noopener noreferrer"><img src="https://press.uchicago.edu/dam/ucp/books/jacket/978/02/26/84/9780226841434.jpg" alt="Cover of Human Capital for Humans by Pablo A. Peña."></a>
+</div>
+<div class="coming-event" id="gilbert-lecture-coming">
+<div>
+<small>Coming in November · Department of Economics Annual Lecture</small>
+<h2>THE DONALD W. GILBERT MEMORIAL LECTURE</h2>
+<p><strong>Robert Staiger</strong> · Chief Economist of the World Trade Organization</p>
+<p><strong>Title:</strong> TBD &nbsp; · &nbsp; <strong>Date:</strong> mid-November &nbsp; · &nbsp; <strong>Time:</strong> TBD &nbsp; · &nbsp; <strong>Location:</strong> TBD</p>
+<p>The Gilbert Lecture is one of the great traditions of Rochester economics: serious economics aimed directly at the practical and policy problems of the day. Since the series began in 1959, its speakers have included many of the central economists of the modern era, including 18 lecturers who later received the Nobel Prize in Economics.</p>
+<a class="button" href="oyster-events.html#gilbert-lecture-2026">Gilbert Lecture details &amp; history</a>
+<a class="button" href="https://home.dartmouth.edu/news/2025/09/professor-robert-staiger-named-chief-economist-wto" target="_blank" rel="noopener noreferrer">About Robert Staiger</a>
+</div>
+<a href="https://home.dartmouth.edu/news/2025/09/professor-robert-staiger-named-chief-economist-wto" target="_blank" rel="noopener noreferrer"><img src="https://economics.dartmouth.edu/sites/economics/files/styles/3_2_lg/public/2025-09/Staiger-WTO-Logo-Words.jpg.webp?h=c6980913&itok=8FYTIiys" alt="Robert Staiger and the World Trade Organization logo." loading="lazy"></a>
 </div>
 <a id="edgeworth-reminder" class="research-alert" href="econ-bulletin.html#edgeworth" hidden style="display:none">
 <strong>ECONOMIC CONSULTING — EDGEWORTH RSVP DEADLINE OCTOBER 16</strong>

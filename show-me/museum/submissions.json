@@ -25,6 +25,20 @@
         "topic_id": "CUSTOM-owenbernsteinsfc-sudo",
         "url": "https://owenbernsteinsfc-sudo.github.io/Fracking-vs-Coal/"
       }
+    },
+    "wzhang76": {
+      "LIST": {
+        "category": "Climate & Models",
+        "cover_url": "https://wzhang76.github.io/econ238-portfolio/clim08_expected_warming.png",
+        "github_user": "wzhang76",
+        "hook": "One billion tons of CO2 sounds enormous, but how much does it actually change global temperature?",
+        "issue_number": 30,
+        "slot": "LIST",
+        "submitted_at": "2026-10-01T23:28:45.617779+00:00",
+        "title": "What Does One Billion Tons of CO2 Do?",
+        "topic_id": "CLIM-08",
+        "url": "https://wzhang76.github.io/econ238-portfolio/Week-05-CLIM-08.html"
+      }
     }
   }
 }

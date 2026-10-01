@@ -38,6 +38,18 @@
         "title": "What Does One Billion Tons of CO2 Do?",
         "topic_id": "CLIM-08",
         "url": "https://wzhang76.github.io/econ238-portfolio/Week-05-CLIM-08.html"
+      },
+      "OWN": {
+        "category": "Student-Created",
+        "cover_url": "https://wzhang76.github.io/econ238-portfolio/shower_water_use_chart.png",
+        "github_user": "wzhang76",
+        "hook": "A few extra minutes in the shower may not seem like much, but how much water and money can a lower-flow showerhead actually save?",
+        "issue_number": 31,
+        "slot": "OWN",
+        "submitted_at": "2026-10-01T23:32:31.597231+00:00",
+        "title": "How Much Water Does a Shower Actually Use?",
+        "topic_id": "CUSTOM-wzhang76",
+        "url": "https://wzhang76.github.io/econ238-portfolio/Week-05-Shower.html"
       }
     }
   }

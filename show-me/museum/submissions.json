@@ -1,3 +1,30 @@
 {
-  "students": {}
+  "students": {
+    "owenbernsteinsfc-sudo": {
+      "LIST": {
+        "category": "Climate & Models",
+        "cover_url": "https://raw.githubusercontent.com/owenbernsteinsfc-sudo/Aerosol-Masking/refs/heads/main/preview.png",
+        "github_user": "owenbernsteinsfc-sudo",
+        "hook": "Cleaning up air pollution might save lives, but unmasking hidden greenhouse warming could inadvertently trigger a rapid surge in global temperatures.",
+        "issue_number": 24,
+        "slot": "LIST",
+        "submitted_at": "2026-10-01T20:55:53.558663+00:00",
+        "title": "The Aerosol Mask",
+        "topic_id": "CLIM-06",
+        "url": "https://owenbernsteinsfc-sudo.github.io/Aerosol-Masking/"
+      },
+      "OWN": {
+        "category": "Student-Created",
+        "cover_url": "https://raw.githubusercontent.com/owenbernsteinsfc-sudo/Fracking-vs-Coal/refs/heads/main/preview.png",
+        "github_user": "owenbernsteinsfc-sudo",
+        "hook": "Fracking is often hailed as a cleaner bridge fuel, but a tiny 2.7% upstream methane leak rate is all it takes to make natural gas as bad for the climate as coal.",
+        "issue_number": 28,
+        "slot": "OWN",
+        "submitted_at": "2026-10-01T21:16:37.713204+00:00",
+        "title": "Fracking VS Coal",
+        "topic_id": "CUSTOM-owenbernsteinsfc-sudo",
+        "url": "https://owenbernsteinsfc-sudo.github.io/Fracking-vs-Coal/"
+      }
+    }
+  }
 }

@@ -26,6 +26,20 @@
         "url": "https://owenbernsteinsfc-sudo.github.io/Fracking-vs-Coal/"
       }
     },
+    "sdmytruk": {
+      "LIST": {
+        "category": "Energy & Grid",
+        "cover_url": "https://sdmytruk.github.io/econ238-portfolio/econhw05.png",
+        "github_user": "sdmytruk",
+        "hook": "Does being renewable for one week actually mean you are sustainable 24/7?",
+        "issue_number": 32,
+        "slot": "LIST",
+        "submitted_at": "2026-10-02T13:42:55.633986+00:00",
+        "title": "100% Renewable for One Week",
+        "topic_id": "ENERGY-18",
+        "url": "https://sdmytruk.github.io/econ238-portfolio/econhw5.html"
+      }
+    },
     "wzhang76": {
       "LIST": {
         "category": "Climate & Models",

@@ -41,6 +41,14 @@
       "description": "I want to compare how much water a 5-, 10-, and 20-minute shower uses with a standard showerhead versus a WaterSense low-flow showerhead. I also want to estimate the yearly water savings and the possible household cost savings from using a lower-flow showerhead.",
       "id": "CUSTOM-wzhang76",
       "title": "How Much Water Does a Shower Actually Use?"
+    },
+    {
+      "active": true,
+      "claimed_at": "2026-10-02T14:25:21.667535+00:00",
+      "claimed_by": "sdmytruk",
+      "description": "How CO2 or general climate impact of meats, or items in the carnivore diet can affect the climate. As a vegetarian, I was interested in seeing if diet really has an impact. After some research, it turns out that it does!",
+      "id": "CUSTOM-sdmytruk",
+      "title": "How does having a plant-based diet affect the climate or economy?"
     }
   ]
 }

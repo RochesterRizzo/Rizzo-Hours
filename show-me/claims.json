@@ -53,6 +53,14 @@
       "description": "How CO2 or general climate impact of meats, or items in the carnivore diet can affect the climate. As a vegetarian, I was interested in seeing if diet really has an impact. After some research, it turns out that it does!",
       "id": "CUSTOM-sdmytruk",
       "title": "How does having a plant-based diet affect the climate or economy?"
+    },
+    {
+      "active": true,
+      "claimed_at": "2026-10-03T04:15:12.038671+00:00",
+      "claimed_by": "Pixelatium",
+      "description": "Compare the cost of providing the same household services\u2014transportation, heating, cooking, and appliances\u2014under a fossil-fuel household and a highly electrified household. Vary electricity prices, gasoline/natural-gas prices, battery costs, and equipment efficiency to identify when electrification actually lowers total household energy expenditure.",
+      "id": "CUSTOM-Pixelatium",
+      "title": "Electrification Can Reduce Energy Costs Without Reducing Energy Use"
     }
   ]
 }

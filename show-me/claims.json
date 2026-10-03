@@ -69,6 +69,14 @@
       "description": "Compare the cost of providing the same household services\u2014transportation, heating, cooking, and appliances\u2014under a fossil-fuel household and a highly electrified household. Vary electricity prices, gasoline/natural-gas prices, battery costs, and equipment efficiency to identify when electrification actually lowers total household energy expenditure.",
       "id": "CUSTOM-Pixelatium",
       "title": "Electrification Can Reduce Energy Costs Without Reducing Energy Use"
+    },
+    {
+      "active": true,
+      "claimed_at": "2026-10-03T18:53:36.881150+00:00",
+      "claimed_by": "bemah123456",
+      "description": "Break down the drop in U.S. electricity CO\u2082 from 2005 to 2025 into demand growth, coal-to-gas switching, wind, solar, nuclear, and hydro using EIA data. Show the year-by-year race between gas and renewables, the cumulative totals, and how the answer changes under different assumptions.",
+      "id": "CUSTOM-bemah123456",
+      "title": "Fracking vs. Renewables: Who Actually Cut U.S. Power-Plant CO\u2082 Since 2005?"
     }
   ]
 }

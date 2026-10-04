@@ -193,6 +193,14 @@
       "description": "This exhibit follows one winter of road salting, showing how salt improves road safety while contributing to vehicle rust, freshwater pollution, plant damage, and infrastructure repair costs. Readers can adjust the amount of salt applied to see when the added environmental damage outweighs the added safety benefits.",
       "id": "CUSTOM-scproom",
       "title": "Road Salt Damage Model"
+    },
+    {
+      "active": true,
+      "claimed_at": "2026-10-04T19:45:02.024021+00:00",
+      "claimed_by": "scoobydoobychu",
+      "description": "Is greater female political represeentation associated with lower carbon emissions? I'll compare percentage of parliamentary seats held by women versus CO2 emissions per person across countries with a scatterplot.",
+      "id": "CUSTOM-scoobydoobychu",
+      "title": "Do Countries with More Women in Politics Have a Greener Future"
     }
   ]
 }

@@ -78,6 +78,20 @@
         "url": "https://pixelatium.github.io/econ238-portfolio/assignment-05-electrification-household-costs.html"
       }
     },
+    "SherBraeWala": {
+      "LIST": {
+        "category": "Climate & Models",
+        "cover_url": "https://sherbraewala.github.io/Econ238-portfolio/coverclaim.png",
+        "github_user": "SherBraeWala",
+        "hook": "Washington has priced the same tonne of CO\u2082 at under $10, at $51, and at $190, and almost none of that gap comes from the climate science; it comes from the interest rate.",
+        "issue_number": 112,
+        "slot": "LIST",
+        "submitted_at": "2026-10-04T19:37:08.487036+00:00",
+        "title": "Discount-rate surgery on the social cost of carbon",
+        "topic_id": "CLIM-12",
+        "url": "https://sherbraewala.github.io/Econ238-portfolio/week5/scc/"
+      }
+    },
     "gracec-1": {
       "LIST": {
         "category": "Energy & Grid",

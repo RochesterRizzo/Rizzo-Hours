@@ -106,6 +106,20 @@
         "url": "https://bemah123456.github.io/fracking-vs-renewables/"
       }
     },
+    "bkzzzz": {
+      "LIST": {
+        "category": "Energy & Grid",
+        "cover_url": "https://bkzzzz.github.io/econ238-portfolio/assets/week-five/nuclear-cover.png",
+        "github_user": "bkzzzz",
+        "hook": "A plant with the same construction budget costs about $80 per MWh at a 3% cost of capital and four years of spending before opening, compared with $212 at 10% and ten years in this model.",
+        "issue_number": 135,
+        "slot": "LIST",
+        "submitted_at": "2026-10-04T20:38:17.385410+00:00",
+        "title": "The same reactor, a different financing bill",
+        "topic_id": "ENERGY-29",
+        "url": "https://bkzzzz.github.io/econ238-portfolio/week-five-nuclear.html"
+      }
+    },
     "calebjkatz": {
       "LIST": {
         "category": "Food & Land",

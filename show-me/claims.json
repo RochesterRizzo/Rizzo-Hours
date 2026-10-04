@@ -97,6 +97,14 @@
       "description": "Recycling is only one part of the U.S. waste stream. I plan on showing where municipal solid waste actually goes, putting recycling and composting in perspective alongside the other ways we manage waste.",
       "id": "CUSTOM-gracec-1",
       "title": "Recycling in Context"
+    },
+    {
+      "active": true,
+      "claimed_at": "2026-10-04T15:23:51.220402+00:00",
+      "claimed_by": "LiamSakakeeny",
+      "description": "Does the means of getting your produce from farm to table affect your carbon footprint? How can we produce food more efficiently with less detriment to the environment?",
+      "id": "CUSTOM-LiamSakakeeny",
+      "title": "Food Miles vs. Production Footprint"
     }
   ]
 }

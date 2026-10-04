@@ -106,6 +106,20 @@
         "url": "https://bemah123456.github.io/fracking-vs-renewables/"
       }
     },
+    "calebjkatz": {
+      "LIST": {
+        "category": "Food & Land",
+        "cover_url": "https://calebjkatz.github.io/econ238-portfolio/homework-5/golden-rice/cover.png",
+        "github_user": "calebjkatz",
+        "hook": "Can changing rice itself deliver vitamin A without expanding farmland\u2014and what happens when yield, adoption, and opposition get in the way?",
+        "issue_number": 132,
+        "slot": "LIST",
+        "submitted_at": "2026-10-04T20:29:43.604164+00:00",
+        "title": "Golden Rice: Same Land. More Nourishment?",
+        "topic_id": "FOOD-59",
+        "url": "https://calebjkatz.github.io/econ238-portfolio/homework-5/golden-rice/"
+      }
+    },
     "gracec-1": {
       "LIST": {
         "category": "Energy & Grid",

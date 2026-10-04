@@ -1,5 +1,19 @@
 {
   "students": {
+    "Pixelatium": {
+      "LIST": {
+        "category": "Energy & Grid",
+        "cover_url": "https://pixelatium.github.io/econ238-portfolio/assets/images/energy24.png",
+        "github_user": "Pixelatium",
+        "hook": "Electricity demand is surging after two flat decades, but the 1960s grew faster, and what's actually new is how fast the forecasts keep moving.",
+        "issue_number": 45,
+        "slot": "LIST",
+        "submitted_at": "2026-10-04T02:22:47.821590+00:00",
+        "title": "How Extraordinary Is Current Electricity-Demand Growth?",
+        "topic_id": "ENERGY-24",
+        "url": "https://pixelatium.github.io/econ238-portfolio/assignment-05-energy24-demand-growth.html"
+      }
+    },
     "owenbernsteinsfc-sudo": {
       "LIST": {
         "category": "Climate & Models",

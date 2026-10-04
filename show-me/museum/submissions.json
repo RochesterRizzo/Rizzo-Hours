@@ -1,5 +1,19 @@
 {
   "students": {
+    "LiamSakakeeny": {
+      "LIST": {
+        "category": "Energy & Grid",
+        "cover_url": "https://liamsakakeeny.github.io/econ238-portfolio/exhibit-2-cover.png",
+        "github_user": "LiamSakakeeny",
+        "hook": "Can we increase the efficiency of wind and solar energy, by simply bringing down the cost of storing it?",
+        "issue_number": 71,
+        "slot": "LIST",
+        "submitted_at": "2026-10-04T15:19:08.153662+00:00",
+        "title": "Storage-Cost Surgery on an ERCOT Grid Model",
+        "topic_id": "ENERGY-20",
+        "url": "https://liamsakakeeny.github.io/econ238-portfolio/Storage-Cost%20Surgery.html"
+      }
+    },
     "Pixelatium": {
       "LIST": {
         "category": "Energy & Grid",

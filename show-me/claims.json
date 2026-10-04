@@ -261,6 +261,14 @@
       "description": "How much water is used to produce food Americans throw away?",
       "id": "CUSTOM-efoley13",
       "title": "What I plan to show: How much water is used to produce food Americans throw away?"
+    },
+    {
+      "active": true,
+      "claimed_at": "2026-10-04T22:34:17.773716+00:00",
+      "claimed_by": "felix-ab",
+      "description": "Rules sold on environmental grounds, such as environmental review and zoning limits, stop homes from being built in New York City (the five boroughs). That has a carbon cost of its own. When a home isn't built in the city, the household that would have lived there often ends up farther out in the NYC metro area, driving more and heating a bigger house. Plenty of suburban households would live there anyway, so I count only those priced out. Using Census commuting data (LODES) for people who work in NYC, federal household driving estimates and home-energy data by census tract, I estimate the extra CO2 per blocked home and in total, and price it at the $268 per ton NYC itself charges under Local Law 97.",
+      "id": "CUSTOM-felix-ab",
+      "title": "The Carbon Cost of Blocking Homes in New York City"
     }
   ]
 }

@@ -205,6 +205,14 @@
       "description": "Is greater female political represeentation associated with lower carbon emissions? I'll compare percentage of parliamentary seats held by women versus CO2 emissions per person across countries with a scatterplot.",
       "id": "CUSTOM-scoobydoobychu",
       "title": "Do Countries with More Women in Politics Have a Greener Future"
+    },
+    {
+      "active": true,
+      "claimed_at": "2026-10-04T19:45:54.004424+00:00",
+      "claimed_by": "bkzzzz",
+      "description": "Using an explicitly hypothetical traffic-noise model, I will show how redirecting traffic away from a park changes sound levels at the park and along a receiving residential road. Readers can vary the redirected share, attenuation of diverted traffic, the number of residents potentially affected, and extra travel time. The exhibit will distinguish a quieter park from a net social benefit, conserve traffic, explain logarithmic decibels, and provide equations and downloadable calculations. It will not present assumed local numbers as Rochester measurements.",
+      "id": "CUSTOM-bkzzzz",
+      "title": "A quieter park. Whose street gets louder?"
     }
   ]
 }

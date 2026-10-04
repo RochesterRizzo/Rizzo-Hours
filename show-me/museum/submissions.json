@@ -172,6 +172,20 @@
         "url": "https://calebjkatz.github.io/econ238-portfolio/homework-5/rare-earths/"
       }
     },
+    "efoley13": {
+      "LIST": {
+        "category": "Risk & Toxicology",
+        "cover_url": "https://efoley13.github.io/econ238-portfolio/Poster%202%20PM2.5%20Wildfire%20Smoke@1x.png",
+        "github_user": "efoley13",
+        "hook": "Three days of wildfire smoke accounted for nearly 10% of an entire year's measured PM2.5 concentration-time at a White Plains, New York monitor",
+        "issue_number": 153,
+        "slot": "LIST",
+        "submitted_at": "2026-10-04T22:51:51.619814+00:00",
+        "title": "Three Days, Nearly 10% of a Year's Measured PM2.5",
+        "topic_id": "RISK-42",
+        "url": "https://efoley13.github.io/econ238-portfolio/week5-wildfire.html"
+      }
+    },
     "felix-ab": {
       "LIST": {
         "category": "Food & Land",

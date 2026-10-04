@@ -277,6 +277,14 @@
       "description": "Context of diaper types (disposable and reusable) along with their environmental impact",
       "id": "CUSTOM-KaileyDurow",
       "title": "Impacting the Environment from Day 1... Diapers"
+    },
+    {
+      "active": true,
+      "claimed_at": "2026-10-04T22:55:05.139329+00:00",
+      "claimed_by": "dbarbere-tech",
+      "description": "How car exhaust creates smog, how many people it harms in the US, who it harms most, and which policies have measurably reduced it.",
+      "id": "CUSTOM-dbarbere-tech",
+      "title": "Cars, Smog & Health"
     }
   ]
 }

@@ -17,10 +17,10 @@
         "category": "Student-Created",
         "cover_url": "https://fishman2341.github.io/econ238-portfolio/week-five/ai-query-energy/cover.png",
         "github_user": "FishMan2341",
-        "hook": "One AI prompt uses about as much electricity as a Google search, yet one proposed data center near Rochester could power ~420,000 homes, so where does all this energy actually go?",
-        "issue_number": 89,
+        "hook": "One AI prompt uses about as much electricity as a 2009 Google search, so why could U.S. data centers nearly triple their power use by 2028?",
+        "issue_number": 91,
         "slot": "OWN",
-        "submitted_at": "2026-10-04T17:12:27.231686+00:00",
+        "submitted_at": "2026-10-04T17:47:40.241973+00:00",
         "title": "How Much Power Is an AI Query?",
         "topic_id": "CUSTOM-FishMan2341",
         "url": "https://fishman2341.github.io/econ238-portfolio/week-five/ai-query-energy/"

@@ -156,6 +156,20 @@
         "url": "https://owenbernsteinsfc-sudo.github.io/Fracking-vs-Coal/"
       }
     },
+    "rmirabe2": {
+      "LIST": {
+        "category": "Policy & Institutions",
+        "cover_url": "https://rmirabe2.github.io/econ238-portfolio/images/cover-catch-shares.png",
+        "github_user": "rmirabe2",
+        "hook": "When nobody owns the fish, every boat races to catch them first: what changes when each boat owns a share of the catch instead?",
+        "issue_number": 105,
+        "slot": "LIST",
+        "submitted_at": "2026-10-04T19:19:49.328746+00:00",
+        "title": "Catch Shares Versus Race-to-Fish",
+        "topic_id": "POL-67",
+        "url": "https://rmirabe2.github.io/econ238-portfolio/assignment-05-catch-shares.html"
+      }
+    },
     "scproom": {
       "LIST": {
         "category": "Water & Waste",

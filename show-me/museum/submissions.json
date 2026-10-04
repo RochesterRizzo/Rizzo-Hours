@@ -12,6 +12,18 @@
         "title": "How Extraordinary Is Current Electricity-Demand Growth?",
         "topic_id": "ENERGY-24",
         "url": "https://pixelatium.github.io/econ238-portfolio/assignment-05-energy24-demand-growth.html"
+      },
+      "OWN": {
+        "category": "Student-Created",
+        "cover_url": "https://pixelatium.github.io/econ238-portfolio/assets/images/electrification-fig1.png",
+        "github_user": "Pixelatium",
+        "hook": "Going electric does not automatically cost less, what matters is the price of a mile driven or a warm house, not the price of a kilowatt hour.",
+        "issue_number": 46,
+        "slot": "OWN",
+        "submitted_at": "2026-10-04T02:41:25.220806+00:00",
+        "title": "Electrification Can Reduce Household Energy Costs",
+        "topic_id": "CUSTOM-Pixelatium",
+        "url": "https://pixelatium.github.io/econ238-portfolio/assignment-05-electrification-household-costs.html"
       }
     },
     "owenbernsteinsfc-sudo": {

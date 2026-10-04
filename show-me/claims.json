@@ -207,7 +207,7 @@
       "title": "Road Salt Damage Model"
     },
     {
-      "active": true,
+      "active": false,
       "claimed_at": "2026-10-04T19:45:02.024021+00:00",
       "claimed_by": "scoobydoobychu",
       "description": "Is greater female political represeentation associated with lower carbon emissions? I'll compare percentage of parliamentary seats held by women versus CO2 emissions per person across countries with a scatterplot.",

@@ -1,5 +1,19 @@
 {
   "students": {
+    "FishMan2341": {
+      "LIST": {
+        "category": "Risk & Toxicology",
+        "cover_url": "https://fishman2341.github.io/econ238-portfolio/week-five/detection-limits/cover.png",
+        "github_user": "FishMan2341",
+        "hook": "Make the lab 1,000x more sensitive and the number of \"detected\" contaminants explodes, even though nobody's exposure changes at all.",
+        "issue_number": 88,
+        "slot": "LIST",
+        "submitted_at": "2026-10-04T17:10:56.659931+00:00",
+        "title": "Same Water, More \"Contaminants\"",
+        "topic_id": "RISK-36",
+        "url": "https://fishman2341.github.io/econ238-portfolio/week-five/detection-limits/"
+      }
+    },
     "LiamSakakeeny": {
       "LIST": {
         "category": "Energy & Grid",

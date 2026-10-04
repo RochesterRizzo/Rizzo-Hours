@@ -408,6 +408,20 @@
         "url": "https://sscheinb.github.io/econ238-portfolio/week-five/clean-air-growth/clean-air-growth.html"
       }
     },
+    "wmcdonq": {
+      "LIST": {
+        "category": "Water & Waste",
+        "cover_url": "https://wmcdonq.github.io/econ238-portfolio/week-05/landfill/cover.svg",
+        "github_user": "wmcdonq",
+        "hook": "See how 100 years of U.S. trash changes with deeper landfills, more recycling, and steady waste growth.",
+        "issue_number": 151,
+        "slot": "LIST",
+        "submitted_at": "2026-10-04T22:48:27.182115+00:00",
+        "title": "How much landfill space would we need?",
+        "topic_id": "WW-60",
+        "url": "https://wmcdonq.github.io/econ238-portfolio/week-05/landfill/"
+      }
+    },
     "wzhang76": {
       "LIST": {
         "category": "Climate & Models",

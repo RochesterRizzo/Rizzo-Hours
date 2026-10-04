@@ -104,6 +104,20 @@
         "url": "https://gracec-1.github.io/econ238-portfolio/assignment-05(2)"
       }
     },
+    "mscholz3-svg": {
+      "LIST": {
+        "category": "Climate & Models",
+        "cover_url": "https://mscholz3-svg.github.io/econ238-portfolio/week-5/clim-16-florida-sea-level/cover.png",
+        "github_user": "mscholz3-svg",
+        "hook": "Six inches does not sound like much, but in Miami-Dade it can turn today's 100 year (1% chance of happening) coastal flood into roughly a 5 year event.",
+        "issue_number": 92,
+        "slot": "LIST",
+        "submitted_at": "2026-10-04T18:19:55.196590+00:00",
+        "title": "When a Rare Flood Stops Being Rare",
+        "topic_id": "CLIM-16",
+        "url": "https://mscholz3-svg.github.io/econ238-portfolio/week-5/clim-16-florida-sea-level/"
+      }
+    },
     "owenbernsteinsfc-sudo": {
       "LIST": {
         "category": "Climate & Models",

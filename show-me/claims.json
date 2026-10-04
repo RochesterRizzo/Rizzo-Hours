@@ -245,6 +245,14 @@
       "description": "I'll use a column chart to see if there's a bell-shape to the CO2 emissions of countries, arranged by income level.",
       "id": "CUSTOM-scoobydoobychu",
       "title": "Do CO2 Emissions per Capita Follow the Environmental Kuznets Curve as Countries Become Richer ?"
+    },
+    {
+      "active": true,
+      "claimed_at": "2026-10-04T20:31:08.986390+00:00",
+      "claimed_by": "calebjkatz",
+      "description": "I want to compare the U.S. and China across the rare-earth/lanthanide supply chain, especially the magnet-related elements neodymium, praseodymium, samarium, and related materials. I will show the difference between mining rare-earth ore and actually separating/refining individual lanthanides, explain why U.S. production and processing declined while China became dominant, and examine current U.S. efforts to rebuild domestic mining, separation, refining, and magnet manufacturing. The exhibit will distinguish measured production/capacity from announced projects and will make the economic and environmental tradeoffs visible rather than treating \"more domestic mining\" as automatically sufficient.",
+      "id": "CUSTOM-calebjkatz",
+      "title": "Why Did the U.S. Lose the Rare-Earth Supply Chain\u2014and Can It Bring It Back?"
     }
   ]
 }

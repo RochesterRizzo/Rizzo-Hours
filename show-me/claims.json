@@ -1,5 +1,9 @@
 {
   "claims": {
+    "CLIM-01": {
+      "claimed_at": "2026-10-04T19:01:38.191061+00:00",
+      "claimed_by": "scoobydoobychu"
+    },
     "CLIM-06": {
       "claimed_at": "2026-10-01T19:51:14.273584+00:00",
       "claimed_by": "owenbernsteinsfc-sudo"

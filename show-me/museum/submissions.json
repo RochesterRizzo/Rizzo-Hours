@@ -104,6 +104,20 @@
         "url": "https://owenbernsteinsfc-sudo.github.io/Fracking-vs-Coal/"
       }
     },
+    "scproom": {
+      "LIST": {
+        "category": "Water & Waste",
+        "cover_url": "https://scproom.github.io/Environemtal-Econ/water-efficiency/cover.png",
+        "github_user": "scproom",
+        "hook": "Follow 100 buckets to see how a farmer can take less water without leaving more for everyone else.",
+        "issue_number": 86,
+        "slot": "LIST",
+        "submitted_at": "2026-10-04T17:03:13.282191+00:00",
+        "title": "Can saving water use more water?",
+        "topic_id": "WW-65",
+        "url": "https://scproom.github.io/Environemtal-Econ/water-efficiency/"
+      }
+    },
     "sdmytruk": {
       "LIST": {
         "category": "Energy & Grid",

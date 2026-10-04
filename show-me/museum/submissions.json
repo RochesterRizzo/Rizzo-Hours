@@ -198,6 +198,20 @@
         "url": "https://gracec-1.github.io/econ238-portfolio/assignment-05(2)"
       }
     },
+    "kawawa-ririko": {
+      "LIST": {
+        "category": "Food & Land",
+        "cover_url": "https://kawawa-ririko.github.io/econ238-portfolio/food57/emissions_1000km.png",
+        "github_user": "kawawa-ririko",
+        "hook": "The same food can produce dramatically different transport emissions depending on whether it moves by truck, rail, ship, or air.",
+        "issue_number": 139,
+        "slot": "LIST",
+        "submitted_at": "2026-10-04T21:05:24.323031+00:00",
+        "title": "Food Miles: Distance Is Not the Whole Story",
+        "topic_id": "FOOD-57",
+        "url": "https://kawawa-ririko.github.io/econ238-portfolio/food57/"
+      }
+    },
     "mscholz3-svg": {
       "LIST": {
         "category": "Climate & Models",

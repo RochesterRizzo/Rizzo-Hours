@@ -229,6 +229,14 @@
       "description": "Compare leaving a gaming PC idle, putting it to sleep, and shutting it down for eight hours each night. Calculate yearly electricity use, cost, and power-plant CO2. Change the power draw, hours, electricity price, and grid emissions rate to show how the answer changes. These will be clearly labeled scenarios, not measurements of my own computer.",
       "id": "CUSTOM-wmcdonq",
       "title": "What Does Leaving a Gaming PC On Overnight Cost?"
+    },
+    {
+      "active": true,
+      "claimed_at": "2026-10-04T20:22:47.031205+00:00",
+      "claimed_by": "GMathieu123",
+      "description": "I will build a model that converts vehicle idling time into gasoline burned, the driver's private fuel cost, CO2 emissions, and a modeled climate external cost. I will use the U.S. Department of Energy's range for idling fuel use and EPA data for CO2 per gallon. I will also vary EPA's 2026 social cost of carbon estimates across discount-rate assumptions so the exhibit shows how the answer changes rather than presenting one number as certain. The main economic question is the break-even point: how valuable would the comfort, convenience, or safety benefit of another minute of idling have to be to exceed its private plus external cost?",
+      "id": "CUSTOM-GMathieu123",
+      "title": "What Does 10 Minutes of Idling Really Cost?"
     }
   ]
 }

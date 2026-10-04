@@ -133,6 +133,14 @@
       "description": "-The electricity usage of different AI tasks next to everyday activites such as a Google search\n-Why published estimates differ by about 10x\n-A calculator so that people can astimate their own daily electricity usage due to AI\n-How per-prompt energy usage growth (due to models getting larger) staks up against data center growth",
       "id": "CUSTOM-FishMan2341",
       "title": "How Much Power is an AI Inquiry?"
+    },
+    {
+      "active": true,
+      "claimed_at": "2026-10-04T18:32:15.272680+00:00",
+      "claimed_by": "mscholz3-svg",
+      "description": "I plan to compare the emissions from beer, wine, and spirits using an equal standard drink. I will also show how packaging can change the climate cost of each drink.",
+      "id": "CUSTOM-mscholz3-svg",
+      "title": "The Climate Cost of a Drink"
     }
   ]
 }

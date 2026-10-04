@@ -168,6 +168,18 @@
         "title": "Catch Shares Versus Race-to-Fish",
         "topic_id": "POL-67",
         "url": "https://rmirabe2.github.io/econ238-portfolio/assignment-05-catch-shares.html"
+      },
+      "OWN": {
+        "category": "Student-Created",
+        "cover_url": "https://rmirabe2.github.io/econ238-portfolio/images/cover-plastic-bag-bans.png",
+        "github_user": "rmirabe2",
+        "hook": "Cities ban plastic bags to cut waste, but what do shoppers actually carry out of the store afterward?",
+        "issue_number": 106,
+        "slot": "OWN",
+        "submitted_at": "2026-10-04T19:20:31.777350+00:00",
+        "title": "Plastic Bag Bans, Before and After",
+        "topic_id": "CUSTOM-rmirabe2",
+        "url": "https://rmirabe2.github.io/econ238-portfolio/assignment-05-plastic-bag-bans.html"
       }
     },
     "scproom": {

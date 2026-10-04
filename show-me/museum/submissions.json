@@ -184,6 +184,18 @@
         "title": "The Land on Our Plates",
         "topic_id": "FOOD-55",
         "url": "https://felix-ab.github.io/econ238-portfolio/food-55/"
+      },
+      "OWN": {
+        "category": "Student-Created",
+        "cover_url": "https://felix-ab.github.io/econ238-portfolio/nyc-homes/assets/cover.png",
+        "github_user": "felix-ab",
+        "hook": "Rules sold as green block homes in New York City, and the households they price out drive more and heat bigger houses: about 122,000 extra tons of CO\u2082 a year for the 80,000 homes the city says its old zoning blocked.",
+        "issue_number": 148,
+        "slot": "OWN",
+        "submitted_at": "2026-10-04T22:35:29.783517+00:00",
+        "title": "The Carbon Cost of NYC\u2019s \u2018Green\u2019 Rules",
+        "topic_id": "CUSTOM-felix-ab",
+        "url": "https://felix-ab.github.io/econ238-portfolio/nyc-homes/"
       }
     },
     "gracec-1": {

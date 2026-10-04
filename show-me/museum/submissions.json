@@ -222,6 +222,18 @@
         "title": "Can saving water use more water?",
         "topic_id": "WW-65",
         "url": "https://scproom.github.io/Environemtal-Econ/water-efficiency/"
+      },
+      "OWN": {
+        "category": "Student-Created",
+        "cover_url": "https://scproom.github.io/Environemtal-Econ/road-salt/cover.png",
+        "github_user": "scproom",
+        "hook": "Follow one winter of road salting\u2014from safer roads to rusting vehicles, contaminated freshwater, damaged plants, and infrastructure costs\u2014and adjust the salt amount to see when additional environmental damage outweighs additional safety benefits.",
+        "issue_number": 118,
+        "slot": "OWN",
+        "submitted_at": "2026-10-04T19:41:54.112579+00:00",
+        "title": "When does more road salt stop helping?",
+        "topic_id": "CUSTOM-scproom",
+        "url": "https://scproom.github.io/Environemtal-Econ/road-salt/"
       }
     },
     "sdass3": {

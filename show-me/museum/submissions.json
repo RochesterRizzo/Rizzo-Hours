@@ -420,6 +420,18 @@
         "title": "How much landfill space would we need?",
         "topic_id": "WW-60",
         "url": "https://wmcdonq.github.io/econ238-portfolio/week-05/landfill/"
+      },
+      "OWN": {
+        "category": "Student-Created",
+        "cover_url": "https://wmcdonq.github.io/econ238-portfolio/week-05/gaming-pc/cover.svg",
+        "github_user": "wmcdonq",
+        "hook": "Compare a PC left on, asleep, and shut down for the same eight unused hours each night.",
+        "issue_number": 152,
+        "slot": "OWN",
+        "submitted_at": "2026-10-04T22:49:06.081253+00:00",
+        "title": "What does leaving a gaming PC on overnight cost?",
+        "topic_id": "CUSTOM-wmcdonq",
+        "url": "https://wmcdonq.github.io/econ238-portfolio/week-05/gaming-pc/"
       }
     },
     "wzhang76": {

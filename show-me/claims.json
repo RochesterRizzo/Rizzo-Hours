@@ -221,6 +221,14 @@
       "description": "Using an explicitly hypothetical traffic-noise model, I will show how redirecting traffic away from a park changes sound levels at the park and along a receiving residential road. Readers can vary the redirected share, attenuation of diverted traffic, the number of residents potentially affected, and extra travel time. The exhibit will distinguish a quieter park from a net social benefit, conserve traffic, explain logarithmic decibels, and provide equations and downloadable calculations. It will not present assumed local numbers as Rochester measurements.",
       "id": "CUSTOM-bkzzzz",
       "title": "A quieter park. Whose street gets louder?"
+    },
+    {
+      "active": true,
+      "claimed_at": "2026-10-04T20:11:17.793787+00:00",
+      "claimed_by": "wmcdonq",
+      "description": "Compare leaving a gaming PC idle, putting it to sleep, and shutting it down for eight hours each night. Calculate yearly electricity use, cost, and power-plant CO2. Change the power draw, hours, electricity price, and grid emissions rate to show how the answer changes. These will be clearly labeled scenarios, not measurements of my own computer.",
+      "id": "CUSTOM-wmcdonq",
+      "title": "What Does Leaving a Gaming PC On Overnight Cost?"
     }
   ]
 }

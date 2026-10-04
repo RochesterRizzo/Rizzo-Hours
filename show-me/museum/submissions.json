@@ -118,6 +118,18 @@
         "title": "The same reactor, a different financing bill",
         "topic_id": "ENERGY-29",
         "url": "https://bkzzzz.github.io/econ238-portfolio/week-five-nuclear.html"
+      },
+      "OWN": {
+        "category": "Student-Created",
+        "cover_url": "https://bkzzzz.github.io/econ238-portfolio/assets/week-five/noise-cover.png",
+        "github_user": "bkzzzz",
+        "hook": "In this hypothetical example, diverting half the park-side traffic makes the park about 3 dB quieter but makes a less busy residential street about 7.7 dB louder and adds travel time.",
+        "issue_number": 136,
+        "slot": "OWN",
+        "submitted_at": "2026-10-04T20:39:06.523619+00:00",
+        "title": "A quieter park. Whose street gets louder?",
+        "topic_id": "CUSTOM-bkzzzz",
+        "url": "https://bkzzzz.github.io/econ238-portfolio/week-five-noise.html"
       }
     },
     "calebjkatz": {

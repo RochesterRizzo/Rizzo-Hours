@@ -26,6 +26,20 @@
         "url": "https://pixelatium.github.io/econ238-portfolio/assignment-05-electrification-household-costs.html"
       }
     },
+    "gracec-1": {
+      "LIST": {
+        "category": "Energy & Grid",
+        "cover_url": "https://raw.githubusercontent.com/gracec-1/econ238-portfolio/50c1db5f10ce77cdac3fc506922cb4c52e0e4d33/assignment51.png",
+        "github_user": "gracec-1",
+        "hook": "A solar panel can produce cheap electricity, but can it keep the lights on all day?",
+        "issue_number": 51,
+        "slot": "LIST",
+        "submitted_at": "2026-10-04T04:26:10.132254+00:00",
+        "title": "LCOE Versus an Electricity System",
+        "topic_id": "ENERGY-17",
+        "url": "https://gracec-1.github.io/econ238-portfolio/assignment-05(1)"
+      }
+    },
     "owenbernsteinsfc-sudo": {
       "LIST": {
         "category": "Climate & Models",

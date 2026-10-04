@@ -173,6 +173,14 @@
       "description": "Bag use, substitute bags (paper, thicker reusable plastic, trash bags), and litter before and after plastic bag bans and fees in places that passed them, to see what the policy actually changed.",
       "id": "CUSTOM-rmirabe2",
       "title": "Plastic Bag Bans, Before and After"
+    },
+    {
+      "active": true,
+      "claimed_at": "2026-10-04T19:22:00.848790+00:00",
+      "claimed_by": "sscheinb",
+      "description": "US GDP rose 349% from 1970 to 2025 while the EPA's combined emissions of six major air pollutants fell 78%. A block chart shows the comparison, with per-unit calculations, a breakdown by pollutant, and the catches, such as 115 million people still living in counties above a national air standard.",
+      "id": "CUSTOM-sscheinb",
+      "title": "Four Times the Economy, Under a Quarter of the Air Pollution"
     }
   ]
 }

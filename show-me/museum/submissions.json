@@ -222,6 +222,20 @@
         "url": "https://sdmytruk.github.io/econ238-portfolio/econhw5custom.html"
       }
     },
+    "sscheinb": {
+      "OWN": {
+        "category": "Student-Created",
+        "cover_url": "https://sscheinb.github.io/econ238-portfolio/week-five/clean-air-growth/cover.png",
+        "github_user": "sscheinb",
+        "hook": "Since 1970, the US economy has grown more than fourfold while its air pollution emissions fell by more than three-quarters, so why do 115 million Americans still live in counties that miss a national air standard?",
+        "issue_number": 108,
+        "slot": "OWN",
+        "submitted_at": "2026-10-04T19:23:10.509374+00:00",
+        "title": "Four Times the Economy, Under a Quarter of the Air Pollution",
+        "topic_id": "CUSTOM-sscheinb",
+        "url": "https://sscheinb.github.io/econ238-portfolio/week-five/clean-air-growth/clean-air-growth.html"
+      }
+    },
     "wzhang76": {
       "LIST": {
         "category": "Climate & Models",

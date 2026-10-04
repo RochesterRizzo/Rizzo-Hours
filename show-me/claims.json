@@ -153,6 +153,14 @@
       "description": "I plan to compare the emissions from beer, wine, and spirits using an equal standard drink. I will also show how packaging can change the climate cost of each drink.",
       "id": "CUSTOM-mscholz3-svg",
       "title": "The Climate Cost of a Drink"
+    },
+    {
+      "active": true,
+      "claimed_at": "2026-10-04T18:51:55.744135+00:00",
+      "claimed_by": "SherBraeWala",
+      "description": "A counterfactual decomposition of the drop in U.S. power-sector CO\u2082 from 2005 to 2024: what 2024 emissions would have been with the 2005 fuel mix, and how much of the gap came from coal-to-gas switching versus wind and solar. The page also shows how methane leakage (on 20- and 100-year metrics) shrinks gas's credit, and finds the break-even leakage rate where gas stops beating coal.",
+      "id": "CUSTOM-SherBraeWala",
+      "title": "Who Cut America's Power-Plant Emissions? Fracking, Wind & Solar, and the Methane Fine Print"
     }
   ]
 }

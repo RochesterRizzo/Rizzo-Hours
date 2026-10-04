@@ -38,6 +38,18 @@
         "title": "LCOE Versus an Electricity System",
         "topic_id": "ENERGY-17",
         "url": "https://gracec-1.github.io/econ238-portfolio/assignment-05(1)"
+      },
+      "OWN": {
+        "category": "Student-Created",
+        "cover_url": "https://raw.githubusercontent.com/gracec-1/econ238-portfolio/main/assignment52.png",
+        "github_user": "gracec-1",
+        "hook": "We put it in the recycling bin, but where does it actually go?",
+        "issue_number": 67,
+        "slot": "OWN",
+        "submitted_at": "2026-10-04T13:41:41.478600+00:00",
+        "title": "Recycling in Context",
+        "topic_id": "CUSTOM-gracec-1",
+        "url": "https://gracec-1.github.io/econ238-portfolio/assignment-05(2)"
       }
     },
     "owenbernsteinsfc-sudo": {

@@ -117,6 +117,14 @@
       "description": "Does the means of getting your produce from farm to table affect your carbon footprint? How can we produce food more efficiently with less detriment to the environment?",
       "id": "CUSTOM-LiamSakakeeny",
       "title": "Food Miles vs. Production Footprint"
+    },
+    {
+      "active": true,
+      "claimed_at": "2026-10-04T16:38:21.440865+00:00",
+      "claimed_by": "FishMan2341",
+      "description": "-The electricity usage of different AI tasks next to everyday activites such as a Google search\n-Why published estimates differ by about 10x\n-A calculator so that people can astimate their own daily electricity usage due to AI\n-How per-prompt energy usage growth (due to models getting larger) staks up against data center growth",
+      "id": "CUSTOM-FishMan2341",
+      "title": "How Much Power is an AI Inquiry?"
     }
   ]
 }

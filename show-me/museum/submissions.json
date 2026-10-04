@@ -277,6 +277,18 @@
       }
     },
     "sscheinb": {
+      "LIST": {
+        "category": "Climate & Models",
+        "cover_url": "https://sscheinb.github.io/econ238-portfolio/week-five/terminal-year/cover-clim09.png",
+        "github_user": "sscheinb",
+        "hook": "Stop counting in 2050, and a modeled climate policy shows a $5 trillion loss, but wait until 2200, and it shows a $51 trillion gain, so who decides where the clock should stop?",
+        "issue_number": 130,
+        "slot": "LIST",
+        "submitted_at": "2026-10-04T20:25:57.380185+00:00",
+        "title": "The Same Climate Policy Loses in 2050 and Wins by 2200.",
+        "topic_id": "CLIM-09",
+        "url": "https://sscheinb.github.io/econ238-portfolio/week-five/terminal-year/clim-09-terminal-year.html"
+      },
       "OWN": {
         "category": "Student-Created",
         "cover_url": "https://sscheinb.github.io/econ238-portfolio/week-five/clean-air-growth/cover.png",

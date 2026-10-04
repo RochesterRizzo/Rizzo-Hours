@@ -172,6 +172,20 @@
         "url": "https://calebjkatz.github.io/econ238-portfolio/homework-5/rare-earths/"
       }
     },
+    "felix-ab": {
+      "LIST": {
+        "category": "Food & Land",
+        "cover_url": "https://felix-ab.github.io/econ238-portfolio/food-55/assets/cover.png",
+        "github_user": "felix-ab",
+        "hook": "US beef uses about 805 million acres a year; swapping it out frees most of that land, but only if the swap still hits the same leucine target.",
+        "issue_number": 147,
+        "slot": "LIST",
+        "submitted_at": "2026-10-04T22:35:12.877505+00:00",
+        "title": "The Land on Our Plates",
+        "topic_id": "FOOD-55",
+        "url": "https://felix-ab.github.io/econ238-portfolio/food-55/"
+      }
+    },
     "gracec-1": {
       "LIST": {
         "category": "Energy & Grid",

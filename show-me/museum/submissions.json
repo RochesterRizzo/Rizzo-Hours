@@ -198,6 +198,20 @@
         "url": "https://calebjkatz.github.io/econ238-portfolio/homework-5/rare-earths/"
       }
     },
+    "dbarbere-tech": {
+      "LIST": {
+        "category": "Energy & Grid",
+        "cover_url": "https://raw.githubusercontent.com/dbarbere-tech/Plugging-In-America-the-Green-Car-Transition/main/cover.png",
+        "github_user": "dbarbere-tech",
+        "hook": "What would happen if every car, pickup, truck and bus in the United States ran on electricity?",
+        "issue_number": 173,
+        "slot": "LIST",
+        "submitted_at": "2026-10-06T21:34:01.631051+00:00",
+        "title": "Plugging In America, the Green Car Transition",
+        "topic_id": "ENERGY-25",
+        "url": "https://dbarbere-tech.github.io/Plugging-In-America-the-Green-Car-Transition/"
+      }
+    },
     "efoley13": {
       "LIST": {
         "category": "Risk & Toxicology",

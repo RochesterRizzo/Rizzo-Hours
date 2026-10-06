@@ -210,6 +210,18 @@
         "title": "Plugging In America, the Green Car Transition",
         "topic_id": "ENERGY-25",
         "url": "https://dbarbere-tech.github.io/Plugging-In-America-the-Green-Car-Transition/"
+      },
+      "OWN": {
+        "category": "Student-Created",
+        "cover_url": "https://raw.githubusercontent.com/dbarbere-tech/Cars-Smog-Health/main/cover.png",
+        "github_user": "dbarbere-tech",
+        "hook": "How car exhaust creates smog, how many people it harms in the US, who it harms most, and which policies have measurably reduced it.",
+        "issue_number": 174,
+        "slot": "OWN",
+        "submitted_at": "2026-10-06T21:38:38.999833+00:00",
+        "title": "Cars, Smog and Health",
+        "topic_id": "CUSTOM-dbarbere-tech",
+        "url": "https://dbarbere-tech.github.io/Cars-Smog-Health/"
       }
     },
     "efoley13": {

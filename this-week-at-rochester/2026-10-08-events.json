@@ -1,0 +1,737 @@
+{
+  "week_start": "2026-10-08",
+  "week_end": "2026-10-15",
+  "timezone": "America/New_York",
+  "verified_on": "2026-10-08",
+  "picks": [
+    {
+      "id": "pick-pena",
+      "day": "Thursday · Economics",
+      "title": "Pablo Peña: Human Capital for Humans",
+      "url": "https://www.sas.rochester.edu/eco/",
+      "description": "3:30 PM · Morey 321. The University of Chicago economist presents an accessible introduction to the economic science of people."
+    },
+    {
+      "id": "pick-big-love",
+      "day": "Thursday–Thursday · Theater",
+      "title": "Big Love",
+      "url": "https://www.sas.rochester.edu/theatre/productions/current/big-love/index.html",
+      "description": "Opens tonight at 8 PM in Smith Theatre and runs six times in this week’s window. Fifty brides, fifty cousin-grooms, Greek myth, comedy, brutality, and the costs of resisting tradition. TICKETED."
+    },
+    {
+      "id": "pick-gateways",
+      "day": "Friday–Monday · Music",
+      "title": "Gateways Music Festival weekend",
+      "url": "https://www.esm.rochester.edu/esm_news/gateways-music-festivals-2026-fall-festival-expands-the-sound-and-the-story-of-classical-music/",
+      "description": "George Taylor’s 40th-anniversary recital, Black sacred music, a BLACKSOUND lecture, Shana Tucker’s ChamberSoul, Ric’key Pageot, and young musicians across Eastman."
+    },
+    {
+      "id": "pick-sports",
+      "day": "Saturday · Sports",
+      "title": "Rowing and a NYU soccer doubleheader at home",
+      "url": "https://uofrathletics.com/calendar?date=10/10/2026",
+      "description": "Head of the Genesee rowing starts at 10 AM in Genesee Valley Park; men’s soccer hosts NYU at 11 AM and women’s soccer hosts NYU at 1:30 PM at Fauver."
+    },
+    {
+      "id": "pick-peer-gynt",
+      "day": "Saturday & Sunday · Music / Theater",
+      "title": "Peer Gynt with John de Lancie",
+      "url": "https://rpo.org/event/peer-gynt-with-john-de-lancie/",
+      "description": "Saturday 7:30 PM and Sunday 2 PM · Kodak Hall. The Star Trek actor narrates a semi-staged English-language Peer Gynt with the RPO. TICKETED."
+    },
+    {
+      "id": "pick-frontier-models",
+      "day": "Monday · AI / Health",
+      "title": "Healthcare in the Age of Frontier Models",
+      "url": "https://events.rochester.edu/event/taubman-deans-lecture-series-5503",
+      "description": "3:30 PM · Class of ’62 Auditorium. Coalition for Health AI CEO Brian Anderson on medicine in the frontier-model era."
+    },
+    {
+      "id": "pick-politics",
+      "day": "Thursday, October 15 · Politics / Technology",
+      "title": "Disrupting Politics",
+      "url": "https://events.rochester.edu/event/experience-rochester-disrupting-politics",
+      "description": "Noon–1 PM · Online. Former Facebook elections-policy leader Katie Harbath joins David Primo to discuss technology, democracy, misinformation, AI, and the 2026 midterms. FREE · RSVP REQUIRED."
+    }
+  ],
+  "events": [
+    {
+      "day": 1,
+      "sort": "09:00",
+      "time": "9:00 AM",
+      "title": "Coffee with Homer",
+      "category": "TALKS / LECTURES",
+      "location": "Wilson Commons, 409 Havens Lounge",
+      "url": "https://events.rochester.edu/event/coffee-with-homer",
+      "description": "Discuss Homer’s Iliad over coffee or breakfast; consult the event page for this week’s assigned reading.",
+      "flags": "RSVP REQUIRED"
+    },
+    {
+      "day": 1,
+      "sort": "12:00",
+      "time": "12:00–1:00 PM",
+      "title": "Careers in Finance: Alumni Perspectives and Career Pathways",
+      "category": "OTHER CAMPUS EVENTS",
+      "location": "Online",
+      "url": "https://simon.rochester.edu/events/careers-finance-alumni-perspectives-and-career-pathways",
+      "description": "Simon alumni share finance career paths, day-to-day work, and practical advice for breaking into the industry.",
+      "flags": "RSVP REQUIRED"
+    },
+    {
+      "day": 1,
+      "sort": "15:00",
+      "time": "3:00–4:30 PM",
+      "title": "Wallis Political Economy Seminar: Jeffery Jenkins (USC)",
+      "category": "TALKS / LECTURES",
+      "location": "Harkness 112",
+      "url": "https://www.wallis.rochester.edu/events/seminar.html",
+      "description": "Popular Support for Disenfranchisement in the United States: Voting on Constitutional Referendums. The series is aimed primarily at faculty and graduate students.",
+      "flags": ""
+    },
+    {
+      "day": 1,
+      "sort": "15:30",
+      "time": "3:30–4:30 PM",
+      "title": "Chambers Distinguished Lecture: Positive Thinking in Organic Chemistry",
+      "category": "TALKS / LECTURES",
+      "location": "Hutchison Hall 140",
+      "url": "https://events.rochester.edu/event/chemistry-chambers-distinguished-lecture-positive-thinking-in-organic-chemistry",
+      "description": "Nuno Maulide of the University of Vienna on energetic intermediates, carbocations, and new routes to complex molecules.",
+      "flags": ""
+    },
+    {
+      "day": 1,
+      "sort": "15:30",
+      "time": "3:30–4:30 PM",
+      "title": "Mathematics Colloquium: Semyon Dyatlov (MIT)",
+      "category": "TALKS / LECTURES",
+      "location": "Hylan Building 1106a",
+      "url": "https://events.rochester.edu/event/colloquium-semyon-daytlov-mit",
+      "description": "MIT’s Semyon Dyatlov on uncertainty principles in quantum chaos.",
+      "flags": ""
+    },
+    {
+      "day": 1,
+      "sort": "15:30",
+      "time": "3:30 PM",
+      "title": "Pablo A. Peña: Human Capital for Humans",
+      "category": "TALKS / LECTURES",
+      "location": "Morey Hall 321",
+      "url": "https://www.sas.rochester.edu/eco/",
+      "description": "The University of Chicago economist discusses his accessible introduction to the economic science of people.",
+      "flags": "",
+      "id": "pablo-pena"
+    },
+    {
+      "day": 1,
+      "sort": "16:00",
+      "time": "4:00–6:00 PM",
+      "title": "Meet Your Research Ambassadors and Subject Librarians",
+      "category": "OTHER CAMPUS EVENTS",
+      "location": "Rush Rhees Library, Hawkins-Carlson Room",
+      "url": "https://events.rochester.edu/event/meet-your-research-ambassadors-and-subject-librarians",
+      "description": "An information session, student panel, and open house for undergraduates trying to find a path into research.",
+      "flags": "FREE · RSVP REQUIRED"
+    },
+    {
+      "day": 1,
+      "sort": "17:00",
+      "time": "5:00–7:00 PM",
+      "title": "Fall Writer’s Lounge",
+      "category": "ARTS",
+      "location": "Rush Rhees Library, Humanities Center Lounge",
+      "url": "https://events.rochester.edu/event/fall-2026-writers-lounge",
+      "description": "Bring writing, exchange ideas, get feedback, and have refreshments.",
+      "flags": "RSVP REQUIRED"
+    },
+    {
+      "day": 1,
+      "sort": "18:00",
+      "time": "6:00–8:00 PM",
+      "title": "OpenAI Student Collective: URochester Tech Night",
+      "category": "OTHER CAMPUS EVENTS",
+      "location": "Venue shown after CCC sign-in",
+      "url": "https://ccc.rochester.edu/rsvp_boot?id=1969599",
+      "description": "A student tech night hosted by the Computer Science Undergraduate Council and the OpenAI Student Collective.",
+      "flags": "CCC SIGN-IN FOR VENUE"
+    },
+    {
+      "day": 1,
+      "sort": "18:30",
+      "time": "6:30–7:45 PM",
+      "title": "Mindful MAGiC: Candlelit Consciousness Concert",
+      "category": "MUSIC",
+      "location": "Memorial Art Gallery auditorium",
+      "url": "https://mag.rochester.edu/event/mindful-magic-candlelit-consciousness-concert-oct8/",
+      "description": "Gongs, more than 200 candles, and spoken-word meditation with Harold Taddy and Theo Trombulak. No late entry; ticket sales end at 6:15 PM.",
+      "flags": "TICKETED · $25; $20 MAG members"
+    },
+    {
+      "day": 1,
+      "sort": "18:30",
+      "time": "6:30 PM",
+      "title": "A Short History of Voting and Voter Suppression in the United States",
+      "category": "TALKS / LECTURES",
+      "location": "Online",
+      "url": "https://events.rochester.edu/event/voting-in-2026-who-votes-and-why",
+      "description": "A virtual conversation on the laws, policies, and political practices that have shaped access to the ballot.",
+      "flags": "FREE · RSVP REQUIRED"
+    },
+    {
+      "day": 1,
+      "sort": "20:00",
+      "time": "8:00 PM",
+      "title": "Big Love — opening night",
+      "category": "THEATER / DANCE",
+      "location": "Sloan Performing Arts Center, Smith Theatre",
+      "url": "https://www.sas.rochester.edu/theatre/productions/current/big-love/index.html",
+      "description": "Charles L. Mee’s collision of Greek myth, comedy, brutality, freedom, and desire. Opening-night reception follows.",
+      "flags": "TICKETED · $10–$20",
+      "id": "big-love"
+    },
+    {
+      "day": 1,
+      "sort": "22:00",
+      "time": "10:00–11:00 PM",
+      "title": "Late Night × Quiz Bowl: Trivia Night",
+      "category": "OTHER CAMPUS EVENTS",
+      "location": "Venue shown after CCC sign-in",
+      "url": "https://ccc.rochester.edu/latenight/rsvp?event_uid=750adac82a82c9bc117aa36c4a634554",
+      "description": "Thursday-night trivia from Late Night and Quiz Bowl.",
+      "flags": "CCC SIGN-IN FOR VENUE"
+    },
+    {
+      "day": 2,
+      "sort": "09:00",
+      "time": "9:00–10:00 AM",
+      "title": "Chambers Distinguished Lecture: The Long and Short of Total Synthesis",
+      "category": "TALKS / LECTURES",
+      "location": "Hutchison Hall 140",
+      "url": "https://events.rochester.edu/event/chemistry-chambers-distinguished-lecture-the-long-and-short-of-total-synthesis",
+      "description": "A second lecture from Nuno Maulide of the University of Vienna on synthetic chemistry and bioactive structures.",
+      "flags": ""
+    },
+    {
+      "day": 2,
+      "sort": "10:30",
+      "time": "10:30 AM",
+      "title": "Ableton Educators Day",
+      "category": "MUSIC",
+      "location": "Eastman School of Music",
+      "url": "https://www.esm.rochester.edu/esm-event/ableton-educators-day/",
+      "description": "A day for teachers and music-makers exploring Ableton tools, creative practice, and music technology.",
+      "flags": "FREE · RSVP REQUIRED"
+    },
+    {
+      "day": 2,
+      "sort": "17:00",
+      "time": "5:00–8:00 PM",
+      "title": "MAG’s Birthday Bash",
+      "category": "ARTS",
+      "location": "Memorial Art Gallery",
+      "url": "https://mag.rochester.edu/event/mags-birthday-bash/",
+      "description": "MAG turns 113 with cake while it lasts, cocktails, 5:30 and 6:30 mini-tours, and the current exhibitions.",
+      "flags": "TICKETED · half-price museum admission"
+    },
+    {
+      "day": 2,
+      "sort": "19:30",
+      "time": "7:30 PM",
+      "title": "Kobrin, Jang & Ying: The Complete Beethoven Piano Trios (1 of 3)",
+      "category": "MUSIC",
+      "location": "Kilbourn Hall",
+      "url": "https://www.esm.rochester.edu/esm-event/eastman-presents-kobrin-jang-ying-the-complete-beethoven-piano-trios/",
+      "description": "Alexander Kobrin, YooJin Jang, and David Ying begin a season-long chronological cycle with Beethoven’s Op. 1 trios.",
+      "flags": "TICKETED · LIVESTREAM"
+    },
+    {
+      "day": 2,
+      "sort": "19:30",
+      "time": "7:30 PM",
+      "title": "George Taylor at 40 with the Gateways Chamber Players",
+      "category": "MUSIC",
+      "location": "Hatch Recital Hall",
+      "url": "https://www.esm.rochester.edu/esm-event/faculty-artist-series-george-taylor-viola/",
+      "description": "A Faculty Artist Series recital celebrating violist George Taylor’s 40 years at Eastman.",
+      "flags": "TICKETED · LIVESTREAM"
+    },
+    {
+      "day": 2,
+      "sort": "20:00",
+      "time": "8:00 PM",
+      "title": "Big Love — IPA Night",
+      "category": "THEATER / DANCE",
+      "location": "Sloan Performing Arts Center, Smith Theatre",
+      "url": "https://www.sas.rochester.edu/theatre/productions/current/big-love/index.html",
+      "description": "Friday’s performance includes a post-show International Theatre Program reception.",
+      "flags": "TICKETED · $10–$20"
+    },
+    {
+      "day": 3,
+      "sort": "10:00",
+      "time": "10:00 AM",
+      "title": "Women’s Rowing: Head of the Genesee",
+      "category": "SPORTS",
+      "location": "Genesee Valley Park",
+      "url": "https://uofrathletics.com/sports/womens-rowing/schedule/2026-27",
+      "description": "Rochester’s home regatta on the Genesee River.",
+      "flags": "HOME"
+    },
+    {
+      "day": 3,
+      "sort": "11:00",
+      "time": "11:00 AM",
+      "title": "Men’s Soccer vs. New York University",
+      "category": "SPORTS",
+      "location": "Edwin Fauver Stadium",
+      "url": "https://uofrathletics.com/sports/mens-soccer/schedule/2026",
+      "description": "UAA conference match.",
+      "flags": "HOME"
+    },
+    {
+      "day": 3,
+      "sort": "11:00",
+      "time": "11:00 AM",
+      "title": "Gateways: SANCTUARY — A Celebration of Black Sacred Music",
+      "category": "MUSIC",
+      "location": "Hatch Recital Hall",
+      "url": "https://www.esm.rochester.edu/esm-event/gateways-sanctuary-a-celebration-of-black-sacred-music/",
+      "description": "Hymns, spirituals, gospel, sacred jazz, classical repertoire, and contemporary devotional music through the voices of Gateways artists.",
+      "flags": "TICKETED"
+    },
+    {
+      "day": 3,
+      "sort": "12:00",
+      "time": "12:00 PM",
+      "title": "Field Hockey at Skidmore College",
+      "category": "SPORTS",
+      "location": "Saratoga Springs, NY",
+      "url": "https://uofrathletics.com/sports/field-hockey/schedule/2026",
+      "description": "Liberty League match.",
+      "flags": "AWAY"
+    },
+    {
+      "day": 3,
+      "sort": "13:00",
+      "time": "1:00 PM",
+      "title": "Football at Ithaca College",
+      "category": "SPORTS",
+      "location": "Ithaca, NY",
+      "url": "https://uofrathletics.com/sports/football/schedule/2026",
+      "description": "Liberty League road game.",
+      "flags": "AWAY"
+    },
+    {
+      "day": 3,
+      "sort": "13:00",
+      "time": "1:00 PM",
+      "title": "Gateways: BLACKSOUND with Matthew D. Morrison",
+      "category": "TALKS / LECTURES",
+      "location": "Hatch Recital Hall",
+      "url": "https://www.esm.rochester.edu/esm-event/gateways-blacksound-lecture/",
+      "description": "A Paul J. Burgett Lecture and community conversation on Black sound, culture, and the history of listening.",
+      "flags": "TICKETED"
+    },
+    {
+      "day": 3,
+      "sort": "13:30",
+      "time": "1:30 PM",
+      "title": "Women’s Soccer vs. New York University",
+      "category": "SPORTS",
+      "location": "Edwin Fauver Stadium",
+      "url": "https://uofrathletics.com/sports/womens-soccer/schedule/2026",
+      "description": "UAA conference match.",
+      "flags": "HOME"
+    },
+    {
+      "day": 3,
+      "sort": "19:30",
+      "time": "7:30–9:00 PM",
+      "title": "RPO: Peer Gynt with John de Lancie",
+      "category": "MUSIC",
+      "location": "Kodak Hall at Eastman Theatre",
+      "url": "https://rpo.org/event/peer-gynt-with-john-de-lancie/",
+      "description": "A semi-staged English-language Peer Gynt with John de Lancie—the actor behind Star Trek’s Q—as narrator. Pre-concert chat at 6:30 PM.",
+      "flags": "TICKETED"
+    },
+    {
+      "day": 3,
+      "sort": "20:00",
+      "time": "8:00 PM",
+      "title": "Gateways: Shana Tucker — ChamberSoul",
+      "category": "MUSIC",
+      "location": "Kilbourn Hall",
+      "url": "https://www.esm.rochester.edu/esm-event/gateways-shana-tucker-chambersoul/",
+      "description": "Cellist, vocalist, and composer Shana Tucker blends classical, jazz, soul, folk, and acoustic pop with storytelling.",
+      "flags": "TICKETED"
+    },
+    {
+      "day": 3,
+      "sort": "20:00",
+      "time": "8:00 PM",
+      "title": "Big Love",
+      "category": "THEATER / DANCE",
+      "location": "Sloan Performing Arts Center, Smith Theatre",
+      "url": "https://www.sas.rochester.edu/theatre/productions/current/big-love/index.html",
+      "description": "Saturday-night performance of Charles L. Mee’s unruly reworking of Aeschylus’s The Suppliants.",
+      "flags": "TICKETED · $10–$20"
+    },
+    {
+      "day": 4,
+      "sort": "10:00",
+      "time": "10:00 AM",
+      "title": "Women’s Volleyball vs. Emory University",
+      "category": "SPORTS",
+      "location": "New York, NY",
+      "url": "https://uofrathletics.com/sports/womens-volleyball/schedule/2026",
+      "description": "UAA Round Robin match at NYU.",
+      "flags": "NEUTRAL"
+    },
+    {
+      "day": 4,
+      "sort": "13:00",
+      "time": "1:00 PM",
+      "title": "Gateways Family Concert: Ric’key Pageot",
+      "category": "MUSIC",
+      "location": "Hatch Recital Hall",
+      "url": "https://www.esm.rochester.edu/esm-event/gateways-rickey-pageot-family-concert/",
+      "description": "An interactive all-ages concert introducing music by groundbreaking Black composers through performance and storytelling.",
+      "flags": "TICKETED"
+    },
+    {
+      "day": 4,
+      "sort": "13:30",
+      "time": "1:30 PM and 3:00 PM",
+      "title": "Going for Baroque",
+      "category": "MUSIC",
+      "location": "Memorial Art Gallery, Fountain Court",
+      "url": "https://www.esm.rochester.edu/esm-event/going-for-baroque-61/",
+      "description": "Two short performances on MAG’s Italian Baroque organ.",
+      "flags": "INCLUDED WITH MUSEUM ADMISSION"
+    },
+    {
+      "day": 4,
+      "sort": "14:00",
+      "time": "2:00 PM",
+      "title": "Big Love — ASL-interpreted matinee",
+      "category": "THEATER / DANCE",
+      "location": "Sloan Performing Arts Center, Smith Theatre",
+      "url": "https://www.sas.rochester.edu/theatre/productions/current/big-love/index.html",
+      "description": "Sunday’s matinee is ASL interpreted.",
+      "flags": "TICKETED · $10–$20"
+    },
+    {
+      "day": 4,
+      "sort": "14:00",
+      "time": "2:00–3:30 PM",
+      "title": "RPO: Peer Gynt with John de Lancie",
+      "category": "MUSIC",
+      "location": "Kodak Hall at Eastman Theatre",
+      "url": "https://rpo.org/event/peer-gynt-with-john-de-lancie/",
+      "description": "Sunday matinee of the semi-staged Peer Gynt with John de Lancie narrating.",
+      "flags": "TICKETED"
+    },
+    {
+      "day": 4,
+      "sort": "14:00",
+      "time": "2:00 PM",
+      "title": "Women’s Volleyball at New York University",
+      "category": "SPORTS",
+      "location": "New York, NY",
+      "url": "https://uofrathletics.com/sports/womens-volleyball/schedule/2026",
+      "description": "UAA Round Robin match.",
+      "flags": "AWAY"
+    },
+    {
+      "day": 4,
+      "sort": "16:00",
+      "time": "4:00–6:00 PM",
+      "title": "ISO Game Club: Video Game Social",
+      "category": "OTHER CAMPUS EVENTS",
+      "location": "Susan B. Anthony Halls, Gamer Den",
+      "url": "https://events.rochester.edu/event/iso-game-club-presents-video-game-social",
+      "description": "A casual Sunday video-game meetup hosted by the International Students’ Office Game Club.",
+      "flags": ""
+    },
+    {
+      "day": 4,
+      "sort": "17:00",
+      "time": "5:00 PM",
+      "title": "Gateways Piano Recital: Ric’key Pageot",
+      "category": "MUSIC",
+      "location": "Kilbourn Hall",
+      "url": "https://www.esm.rochester.edu/esm-event/gateways-piano-recital-rickey-pageots-classic-black/",
+      "description": "Pageot’s Classic Black recital centers Black classical composers and the musical traditions they shaped.",
+      "flags": "TICKETED"
+    },
+    {
+      "day": 4,
+      "sort": "21:00",
+      "time": "9:00 PM",
+      "title": "Compline with Schola Cantorum",
+      "category": "MUSIC",
+      "location": "Christ Church",
+      "url": "https://www.esm.rochester.edu/esm-event/compline-with-schola-cantorum-9/",
+      "description": "A quiet late-evening service with chant and choral music.",
+      "flags": "FREE"
+    },
+    {
+      "day": 5,
+      "sort": "08:30",
+      "time": "8:30 AM; showcase 6:30 PM",
+      "title": "Gateways Young Musicians Institute: Rochester Day for Strings and Showcase",
+      "category": "MUSIC",
+      "location": "Eastman School of Music; Kilbourn Hall",
+      "url": "https://www.esm.rochester.edu/esm-event/gateways-music-festival-young-musicians-institute-rochester-day-for-strings/",
+      "description": "A day of string study concludes with a 6:30 PM Young Musicians Institute showcase in Kilbourn Hall.",
+      "flags": "TICKETED"
+    },
+    {
+      "day": 5,
+      "sort": "08:30",
+      "time": "8:30 AM",
+      "title": "Men’s Golf: Carnegie Mellon Tartan Invitational, Day 1",
+      "category": "SPORTS",
+      "location": "Laurel Valley Golf Club, Ligonier, PA",
+      "url": "https://uofrathletics.com/sports/mens-golf/schedule/2026-27",
+      "description": "First round of the two-day invitational.",
+      "flags": "AWAY"
+    },
+    {
+      "day": 5,
+      "sort": "15:30",
+      "time": "3:30–6:00 PM",
+      "title": "Healthcare in the Age of Frontier Models",
+      "category": "TALKS / LECTURES",
+      "location": "School of Medicine and Dentistry, Class of ’62 Auditorium",
+      "url": "https://events.rochester.edu/event/taubman-deans-lecture-series-5503",
+      "description": "Brian Anderson, CEO of the Coalition for Health AI, delivers the Taubman Dean’s Lecture.",
+      "flags": ""
+    },
+    {
+      "day": 5,
+      "sort": "18:00",
+      "time": "6:00–7:30 PM",
+      "title": "Chess Club weekly meeting",
+      "category": "OTHER CAMPUS EVENTS",
+      "location": "Douglass Commons 302",
+      "url": "https://ccc.rochester.edu/rsvp_boot?id=1967605",
+      "description": "Drop in for casual and competitive chess.",
+      "flags": ""
+    },
+    {
+      "day": 6,
+      "sort": "08:30",
+      "time": "8:30 AM",
+      "title": "Men’s Golf: Carnegie Mellon Tartan Invitational, Day 2",
+      "category": "SPORTS",
+      "location": "Laurel Valley Golf Club, Ligonier, PA",
+      "url": "https://uofrathletics.com/sports/mens-golf/schedule/2026-27",
+      "description": "Final round of the invitational.",
+      "flags": "AWAY"
+    },
+    {
+      "day": 6,
+      "sort": "12:10",
+      "time": "12:10 PM",
+      "title": "Tuesday Pipes",
+      "category": "MUSIC",
+      "location": "Christ Church",
+      "url": "https://www.esm.rochester.edu/esm-event/tuesday-pipes-29/",
+      "description": "Eastman’s weekly lunchtime organ series.",
+      "flags": "FREE"
+    },
+    {
+      "day": 6,
+      "sort": "17:00",
+      "time": "5:00 PM",
+      "title": "Field Hockey at Hamilton College",
+      "category": "SPORTS",
+      "location": "Clinton, NY",
+      "url": "https://uofrathletics.com/sports/field-hockey/schedule/2026",
+      "description": "Non-conference road match.",
+      "flags": "AWAY"
+    },
+    {
+      "day": 6,
+      "sort": "19:00",
+      "time": "7:00 PM",
+      "title": "Men’s Soccer vs. Hamilton College",
+      "category": "SPORTS",
+      "location": "Edwin Fauver Stadium",
+      "url": "https://uofrathletics.com/sports/mens-soccer/schedule/2026",
+      "description": "Home non-conference match.",
+      "flags": "HOME"
+    },
+    {
+      "day": 6,
+      "sort": "20:30",
+      "time": "8:30 PM",
+      "title": "China Stories — piano recital by Liu Liu",
+      "category": "MUSIC",
+      "location": "Hatch Recital Hall",
+      "url": "https://www.esm.rochester.edu/esm-event/special-concert-china-stories-piano-recital-by-liu-liu/",
+      "description": "A special piano recital by Liu Liu.",
+      "flags": "FREE · LIVESTREAM"
+    },
+    {
+      "day": 7,
+      "sort": "12:30",
+      "time": "12:30–2:00 PM",
+      "title": "Grammars of Crisis: Madness and Responsibility in Sunni-Islamic Maldives",
+      "category": "TALKS / LECTURES",
+      "location": "Rush Rhees Library, Humanities Center Conference Room D",
+      "url": "https://events.rochester.edu/event/grammars-of-crisis-emergent-conceptions-of-madness-and-responsibility-in-sunni-islamic-maldives-by-anu-ahmed",
+      "description": "Anthropologist Anu Ahmed on mental illness, ethics, modernization, gender, class, and responsibility in the Maldives.",
+      "flags": "RSVP REQUIRED"
+    },
+    {
+      "day": 7,
+      "sort": "15:30",
+      "time": "3:30 PM",
+      "title": "AI in Education Across the World",
+      "category": "TALKS / LECTURES",
+      "location": "Online",
+      "url": "https://events.rochester.edu/event/lida-colloquium-series-ai-in-education-across-the-world-9068",
+      "description": "The LiDA Colloquium looks beyond U.S. assumptions about the potential and limits of AI in schools and universities.",
+      "flags": "FREE"
+    },
+    {
+      "day": 7,
+      "sort": "19:00",
+      "time": "7:00–9:00 PM",
+      "title": "Lewis Henry Morgan Lecture: Living with Toxic Development",
+      "category": "TALKS / LECTURES",
+      "location": "Wegmans Hall 1400",
+      "url": "https://events.rochester.edu/event/2026-lewis-henry-morgan-lecture-camelia-dewan-uppsala-university",
+      "description": "Camelia Dewan of Uppsala University examines ship recycling, toxic exposure, livelihoods, and the unequal promises of development in coastal Bangladesh.",
+      "flags": "FREE"
+    },
+    {
+      "day": 7,
+      "sort": "19:30",
+      "time": "7:30 PM",
+      "title": "George Abraham: CELEBRATE — Opus 90 Completed",
+      "category": "MUSIC",
+      "location": "Kilbourn Hall",
+      "url": "https://www.esm.rochester.edu/esm-event/special-concert-george-abraham-celebrate-opus-90-completed/",
+      "description": "A 90th-birthday two-piano recital and Wilmot Cancer Institute fundraiser with Liu Liu, Cahill Smith, Alan Chow, and George Abraham; works for four, six, and eight hands.",
+      "flags": "FREE · $20 suggested donation · LIVESTREAM"
+    },
+    {
+      "day": 7,
+      "sort": "20:00",
+      "time": "8:00 PM",
+      "title": "Big Love — English Night",
+      "category": "THEATER / DANCE",
+      "location": "Sloan Performing Arts Center, Smith Theatre",
+      "url": "https://www.sas.rochester.edu/theatre/productions/current/big-love/index.html",
+      "description": "Wednesday’s performance includes an English-department post-show reception.",
+      "flags": "TICKETED · $10–$20"
+    },
+    {
+      "day": 8,
+      "sort": "12:00",
+      "time": "12:00–1:00 PM",
+      "title": "Experience Rochester: Disrupting Politics",
+      "category": "TALKS / LECTURES",
+      "location": "Online",
+      "url": "https://events.rochester.edu/event/experience-rochester-disrupting-politics",
+      "description": "Katie Harbath, a former political strategist and longtime Facebook elections-policy leader, joins David Primo on technology, democracy, misinformation, AI, and the 2026 midterms.",
+      "flags": "FREE · RSVP REQUIRED"
+    },
+    {
+      "day": 8,
+      "sort": "12:30",
+      "time": "12:30–2:00 PM",
+      "title": "Lunch and Labyrinth",
+      "category": "OTHER CAMPUS EVENTS",
+      "location": "Venue shown after CCC sign-in",
+      "url": "https://ccc.rochester.edu/rsvp_boot?id=1966547",
+      "description": "Religious and Spiritual Life hosts lunch and a walk through the labyrinth.",
+      "flags": "FREE · RSVP REQUIRED · CCC SIGN-IN FOR VENUE"
+    },
+    {
+      "day": 8,
+      "sort": "18:00",
+      "time": "6:00–7:00 PM",
+      "title": "Curator’s Tour of Hugo McCloud: to everything there is a season",
+      "category": "ARTS",
+      "location": "Memorial Art Gallery, meet at Admissions Desk",
+      "url": "https://mag.rochester.edu/event/curators-tour-hugo-mccloud/",
+      "description": "Curator Timothy Peterson explores McCloud’s examination of labor and his use of plastic, foil, tar paper, and other unconventional materials.",
+      "flags": "SOLD OUT · $10; free UR/MAG members"
+    },
+    {
+      "day": 8,
+      "sort": "18:30",
+      "time": "6:30 PM",
+      "title": "Haniel Anugerah, piano",
+      "category": "MUSIC",
+      "location": "Hatch Recital Hall",
+      "url": "https://www.esm.rochester.edu/esm-event/student-degree-recital-haniel-anugerah-piano-2/",
+      "description": "Eastman student degree recital.",
+      "flags": "FREE · LIVESTREAM"
+    },
+    {
+      "day": 8,
+      "sort": "19:00",
+      "time": "7:00 PM",
+      "title": "Third Thursday: Anonymous — A Rose by Any Other Name",
+      "category": "MUSIC",
+      "location": "Memorial Art Gallery",
+      "url": "https://www.esm.rochester.edu/esm-event/third-thursday-concert-oct2026/",
+      "description": "John Sheridan, organ, and friends perform at MAG.",
+      "flags": "FREE"
+    },
+    {
+      "day": 8,
+      "sort": "20:00",
+      "time": "8:00 PM",
+      "title": "Big Love",
+      "category": "THEATER / DANCE",
+      "location": "Sloan Performing Arts Center, Smith Theatre",
+      "url": "https://www.sas.rochester.edu/theatre/productions/current/big-love/index.html",
+      "description": "Thursday-night performance; the production continues October 16–17 after this digest window.",
+      "flags": "TICKETED · $10–$20"
+    },
+    {
+      "day": 8,
+      "sort": "22:00",
+      "time": "10:00–11:00 PM",
+      "title": "Late Night × Quiz Bowl: Trivia Night",
+      "category": "OTHER CAMPUS EVENTS",
+      "location": "Venue shown after CCC sign-in",
+      "url": "https://ccc.rochester.edu/latenight/rsvp?event_uid=1cc3dccf3c4b2aeb71b2561a57038c76",
+      "description": "Another Thursday-night trivia session from Late Night and Quiz Bowl.",
+      "flags": "CCC SIGN-IN FOR VENUE"
+    }
+  ],
+  "exhibitions": [
+    {
+      "title": "Hugo McCloud: to everything there is a season",
+      "url": "https://mag.rochester.edu/exhibitions/hugo-mccloud/",
+      "description": "McCloud’s global examination of labor, migration, and material reuse runs at MAG; free admission for University of Rochester students with ID."
+    },
+    {
+      "title": "Fischli & Weiss: The Way Things Go",
+      "url": "https://events.rochester.edu/event/fischli-weiss-the-way-things-go",
+      "description": "A delightfully elaborate chain-reaction film in MAG’s Media Arts Watch Gallery; included with museum admission."
+    },
+    {
+      "title": "Desire and Abundance: American Culture and the Still Life",
+      "url": "https://events.rochester.edu/event/desire-and-abundance-american-culture-and-the-still-life",
+      "description": "American still lifes and the culture of consumption in MAG’s Forman Gallery; free to University of Rochester students with ID."
+    }
+  ],
+  "source_health": [
+    "The central University calendar API returned 134 raw listings across both pages for October 8–15. Clinical screenings, employee training, routine wellness classes, and closed professional meetings were searched but not dumped into this student-facing digest.",
+    "CampusGroups’ public event service returned 63 events for the window, including Tech Night, Chess Club, Lunch and Labyrinth, and both Late Night trivia sessions. Many venues remain hidden until sign-in; those entries are labeled rather than guessed.",
+    "Eastman’s independent calendar supplied 24 listings in the window, most absent from the central calendar. The Gateways festival and Eastman pages are active; livestream and ticket labels above follow the current Eastman listings.",
+    "Eastman calls the October 14 concert “George Abraham: CELEBRATE: Opus 90 Completed,” while the central calendar calls it a duo-piano fundraiser for Wilmot. The descriptions, time, venue, performers, and 90th-birthday framing establish that these are the same event, so they are deduplicated above.",
+    "MAG currently marks its October 8 Kirigami workshop, October 9 pottery workshop, and October 15 Hugo McCloud curator tour SOLD OUT. The first two are omitted as unavailable; the curator tour remains listed because it is a notable event and the status is clearly flagged.",
+    "Athletics’ official responsive calendar and individual sport schedules agree on all 11 varsity events in the window. Home, away, and neutral status are labeled; home venues are taken from the official event data.",
+    "Arthur Satz Music is active but lists no River Campus concert between October 8 and 15; its next published concert is October 18. GIDS-AI and Dance/Movement also produced no separately confirmed public event for this window. Simon is active and supplied Thursday’s finance panel; Humanities supplied Wednesday’s Anu Ahmed seminar.",
+    "Event pages remain the authority for last-minute changes, admission, and registration. This is a broad, curated campus digest—not every appointment, closed meeting, clinical training, or recurring workout."
+  ]
+}

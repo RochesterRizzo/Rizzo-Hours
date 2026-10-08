@@ -651,6 +651,20 @@
         grid-template-columns: 1fr;
       }
     }
+
+    .earnings-feature { padding:24px; background:#fff; border:3px solid var(--yellow); border-top:10px solid var(--yellow); border-radius:14px; box-shadow:0 4px 18px rgba(5,47,79,.12); }
+    .earnings-feature__label { margin:0 0 6px; color:var(--river); font-size:.9rem; font-weight:900; letter-spacing:.08em; text-transform:uppercase; }
+    .earnings-feature h2 { margin:0 0 18px; color:var(--navy); font-size:clamp(1.7rem,4vw,2.5rem); line-height:1.15; }
+    .earnings-feature__grid { display:grid; grid-template-columns:minmax(0,1fr) minmax(220px,300px); gap:26px; align-items:start; }
+    .earnings-feature__amount { margin:0; color:var(--navy); font-size:clamp(2.8rem,7vw,4.4rem); font-weight:900; line-height:1.1; }
+    .earnings-feature table { width:100%; border-collapse:collapse; margin:20px 0; background:#f5f8fa; }
+    .earnings-feature th,.earnings-feature td { padding:12px; border-bottom:1px solid var(--line); text-align:left; }
+    .earnings-feature td:last-child { white-space:nowrap; font-weight:800; }
+    .earnings-feature figure { margin:0; }
+    .earnings-feature img { display:block; width:100%; height:auto; border:1px solid var(--line); border-radius:8px; }
+    .earnings-feature figcaption,.earnings-feature__source { font-size:.9rem; color:var(--muted); }
+    .earnings-feature figcaption { margin-top:8px; }
+    @media (max-width:760px) { .earnings-feature { padding:18px; } .earnings-feature__grid { grid-template-columns:1fr; } .earnings-feature figure { max-width:360px; margin:0 auto; } }
   </style>
 </head>
 
@@ -668,6 +682,33 @@
         <a href="index.html">← Back to Office Hours & Student Information</a>
       </p>
 
+      <section class="earnings-feature" id="rochester-economics-earnings" aria-labelledby="earnings-feature-title">
+        <p class="earnings-feature__label">Featured · Rochester economics outcomes</p>
+        <h2 id="earnings-feature-title">What do Rochester economics graduates earn?</h2>
+        <div class="earnings-feature__grid">
+          <div>
+            <p class="earnings-feature__amount">$109,324</p>
+            <p><strong>Median earnings for University of Rochester economics graduates in the comparison shown.</strong></p>
+            <p>Considering an economics major? Put this on your radar. The <em>New York Times</em> comparison shown here reports Rochester economics graduates earning <strong>$15,957 more — about 17% higher —</strong> than Rochester graduates in Business/Commerce, General.</p>
+            <table>
+              <caption style="text-align:left;font-weight:800;margin-bottom:8px">Median earnings shown in the comparison</caption>
+              <thead><tr><th scope="col">School / major</th><th scope="col">Earnings</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">University of Rochester · Economics</th><td>$109,324</td></tr>
+                <tr><th scope="row">University of Rochester · Business/Commerce, General</th><td>$93,367</td></tr>
+                <tr><th scope="row">All Institutions · All Majors</th><td>$64,500</td></tr>
+              </tbody>
+            </table>
+            <p class="earnings-feature__source"><strong>Source and scope:</strong> The supplied <em>New York Times</em> screenshot credits The HEA Group. Its note describes median income from IRS tax records for graduates of 2017–18 or 2018–19 programs, with programs listed when more than 15 graduates received federal aid. These are reported graduate outcomes, not starting-salary guarantees; the comparison alone does not establish how much of the gap the major itself causes.</p>
+            <p><a href="#majors">Explore Rochester’s economics majors</a> · <a href="whats-on-tap.html#rochester-economics-earnings">Discuss what explains the earnings gap →</a></p>
+          </div>
+          <figure>
+            <a href="bulletin-files/rochester-economics-earnings-nyt.png" target="_blank" rel="noopener noreferrer" aria-label="Open the original New York Times earnings screenshot at full size"><img src="bulletin-files/rochester-economics-earnings-nyt.png" width="552" height="1350" alt="New York Times college earnings comparison: University of Rochester Economics, $109,324; Rochester Business/Commerce, General, $93,367; All Institutions and All Majors, $64,500. Source note credits The HEA Group."></a>
+            <figcaption>Original screenshot, including the source note. Select the image to view it at full size.</figcaption>
+          </figure>
+        </div>
+      </section>
+
       <div class="notice">
         <h2>Use the official department pages as the source of truth</h2>
         <p>
@@ -676,6 +717,7 @@
       </div>
 
       <nav class="nav-strip" aria-label="Page sections">
+        <a href="#rochester-economics-earnings">Rochester Economics Earnings</a>
         <a href="#official-links">Official Links</a>
         <a href="#majors">New Majors</a>
         <a href="#typical-pathways">Typical Pathways</a>
@@ -1708,6 +1750,7 @@
       </section>
 
       <section id="careers">
+        <p><a href="#rochester-economics-earnings">Featured: Rochester economics graduates’ median earnings of $109,324 →</a></p>
         <div class="section-title">
           <h2>Careers and Salaries</h2>
           <p>Economics is not a single job title. It is a way to reason with models, evidence, uncertainty, incentives, and tradeoffs.</p>

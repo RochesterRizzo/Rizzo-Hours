@@ -19,8 +19,8 @@ Use original event pages for final details. Add newly useful sources here. This 
 | Coverage | Source | Retrieval notes |
 | --- | --- | --- |
 | Main University calendar | https://events.rochester.edu/ | Public Localist API: `https://events.rochester.edu/api/2/events?start=YYYY-MM-DD&end=YYYY-MM-DD&pp=100&page=1`. Follow `page.next_page` until complete. End is exclusive: request through Friday to include the second Thursday. Use `event_instances[].event_instance.start/end`, `location_name`, `room_number`, `free`, `ticket_cost`, `has_register`, `description_text`, and `localist_url`. |
-| All varsity sports | https://uofrathletics.com/calendar | Read each sport's current official schedule; the composite calendar can be empty in text retrieval. Emphasize home games, label away games, and verify opponents, times, venues, cancellations, and season year. Fall schedules include football, field hockey, both soccer teams, volleyball, both cross-country teams, both tennis teams, golf, rowing, swimming, and squash; also check other varsity sports for posted events. |
-| Student activities / CCC | https://ccc.rochester.edu/ | Search direct organization and RSVP pages; sign-in-only venues must be marked as such. Do not infer that a thin organization homepage means no events. |
+| All varsity sports | https://uofrathletics.com/calendar | Read each sport's current official schedule; the composite calendar can be empty in text retrieval. The site calendar service at `https://uofrathletics.com/services/responsive-calendar.ashx?type=month&sport=0&location=all&date=M/D/YYYY%2012:00:00%20AM&year=YYYY` is useful for finding every sport before verifying direct schedule pages. Emphasize home games, label away games, and verify opponents, times, venues, cancellations, and season year. Fall schedules include football, field hockey, both soccer teams, volleyball, both cross-country teams, both tennis teams, golf, rowing, swimming, and squash; also check other varsity sports for posted events. |
+| Student activities / CCC | https://ccc.rochester.edu/ | Search direct organization and RSVP pages; sign-in-only venues must be marked as such. The public CampusGroups service at `https://ccc.rochester.edu/mobile_ws/v17/mobile_events_list?range=0&limit=200&filter8=YYYY-MM-DD&filter9=YYYY-MM-DD&order=&search_word=` provides broad date-window discovery; follow the returned organization and event URLs for verification. Do not infer that a thin organization homepage means no events. |
 | Late Night / Wilson Commons | https://ccc.rochester.edu/latenight/ | Good source for trivia, live music, games, and weekend student events. Follow individual event links. |
 | Eastman | https://www.esm.rochester.edu/events/ | Date filter: `?_esm_events_date_range=YYYY-MM-DD`; inspect direct `/esm-event/` pages. Distinguish public concerts from Eastman-only masterclasses. Check postponements. |
 | River Campus music | https://www.sas.rochester.edu/mur/ensembles/concerts.html | Arthur Satz Department of Music calendar; complements Eastman. |
@@ -36,12 +36,13 @@ Use original event pages for final details. Add newly useful sources here. This 
 | Memorial Art Gallery | https://mag.rochester.edu/ | Direct event/exhibition pages; museum admission, special tickets, and opening hours differ. |
 | Meliora Weekend | https://www.rochester.edu/melioraweekend/schedule/ | Full program uses a Cvent embed. Check registration/availability; never guess headliner times from promotional pages. |
 
-## Known source issues observed October 1, 2026
+## Known source issues observed October 8, 2026
 
-- University calendar HTML requests intermittently returned HTTP 429 while the public API was available.
-- Search snippets sometimes display Pacific time. Normalize the source timestamps to America/New_York.
-- October 1 Wing Lecture's current room is Hylan 1106a; last week's edition had Hylan 101. Preserve the historical archive while using the current listing in the live digest.
-- October 4 Eastman Performance Plus was postponed. Laurent Dubreuil's AI lecture moved to October 21 in the current listing.
-- CCC often hides venue details behind sign-in. The October 3 Late Night arcade event was confirmed on its organizer calendar, while its direct RSVP page returned an access error.
-- Economics workshop pages exposed standing times but no date-specific speakers; do not manufacture weekly events from the recurrence.
+- The University calendar API returned 134 raw listings across two pages for October 8–15; full pagination remains necessary.
+- CCC's public service returned 63 listings in the window, but some direct CampusGroups pages still hide venue details behind sign-in. Label those venues as unavailable rather than guessing.
+- Eastman's calendar exposed 24 public listings in the window. The George Abraham 90th-birthday concert appeared separately on Eastman and the University calendar as the same Wilmot Cancer Institute benefit and must be deduplicated.
+- The athletics calendar service and the individual official schedules agreed on 11 varsity events in the window, including home/away status.
+- MAG marked the October 8 Kirigami workshop, October 9 pottery workshop, and October 15 Hugo McCloud curator tour sold out. Keep notable sold-out events only when the status is explicit.
+- Arthur Satz Music was active but had no River Campus concert in the October 8–15 window; its next posted concert was October 18. GIDS-AI and Dance/Movement likewise had no separately confirmed public event for this window.
+- Search snippets can display the wrong timezone. Normalize authoritative source timestamps to America/New_York.
 - Do not conflate missing/blocked/dynamic feeds with verified absence of events.

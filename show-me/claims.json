@@ -1,5 +1,9 @@
 {
   "claims": {
+    "CLIM-02": {
+      "claimed_at": "2026-10-04T19:32:22.781730+00:00",
+      "claimed_by": "hchambe6-dot"
+    },
     "CLIM-06": {
       "claimed_at": "2026-10-01T19:51:14.273584+00:00",
       "claimed_by": "owenbernsteinsfc-sudo"
@@ -12,9 +16,21 @@
       "claimed_at": "2026-10-01T01:02:52.821390+00:00",
       "claimed_by": "sscheinb"
     },
+    "CLIM-12": {
+      "claimed_at": "2026-10-04T18:48:16.194024+00:00",
+      "claimed_by": "SherBraeWala"
+    },
+    "CLIM-14": {
+      "claimed_at": "2026-10-04T19:07:02.859427+00:00",
+      "claimed_by": "scoobydoobychu"
+    },
     "CLIM-16": {
       "claimed_at": "2026-09-23T20:07:47.322924+00:00",
       "claimed_by": "mscholz3-svg"
+    },
+    "ENERGY-17": {
+      "claimed_at": "2026-10-02T15:52:14.192165+00:00",
+      "claimed_by": "gracec-1"
     },
     "ENERGY-18": {
       "claimed_at": "2026-09-23T20:08:42.432818+00:00",
@@ -23,6 +39,66 @@
     "ENERGY-20": {
       "claimed_at": "2026-10-01T20:38:48.893826+00:00",
       "claimed_by": "LiamSakakeeny"
+    },
+    "ENERGY-24": {
+      "claimed_at": "2026-10-03T04:15:40.561621+00:00",
+      "claimed_by": "Pixelatium"
+    },
+    "ENERGY-25": {
+      "claimed_at": "2026-10-04T17:06:18.322159+00:00",
+      "claimed_by": "dbarbere-tech"
+    },
+    "ENERGY-28": {
+      "claimed_at": "2026-10-03T22:38:33.503120+00:00",
+      "claimed_by": "sdass3"
+    },
+    "ENERGY-29": {
+      "claimed_at": "2026-10-04T19:45:42.088265+00:00",
+      "claimed_by": "bkzzzz"
+    },
+    "FOOD-55": {
+      "claimed_at": "2026-10-04T18:42:39.194977+00:00",
+      "claimed_by": "felix-ab"
+    },
+    "FOOD-57": {
+      "claimed_at": "2026-10-04T18:42:51.608641+00:00",
+      "claimed_by": "kawawa-ririko"
+    },
+    "FOOD-59": {
+      "claimed_at": "2026-10-04T16:55:16.176247+00:00",
+      "claimed_by": "calebjkatz"
+    },
+    "POL-67": {
+      "claimed_at": "2026-10-04T15:20:55.194811+00:00",
+      "claimed_by": "rmirabe2"
+    },
+    "POL-70": {
+      "claimed_at": "2026-10-03T18:12:53.852929+00:00",
+      "claimed_by": "bemah123456"
+    },
+    "RISK-35": {
+      "claimed_at": "2026-10-04T19:49:58.582393+00:00",
+      "claimed_by": "GMathieu123"
+    },
+    "RISK-36": {
+      "claimed_at": "2026-10-04T16:05:21.420245+00:00",
+      "claimed_by": "FishMan2341"
+    },
+    "RISK-40": {
+      "claimed_at": "2026-10-04T16:24:53.599084+00:00",
+      "claimed_by": "KaileyDurow"
+    },
+    "RISK-42": {
+      "claimed_at": "2026-10-04T01:36:41.357694+00:00",
+      "claimed_by": "efoley13"
+    },
+    "WW-60": {
+      "claimed_at": "2026-10-04T20:11:04.943287+00:00",
+      "claimed_by": "wmcdonq"
+    },
+    "WW-65": {
+      "claimed_at": "2026-10-04T15:24:16.138159+00:00",
+      "claimed_by": "scproom"
     }
   },
   "custom": [
@@ -41,6 +117,174 @@
       "description": "I want to compare how much water a 5-, 10-, and 20-minute shower uses with a standard showerhead versus a WaterSense low-flow showerhead. I also want to estimate the yearly water savings and the possible household cost savings from using a lower-flow showerhead.",
       "id": "CUSTOM-wzhang76",
       "title": "How Much Water Does a Shower Actually Use?"
+    },
+    {
+      "active": true,
+      "claimed_at": "2026-10-02T14:25:21.667535+00:00",
+      "claimed_by": "sdmytruk",
+      "description": "How CO2 or general climate impact of meats, or items in the carnivore diet can affect the climate. As a vegetarian, I was interested in seeing if diet really has an impact. After some research, it turns out that it does!",
+      "id": "CUSTOM-sdmytruk",
+      "title": "How does having a plant-based diet affect the climate or economy?"
+    },
+    {
+      "active": true,
+      "claimed_at": "2026-10-03T04:15:12.038671+00:00",
+      "claimed_by": "Pixelatium",
+      "description": "Compare the cost of providing the same household services\u2014transportation, heating, cooking, and appliances\u2014under a fossil-fuel household and a highly electrified household. Vary electricity prices, gasoline/natural-gas prices, battery costs, and equipment efficiency to identify when electrification actually lowers total household energy expenditure.",
+      "id": "CUSTOM-Pixelatium",
+      "title": "Electrification Can Reduce Energy Costs Without Reducing Energy Use"
+    },
+    {
+      "active": true,
+      "claimed_at": "2026-10-03T18:53:36.881150+00:00",
+      "claimed_by": "bemah123456",
+      "description": "Break down the drop in U.S. electricity CO\u2082 from 2005 to 2025 into demand growth, coal-to-gas switching, wind, solar, nuclear, and hydro using EIA data. Show the year-by-year race between gas and renewables, the cumulative totals, and how the answer changes under different assumptions.",
+      "id": "CUSTOM-bemah123456",
+      "title": "Fracking vs. Renewables: Who Actually Cut U.S. Power-Plant CO\u2082 Since 2005?"
+    },
+    {
+      "active": true,
+      "claimed_at": "2026-10-04T13:41:04.738361+00:00",
+      "claimed_by": "gracec-1",
+      "description": "Recycling is only one part of the U.S. waste stream. I plan on showing where municipal solid waste actually goes, putting recycling and composting in perspective alongside the other ways we manage waste.",
+      "id": "CUSTOM-gracec-1",
+      "title": "Recycling in Context"
+    },
+    {
+      "active": true,
+      "claimed_at": "2026-10-04T15:23:51.220402+00:00",
+      "claimed_by": "LiamSakakeeny",
+      "description": "Does the means of getting your produce from farm to table affect your carbon footprint? How can we produce food more efficiently with less detriment to the environment?",
+      "id": "CUSTOM-LiamSakakeeny",
+      "title": "Food Miles vs. Production Footprint"
+    },
+    {
+      "active": true,
+      "claimed_at": "2026-10-04T16:38:21.440865+00:00",
+      "claimed_by": "FishMan2341",
+      "description": "-The electricity usage of different AI tasks next to everyday activites such as a Google search\n-Why published estimates differ by about 10x\n-A calculator so that people can astimate their own daily electricity usage due to AI\n-How per-prompt energy usage growth (due to models getting larger) staks up against data center growth",
+      "id": "CUSTOM-FishMan2341",
+      "title": "How Much Power is an AI Inquiry?"
+    },
+    {
+      "active": true,
+      "claimed_at": "2026-10-04T18:32:15.272680+00:00",
+      "claimed_by": "mscholz3-svg",
+      "description": "I plan to compare the emissions from beer, wine, and spirits using an equal standard drink. I will also show how packaging can change the climate cost of each drink.",
+      "id": "CUSTOM-mscholz3-svg",
+      "title": "The Climate Cost of a Drink"
+    },
+    {
+      "active": true,
+      "claimed_at": "2026-10-04T18:51:55.744135+00:00",
+      "claimed_by": "SherBraeWala",
+      "description": "A counterfactual decomposition of the drop in U.S. power-sector CO\u2082 from 2005 to 2024: what 2024 emissions would have been with the 2005 fuel mix, and how much of the gap came from coal-to-gas switching versus wind and solar. The page also shows how methane leakage (on 20- and 100-year metrics) shrinks gas's credit, and finds the break-even leakage rate where gas stops beating coal.",
+      "id": "CUSTOM-SherBraeWala",
+      "title": "Who Cut America's Power-Plant Emissions? Fracking, Wind & Solar, and the Methane Fine Print"
+    },
+    {
+      "active": true,
+      "claimed_at": "2026-10-04T19:06:29.168690+00:00",
+      "claimed_by": "rmirabe2",
+      "description": "Bag use, substitute bags (paper, thicker reusable plastic, trash bags), and litter before and after plastic bag bans and fees in places that passed them, to see what the policy actually changed.",
+      "id": "CUSTOM-rmirabe2",
+      "title": "Plastic Bag Bans, Before and After"
+    },
+    {
+      "active": true,
+      "claimed_at": "2026-10-04T19:22:00.848790+00:00",
+      "claimed_by": "sscheinb",
+      "description": "US GDP rose 349% from 1970 to 2025 while the EPA's combined emissions of six major air pollutants fell 78%. A block chart shows the comparison, with per-unit calculations, a breakdown by pollutant, and the catches, such as 115 million people still living in counties above a national air standard.",
+      "id": "CUSTOM-sscheinb",
+      "title": "Four Times the Economy, Under a Quarter of the Air Pollution"
+    },
+    {
+      "active": true,
+      "claimed_at": "2026-10-04T19:41:05.931305+00:00",
+      "claimed_by": "scproom",
+      "description": "This exhibit follows one winter of road salting, showing how salt improves road safety while contributing to vehicle rust, freshwater pollution, plant damage, and infrastructure repair costs. Readers can adjust the amount of salt applied to see when the added environmental damage outweighs the added safety benefits.",
+      "id": "CUSTOM-scproom",
+      "title": "Road Salt Damage Model"
+    },
+    {
+      "active": false,
+      "claimed_at": "2026-10-04T19:45:02.024021+00:00",
+      "claimed_by": "scoobydoobychu",
+      "description": "Is greater female political represeentation associated with lower carbon emissions? I'll compare percentage of parliamentary seats held by women versus CO2 emissions per person across countries with a scatterplot.",
+      "id": "CUSTOM-scoobydoobychu",
+      "title": "Do Countries with More Women in Politics Have a Greener Future"
+    },
+    {
+      "active": true,
+      "claimed_at": "2026-10-04T19:45:54.004424+00:00",
+      "claimed_by": "bkzzzz",
+      "description": "Using an explicitly hypothetical traffic-noise model, I will show how redirecting traffic away from a park changes sound levels at the park and along a receiving residential road. Readers can vary the redirected share, attenuation of diverted traffic, the number of residents potentially affected, and extra travel time. The exhibit will distinguish a quieter park from a net social benefit, conserve traffic, explain logarithmic decibels, and provide equations and downloadable calculations. It will not present assumed local numbers as Rochester measurements.",
+      "id": "CUSTOM-bkzzzz",
+      "title": "A quieter park. Whose street gets louder?"
+    },
+    {
+      "active": true,
+      "claimed_at": "2026-10-04T20:11:17.793787+00:00",
+      "claimed_by": "wmcdonq",
+      "description": "Compare leaving a gaming PC idle, putting it to sleep, and shutting it down for eight hours each night. Calculate yearly electricity use, cost, and power-plant CO2. Change the power draw, hours, electricity price, and grid emissions rate to show how the answer changes. These will be clearly labeled scenarios, not measurements of my own computer.",
+      "id": "CUSTOM-wmcdonq",
+      "title": "What Does Leaving a Gaming PC On Overnight Cost?"
+    },
+    {
+      "active": true,
+      "claimed_at": "2026-10-04T20:22:47.031205+00:00",
+      "claimed_by": "GMathieu123",
+      "description": "I will build a model that converts vehicle idling time into gasoline burned, the driver's private fuel cost, CO2 emissions, and a modeled climate external cost. I will use the U.S. Department of Energy's range for idling fuel use and EPA data for CO2 per gallon. I will also vary EPA's 2026 social cost of carbon estimates across discount-rate assumptions so the exhibit shows how the answer changes rather than presenting one number as certain. The main economic question is the break-even point: how valuable would the comfort, convenience, or safety benefit of another minute of idling have to be to exceed its private plus external cost?",
+      "id": "CUSTOM-GMathieu123",
+      "title": "What Does 10 Minutes of Idling Really Cost?"
+    },
+    {
+      "active": true,
+      "claimed_at": "2026-10-04T20:27:30.305287+00:00",
+      "claimed_by": "scoobydoobychu",
+      "description": "I'll use a column chart to see if there's a bell-shape to the CO2 emissions of countries, arranged by income level.",
+      "id": "CUSTOM-scoobydoobychu",
+      "title": "Do CO2 Emissions per Capita Follow the Environmental Kuznets Curve as Countries Become Richer ?"
+    },
+    {
+      "active": true,
+      "claimed_at": "2026-10-04T20:31:08.986390+00:00",
+      "claimed_by": "calebjkatz",
+      "description": "I want to compare the U.S. and China across the rare-earth/lanthanide supply chain, especially the magnet-related elements neodymium, praseodymium, samarium, and related materials. I will show the difference between mining rare-earth ore and actually separating/refining individual lanthanides, explain why U.S. production and processing declined while China became dominant, and examine current U.S. efforts to rebuild domestic mining, separation, refining, and magnet manufacturing. The exhibit will distinguish measured production/capacity from announced projects and will make the economic and environmental tradeoffs visible rather than treating \"more domestic mining\" as automatically sufficient.",
+      "id": "CUSTOM-calebjkatz",
+      "title": "Why Did the U.S. Lose the Rare-Earth Supply Chain\u2014and Can It Bring It Back?"
+    },
+    {
+      "active": true,
+      "claimed_at": "2026-10-04T22:30:41.401926+00:00",
+      "claimed_by": "efoley13",
+      "description": "How much water is used to produce food Americans throw away?",
+      "id": "CUSTOM-efoley13",
+      "title": "What I plan to show: How much water is used to produce food Americans throw away?"
+    },
+    {
+      "active": true,
+      "claimed_at": "2026-10-04T22:34:17.773716+00:00",
+      "claimed_by": "felix-ab",
+      "description": "Rules sold on environmental grounds, such as environmental review and zoning limits, stop homes from being built in New York City (the five boroughs). That has a carbon cost of its own. When a home isn't built in the city, the household that would have lived there often ends up farther out in the NYC metro area, driving more and heating a bigger house. Plenty of suburban households would live there anyway, so I count only those priced out. Using Census commuting data (LODES) for people who work in NYC, federal household driving estimates and home-energy data by census tract, I estimate the extra CO2 per blocked home and in total, and price it at the $268 per ton NYC itself charges under Local Law 97.",
+      "id": "CUSTOM-felix-ab",
+      "title": "The Carbon Cost of Blocking Homes in New York City"
+    },
+    {
+      "active": true,
+      "claimed_at": "2026-10-04T22:36:17.552617+00:00",
+      "claimed_by": "KaileyDurow",
+      "description": "Context of diaper types (disposable and reusable) along with their environmental impact",
+      "id": "CUSTOM-KaileyDurow",
+      "title": "Impacting the Environment from Day 1... Diapers"
+    },
+    {
+      "active": true,
+      "claimed_at": "2026-10-04T22:55:05.139329+00:00",
+      "claimed_by": "dbarbere-tech",
+      "description": "How car exhaust creates smog, how many people it harms in the US, who it harms most, and which policies have measurably reduced it.",
+      "id": "CUSTOM-dbarbere-tech",
+      "title": "Cars, Smog & Health"
     }
   ]
 }

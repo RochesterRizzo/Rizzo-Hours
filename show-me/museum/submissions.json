@@ -1,5 +1,347 @@
 {
   "students": {
+    "FishMan2341": {
+      "LIST": {
+        "category": "Risk & Toxicology",
+        "cover_url": "https://fishman2341.github.io/econ238-portfolio/week-five/detection-limits/cover.png",
+        "github_user": "FishMan2341",
+        "hook": "Make the lab 1,000x more sensitive and the number of \"detected\" contaminants explodes, even though nobody's exposure changes at all.",
+        "issue_number": 88,
+        "slot": "LIST",
+        "submitted_at": "2026-10-04T17:10:56.659931+00:00",
+        "title": "Same Water, More \"Contaminants\"",
+        "topic_id": "RISK-36",
+        "url": "https://fishman2341.github.io/econ238-portfolio/week-five/detection-limits/"
+      },
+      "OWN": {
+        "category": "Student-Created",
+        "cover_url": "https://fishman2341.github.io/econ238-portfolio/week-five/ai-query-energy/cover.png",
+        "github_user": "FishMan2341",
+        "hook": "One AI prompt uses about as much electricity as a 2009 Google search, so why could U.S. data centers nearly triple their power use by 2028?",
+        "issue_number": 91,
+        "slot": "OWN",
+        "submitted_at": "2026-10-04T17:47:40.241973+00:00",
+        "title": "How Much Power Is an AI Query?",
+        "topic_id": "CUSTOM-FishMan2341",
+        "url": "https://fishman2341.github.io/econ238-portfolio/week-five/ai-query-energy/"
+      }
+    },
+    "GMathieu123": {
+      "LIST": {
+        "category": "Risk & Toxicology",
+        "cover_url": "https://raw.githubusercontent.com/GMathieu123/Econ238-Portfolio/main/cover%20(1).png",
+        "github_user": "GMathieu123",
+        "hook": "One part per trillion is one second in 31,689 years\u2014but a concentration is not a dose until you specify how exposure happens.",
+        "issue_number": 137,
+        "slot": "LIST",
+        "submitted_at": "2026-10-04T20:51:47.218670+00:00",
+        "title": "How Small Is a Part per Trillion?",
+        "topic_id": "RISK-35",
+        "url": "https://gmathieu123.github.io/Econ238-Portfolio/index.html"
+      }
+    },
+    "KaileyDurow": {
+      "LIST": {
+        "category": "Risk & Toxicology",
+        "cover_url": "https://cdn.corenexis.com/f/NO0Dm2n2p0o.png",
+        "github_user": "KaileyDurow",
+        "hook": "DEHP vs. DINCH: What risks are hiding in dolls & teethers?",
+        "issue_number": 163,
+        "slot": "LIST",
+        "submitted_at": "2026-10-04T23:31:52.206860+00:00",
+        "title": "Chemical Substitution in Child-Care Products",
+        "topic_id": "RISK-40",
+        "url": "https://sites.google.com/u.rochester.edu/kaileydurow-econ-238-portfolio/assignments/104-dehp-vs-dinch-childcare-chemicals"
+      },
+      "OWN": {
+        "category": "Student-Created",
+        "cover_url": "https://cdn.corenexis.com/f/zZrVga5j0vv.png",
+        "github_user": "KaileyDurow",
+        "hook": "Whether you're team disposable or reusable, there's some needed context.",
+        "issue_number": 164,
+        "slot": "OWN",
+        "submitted_at": "2026-10-04T23:37:08.791932+00:00",
+        "title": "Impacting the Environment from Day 1: Diapers",
+        "topic_id": "CUSTOM-KaileyDurow",
+        "url": "https://sites.google.com/u.rochester.edu/kaileydurow-econ-238-portfolio/assignments/104-impacting-the-environment-from-day-1-diapers"
+      }
+    },
+    "LiamSakakeeny": {
+      "LIST": {
+        "category": "Energy & Grid",
+        "cover_url": "https://liamsakakeeny.github.io/econ238-portfolio/exhibit-2-cover.png",
+        "github_user": "LiamSakakeeny",
+        "hook": "Can we increase the efficiency of wind and solar energy, by simply bringing down the cost of storing it?",
+        "issue_number": 71,
+        "slot": "LIST",
+        "submitted_at": "2026-10-04T15:19:08.153662+00:00",
+        "title": "Storage-Cost Surgery on an ERCOT Grid Model",
+        "topic_id": "ENERGY-20",
+        "url": "https://liamsakakeeny.github.io/econ238-portfolio/Storage-Cost%20Surgery.html"
+      },
+      "OWN": {
+        "category": "Student-Created",
+        "cover_url": "https://liamsakakeeny.github.io/econ238-portfolio/exhibit-1-cover.png",
+        "github_user": "LiamSakakeeny",
+        "hook": "Does where we get our food from impact our carbon footprint, and how can Americans change their diet to reduce their impact to climate change?",
+        "issue_number": 77,
+        "slot": "OWN",
+        "submitted_at": "2026-10-04T15:26:18.286121+00:00",
+        "title": "Food Miles vs. Production Footprint",
+        "topic_id": "CUSTOM-LiamSakakeeny",
+        "url": "https://liamsakakeeny.github.io/econ238-portfolio/Food%20Miles%20vs.%20Production%20Footprint.html"
+      }
+    },
+    "Pixelatium": {
+      "LIST": {
+        "category": "Energy & Grid",
+        "cover_url": "https://pixelatium.github.io/econ238-portfolio/assets/images/energy24.png",
+        "github_user": "Pixelatium",
+        "hook": "Electricity demand is surging after two flat decades, but the 1960s grew faster, and what's actually new is how fast the forecasts keep moving.",
+        "issue_number": 45,
+        "slot": "LIST",
+        "submitted_at": "2026-10-04T02:22:47.821590+00:00",
+        "title": "How Extraordinary Is Current Electricity-Demand Growth?",
+        "topic_id": "ENERGY-24",
+        "url": "https://pixelatium.github.io/econ238-portfolio/assignment-05-energy24-demand-growth.html"
+      },
+      "OWN": {
+        "category": "Student-Created",
+        "cover_url": "https://pixelatium.github.io/econ238-portfolio/assets/images/electrification-fig1.png",
+        "github_user": "Pixelatium",
+        "hook": "Going electric does not automatically cost less, what matters is the price of a mile driven or a warm house, not the price of a kilowatt hour.",
+        "issue_number": 46,
+        "slot": "OWN",
+        "submitted_at": "2026-10-04T02:41:25.220806+00:00",
+        "title": "Electrification Can Reduce Household Energy Costs",
+        "topic_id": "CUSTOM-Pixelatium",
+        "url": "https://pixelatium.github.io/econ238-portfolio/assignment-05-electrification-household-costs.html"
+      }
+    },
+    "SherBraeWala": {
+      "LIST": {
+        "category": "Climate & Models",
+        "cover_url": "https://sherbraewala.github.io/Econ238-portfolio/coverclaim.png",
+        "github_user": "SherBraeWala",
+        "hook": "Washington has priced the same tonne of CO\u2082 at under $10, at $51, and at $190, and almost none of that gap comes from the climate science; it comes from the interest rate.",
+        "issue_number": 112,
+        "slot": "LIST",
+        "submitted_at": "2026-10-04T19:37:08.487036+00:00",
+        "title": "Discount-rate surgery on the social cost of carbon",
+        "topic_id": "CLIM-12",
+        "url": "https://sherbraewala.github.io/Econ238-portfolio/week5/scc/"
+      }
+    },
+    "bemah123456": {
+      "OWN": {
+        "category": "Student-Created",
+        "cover_url": "https://bemah123456.github.io/fracking-vs-renewables/cover.png",
+        "github_user": "bemah123456",
+        "hook": "Natural gas avoided more power-plant CO\u2082 than wind and solar through 2020, but wind and solar pulled ahead in the 2020s; pick a year to see where the 38% drop came from.",
+        "issue_number": 116,
+        "slot": "OWN",
+        "submitted_at": "2026-10-04T19:41:37.698772+00:00",
+        "title": "Fracking vs. Renewables: Who Actually Cut U.S. Power-Plant CO\u2082 Since 2005?",
+        "topic_id": "CUSTOM-bemah123456",
+        "url": "https://bemah123456.github.io/fracking-vs-renewables/"
+      }
+    },
+    "bkzzzz": {
+      "LIST": {
+        "category": "Energy & Grid",
+        "cover_url": "https://bkzzzz.github.io/econ238-portfolio/assets/week-five/nuclear-cover.png",
+        "github_user": "bkzzzz",
+        "hook": "A plant with the same construction budget costs about $80 per MWh at a 3% cost of capital and four years of spending before opening, compared with $212 at 10% and ten years in this model.",
+        "issue_number": 135,
+        "slot": "LIST",
+        "submitted_at": "2026-10-04T20:38:17.385410+00:00",
+        "title": "The same reactor, a different financing bill",
+        "topic_id": "ENERGY-29",
+        "url": "https://bkzzzz.github.io/econ238-portfolio/week-five-nuclear.html"
+      },
+      "OWN": {
+        "category": "Student-Created",
+        "cover_url": "https://bkzzzz.github.io/econ238-portfolio/assets/week-five/noise-cover.png",
+        "github_user": "bkzzzz",
+        "hook": "In this hypothetical example, diverting half the park-side traffic makes the park about 3 dB quieter but makes a less busy residential street about 7.7 dB louder and adds travel time.",
+        "issue_number": 136,
+        "slot": "OWN",
+        "submitted_at": "2026-10-04T20:39:06.523619+00:00",
+        "title": "A quieter park. Whose street gets louder?",
+        "topic_id": "CUSTOM-bkzzzz",
+        "url": "https://bkzzzz.github.io/econ238-portfolio/week-five-noise.html"
+      }
+    },
+    "calebjkatz": {
+      "LIST": {
+        "category": "Food & Land",
+        "cover_url": "https://calebjkatz.github.io/econ238-portfolio/homework-5/golden-rice/cover.png",
+        "github_user": "calebjkatz",
+        "hook": "Can changing rice itself deliver vitamin A without expanding farmland\u2014and what happens when yield, adoption, and opposition get in the way?",
+        "issue_number": 132,
+        "slot": "LIST",
+        "submitted_at": "2026-10-04T20:29:43.604164+00:00",
+        "title": "Golden Rice: Same Land. More Nourishment?",
+        "topic_id": "FOOD-59",
+        "url": "https://calebjkatz.github.io/econ238-portfolio/homework-5/golden-rice/"
+      },
+      "OWN": {
+        "category": "Student-Created",
+        "cover_url": "https://calebjkatz.github.io/econ238-portfolio/homework-5/rare-earths/cover.svg",
+        "github_user": "calebjkatz",
+        "hook": "The U.S. can mine rare earths again, but the harder question is whether it can rebuild the separation, refining, and magnet-making chain that China still dominates.",
+        "issue_number": 134,
+        "slot": "OWN",
+        "submitted_at": "2026-10-04T20:36:37.630958+00:00",
+        "title": "Mine \u2260 Magnet: Why the U.S. Lost the Rare-Earth Supply Chain",
+        "topic_id": "CUSTOM-calebjkatz",
+        "url": "https://calebjkatz.github.io/econ238-portfolio/homework-5/rare-earths/"
+      }
+    },
+    "dbarbere-tech": {
+      "LIST": {
+        "category": "Energy & Grid",
+        "cover_url": "https://raw.githubusercontent.com/dbarbere-tech/Plugging-In-America-the-Green-Car-Transition/main/cover.png",
+        "github_user": "dbarbere-tech",
+        "hook": "What would happen if every car, pickup, truck and bus in the United States ran on electricity?",
+        "issue_number": 173,
+        "slot": "LIST",
+        "submitted_at": "2026-10-06T21:34:01.631051+00:00",
+        "title": "Plugging In America, the Green Car Transition",
+        "topic_id": "ENERGY-25",
+        "url": "https://dbarbere-tech.github.io/Plugging-In-America-the-Green-Car-Transition/"
+      },
+      "OWN": {
+        "category": "Student-Created",
+        "cover_url": "https://raw.githubusercontent.com/dbarbere-tech/Cars-Smog-Health/main/cover.png",
+        "github_user": "dbarbere-tech",
+        "hook": "How car exhaust creates smog, how many people it harms in the US, who it harms most, and which policies have measurably reduced it.",
+        "issue_number": 174,
+        "slot": "OWN",
+        "submitted_at": "2026-10-06T21:38:38.999833+00:00",
+        "title": "Cars, Smog and Health",
+        "topic_id": "CUSTOM-dbarbere-tech",
+        "url": "https://dbarbere-tech.github.io/Cars-Smog-Health/"
+      }
+    },
+    "efoley13": {
+      "LIST": {
+        "category": "Risk & Toxicology",
+        "cover_url": "https://efoley13.github.io/econ238-portfolio/Poster%202%20PM2.5%20Wildfire%20Smoke@1x.png",
+        "github_user": "efoley13",
+        "hook": "Three days of wildfire smoke accounted for nearly 10% of an entire year's measured PM2.5 concentration-time at a White Plains, New York monitor",
+        "issue_number": 153,
+        "slot": "LIST",
+        "submitted_at": "2026-10-04T22:51:51.619814+00:00",
+        "title": "Three Days, Nearly 10% of a Year's Measured PM2.5",
+        "topic_id": "RISK-42",
+        "url": "https://efoley13.github.io/econ238-portfolio/week5-wildfire.html"
+      },
+      "OWN": {
+        "category": "Student-Created",
+        "cover_url": "https://efoley13.github.io/econ238-portfolio/Poster%201%20Water%20Behind%20Wasted%20Food@1x.png",
+        "github_user": "efoley13",
+        "hook": "U.S. food loss and waste is tied to 5.9 trillion gallons of blue water each year\u2014water used to grow, raise, and process food that is never eaten.",
+        "issue_number": 159,
+        "slot": "OWN",
+        "submitted_at": "2026-10-04T22:56:15.755637+00:00",
+        "title": "The Water Behind the Food We Never Eat",
+        "topic_id": "CUSTOM-efoley13",
+        "url": "https://efoley13.github.io/econ238-portfolio/week5-food-waste.html"
+      }
+    },
+    "felix-ab": {
+      "LIST": {
+        "category": "Food & Land",
+        "cover_url": "https://felix-ab.github.io/econ238-portfolio/food-55/assets/cover.png",
+        "github_user": "felix-ab",
+        "hook": "US beef uses about 805 million acres a year; swapping it out frees most of that land, but only if the swap still hits the same leucine target.",
+        "issue_number": 147,
+        "slot": "LIST",
+        "submitted_at": "2026-10-04T22:35:12.877505+00:00",
+        "title": "The Land on Our Plates",
+        "topic_id": "FOOD-55",
+        "url": "https://felix-ab.github.io/econ238-portfolio/food-55/"
+      },
+      "OWN": {
+        "category": "Student-Created",
+        "cover_url": "https://felix-ab.github.io/econ238-portfolio/nyc-homes/assets/cover.png",
+        "github_user": "felix-ab",
+        "hook": "Rules sold as green block homes in New York City, and the households they price out drive more and heat bigger houses: about 122,000 extra tons of CO\u2082 a year for the 80,000 homes the city says its old zoning blocked.",
+        "issue_number": 148,
+        "slot": "OWN",
+        "submitted_at": "2026-10-04T22:35:29.783517+00:00",
+        "title": "The Carbon Cost of NYC\u2019s \u2018Green\u2019 Rules",
+        "topic_id": "CUSTOM-felix-ab",
+        "url": "https://felix-ab.github.io/econ238-portfolio/nyc-homes/"
+      }
+    },
+    "gracec-1": {
+      "LIST": {
+        "category": "Energy & Grid",
+        "cover_url": "https://raw.githubusercontent.com/gracec-1/econ238-portfolio/50c1db5f10ce77cdac3fc506922cb4c52e0e4d33/assignment51.png",
+        "github_user": "gracec-1",
+        "hook": "A solar panel can produce cheap electricity, but can it keep the lights on all day?",
+        "issue_number": 51,
+        "slot": "LIST",
+        "submitted_at": "2026-10-04T04:26:10.132254+00:00",
+        "title": "LCOE Versus an Electricity System",
+        "topic_id": "ENERGY-17",
+        "url": "https://gracec-1.github.io/econ238-portfolio/assignment-05(1)"
+      },
+      "OWN": {
+        "category": "Student-Created",
+        "cover_url": "https://raw.githubusercontent.com/gracec-1/econ238-portfolio/main/assignment52.png",
+        "github_user": "gracec-1",
+        "hook": "We put it in the recycling bin, but where does it actually go?",
+        "issue_number": 67,
+        "slot": "OWN",
+        "submitted_at": "2026-10-04T13:41:41.478600+00:00",
+        "title": "Recycling in Context",
+        "topic_id": "CUSTOM-gracec-1",
+        "url": "https://gracec-1.github.io/econ238-portfolio/assignment-05(2)"
+      }
+    },
+    "kawawa-ririko": {
+      "LIST": {
+        "category": "Food & Land",
+        "cover_url": "https://kawawa-ririko.github.io/econ238-portfolio/food57/emissions_1000km.png",
+        "github_user": "kawawa-ririko",
+        "hook": "The same food can produce dramatically different transport emissions depending on whether it moves by truck, rail, ship, or air.",
+        "issue_number": 139,
+        "slot": "LIST",
+        "submitted_at": "2026-10-04T21:05:24.323031+00:00",
+        "title": "Food Miles: Distance Is Not the Whole Story",
+        "topic_id": "FOOD-57",
+        "url": "https://kawawa-ririko.github.io/econ238-portfolio/food57/"
+      }
+    },
+    "mscholz3-svg": {
+      "LIST": {
+        "category": "Climate & Models",
+        "cover_url": "https://mscholz3-svg.github.io/econ238-portfolio/week-5/clim-16-florida-sea-level/cover.png",
+        "github_user": "mscholz3-svg",
+        "hook": "Six inches does not sound like much, but in Miami-Dade it can turn today's 100 year (1% chance of happening) coastal flood into roughly a 5 year event.",
+        "issue_number": 92,
+        "slot": "LIST",
+        "submitted_at": "2026-10-04T18:19:55.196590+00:00",
+        "title": "When a Rare Flood Stops Being Rare",
+        "topic_id": "CLIM-16",
+        "url": "https://mscholz3-svg.github.io/econ238-portfolio/week-5/clim-16-florida-sea-level/"
+      },
+      "OWN": {
+        "category": "Student-Created",
+        "cover_url": "https://mscholz3-svg.github.io/econ238-portfolio/week-5/alcohol-climate-cost/cover.png",
+        "github_user": "mscholz3-svg",
+        "hook": "Two drinks can contain the same amount of alcohol but leave very different climate footprints, and the packaging may matter almost as much as what is inside.",
+        "issue_number": 95,
+        "slot": "OWN",
+        "submitted_at": "2026-10-04T18:33:53.627290+00:00",
+        "title": "The Climate Cost of a Drink",
+        "topic_id": "CUSTOM-mscholz3-svg",
+        "url": "https://mscholz3-svg.github.io/econ238-portfolio/week-5/alcohol-climate-cost/"
+      }
+    },
     "owenbernsteinsfc-sudo": {
       "LIST": {
         "category": "Climate & Models",
@@ -24,6 +366,176 @@
         "title": "Fracking VS Coal",
         "topic_id": "CUSTOM-owenbernsteinsfc-sudo",
         "url": "https://owenbernsteinsfc-sudo.github.io/Fracking-vs-Coal/"
+      }
+    },
+    "rmirabe2": {
+      "LIST": {
+        "category": "Policy & Institutions",
+        "cover_url": "https://rmirabe2.github.io/econ238-portfolio/images/cover-catch-shares.png",
+        "github_user": "rmirabe2",
+        "hook": "When nobody owns the fish, every boat races to catch them first: what changes when each boat owns a share of the catch instead?",
+        "issue_number": 105,
+        "slot": "LIST",
+        "submitted_at": "2026-10-04T19:19:49.328746+00:00",
+        "title": "Catch Shares Versus Race-to-Fish",
+        "topic_id": "POL-67",
+        "url": "https://rmirabe2.github.io/econ238-portfolio/assignment-05-catch-shares.html"
+      },
+      "OWN": {
+        "category": "Student-Created",
+        "cover_url": "https://rmirabe2.github.io/econ238-portfolio/images/cover-plastic-bag-bans.png",
+        "github_user": "rmirabe2",
+        "hook": "Cities ban plastic bags to cut waste, but what do shoppers actually carry out of the store afterward?",
+        "issue_number": 106,
+        "slot": "OWN",
+        "submitted_at": "2026-10-04T19:20:31.777350+00:00",
+        "title": "Plastic Bag Bans, Before and After",
+        "topic_id": "CUSTOM-rmirabe2",
+        "url": "https://rmirabe2.github.io/econ238-portfolio/assignment-05-plastic-bag-bans.html"
+      }
+    },
+    "scproom": {
+      "LIST": {
+        "category": "Water & Waste",
+        "cover_url": "https://scproom.github.io/Environemtal-Econ/water-efficiency/cover.png",
+        "github_user": "scproom",
+        "hook": "Follow 100 buckets to see how a farmer can take less water without leaving more for everyone else.",
+        "issue_number": 86,
+        "slot": "LIST",
+        "submitted_at": "2026-10-04T17:03:13.282191+00:00",
+        "title": "Can saving water use more water?",
+        "topic_id": "WW-65",
+        "url": "https://scproom.github.io/Environemtal-Econ/water-efficiency/"
+      },
+      "OWN": {
+        "category": "Student-Created",
+        "cover_url": "https://scproom.github.io/Environemtal-Econ/road-salt/cover.png",
+        "github_user": "scproom",
+        "hook": "Follow one winter of road salting\u2014from safer roads to rusting vehicles, contaminated freshwater, damaged plants, and infrastructure costs\u2014and adjust the salt amount to see when additional environmental damage outweighs additional safety benefits.",
+        "issue_number": 118,
+        "slot": "OWN",
+        "submitted_at": "2026-10-04T19:41:54.112579+00:00",
+        "title": "When does more road salt stop helping?",
+        "topic_id": "CUSTOM-scproom",
+        "url": "https://scproom.github.io/Environemtal-Econ/road-salt/"
+      }
+    },
+    "sdass3": {
+      "LIST": {
+        "category": "Energy & Grid",
+        "cover_url": "https://raw.githubusercontent.com/sdass3/econ238-portfolio/refs/heads/main/Seabrook.jpg",
+        "github_user": "sdass3",
+        "hook": "What would replace the nuclear power of Seabrook Power Plant?",
+        "issue_number": 165,
+        "slot": "LIST",
+        "submitted_at": "2026-10-05T02:10:19.353532+00:00",
+        "title": "What if Seabrook Shuts Down?",
+        "topic_id": "ENERGY-28",
+        "url": "https://sdass3.github.io/econ238-portfolio/CloseSeabrook_WhatReplacesIt_(1).html"
+      }
+    },
+    "sdmytruk": {
+      "LIST": {
+        "category": "Energy & Grid",
+        "cover_url": "https://sdmytruk.github.io/econ238-portfolio/econhw05.png",
+        "github_user": "sdmytruk",
+        "hook": "Does being renewable for one week actually mean you are sustainable 24/7?",
+        "issue_number": 32,
+        "slot": "LIST",
+        "submitted_at": "2026-10-02T13:42:55.633986+00:00",
+        "title": "100% Renewable for One Week",
+        "topic_id": "ENERGY-18",
+        "url": "https://sdmytruk.github.io/econ238-portfolio/econhw5.html"
+      },
+      "OWN": {
+        "category": "Student-Created",
+        "cover_url": "https://sdmytruk.github.io/econ238-portfolio/econhw5custom.png",
+        "github_user": "sdmytruk",
+        "hook": "As a vegetarian, I wondered if the food I was - or was not - eating affected the climate and economy. Turns out, it does!",
+        "issue_number": 35,
+        "slot": "OWN",
+        "submitted_at": "2026-10-02T14:27:37.143377+00:00",
+        "title": "How does having a plant-based diet affect the climate or economy?",
+        "topic_id": "CUSTOM-sdmytruk",
+        "url": "https://sdmytruk.github.io/econ238-portfolio/econhw5custom.html"
+      }
+    },
+    "sscheinb": {
+      "LIST": {
+        "category": "Climate & Models",
+        "cover_url": "https://sscheinb.github.io/econ238-portfolio/week-five/terminal-year/cover-clim09.png",
+        "github_user": "sscheinb",
+        "hook": "Stop counting in 2050, and a modeled climate policy shows a $5 trillion loss, but wait until 2200, and it shows a $51 trillion gain, so who decides where the clock should stop?",
+        "issue_number": 130,
+        "slot": "LIST",
+        "submitted_at": "2026-10-04T20:25:57.380185+00:00",
+        "title": "The Same Climate Policy Loses in 2050 and Wins by 2200.",
+        "topic_id": "CLIM-09",
+        "url": "https://sscheinb.github.io/econ238-portfolio/week-five/terminal-year/clim-09-terminal-year.html"
+      },
+      "OWN": {
+        "category": "Student-Created",
+        "cover_url": "https://sscheinb.github.io/econ238-portfolio/week-five/clean-air-growth/cover.png",
+        "github_user": "sscheinb",
+        "hook": "Since 1970, the US economy has grown more than fourfold while its air pollution emissions fell by more than three-quarters, so why do 115 million Americans still live in counties that miss a national air standard?",
+        "issue_number": 108,
+        "slot": "OWN",
+        "submitted_at": "2026-10-04T19:23:10.509374+00:00",
+        "title": "Four Times the Economy, Under a Quarter of the Air Pollution",
+        "topic_id": "CUSTOM-sscheinb",
+        "url": "https://sscheinb.github.io/econ238-portfolio/week-five/clean-air-growth/clean-air-growth.html"
+      }
+    },
+    "wmcdonq": {
+      "LIST": {
+        "category": "Water & Waste",
+        "cover_url": "https://wmcdonq.github.io/econ238-portfolio/week-05/landfill/cover.svg",
+        "github_user": "wmcdonq",
+        "hook": "See how 100 years of U.S. trash changes with deeper landfills, more recycling, and steady waste growth.",
+        "issue_number": 151,
+        "slot": "LIST",
+        "submitted_at": "2026-10-04T22:48:27.182115+00:00",
+        "title": "How much landfill space would we need?",
+        "topic_id": "WW-60",
+        "url": "https://wmcdonq.github.io/econ238-portfolio/week-05/landfill/"
+      },
+      "OWN": {
+        "category": "Student-Created",
+        "cover_url": "https://wmcdonq.github.io/econ238-portfolio/week-05/gaming-pc/cover.svg",
+        "github_user": "wmcdonq",
+        "hook": "Compare a PC left on, asleep, and shut down for the same eight unused hours each night.",
+        "issue_number": 152,
+        "slot": "OWN",
+        "submitted_at": "2026-10-04T22:49:06.081253+00:00",
+        "title": "What does leaving a gaming PC on overnight cost?",
+        "topic_id": "CUSTOM-wmcdonq",
+        "url": "https://wmcdonq.github.io/econ238-portfolio/week-05/gaming-pc/"
+      }
+    },
+    "wzhang76": {
+      "LIST": {
+        "category": "Climate & Models",
+        "cover_url": "https://wzhang76.github.io/econ238-portfolio/clim08_expected_warming.png",
+        "github_user": "wzhang76",
+        "hook": "One billion tons of CO2 sounds enormous, but how much does it actually change global temperature?",
+        "issue_number": 30,
+        "slot": "LIST",
+        "submitted_at": "2026-10-01T23:28:45.617779+00:00",
+        "title": "What Does One Billion Tons of CO2 Do?",
+        "topic_id": "CLIM-08",
+        "url": "https://wzhang76.github.io/econ238-portfolio/Week-05-CLIM-08.html"
+      },
+      "OWN": {
+        "category": "Student-Created",
+        "cover_url": "https://wzhang76.github.io/econ238-portfolio/shower_water_use_chart.png",
+        "github_user": "wzhang76",
+        "hook": "A few extra minutes in the shower may not seem like much, but how much water and money can a lower-flow showerhead actually save?",
+        "issue_number": 31,
+        "slot": "OWN",
+        "submitted_at": "2026-10-01T23:32:31.597231+00:00",
+        "title": "How Much Water Does a Shower Actually Use?",
+        "topic_id": "CUSTOM-wzhang76",
+        "url": "https://wzhang76.github.io/econ238-portfolio/Week-05-Shower.html"
       }
     }
   }

@@ -467,6 +467,22 @@
         padding-bottom: 4px;
       }
     }
+  
+    .resource-card.nber-highlight {
+      grid-column: 1 / -1;
+      border: 4px solid var(--gold);
+      border-left: 12px solid var(--red);
+      background: #fff2bd;
+      padding: 22px 24px;
+      box-shadow: 0 4px 16px rgba(6,42,68,.16);
+    }
+    .nber-highlight .resource-category { background: var(--navy); color: #fff; border-color: var(--navy); }
+    .nber-highlight h3 { font-size: clamp(1.3rem, 2.5vw, 1.75rem); font-weight: 900; line-height: 1.2; }
+    .nber-highlight h3 a { color: #801c1d; font-weight: 900; text-decoration: underline; }
+    .nber-highlight p { font-size: 1rem; margin-top: 12px; }
+    .nber-highlight .key-finding { font-size: 1.14rem; color: #062a44; font-weight: 900; }
+    .nber-highlight .key-finding strong { font-weight: 900; }
+    .nber-highlight .paper-details { font-size: .9rem; color: #444; }
   </style>
 </head>
 
@@ -492,6 +508,7 @@
       </div>
 
       <nav class="nav-strip" aria-label="Page sections">
+        <a href="#econ-phd-employers">Who Hires Economics PhDs?</a>
         <a href="#start">Start Here</a>
         <a href="#fit">Is This for You?</a>
         <a href="#funding">Funding and Commitment</a>
@@ -713,6 +730,18 @@
             <strong>Comments:</strong> The useful disagreement is not “causal inference good or bad,” but whether transparent identification makes errors easier to discover or creates false confidence through causal branding.
           </p>
         </article>
+      </section>
+
+      <section id="econ-phd-employers">
+        <div class="section-title"><h2>Who Hires Economics PhDs?</h2></div>
+        <p>Where can an economics PhD lead? This Revelio Labs chart compares employers by their average annual intake of recent economics PhD graduates from 2017–2026. Amazon, Analysis Group, and the World Bank Group lead the employers shown, alongside consulting firms, technology companies, financial institutions, universities, and public institutions.</p>
+        <figure style="margin:16px 0">
+          <a href="bulletin-files/economics-phd-employers-2026.png" target="_blank" rel="noopener noreferrer" aria-label="Open the economics PhD employers chart at full size">
+            <img src="bulletin-files/economics-phd-employers-2026.png" alt="Revelio Labs chart of average annual hires of recent economics PhD graduates, 2017–2026. Amazon: 22.2; Analysis Group: 13.5; World Bank Group: 12.1; Cornerstone Research: 11.4; International Monetary Fund: 9.6. Ten additional employers are shown." width="1999" height="1237" loading="lazy" style="display:block;width:100%;height:auto;background:white;border:1px solid #d7d7d7;border-radius:8px">
+          </a>
+          <figcaption style="margin-top:10px;font-size:.94rem;color:#555">Chart: Revelio Labs. Covers recent economics <strong>PhD</strong> graduates, 2017–2026. Click the chart to view it at full size.</figcaption>
+        </figure>
+        <p><a href="https://marginalrevolution.com/marginalrevolution/2026/10/the-top-private-sector-employers-of-economics-graduates.html" target="_blank" rel="noopener noreferrer">Read: “The top private sector employers of economics graduates”</a> — Tyler Cowen, <em>Marginal Revolution</em>, October 1, 2026.</p>
       </section>
 
       <section id="market">
@@ -1041,6 +1070,16 @@
             </div>
             <h3><a href="https://capitalismandfreedom.substack.com/p/episode-28-steven-d-levitt-freakonomics" target="_blank" rel="noopener noreferrer">Capitalism and Freedom: Steven Levitt on the Future of Econ</a></h3>
             <p>A skeptical view of whether the profession rewards practical insight or increasingly inward-looking technical difficulty.</p>
+          </article>
+
+          <article class="resource-card nber-highlight" id="nber-economics-concentration" data-category="The Profession" data-tags="NBER Freeman Xie Zhang Zhou w35875 awards prizewinning economists institutional concentration prestige hierarchy economics PhD">
+            <div class="resource-topline">
+              <span class="resource-category">The Profession · NBER Research Highlight</span>
+            </div>
+            <h3><a href="https://www.nber.org/papers/w35875" target="_blank" rel="noopener noreferrer">ECONOMICS IS THE OUTLIER: PRIZEWINNERS ARE BECOMING MORE CONCENTRATED</a></h3>
+            <p class="key-finding"><strong>Across 18 academic fields, award-winning researchers have become more widely distributed across institutions — except in economics. Economics has moved in the opposite direction and is now the most institutionally concentrated field in the study.</strong></p>
+            <p>The authors examine nearly 6,000 award-winning researchers across the natural sciences, engineering, and social sciences, focusing on trends since the 1960s. They associate economics’ unusual pattern with stronger sorting by institutional prestige, less reliance on specialized equipment, and judgments based on a synthesis of evidence rather than decisive experiments or proofs. The paper considers both the benefits and costs of this concentration.</p>
+            <p class="paper-details"><strong>High and Rising Institutional Concentration of Award-Winning Economists</strong><br>Richard B. Freeman, Danxia Xie, Hanzhe Zhang, and Hanzhang Zhou · NBER Working Paper 35875 · Featured October 5, 2026 · Not yet peer reviewed.</p>
           </article>
 
           <article class="resource-card" data-category="Funding" data-tags="caplan funding opportunity cost phd Bryan Caplan: Is the Econ PhD a Free Lunch? A provocative way to think about funding, opportunity cost, and whether an economics PhD can be unusually cheap relative to other graduate paths.">

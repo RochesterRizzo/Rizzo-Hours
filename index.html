@@ -39,6 +39,12 @@ main{padding:22px}
 .event-highlight .poster{display:block;background:#111;border-radius:8px;overflow:hidden}
 .event-highlight .poster img{display:block;width:100%;height:225px;object-fit:contain}
 .event-highlight .button{margin-top:10px;background:var(--n);color:#fff}
+.coming-event{display:grid;grid-template-columns:minmax(0,1fr) 250px;gap:18px;align-items:center;border:2px solid #b89a4a;border-left:9px solid #b58a16;border-radius:11px;background:linear-gradient(135deg,#fffdf5,#f4f8fc);padding:16px 18px;margin:0 0 22px;box-shadow:0 3px 12px #0001}
+.coming-event small{display:block;color:#7b5c00;font-weight:900;letter-spacing:.09em;text-transform:uppercase;margin-bottom:4px}
+.coming-event h2{font:700 clamp(1.35rem,2.6vw,1.8rem) Georgia,serif;color:var(--n);margin:0 0 7px}
+.coming-event p{margin:5px 0;line-height:1.42}
+.coming-event img{display:block;width:100%;max-height:180px;object-fit:contain;background:#fff;border-radius:7px;border:1px solid #d8d8d8}
+.coming-event .button{margin-top:9px;margin-right:6px;background:var(--n);color:#fff}
 .research-alert{display:block;border:3px solid #c40000;border-radius:10px;background:#fff0f0;color:#770000;padding:13px 16px;margin:0 0 18px;text-decoration:none;box-shadow:0 0 0 rgba(212,0,0,0);animation:researchPulse 2.2s ease-in-out infinite}
 .research-alert strong{display:block;color:#b00000;font-size:1.02rem;letter-spacing:.02em;margin-bottom:4px}
 .research-alert span{color:#5b0000;line-height:1.4}
@@ -104,7 +110,7 @@ h2{margin:0 0 10px;color:var(--n);font-size:1.25rem}
 footer{padding:18px 22px;background:#b5a4cc;display:grid;grid-template-columns:1fr 1fr;gap:16px}
 @media(prefers-reduced-motion:reduce){.research-alert{animation:none}
 }
-@media(max-width:900px){.quick,.layout,footer{grid-template-columns:1fr}.event-highlight{grid-template-columns:1fr}.event-highlight .poster{max-width:260px}.weekly ul{grid-template-columns:repeat(2,1fr)}.resources{position:static}.links{grid-template-columns:1fr}
+@media(max-width:900px){.quick,.layout,footer{grid-template-columns:1fr}.event-highlight,.coming-event{grid-template-columns:1fr}.event-highlight .poster{max-width:260px}.weekly ul{grid-template-columns:repeat(2,1fr)}.resources{position:static}.links{grid-template-columns:1fr}
 }
 @media(max-width:600px){.weekly ul{grid-template-columns:1fr}
 }
@@ -114,38 +120,20 @@ footer{padding:18px 22px;background:#b5a4cc;display:grid;grid-template-columns:1
 <div class="page">
 <header>
 <h1>Pr. Rizzo’s Office Hours &amp; Student Information</h1>
-<p>Fall 2026. <span style="color:#ffd166;font-weight:700">Week of Oct 5 - Oct 9.</span> Check daily at <a href="http://tiny.cc/RizzoHours">tiny.cc/RizzoHours</a>. Text any time.</p>
+<p>Fall 2026. <span style="color:#ffd166;font-weight:700">Week of Oct 12 - Oct 16.</span> Check daily at <a href="http://tiny.cc/RizzoHours">tiny.cc/RizzoHours</a>. Text any time.</p>
 </header>
 <div class="quick">
 <div class="q">
 <h2>Nerd Club Lunch Bunch</h2>
-<p>
-<strong>Mon Oct. 5 · 11:30–12:30</strong><br>
-<strong style="color:#b00000">Office hours end at 12:30 this week.</strong>
-<br>Tables between Meliora and Harkness<br>
-Bring lunch/snack.<br>
-<em>Intellectual Free for All</em><br>
-<a href="whats-on-tap.html"><strong>What’s on Tap? →</strong></a>
-</p>
+<p><strong>Mon Oct. 12</strong><br><strong style="color:#b00000">NO OFFICE HOURS — Fall Break</strong></p>
 </div>
 <div class="q">
 <h2>Inside Office Hours</h2>
-<p>
-<strong>Tue Oct. 6 · 12:30–1:30</strong><br>
-236 Harkness<br>
-<em>Class/advising prioritized</em><br>
-<a href="whats-on-tap.html"><strong>What’s on Tap? →</strong></a>
-</p>
+<p><strong>Tue Oct. 13</strong><br><strong style="color:#b00000">NO OFFICE HOURS — Fall Break</strong></p>
 </div>
 <div class="q">
-<h2>Outside Office Hours</h2>
-<p>
-<strong>Wed Oct. 7 · 11:30–12:30</strong><br>
-<strong style="color:#b00000">Office hours end at 12:30 this week.</strong><br>
-Picnic tables between Meliora and Harkness<br>
-<em>All questions and discussions welcome.</em><br>
-<a href="whats-on-tap.html"><strong>What’s on Tap? →</strong></a>
-</p>
+<h2>Outdoors Office Hours</h2>
+<p><strong>Wed Oct. 14 · 11:30 AM–12:45 PM</strong><br>Picnic tables between Meliora and Harkness<br><a href="outdoor-hours-location.html">Outside OH Location →</a><br><a href="whats-on-tap.html"><strong>What’s on Tap? →</strong></a></p>
 </div>
 <div class="q">
 <h2>Contact</h2>
@@ -156,25 +144,17 @@ Picnic tables between Meliora and Harkness<br>
 </div>
 </div>
 <main>
-<div class="event-highlight" id="trade-war-feature">
+<div class="coming-event" id="gilbert-lecture-coming">
 <div>
-<small>Featured Event · Tuesday, September 29</small>
-<h2>TRADE WAR + DINOSAUR BBQ</h2>
-<p class="event-title">“Trade War: The View from Across Lake America!”</p>
-<p><strong>Joe Steinberg · University of Toronto</strong></p>
-<p><strong>Talk: 6:00–7:00 PM · Morey 321</strong><br>
-<strong>Dinosaur BBQ reception: 7:00–8:30 PM · Morey’s Rettner Gallery</strong></p>
-<div class="event-office"><strong>September 29 office hours were held at the Dinosaur BBQ reception after the talk.</strong> See the October 5–9 schedule below for this week’s hours.</div>
-<a class="button" href="oyster-events.html#trade-war">Full event details</a>
-<a class="button" href="poster-files/trade-war-fall-2026.jpg">View poster</a>
+<small>Coming in November · Department of Economics Annual Lecture</small>
+<h2>THE DONALD W. GILBERT MEMORIAL LECTURE</h2>
+<p><strong>Robert Staiger</strong> · Chief Economist of the World Trade Organization</p>
+<p><strong>Title:</strong> TBD &nbsp; · &nbsp; <strong>Date:</strong> mid-November &nbsp; · &nbsp; <strong>Time:</strong> TBD &nbsp; · &nbsp; <strong>Location:</strong> TBD</p>
+<p>The Gilbert Lecture is one of the great traditions of Rochester economics: serious economics aimed directly at the practical and policy problems of the day. Since the series began in 1959, its speakers have included many of the central economists of the modern era, including 18 lecturers who later received the Nobel Prize in Economics.</p>
+<a class="button" href="oyster-events.html#gilbert-lecture-2026">Gilbert Lecture details &amp; history</a>
+<a class="button" href="https://home.dartmouth.edu/news/2025/09/professor-robert-staiger-named-chief-economist-wto" target="_blank" rel="noopener noreferrer">About Robert Staiger</a>
 </div>
-<a class="poster" href="poster-files/trade-war-fall-2026.jpg"><img src="poster-files/trade-war-fall-2026.jpg" alt="Trade War: The View from Across Lake America! Joe Steinberg, September 29, with Dinosaur BBQ reception."></a>
-</div>
-<div class="research-alert bbq-reminder" data-expires="2026-09-26">
-<strong>DON’T FORGET TO RSVP — DINOSAUR BBQ + TRADE WAR!</strong>
-<span>Join us Tuesday, September 29: Joe Steinberg’s “Trade War: The View from Across Lake America!” at 6:00–7:00 PM in Morey 321, followed by Dinosaur Bar-B-Que at 7:00–8:30 PM in Morey’s Rettner Gallery. <strong>RSVP for food by Friday, September 25 so we can get the food count right!</strong></span>
-<a class="button" href="https://form.jotform.com/262586026121048" target="_blank" rel="noopener noreferrer">RSVP for Dinosaur BBQ</a>
-<a class="button" href="oyster-events.html#trade-war">Event details &amp; poster</a>
+<a href="https://home.dartmouth.edu/news/2025/09/professor-robert-staiger-named-chief-economist-wto" target="_blank" rel="noopener noreferrer"><img src="https://economics.dartmouth.edu/sites/economics/files/styles/3_2_lg/public/2025-09/Staiger-WTO-Logo-Words.jpg.webp?h=c6980913&itok=8FYTIiys" alt="Robert Staiger and the World Trade Organization logo." loading="lazy"></a>
 </div>
 <a id="edgeworth-reminder" class="research-alert" href="econ-bulletin.html#edgeworth" hidden style="display:none">
 <strong>ECONOMIC CONSULTING — EDGEWORTH RSVP DEADLINE OCTOBER 16</strong>
@@ -218,7 +198,7 @@ Picnic tables between Meliora and Harkness<br>
 <div class="time tall">11:30 to 12:30</div>
 <div class="office tall">Lunch Bunch Discussions<br>11:30–12:30<br>Intellectual Free for All<br>Bring LUNCH/Snack · Picnic tables</div>
 <div class="class tall">Eco 238<br>(B&amp;L 106)<br>11:05 to 12:30</div>
-<div class="office tall">Outside Office Hours<br>11:30–12:30<br>Picnic tables between Meliora and Harkness</div>
+<div class="office tall">Outside Office Hours<br>11:30–12:45<br>Picnic tables between Meliora and Harkness</div>
 <div class="class tall">Eco 238<br>(B&amp;L 106)<br>11:05 to 12:30</div>
 <div class="meeting tall">TA Meetings</div>
 <div class="time">12:30 to 1:30</div>
@@ -248,10 +228,10 @@ Picnic tables between Meliora and Harkness<br>
 </div>
 </div>
 <div class="notice">
-<h2>Current update · October 5–9</h2>
-<p><strong>Monday, October 5:</strong> <strong style="color:#b00000">11:30–12:30 — ending at 12:30 instead of 12:45.</strong> Meet outside at the tables between Meliora and Harkness. Bring lunch/snack for <em>Intellectual Free for All</em>.</p>
-<p><strong>Tuesday, October 6:</strong> Regular office hours, <strong>12:30–1:30 in Harkness 236</strong>. Class/advising prioritized.</p>
-<p><strong>Wednesday, October 7:</strong> Outside office hours, <strong style="color:#b00000">11:30–12:30 — ending at 12:30 instead of 12:45.</strong> Meet at the picnic tables between Meliora and Harkness. All questions and discussions welcome.</p>
+<h2>Current update · October 12–16</h2>
+<p><strong>Monday, October 12:</strong> <strong style="color:#b00000">NO OFFICE HOURS — Fall Break.</strong></p>
+<p><strong>Tuesday, October 13:</strong> <strong style="color:#b00000">NO OFFICE HOURS — Fall Break.</strong></p>
+<p><strong>Wednesday, October 14:</strong> Usual <strong>OUTDOORS office hours, 11:30 AM–12:45 PM</strong>, at the picnic tables between Meliora and Harkness.</p>
 </div>
 <section class="weekly">
 <h2>Weekly Course Updates</h2>
@@ -312,16 +292,14 @@ Picnic tables between Meliora and Harkness<br>
 <section class="resources">
 <h2>Resources, Events, Motivation</h2>
 
-<div class="rochester-week"><div class="rochester-week__head"><p class="rochester-week__eyebrow">Staff Picks</p><h3>This Week at Rochester</h3><p class="rochester-week__range">Thu Oct. 1 → Thu Oct. 8</p></div><div class="rochester-week__scroll">
-<a class="rochester-pick" href="this-week-at-rochester/#meliora-weekend"><span class="rochester-pick__day">Thursday–Sunday · Campus-wide</span><strong>Meliora Weekend</strong><span>October 1–4. Headliners include Amna Nawaz, Andrew Ross Sorkin, and Nick Offerman, with performances, open houses, and family activities. Use the live schedule for individual times, admission, and availability.</span></a>
-<a class="rochester-pick" href="this-week-at-rochester/#pick-alarm"><span class="rochester-pick__day">Friday · Music</span><strong>Alarm Will Sound: Homecoming</strong><span>8 PM · Kodak Hall. Electronica played by an acoustic ensemble. TICKETED.</span></a>
-<a class="rochester-pick" href="this-week-at-rochester/#sat-sports"><span class="rochester-pick__day">Saturday · Sports</span><strong>Make a day of home sports</strong><span>Volleyball at noon and 4; football at 1; men’s soccer at 5; women’s soccer at 7:30. Full opponents and venues below.</span></a>
-<a class="rochester-pick" href="this-week-at-rochester/#pick-chavkin"><span class="rochester-pick__day">Monday · Theater / Talk</span><strong>Rachel Chavkin on making theater</strong><span>5–6 PM · Zoom. The Hadestown director joins Nigel Maister. RSVP REQUIRED.</span></a>
-<a class="rochester-pick" href="this-week-at-rochester/#pick-ai"><span class="rochester-pick__day">Wednesday · Talk</span><strong>AI Coffee Salon: What should we trust?</strong><span>1–2 PM · Welles-Brown Room, Rush Rhees. An informal discussion of information and credibility. FREE.</span></a>
-<a class="rochester-pick" href="this-week-at-rochester/#pick-pena"><span class="rochester-pick__day">Thursday, October 8 · Economics</span><strong>Pablo Peña: Human Capital for Humans</strong><span>3:30 PM · Morey 321. An accessible introduction to the economic science of people.</span></a>
-<a class="rochester-pick" href="this-week-at-rochester/#pick-big-love"><span class="rochester-pick__day">Thursday, October 8 · Theater</span><strong>Big Love: opening night</strong><span>8 PM · Smith Theatre, Sloan Performing Arts Center. Greek myth, freedom, desire, and a post-show reception. TICKETED.</span></a>
+<div class="rochester-week"><div class="rochester-week__head"><p class="rochester-week__eyebrow">Staff Picks</p><h3>This Week at Rochester</h3><p class="rochester-week__range">Thu Oct. 8 → Thu Oct. 15</p></div><div class="rochester-week__scroll">
+<a class="rochester-pick" href="this-week-at-rochester/#pick-big-love"><span class="rochester-pick__day">Thursday–Thursday · Theater</span><strong>Big Love</strong><span>Opens tonight at 8 PM in Smith Theatre and runs six times in this week’s window. Fifty brides, fifty cousin-grooms, Greek myth, comedy, brutality, and the costs of resisting tradition. TICKETED.</span></a>
+<a class="rochester-pick" href="this-week-at-rochester/#pick-gateways"><span class="rochester-pick__day">Friday–Monday · Music</span><strong>Gateways Music Festival weekend</strong><span>George Taylor’s 40th-anniversary recital, Black sacred music, a BLACKSOUND lecture, Shana Tucker’s ChamberSoul, Ric’key Pageot, and young musicians across Eastman.</span></a>
+<a class="rochester-pick" href="this-week-at-rochester/#pick-sports"><span class="rochester-pick__day">Saturday · Sports</span><strong>Rowing and a NYU soccer doubleheader at home</strong><span>Head of the Genesee rowing starts at 10 AM in Genesee Valley Park; men’s soccer hosts NYU at 11 AM and women’s soccer hosts NYU at 1:30 PM at Fauver.</span></a>
+<a class="rochester-pick" href="this-week-at-rochester/#pick-peer-gynt"><span class="rochester-pick__day">Saturday &amp; Sunday · Music / Theater</span><strong>Peer Gynt with John de Lancie</strong><span>Saturday 7:30 PM and Sunday 2 PM · Kodak Hall. The Star Trek actor narrates a semi-staged English-language Peer Gynt with the RPO. TICKETED.</span></a>
+<a class="rochester-pick" href="this-week-at-rochester/#pick-frontier-models"><span class="rochester-pick__day">Monday · AI / Health</span><strong>Healthcare in the Age of Frontier Models</strong><span>3:30 PM · Class of ’62 Auditorium. Coalition for Health AI CEO Brian Anderson on medicine in the frontier-model era.</span></a>
+<a class="rochester-pick" href="this-week-at-rochester/#pick-politics"><span class="rochester-pick__day">Thursday, October 15 · Politics / Technology</span><strong>Disrupting Politics</strong><span>Noon–1 PM · Online. Former Facebook elections-policy leader Katie Harbath joins David Primo to discuss technology, democracy, misinformation, AI, and the 2026 midterms. FREE · RSVP REQUIRED.</span></a>
 </div><a class="rochester-week__all" href="this-week-at-rochester/">Full Thursday → Thursday calendar →</a></div>
-
 
 <div class="mooings">
 <p class="mooings__eyebrow">Audio essays &amp; conversations</p>
@@ -341,6 +319,7 @@ Picnic tables between Meliora and Harkness<br>
 <a href="whats-on-tap.html">What's on Tap?</a>
 <a href="outdoor-hours-location.html">Outside OH Location</a>
 <a href="oyster-events.html">OYSTER Club and Special Events</a>
+<a href="oyster-events.html#pena-human-capital">Past Event: Pablo Peña · Human Capital for Humans</a>
 <a href="econ-bulletin.html">Economics Bulletin Board</a>
 <a href="undergraduate-research.html">Undergraduate Research Opportunities</a>
 <a href="letters.html">Letters of Recommendation</a>

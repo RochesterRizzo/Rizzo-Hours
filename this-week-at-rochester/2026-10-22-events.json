@@ -1,0 +1,547 @@
+{
+  "week_start": "2026-10-22",
+  "week_end": "2026-10-29",
+  "updated": "2026-10-23",
+  "timezone": "America/New_York",
+  "coverage": "partial",
+  "events": [
+    {
+      "day": 23,
+      "time": "6:30 PM",
+      "title": "Jay Kline, clarinet",
+      "venue": "Kilbourn Hall",
+      "url": "https://www.esm.rochester.edu/esm-event/student-degree-recital-jay-kline-clarinet/",
+      "category": "MUSIC",
+      "flag": "FREE",
+      "description": "",
+      "sort": 0
+    },
+    {
+      "day": 23,
+      "time": "6:30 PM",
+      "title": "Eastman Jazz Club",
+      "venue": "Sproull Atrium",
+      "url": "https://www.esm.rochester.edu/esm-event/eastman-jazz-club/",
+      "category": "MUSIC",
+      "flag": "FREE",
+      "description": "",
+      "sort": 0
+    },
+    {
+      "day": 23,
+      "time": "7:30 PM",
+      "title": "Electroacoustic Music Studios at Eastman (EMuSE)",
+      "venue": "Hatch Recital Hall",
+      "url": "https://www.esm.rochester.edu/esm-event/emuse-2/",
+      "category": "MUSIC",
+      "flag": "FREE",
+      "description": "",
+      "sort": 0
+    },
+    {
+      "day": 24,
+      "time": "11:30 AM",
+      "title": "Andrew Foster, horn",
+      "venue": "Kilbourn Hall",
+      "url": "https://www.esm.rochester.edu/esm-event/student-degree-recital-andrew-foster-horn/",
+      "category": "MUSIC",
+      "flag": "FREE",
+      "description": "",
+      "sort": 0
+    },
+    {
+      "day": 24,
+      "time": "1:30 PM",
+      "title": "Jack Whalen, tuba",
+      "venue": "Hatch Recital Hall",
+      "url": "https://www.esm.rochester.edu/esm-event/student-degree-recital-jack-whalen-tuba/",
+      "category": "MUSIC",
+      "flag": "FREE",
+      "description": "",
+      "sort": 0
+    },
+    {
+      "day": 24,
+      "time": "4:30 PM",
+      "title": "ECMS Showcase Recital",
+      "venue": "Hatch Recital Hall",
+      "url": "https://www.esm.rochester.edu/esm-event/ecms-showcase-recital-6/",
+      "category": "MUSIC",
+      "flag": "FREE",
+      "description": "",
+      "sort": 0
+    },
+    {
+      "day": 24,
+      "time": "7:30 PM",
+      "title": "Ran Dank and Soyeon Kate Lee, piano",
+      "venue": "Kilbourn Hall",
+      "url": "https://www.esm.rochester.edu/esm-event/faculty-artist-series-ran-dank-piano-with-soyeon-kate-lee-piano/",
+      "category": "MUSIC",
+      "flag": "TICKETED",
+      "description": "",
+      "sort": 0
+    },
+    {
+      "day": 24,
+      "time": "7:30 PM",
+      "title": "RPO: Douglas Plays Tchaikovsky",
+      "venue": "Kodak Hall",
+      "url": "https://www.esm.rochester.edu/esm-event/rpo-piano-festival-douglas-plays-tchaikovsky/",
+      "category": "MUSIC",
+      "flag": "",
+      "description": "",
+      "sort": 0
+    },
+    {
+      "day": 25,
+      "time": "1:30 PM",
+      "title": "Michael Deresz, bassoon",
+      "venue": "Hatch Recital Hall",
+      "url": "https://www.esm.rochester.edu/esm-event/student-degree-recital-michael-deresz-bassoon/",
+      "category": "MUSIC",
+      "flag": "FREE",
+      "description": "",
+      "sort": 0
+    },
+    {
+      "day": 25,
+      "time": "1:30 PM & 3:00 PM",
+      "title": "Going for Baroque",
+      "venue": "Memorial Art Gallery",
+      "url": "https://www.esm.rochester.edu/esm-event/going-for-baroque-64/",
+      "category": "MUSIC",
+      "flag": "FREE",
+      "description": "",
+      "sort": 0
+    },
+    {
+      "day": 25,
+      "time": "3:00 PM",
+      "title": "Chanticleer: Our American Journey",
+      "venue": "Kilbourn Hall",
+      "url": "https://www.esm.rochester.edu/esm-event/eastman-presents-chanticleer-our-american-journey/",
+      "category": "MUSIC",
+      "flag": "TICKETED",
+      "description": "",
+      "sort": 0
+    },
+    {
+      "day": 25,
+      "time": "3:30 PM",
+      "title": "ECMS Composition Performance",
+      "venue": "Howard Hanson Hall",
+      "url": "https://www.esm.rochester.edu/esm-event/ecms-composition-performance/",
+      "category": "MUSIC",
+      "flag": "FREE",
+      "description": "",
+      "sort": 0
+    },
+    {
+      "day": 25,
+      "time": "9:00 PM",
+      "title": "Compline with Schola Cantorum",
+      "venue": "Christ Church",
+      "url": "https://www.esm.rochester.edu/esm-event/compline-with-schola-cantorum-11/",
+      "category": "MUSIC",
+      "flag": "FREE",
+      "description": "",
+      "sort": 0
+    },
+    {
+      "day": 26,
+      "time": "7:30 PM",
+      "title": "Chamber Jazz with Mike Moreno, guitar",
+      "venue": "Hatch Recital Hall",
+      "url": "https://www.esm.rochester.edu/esm-event/chamber-jazz/",
+      "category": "MUSIC",
+      "flag": "FREE",
+      "description": "",
+      "sort": 0
+    },
+    {
+      "day": 26,
+      "time": "7:30 PM",
+      "title": "Eastman School Symphony Orchestra",
+      "venue": "Kodak Hall",
+      "url": "https://www.esm.rochester.edu/esm-event/eastman-school-symphony-orchestra-4/",
+      "category": "MUSIC",
+      "flag": "FREE",
+      "description": "",
+      "sort": 0
+    },
+    {
+      "day": 27,
+      "time": "12:10 PM",
+      "title": "Tuesday Pipes",
+      "venue": "Christ Church",
+      "url": "https://www.esm.rochester.edu/esm-event/tuesday-pipes-31/",
+      "category": "MUSIC",
+      "flag": "FREE",
+      "description": "",
+      "sort": 0
+    },
+    {
+      "day": 27,
+      "time": "7:30 PM",
+      "title": "Eastman Vocal Jazz",
+      "venue": "Hatch Recital Hall",
+      "url": "https://www.esm.rochester.edu/esm-event/vocal-jazz/",
+      "category": "MUSIC",
+      "flag": "FREE",
+      "description": "",
+      "sort": 0
+    },
+    {
+      "day": 27,
+      "time": "7:30 PM",
+      "title": "Eastman Percussion Ensemble",
+      "venue": "Kodak Hall",
+      "url": "https://www.esm.rochester.edu/esm-event/eastman-percussion-ensemble-2/",
+      "category": "MUSIC",
+      "flag": "FREE",
+      "description": "",
+      "sort": 0
+    },
+    {
+      "day": 28,
+      "time": "4:30 PM",
+      "title": "VOVC Departmental Recital",
+      "venue": "Hatch Recital Hall",
+      "url": "https://www.esm.rochester.edu/esm-event/vovc-departmental-recital/",
+      "category": "MUSIC",
+      "flag": "FREE",
+      "description": "",
+      "sort": 0
+    },
+    {
+      "day": 28,
+      "time": "7:30 PM",
+      "title": "Eastman Philharmonia",
+      "venue": "Kodak Hall",
+      "url": "https://www.esm.rochester.edu/esm-event/eastman-philharmonia-4/",
+      "category": "MUSIC",
+      "flag": "FREE",
+      "description": "",
+      "sort": 0
+    },
+    {
+      "day": 29,
+      "time": "12:15 PM",
+      "title": "Eastman at Washington Square: To the Sea",
+      "venue": "First Universalist Church",
+      "url": "https://www.esm.rochester.edu/esm-event/eastman-washington-square-to-the-sea/",
+      "category": "MUSIC",
+      "flag": "FREE",
+      "description": "",
+      "sort": 0
+    },
+    {
+      "day": 23,
+      "time": "6:00 PM Eastern",
+      "title": "Men’s Soccer at Washington University",
+      "venue": "St. Louis, MO; stadium not specified in retrieved schedule",
+      "url": "https://uofrathletics.com/sports/mens-soccer/schedule/2026",
+      "category": "SPORTS",
+      "flag": "AWAY",
+      "description": "5 PM Central.",
+      "sort": 0
+    },
+    {
+      "day": 23,
+      "time": "8:30 PM Eastern",
+      "title": "Women’s Soccer at Washington University",
+      "venue": "St. Louis, MO; stadium not specified in retrieved schedule",
+      "url": "https://uofrathletics.com/sports/womens-soccer/schedule/2026",
+      "category": "SPORTS",
+      "flag": "AWAY",
+      "description": "7:30 PM Central.",
+      "sort": 0
+    },
+    {
+      "day": 24,
+      "time": "12:00 PM",
+      "title": "Football vs. RPI",
+      "venue": "Edwin Fauver Stadium",
+      "url": "https://uofrathletics.com/sports/football/schedule/2026",
+      "category": "SPORTS",
+      "flag": "HOME",
+      "description": "Morgan’s Message dedication game.",
+      "sort": 0
+    },
+    {
+      "day": 24,
+      "time": "1:00 PM",
+      "title": "Men’s Swimming and Diving vs. SUNY Cortland",
+      "venue": "Speegle-Wilbraham Aquatics Center",
+      "url": "https://uofrathletics.com/sports/mens-swimming-and-diving/schedule",
+      "category": "SPORTS",
+      "flag": "HOME",
+      "description": "",
+      "sort": 0
+    },
+    {
+      "day": 24,
+      "time": "1:00 PM",
+      "title": "Women’s Swimming and Diving vs. SUNY Cortland",
+      "venue": "Speegle-Wilbraham Aquatics Center",
+      "url": "https://uofrathletics.com/sports/womens-swimming-and-diving/schedule/2026-27",
+      "category": "SPORTS",
+      "flag": "HOME",
+      "description": "",
+      "sort": 0
+    },
+    {
+      "day": 24,
+      "time": "4:00 PM",
+      "title": "Field Hockey vs. St. Lawrence",
+      "venue": "Edwin Fauver Stadium",
+      "url": "https://uofrathletics.com/sports/field-hockey/schedule/2026",
+      "category": "SPORTS",
+      "flag": "HOME",
+      "description": "Breast Cancer Awareness Game.",
+      "sort": 0
+    },
+    {
+      "day": 25,
+      "time": "12:00 PM Eastern",
+      "title": "Men’s Soccer at Chicago",
+      "venue": "Chicago, IL; stadium not specified in retrieved schedule",
+      "url": "https://uofrathletics.com/sports/mens-soccer/schedule/2026",
+      "category": "SPORTS",
+      "flag": "AWAY",
+      "description": "11 AM Central.",
+      "sort": 0
+    },
+    {
+      "day": 25,
+      "time": "2:30 PM Eastern",
+      "title": "Women’s Soccer at Chicago",
+      "venue": "Chicago, IL; stadium not specified in retrieved schedule",
+      "url": "https://uofrathletics.com/sports/womens-soccer/schedule/2026",
+      "category": "SPORTS",
+      "flag": "AWAY",
+      "description": "1:30 PM Central.",
+      "sort": 0
+    },
+    {
+      "day": 28,
+      "time": "4:00 PM",
+      "title": "Field Hockey at Oswego State",
+      "venue": "Oswego, NY; field not specified in retrieved schedule",
+      "url": "https://uofrathletics.com/sports/field-hockey/schedule/2026",
+      "category": "SPORTS",
+      "flag": "AWAY",
+      "description": "",
+      "sort": 0
+    },
+    {
+      "day": 26,
+      "time": "12:00–1:00 PM",
+      "title": "Ruofei Du: AI and XR innovations",
+      "venue": "Wegmans Hall 1400",
+      "url": "https://events.rochester.edu/event/cs-seminar-series-ruofei-du",
+      "category": "TALKS / LECTURES",
+      "flag": "",
+      "description": "Direct event page gives noon Eastern; department calendar displays 4 PM. Confirm with organizer if attending.",
+      "sort": 0
+    },
+    {
+      "day": 26,
+      "time": "1:00–3:00 PM",
+      "title": "Data Bloom: Excel PivotTables, PivotCharts and dashboards",
+      "venue": "Online",
+      "url": "https://events.rochester.edu/event/data-bloom-pivottables-pivotcharts-and-dashboards-in-excel-1624",
+      "category": "OTHER CAMPUS EVENTS",
+      "flag": "REGISTRATION",
+      "description": "Library workshop; Zoom link provided after registration.",
+      "sort": 0
+    },
+    {
+      "day": 26,
+      "time": "5:00–7:00 PM",
+      "title": "Scrape, Scan, Shred, Slop: The End of Intelligence",
+      "venue": "Humanities Center Conference Room D, Rush Rhees",
+      "url": "https://events.rochester.edu/event/scrape-scan-shred-slop-the-end-of-intelligence",
+      "category": "TALKS / LECTURES",
+      "flag": "",
+      "description": "Matt Seybold of Elmira College speaks in the AI & Humanities series.",
+      "sort": 0
+    },
+    {
+      "day": 27,
+      "time": "5:00–6:00 PM",
+      "title": "Plutzik Reading Series: Lauren Acampora",
+      "venue": "See organizer link; room not verified",
+      "url": "https://events.rochester.edu/event/plutzik-reading-series-lauren-acampora",
+      "category": "TALKS / LECTURES",
+      "flag": "",
+      "description": "Time converted from the official listing’s 2–3 PM Pacific display.",
+      "sort": 0
+    },
+    {
+      "day": 28,
+      "time": "9:00 AM–3:00 PM",
+      "title": "Translational Science Day",
+      "venue": "Saunders Research Building and Helen Wood Hall",
+      "url": "https://events.rochester.edu/event/translational-science-day-2026",
+      "category": "TALKS / LECTURES",
+      "flag": "FREE · REGISTRATION",
+      "description": "Research fair, talks and a three-minute thesis competition; see program for rooms.",
+      "sort": 0
+    },
+    {
+      "day": 28,
+      "time": "10:30–11:45 AM",
+      "title": "Generative AI in Teaching and Research",
+      "venue": "Wilson Commons 122",
+      "url": "https://events.rochester.edu/event/generative-ai-in-teaching-and-research-what-faculty-need-to-know",
+      "category": "TALKS / LECTURES",
+      "flag": "FREE · REGISTRATION",
+      "description": "Faculty session with Rachel Remmel and Jonathan Herington.",
+      "sort": 0
+    },
+    {
+      "day": 28,
+      "time": "12:00–1:00 PM",
+      "title": "Chunqiang Tang: Meta’s computing infrastructure",
+      "venue": "Wegmans Hall 1400",
+      "url": "https://events.rochester.edu/event/cs-seminar-series-chunqiang-tang",
+      "category": "TALKS / LECTURES",
+      "flag": "",
+      "description": "Direct event page gives noon Eastern; department calendar displays 4 PM. Confirm with organizer if attending.",
+      "sort": 0
+    },
+    {
+      "day": 28,
+      "time": "1:00–2:00 PM",
+      "title": "Research Security: Collaborating in a Global Context",
+      "venue": "Humanities Center Conference Room D, Rush Rhees; stream available",
+      "url": "https://events.rochester.edu/event/research-security-guidelines-for-collaborating-in-a-global-context",
+      "category": "TALKS / LECTURES",
+      "flag": "FREE",
+      "description": "",
+      "sort": 0
+    },
+    {
+      "day": 28,
+      "time": "6:30–8:00 PM",
+      "title": "Professors of Faith: Thomas Brown",
+      "venue": "Wegmans Hall 1400",
+      "url": "https://events.rochester.edu/event/professors-of-faith-speaker-series",
+      "category": "TALKS / LECTURES",
+      "flag": "",
+      "description": "The Institute of Optics director speaks.",
+      "sort": 0
+    },
+    {
+      "day": 29,
+      "time": "9:00 AM",
+      "title": "Coffee with Homer",
+      "venue": "Wilson Commons 409, Havens Lounge",
+      "url": "https://events.rochester.edu/event/coffee-with-homer",
+      "category": "TALKS / LECTURES",
+      "flag": "",
+      "description": "Discuss Iliad books 13–16; read the selection beforehand and bring your coffee.",
+      "sort": 0
+    },
+    {
+      "day": 29,
+      "time": "9:00 AM–4:30 PM",
+      "title": "Mitochondria and Metabolism Day",
+      "venue": "Class of ’62 Auditorium and Sarah Flaum Atrium",
+      "url": "https://events.rochester.edu/event/mitochondria-and-metabolism-day",
+      "category": "TALKS / LECTURES",
+      "flag": "FREE · REGISTRATION",
+      "description": "",
+      "sort": 0
+    },
+    {
+      "day": 29,
+      "time": "3:30–4:30 PM",
+      "title": "Greta Panova: Complexity in algebraic combinatorics",
+      "venue": "Hylan 1106a",
+      "url": "https://events.rochester.edu/event/colloquium-greta-panova-university-of-southern-california",
+      "category": "TALKS / LECTURES",
+      "flag": "",
+      "description": "",
+      "sort": 0
+    },
+    {
+      "day": 29,
+      "time": "5:00–6:00 PM",
+      "title": "Kafka Prize Reading",
+      "venue": "See organizer link; room not verified",
+      "url": "https://events.rochester.edu/event/kafka-prize-reading",
+      "category": "TALKS / LECTURES",
+      "flag": "",
+      "description": "Time converted from the official listing’s 2–3 PM Pacific display.",
+      "sort": 0
+    },
+    {
+      "day": 29,
+      "time": "7:30–9:00 PM",
+      "title": "Out of the Box – In the Box",
+      "venue": "Smith Theatre, Sloan Performing Arts Center",
+      "url": "https://events.rochester.edu/event/fall-student-concert-out-of-the-box-in-the-box",
+      "category": "THEATER / DANCE",
+      "flag": "TICKETED · FREE WITH UR STUDENT ID",
+      "description": "Student dance works, including work by Missy Pfohl Smith. General admission range $0–$15.",
+      "sort": 0
+    }
+  ],
+  "staff_picks": [
+    {
+      "day": "Saturday · Home sports",
+      "title": "Football, swimming, field hockey",
+      "desc": "Noon football vs. RPI; 1 PM swimming vs. Cortland; 4 PM field hockey vs. St. Lawrence.",
+      "url": "https://uofrathletics.com/sports/football/schedule/2026"
+    },
+    {
+      "day": "Sunday · Voices",
+      "title": "Chanticleer: Our American Journey",
+      "desc": "3 PM · Kilbourn Hall · Ticketed.",
+      "url": "https://www.esm.rochester.edu/esm-event/eastman-presents-chanticleer-our-american-journey/"
+    },
+    {
+      "day": "Monday · Ideas",
+      "title": "Scrape, Scan, Shred, Slop",
+      "desc": "5–7 PM · Humanities Center. Matt Seybold on AI and intelligence.",
+      "url": "https://events.rochester.edu/event/scrape-scan-shred-slop-the-end-of-intelligence"
+    },
+    {
+      "day": "Monday · Jazz guitar",
+      "title": "Chamber Jazz with Mike Moreno",
+      "desc": "7:30 PM · Hatch Recital Hall · Free.",
+      "url": "https://www.esm.rochester.edu/esm-event/chamber-jazz/"
+    },
+    {
+      "day": "Tuesday · Literature",
+      "title": "Lauren Acampora: Plutzik Reading",
+      "desc": "5–6 PM · Follow the organizer link for room confirmation.",
+      "url": "https://events.rochester.edu/event/plutzik-reading-series-lauren-acampora"
+    },
+    {
+      "day": "Wednesday · Faith",
+      "title": "Professors of Faith: Thomas Brown",
+      "desc": "6:30–8 PM · Wegmans Hall 1400.",
+      "url": "https://events.rochester.edu/event/professors-of-faith-speaker-series"
+    },
+    {
+      "day": "Thursday · Original dance",
+      "title": "Out of the Box – In the Box",
+      "desc": "7:30 PM · Smith Theatre. Free for UR students with ID.",
+      "url": "https://events.rochester.edu/event/fall-student-concert-out-of-the-box-in-the-box"
+    }
+  ],
+  "source_health": [
+    "Coverage is partial: central calendar API was inaccessible, several daily pages and the Libraries calendar returned HTTP 429, and CampusGroups/Late Night could not be retrieved. Missing listings do not mean there are no events.",
+    "Eastman’s own calendar and direct concert pages supplied the music listings. Student-only masterclasses are omitted. One central-calendar jazz listing names a different guest; Eastman’s own current page identifies Mike Moreno.",
+    "Official football, field hockey, men’s/women’s soccer and swimming sources supplied the sports listed. Soccer times have been converted from Central to Eastern. Volleyball timed out; rowing, cross-country, tennis, golf, squash and remaining varsity schedules were not fully verified in this rapid pass.",
+    "Economics workshop index and Wallis’s current schedule were checked; standing weekly workshop times were not treated as confirmed events. Individual Economics workshop pages still need a complete pass. Wallis has no dated seminar in this window on its published table.",
+    "Arthur Satz Music lists October 18 and November 1 concerts, with none dated in this window. Humanities, Theatre, Dance and Simon pages were checked, but dynamic source completeness is not established. The dance opening was verified on its original event page. The Goergen events URL was inaccessible; Computer Science talks were recovered separately.",
+    "Computer Science’s department listing displays 4 PM for the Du and Tang talks while direct Localist event pages explicitly show noon Eastern. The digest uses the direct event pages and flags the discrepancy.",
+    "Plutzik and Kafka reading dates/times were found in indexed official event listings; their rooms could not be verified. These entries explicitly flag that limitation. Full calendar pagination and comprehensive source coverage are not certified."
+  ],
+  "october22": "Retained from archived 2026-10-15.html"
+}

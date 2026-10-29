@@ -1,0 +1,530 @@
+{
+  "coverage": {
+    "start": "2026-10-29",
+    "end": "2026-11-05",
+    "timezone": "America/New_York"
+  },
+  "generated": "2026-10-29",
+  "count": 47,
+  "events": [
+    {
+      "date": "2026-10-29",
+      "time": "9:00 AM–4:30 PM",
+      "category": "TALKS / LECTURES",
+      "title": "Mitochondria and Metabolism Day",
+      "location": "School of Medicine and Dentistry, Class of ’62 Auditorium and Sarah Flaum Atrium",
+      "url": "https://events.rochester.edu/event/mitochondria-and-metabolism-day",
+      "description": "Research-day program on metabolism and mitochondrial biology.",
+      "status": [
+        "FREE"
+      ]
+    },
+    {
+      "date": "2026-10-29",
+      "time": "12:15 PM",
+      "category": "MUSIC",
+      "title": "Eastman @ Washington Square: To the Sea",
+      "location": "First Universalist Church of Rochester",
+      "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-10-29",
+      "description": "Free lunchtime chamber-music program.",
+      "status": [
+        "FREE"
+      ]
+    },
+    {
+      "date": "2026-10-29",
+      "time": "1:00–2:00 PM",
+      "category": "ARTS",
+      "title": "Blender Pumpkin Workshop",
+      "location": "Carlson Science & Engineering Library, first-floor Studio X",
+      "url": "https://events.rochester.edu/event/blender-pumpkin-workshop",
+      "description": "A seasonal 3D-design workshop from River Campus Libraries.",
+      "status": []
+    },
+    {
+      "date": "2026-10-29",
+      "time": "5:00–6:00 PM",
+      "category": "TALKS / LECTURES",
+      "title": "Kafka Prize Reading",
+      "location": "Rush Rhees Library, Welles-Brown Room",
+      "url": "https://events.rochester.edu/event/kafka-prize-reading",
+      "description": "Annual literary-prize reading.",
+      "status": []
+    },
+    {
+      "date": "2026-10-29",
+      "time": "5:00–7:00 PM",
+      "category": "OTHER CAMPUS EVENTS",
+      "title": "Fall 2026 Writer’s Lounge",
+      "location": "Rush Rhees Library, Humanities Center Lounge",
+      "url": "https://events.rochester.edu/event/fall-2026-writers-lounge",
+      "description": "An informal writing community gathering.",
+      "status": []
+    },
+    {
+      "date": "2026-10-29",
+      "time": "6:00–7:00 PM",
+      "category": "ARTS",
+      "title": "Art, Death, and Fashion DeTOUR",
+      "location": "Memorial Art Gallery; meet at Admissions",
+      "url": "https://mag.rochester.edu/programs/",
+      "description": "Fashion historian Brandon W. Brooks leads a gallery tour; $25, $20 members.",
+      "status": [
+        "SOLD OUT",
+        "TICKETED"
+      ]
+    },
+    {
+      "date": "2026-10-29",
+      "time": "6:45–7:45 PM",
+      "category": "ARTS",
+      "title": "MAG Highlights Tour",
+      "location": "Memorial Art Gallery; meet at Admissions",
+      "url": "https://mag.rochester.edu/programs/",
+      "description": "A docent-led collection tour.",
+      "status": [
+        "TICKETED"
+      ]
+    },
+    {
+      "date": "2026-10-30",
+      "time": "11:15 AM–12:15 PM",
+      "category": "ARTS",
+      "title": "MAG Highlights Tour",
+      "location": "Memorial Art Gallery; meet at Admissions",
+      "url": "https://mag.rochester.edu/programs/",
+      "description": "Included with museum admission.",
+      "status": [
+        "TICKETED"
+      ]
+    },
+    {
+      "date": "2026-10-30",
+      "time": "12:00–4:00 PM",
+      "category": "OTHER CAMPUS EVENTS",
+      "title": "Scare Fair",
+      "location": "Rush Rhees Library, Lam Square",
+      "url": "https://events.rochester.edu/event/scare-fair",
+      "description": "Library Halloween program; Lam Square is the scavenger-hunt check-in.",
+      "status": []
+    },
+    {
+      "date": "2026-10-30",
+      "time": "1:00–2:30 PM",
+      "category": "TALKS / LECTURES",
+      "title": "Reconsidering Archaeological Collections Stewardship",
+      "location": "Rush Rhees Library, Room 442",
+      "url": "https://events.rochester.edu/event/reconsidering-archaeological-collections-stewardship",
+      "description": "A collections and stewardship discussion.",
+      "status": []
+    },
+    {
+      "date": "2026-10-30",
+      "time": "1:30–3:30 PM",
+      "category": "TALKS / LECTURES",
+      "title": "Schwartz Discover Scholars Showcase",
+      "location": "Frederick Douglass Commons, Feldman Ballroom",
+      "url": "https://events.rochester.edu/event/schwartz-discover-scholars-showcase",
+      "description": "Student research showcase.",
+      "status": []
+    },
+    {
+      "date": "2026-10-30",
+      "time": "2:00 PM",
+      "category": "OTHER CAMPUS EVENTS",
+      "title": "The Heist Hackathon Finals",
+      "location": "Schlegel Hall 107",
+      "url": "https://www.rochester.edu/aincenter/the-heist-hackathon/",
+      "description": "Final pitches in the Ain Center’s AI-and-entrepreneurship challenge.",
+      "status": []
+    },
+    {
+      "date": "2026-10-30",
+      "time": "4:00–6:00 PM",
+      "category": "ARTS",
+      "title": "The Psychological Ledger",
+      "location": "Hartnett Gallery",
+      "url": "https://events.rochester.edu/event/hartnett-gallery-exhibit-the-psychological-ledger",
+      "description": "Exhibition event at the student-run Hartnett Gallery.",
+      "status": []
+    },
+    {
+      "date": "2026-10-30",
+      "time": "5:00 PM",
+      "category": "MUSIC",
+      "title": "Eastman Jazz Club",
+      "location": "Sproull Atrium",
+      "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-10-29",
+      "description": "Informal Eastman jazz performance.",
+      "status": [
+        "FREE"
+      ]
+    },
+    {
+      "date": "2026-10-30",
+      "time": "7:30 PM",
+      "category": "MUSIC",
+      "title": "Sara Gazarek, jazz voice",
+      "location": "Hatch Recital Hall",
+      "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-10-29",
+      "description": "Faculty Artist Series concert; livestream available.",
+      "status": [
+        "TICKETED"
+      ]
+    },
+    {
+      "date": "2026-10-30",
+      "time": "7:30–9:00 PM",
+      "category": "THEATER / DANCE",
+      "title": "Out of the Box – In the Box",
+      "location": "Sloan Performing Arts Center, Smith Theatre",
+      "url": "https://events.rochester.edu/event/fall-student-concert-out-of-the-box-in-the-box",
+      "description": "Fall student dance concert; listed at $0–$15.",
+      "status": [
+        "TICKETED"
+      ]
+    },
+    {
+      "date": "2026-10-31",
+      "time": "9:15–10:45 AM",
+      "category": "ARTS",
+      "title": "Mindful MAGiC: Frequency Flow",
+      "location": "Memorial Art Gallery, Fountain Court",
+      "url": "https://mag.rochester.edu/programs/",
+      "description": "Movement and live sound in Fountain Court; $35, $30 members.",
+      "status": [
+        "TICKETED"
+      ]
+    },
+    {
+      "date": "2026-10-31",
+      "time": "10:00 AM",
+      "category": "SPORTS",
+      "title": "Field Hockey vs. William Smith",
+      "location": "HOME · Edwin Fauver Stadium",
+      "url": "https://uofrathletics.com/sports/field-hockey/schedule/2026",
+      "description": "Regular-season home finale.",
+      "status": []
+    },
+    {
+      "date": "2026-10-31",
+      "time": "1:00 PM",
+      "category": "SPORTS",
+      "title": "Men’s Soccer vs. Carnegie Mellon",
+      "location": "HOME · Edwin Fauver Stadium",
+      "url": "https://uofrathletics.com/sports/mens-soccer/schedule/2026",
+      "description": "UAA home match.",
+      "status": []
+    },
+    {
+      "date": "2026-10-31",
+      "time": "1:00 PM",
+      "category": "SPORTS",
+      "title": "Football at Hobart",
+      "location": "AWAY · Geneva, NY; venue not specified in retrieved listing",
+      "url": "https://uofrathletics.com/sports/football/schedule/2026",
+      "description": "Liberty League road game.",
+      "status": []
+    },
+    {
+      "date": "2026-10-31",
+      "time": "2:00–3:30 PM",
+      "category": "THEATER / DANCE",
+      "title": "Out of the Box – In the Box",
+      "location": "Sloan Performing Arts Center, Smith Theatre",
+      "url": "https://events.rochester.edu/event/fall-student-concert-out-of-the-box-in-the-box",
+      "description": "Saturday matinee of the fall student dance concert; $0–$15.",
+      "status": [
+        "TICKETED"
+      ]
+    },
+    {
+      "date": "2026-10-31",
+      "time": "2:15 PM ET",
+      "category": "SPORTS",
+      "title": "Women’s Cross Country at UAA Championship",
+      "location": "AWAY · host venue not specified in retrieved listing",
+      "url": "https://uofrathletics.com/sports/womens-cross-country/schedule/2026",
+      "description": "Official listing gives 1:15 PM Central; shown here in Eastern.",
+      "status": []
+    },
+    {
+      "date": "2026-10-31",
+      "time": "3:00 PM ET",
+      "category": "SPORTS",
+      "title": "Men’s Cross Country at UAA Championship",
+      "location": "AWAY · host venue not specified in retrieved listing",
+      "url": "https://uofrathletics.com/sports/mens-cross-country/schedule/2026",
+      "description": "Official listing gives 2:00 PM Central; shown here in Eastern.",
+      "status": []
+    },
+    {
+      "date": "2026-10-31",
+      "time": "3:30 PM",
+      "category": "SPORTS",
+      "title": "Women’s Soccer vs. Carnegie Mellon",
+      "location": "HOME · Edwin Fauver Stadium",
+      "url": "https://uofrathletics.com/sports/womens-soccer/schedule/2026",
+      "description": "UAA home match.",
+      "status": []
+    },
+    {
+      "date": "2026-10-31",
+      "time": "7:30 PM",
+      "category": "MUSIC",
+      "title": "RPO Piano Festival: Biss Plays Beethoven",
+      "location": "Kodak Hall at Eastman Theatre",
+      "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-10-29",
+      "description": "Jonathan Biss joins the Rochester Philharmonic.",
+      "status": [
+        "TICKETED"
+      ]
+    },
+    {
+      "date": "2026-11-01",
+      "time": "11:30 AM",
+      "category": "MUSIC",
+      "title": "Samantha Webster, bassoon",
+      "location": "Hatch Recital Hall",
+      "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-10-29",
+      "description": "Eastman student degree recital; livestream available.",
+      "status": [
+        "FREE"
+      ]
+    },
+    {
+      "date": "2026-11-01",
+      "time": "12:30–1:30 PM",
+      "category": "ARTS",
+      "title": "MAG Highlights Tour",
+      "location": "Memorial Art Gallery; meet at Admissions",
+      "url": "https://mag.rochester.edu/programs/",
+      "description": "Included with museum admission.",
+      "status": [
+        "TICKETED"
+      ]
+    },
+    {
+      "date": "2026-11-01",
+      "time": "1:30–1:55 PM and 3:00–3:25 PM",
+      "category": "MUSIC",
+      "title": "Going for Baroque",
+      "location": "Memorial Art Gallery, Fountain Court",
+      "url": "https://mag.rochester.edu/programs/",
+      "description": "Two short concerts on the Italian Baroque organ; included with museum admission.",
+      "status": [
+        "TICKETED"
+      ]
+    },
+    {
+      "date": "2026-11-01",
+      "time": "2:00 PM",
+      "category": "MUSIC",
+      "title": "RPO Piano Festival: Hamelin Plays Brahms",
+      "location": "Kodak Hall at Eastman Theatre",
+      "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-10-29",
+      "description": "Marc-André Hamelin with the Rochester Philharmonic.",
+      "status": [
+        "TICKETED"
+      ]
+    },
+    {
+      "date": "2026-11-01",
+      "time": "7:00 PM",
+      "category": "MUSIC",
+      "title": "Jazz Ensemble Concert",
+      "location": "Upper Strong Auditorium",
+      "url": "https://www.sas.rochester.edu/mur/ensembles/concerts.html",
+      "description": "Arthur Satz Department of Music ensemble concert.",
+      "status": [
+        "FREE"
+      ]
+    },
+    {
+      "date": "2026-11-02",
+      "time": "8:00 AM–5:30 PM",
+      "category": "TALKS / LECTURES",
+      "title": "2nd Annual Infectious Diseases and Immunity Symposium",
+      "location": "University of Rochester; room not shown in retrieved listing",
+      "url": "https://events.rochester.edu/event/2nd-annual-infectious-diseases-and-immunity-symposium",
+      "description": "Full-day research symposium.",
+      "status": []
+    },
+    {
+      "date": "2026-11-02",
+      "time": "1:00–3:00 PM",
+      "category": "OTHER CAMPUS EVENTS",
+      "title": "First-Gen Fun Day 2026",
+      "location": "Wilson Commons, Hirst Lounge",
+      "url": "https://events.rochester.edu/event/first-gen-fun-day-2026",
+      "description": "First-Gen Week kickoff activity.",
+      "status": []
+    },
+    {
+      "date": "2026-11-02",
+      "time": "1:00–3:00 PM",
+      "category": "TALKS / LECTURES",
+      "title": "How We Run Online Genetics Studies",
+      "location": "Online",
+      "url": "https://events.rochester.edu/event/rutgers-university-genetics-coordinating-center-how-we-run-online-genetics-studies",
+      "description": "Rutgers Genetics Coordinating Center presentation.",
+      "status": []
+    },
+    {
+      "date": "2026-11-03",
+      "time": "12:30–2:00 PM",
+      "category": "TALKS / LECTURES",
+      "title": "How AI Can Become a Better Learner",
+      "location": "Rush Rhees Library, Humanities Center Conference Room D",
+      "url": "https://events.rochester.edu/event/how-ai-can-become-a-better-learner",
+      "description": "Language Science lecture by Ben Zhou of Arizona State.",
+      "status": []
+    },
+    {
+      "date": "2026-11-03",
+      "time": "4:00–5:30 PM",
+      "category": "TALKS / LECTURES",
+      "title": "57th Annual Gilbert Lecture: Robert Staiger",
+      "location": "Morey Hall 321",
+      "url": "https://events.rochester.edu/event/57th-annual-gilbert-lecture",
+      "description": "The WTO chief economist speaks on a critical juncture for the world trading system.",
+      "status": []
+    },
+    {
+      "date": "2026-11-03",
+      "time": "5:00–6:30 PM",
+      "category": "OTHER CAMPUS EVENTS",
+      "title": "Hot Ones: English Department Edition",
+      "location": "Todd Union, Todd Theater Lobby",
+      "url": "https://events.rochester.edu/event/hot-ones-english-department-edition",
+      "description": "Spring-course Q&A with professors and increasingly hot wings.",
+      "status": []
+    },
+    {
+      "date": "2026-11-03",
+      "time": "5:00–7:00 PM",
+      "category": "TALKS / LECTURES",
+      "title": "First-Gen Week Keynote: Why Not Me?",
+      "location": "Rush Rhees Library, Hawkins-Carlson Room",
+      "url": "https://events.rochester.edu/event/first-gen-week-2026-keynote-address-why-not-me-choosing-joy-centering-purpose",
+      "description": "A keynote on choosing joy and centering purpose.",
+      "status": []
+    },
+    {
+      "date": "2026-11-03",
+      "time": "5:00–9:00 PM",
+      "category": "TALKS / LECTURES",
+      "title": "Vision Meets Optics — opening night",
+      "location": "River Campus; registration page provides program access",
+      "url": "https://events.rochester.edu/event/vision-meets-optics",
+      "description": "Networking, keynote, panel, and dinner on prescription-integrated AR; listed at $250.",
+      "status": [
+        "RSVP REQUIRED",
+        "TICKETED"
+      ]
+    },
+    {
+      "date": "2026-11-03",
+      "time": "6:00–9:00 PM",
+      "category": "ARTS",
+      "title": "Art Start: Paint & Snack – Turning Point Park",
+      "location": "Memorial Art Gallery, Creative Workshop",
+      "url": "https://mag.rochester.edu/programs/",
+      "description": "The organizer marks this class canceled.",
+      "status": [
+        "CANCELED"
+      ]
+    },
+    {
+      "date": "2026-11-04",
+      "time": "11:00 AM–12:00 PM",
+      "category": "ARTS",
+      "title": "Open MIC: Hugo McCloud",
+      "location": "Memorial Art Gallery",
+      "url": "https://mag.rochester.edu/programs/",
+      "description": "Members-in-conversation program about the Hugo McCloud exhibition.",
+      "status": [
+        "SOLD OUT"
+      ]
+    },
+    {
+      "date": "2026-11-04",
+      "time": "12:30–2:00 PM",
+      "category": "TALKS / LECTURES",
+      "title": "Collage and Fragmented Narratives as Resistance",
+      "location": "Rush Rhees Library, Humanities Center Conference Room D",
+      "url": "https://events.rochester.edu/event/collage-and-fragmented-narratives-as-a-form-of-resistance-in-memoir-writing-by-shohreh-laici",
+      "description": "Shohreh Laici on collage and memoir writing.",
+      "status": []
+    },
+    {
+      "date": "2026-11-04",
+      "time": "5:00–7:00 PM",
+      "category": "TALKS / LECTURES",
+      "title": "Bright Futures for Humanities Majors with Mike Schiff ’86",
+      "location": "Rush Rhees Library, Humanities Center Conference Room D",
+      "url": "https://events.rochester.edu/event/qa-with-mike-schiff-86-bright-futures-for-humanities-majors",
+      "description": "Career conversation and Q&A.",
+      "status": []
+    },
+    {
+      "date": "2026-11-04",
+      "time": "6:00 PM",
+      "category": "MUSIC",
+      "title": "Leonard Cohen Meets Rumi",
+      "location": "Interfaith Chapel, Sanctuary",
+      "url": "https://events.rochester.edu/event/leonard-cohen-meets-rumi-john-terlazzo-and-voices-in-the-hall-concert",
+      "description": "John Terlazzo and Voices in the Hall in concert.",
+      "status": []
+    },
+    {
+      "date": "2026-11-05",
+      "time": "12:00–2:00 PM",
+      "category": "TALKS / LECTURES",
+      "title": "A Case Study on the Use of AI in the Humanities",
+      "location": "Rush Rhees Library, Humanities Center Conference Room D",
+      "url": "https://events.rochester.edu/event/a-case-study-on-the-use-of-ai-in-the-humanities",
+      "description": "Humanities Center program on research uses of AI.",
+      "status": []
+    },
+    {
+      "date": "2026-11-05",
+      "time": "5:00–7:00 PM",
+      "category": "OTHER CAMPUS EVENTS",
+      "title": "Fall 2026 Writer’s Lounge",
+      "location": "Rush Rhees Library, Humanities Center Lounge",
+      "url": "https://events.rochester.edu/event/fall-2026-writers-lounge",
+      "description": "Weekly informal writing community.",
+      "status": []
+    },
+    {
+      "date": "2026-11-05",
+      "time": "6:45–7:45 PM",
+      "category": "ARTS",
+      "title": "MAG Highlights Tour",
+      "location": "Memorial Art Gallery; meet at Admissions",
+      "url": "https://mag.rochester.edu/programs/",
+      "description": "Included with museum admission.",
+      "status": [
+        "TICKETED"
+      ]
+    },
+    {
+      "date": "2026-11-05",
+      "time": "7:00 PM",
+      "category": "SPORTS",
+      "title": "Women’s Volleyball vs. Utica University",
+      "location": "HOME · Louis Alexander Palestra",
+      "url": "https://uofrathletics.com/sports/womens-volleyball/schedule/2026",
+      "description": "Regular-season home match.",
+      "status": []
+    }
+  ],
+  "source_health": [
+    "Localist API unavailable; HTML/direct pages used",
+    "CCC mobile feed unavailable; University/Student Life alternatives used",
+    "Official athletics coverage and schedules checked",
+    "Eastman official filtered calendar checked",
+    "MAG organizer page used to resolve cancellation and sold-out status"
+  ]
+}

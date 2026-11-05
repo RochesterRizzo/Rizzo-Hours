@@ -1,0 +1,717 @@
+{
+  "coverage": {
+    "start": "2026-11-05",
+    "end": "2026-11-12",
+    "timezone": "America/New_York"
+  },
+  "generated": "2026-11-05",
+  "count": 62,
+  "events": [
+    {
+      "date": "2026-11-05",
+      "time": "12:00–2:00 PM",
+      "category": "TALKS / LECTURES",
+      "title": "A Case Study on the Use of AI in the Humanities",
+      "location": "Rush Rhees Library, Humanities Center Conference Room D",
+      "url": "https://events.rochester.edu/event/a-case-study-on-the-use-of-ai-in-the-humanities",
+      "description": "Goergen Institute associate professor Cantay Caliskan considers AI through a humanities lens.",
+      "status": []
+    },
+    {
+      "date": "2026-11-05",
+      "time": "12:15 PM",
+      "category": "MUSIC",
+      "title": "The Art of the String Quartet I: Borodin",
+      "location": "First Universalist Church of Rochester",
+      "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-11-04",
+      "description": "Eastman at Washington Square lunchtime concert.",
+      "status": [
+        "FREE"
+      ]
+    },
+    {
+      "date": "2026-11-05",
+      "time": "1:00–2:00 PM",
+      "category": "TALKS / LECTURES",
+      "title": "Data Bloom: In 3D — XR for Data Visualization",
+      "location": "Carlson Science & Engineering Library, first-floor Studio X; stream available",
+      "url": "https://events.rochester.edu/event/data-bloom-in-3d-xr-for-data-visualization",
+      "description": "River Campus Libraries workshop on immersive data visualization.",
+      "status": []
+    },
+    {
+      "date": "2026-11-05",
+      "time": "1:00–2:00 PM",
+      "category": "MUSIC",
+      "title": "Cello Music with Katrya Cichanowicz",
+      "location": "Strong Memorial Hospital, Interfaith Chapel near Miner Library",
+      "url": "https://events.rochester.edu/event/smh-interfaith-chapel-cello-music-with-katrya-cichanowicz-3015",
+      "description": "Bach, folk tunes, and Disney selections; visitors may enter and leave freely.",
+      "status": [
+        "FREE"
+      ]
+    },
+    {
+      "date": "2026-11-05",
+      "time": "5:00–6:30 PM",
+      "category": "TALKS / LECTURES",
+      "title": "First-Gen Week Faculty Panel and Dessert Reception",
+      "location": "Goergen Hall, Sloan Auditorium and Munnerlyn Atrium",
+      "url": "https://events.rochester.edu/event/first-gen-week-2026-faculty-panel-and-dessert-reception",
+      "description": "Faculty discuss the path from undergraduate study to the professoriate.",
+      "status": [
+        "RSVP REQUIRED"
+      ]
+    },
+    {
+      "date": "2026-11-05",
+      "time": "5:00–7:00 PM",
+      "category": "TALKS / LECTURES",
+      "title": "Tatyana Voltskaya: Poetry in Wartime",
+      "location": "Rush Rhees Library, Humanities Center Conference Room D",
+      "url": "https://events.rochester.edu/event/tatyana-voltskaya-poetry-in-wartime",
+      "description": "Poetry and conversation in the Humanities Center.",
+      "status": []
+    },
+    {
+      "date": "2026-11-05",
+      "time": "5:15–8:00 PM",
+      "category": "ARTS",
+      "title": "An Evening with Daniel Kehlmann",
+      "location": "George Eastman Museum",
+      "url": "https://events.rochester.edu/event/an-evening-at-the-george-eastman-museum-with-daniel-kehlmann",
+      "description": "Conversation with the acclaimed author, followed by a reception.",
+      "status": [
+        "FREE"
+      ]
+    },
+    {
+      "date": "2026-11-05",
+      "time": "6:45–7:45 PM",
+      "category": "ARTS",
+      "title": "MAG Highlights Tour",
+      "location": "Memorial Art Gallery; meet at Admissions",
+      "url": "https://mag.rochester.edu/programs/",
+      "description": "Docent-led collection tour, included with museum admission.",
+      "status": [
+        "TICKETED"
+      ]
+    },
+    {
+      "date": "2026-11-05",
+      "time": "7:00 PM",
+      "category": "SPORTS",
+      "title": "Women’s Volleyball vs. Utica University",
+      "location": "HOME · Louis Alexander Palestra",
+      "url": "https://uofrathletics.com/sports/womens-volleyball/schedule/2026",
+      "description": "Regular-season home match.",
+      "status": []
+    },
+    {
+      "date": "2026-11-05",
+      "time": "7:30 PM",
+      "category": "THEATER / DANCE",
+      "title": "Eastman Opera Theatre: Candide",
+      "location": "Kilbourn Hall",
+      "url": "https://www.esm.rochester.edu/events/?_search=Eastman+Opera+Theatre%3A+Candide",
+      "description": "Bernstein’s comic operetta opens a four-performance run.",
+      "status": [
+        "TICKETED"
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "time": "11:15 AM–12:15 PM",
+      "category": "ARTS",
+      "title": "MAG Highlights Tour",
+      "location": "Memorial Art Gallery; meet at Admissions",
+      "url": "https://mag.rochester.edu/programs/",
+      "description": "Included with museum admission.",
+      "status": [
+        "TICKETED"
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "time": "2:00–3:00 PM",
+      "category": "TALKS / LECTURES",
+      "title": "Voices of XR: Brendan David-John",
+      "location": "Carlson Science & Engineering Library, first-floor Studio X",
+      "url": "https://events.rochester.edu/event/voices-of-xr-brendan-david-john",
+      "description": "Studio X talk in the extended-reality series.",
+      "status": []
+    },
+    {
+      "date": "2026-11-06",
+      "time": "3:30–5:00 PM",
+      "category": "TALKS / LECTURES",
+      "title": "Toward an Indigenous Decolonial Critique",
+      "location": "Rush Rhees Library, Gamble Room",
+      "url": "https://events.rochester.edu/event/towards-an-indigenous-decolonial-critique-mariategui-reinaga-and-the-question-of-revolution",
+      "description": "A Humanities talk on Mariátegui, Reinaga, and revolution.",
+      "status": []
+    },
+    {
+      "date": "2026-11-06",
+      "time": "5:00–6:30 PM",
+      "category": "OTHER CAMPUS EVENTS",
+      "title": "First-Gen Week Alumni and Student Reception",
+      "location": "Dewey Hall, Kearns Center 4-162",
+      "url": "https://events.rochester.edu/event/first-gen-week-2026-kearns-alumni-and-student-reception",
+      "description": "First-generation alumni and students gather at the Kearns Center.",
+      "status": []
+    },
+    {
+      "date": "2026-11-06",
+      "time": "7:30 PM",
+      "category": "THEATER / DANCE",
+      "title": "Eastman Opera Theatre: Candide",
+      "location": "Kilbourn Hall",
+      "url": "https://www.esm.rochester.edu/events/?_search=Eastman+Opera+Theatre%3A+Candide",
+      "description": "Second performance of Bernstein’s operetta.",
+      "status": [
+        "TICKETED"
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "time": "7:30 PM",
+      "category": "MUSIC",
+      "title": "RPO: Raiders of the Lost Ark",
+      "location": "Kodak Hall at Eastman Theatre",
+      "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-11-04",
+      "description": "The Rochester Philharmonic performs the score with the film.",
+      "status": [
+        "TICKETED"
+      ]
+    },
+    {
+      "date": "2026-11-07",
+      "time": "10:00 AM–1:00 PM",
+      "category": "ARTS",
+      "title": "StART with a Story with Ms. Mariposa",
+      "location": "Memorial Art Gallery, Vanden Brul Pavilion",
+      "url": "https://mag.rochester.edu/programs/",
+      "description": "Family story and art program; no museum ticket required.",
+      "status": [
+        "FREE"
+      ]
+    },
+    {
+      "date": "2026-11-07",
+      "time": "11:00 AM",
+      "category": "SPORTS",
+      "title": "Men’s Soccer at Emory University",
+      "location": "AWAY · Atlanta, GA; venue not specified in retrieved schedule",
+      "url": "https://uofrathletics.com/sports/mens-soccer/schedule/2026",
+      "description": "UAA road match.",
+      "status": []
+    },
+    {
+      "date": "2026-11-07",
+      "time": "11:00 AM",
+      "category": "SPORTS",
+      "title": "Men’s and Women’s Swimming & Diving at Alfred, with Fredonia",
+      "location": "AWAY / NEUTRAL · Alfred, NY; pool not specified in retrieved schedules",
+      "url": "https://uofrathletics.com/sports/mens-swimming-and-diving/schedule/2026-27",
+      "description": "Both Rochester teams face host Alfred and neutral-site Fredonia in the same meet window.",
+      "status": []
+    },
+    {
+      "date": "2026-11-07",
+      "time": "11:30 AM",
+      "category": "MUSIC",
+      "title": "Logan Wadley, tuba",
+      "location": "Hatch Recital Hall",
+      "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-11-04",
+      "description": "Eastman student degree recital; livestream available.",
+      "status": [
+        "FREE"
+      ]
+    },
+    {
+      "date": "2026-11-07",
+      "time": "1:00 PM",
+      "category": "SPORTS",
+      "title": "Football at Union College",
+      "location": "AWAY · Schenectady, NY; stadium not specified in retrieved schedule",
+      "url": "https://uofrathletics.com/sports/football/schedule/2026",
+      "description": "Rochester’s final road game.",
+      "status": []
+    },
+    {
+      "date": "2026-11-07",
+      "time": "1:30 PM",
+      "category": "SPORTS",
+      "title": "Women’s Soccer at Emory University",
+      "location": "AWAY · Atlanta, GA; venue not specified in retrieved schedule",
+      "url": "https://uofrathletics.com/sports/womens-soccer/schedule/2026",
+      "description": "UAA road match.",
+      "status": []
+    },
+    {
+      "date": "2026-11-07",
+      "time": "2:00–4:00 PM",
+      "category": "OTHER CAMPUS EVENTS",
+      "title": "Mark Ain Business Model Competition",
+      "location": "Wegmans Hall Auditorium",
+      "url": "https://www.rochester.edu/aincenter/mark-ain-business-model-competition/",
+      "description": "Roc Startup Week competition for student business models.",
+      "status": []
+    },
+    {
+      "date": "2026-11-07",
+      "time": "7:30 PM",
+      "category": "THEATER / DANCE",
+      "title": "Eastman Opera Theatre: Candide",
+      "location": "Kilbourn Hall",
+      "url": "https://www.esm.rochester.edu/events/?_search=Eastman+Opera+Theatre%3A+Candide",
+      "description": "Saturday performance.",
+      "status": [
+        "TICKETED"
+      ]
+    },
+    {
+      "date": "2026-11-07",
+      "time": "7:30 PM",
+      "category": "MUSIC",
+      "title": "RPO: Raiders of the Lost Ark",
+      "location": "Kodak Hall at Eastman Theatre",
+      "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-11-04",
+      "description": "Second film-with-orchestra performance.",
+      "status": [
+        "TICKETED"
+      ]
+    },
+    {
+      "date": "2026-11-08",
+      "time": "12:30–1:30 PM",
+      "category": "ARTS",
+      "title": "MAG Highlights Tour",
+      "location": "Memorial Art Gallery; meet at Admissions",
+      "url": "https://mag.rochester.edu/programs/",
+      "description": "Included with museum admission.",
+      "status": [
+        "TICKETED"
+      ]
+    },
+    {
+      "date": "2026-11-08",
+      "time": "1:30–1:55 PM and 3:00–3:25 PM",
+      "category": "MUSIC",
+      "title": "Going for Baroque",
+      "location": "Memorial Art Gallery, Fountain Court",
+      "url": "https://mag.rochester.edu/programs/",
+      "description": "Two short concerts on the Italian Baroque organ; included with museum admission.",
+      "status": [
+        "TICKETED"
+      ]
+    },
+    {
+      "date": "2026-11-08",
+      "time": "2:30 PM",
+      "category": "THEATER / DANCE",
+      "title": "Eastman Opera Theatre: Candide",
+      "location": "Kilbourn Hall",
+      "url": "https://www.esm.rochester.edu/events/?_search=Eastman+Opera+Theatre%3A+Candide",
+      "description": "Sunday matinee and final performance.",
+      "status": [
+        "TICKETED"
+      ]
+    },
+    {
+      "date": "2026-11-08",
+      "time": "3:00 PM",
+      "category": "MUSIC",
+      "title": "Ying Quartet: Billy Childs and String Quartet Creativity",
+      "location": "Hatch Recital Hall",
+      "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-11-04",
+      "description": "Eastman Presents chamber concert pairing the Ying Quartet with music by Billy Childs.",
+      "status": [
+        "TICKETED"
+      ]
+    },
+    {
+      "date": "2026-11-08",
+      "time": "9:00 PM",
+      "category": "MUSIC",
+      "title": "Compline with Schola Cantorum",
+      "location": "Christ Church",
+      "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-11-04",
+      "description": "Late-evening choral service.",
+      "status": [
+        "FREE"
+      ]
+    },
+    {
+      "date": "2026-11-09",
+      "time": "12:00–1:00 PM",
+      "category": "TALKS / LECTURES",
+      "title": "CS Seminar: Yicheng Zhang",
+      "location": "Wegmans Hall 1400; stream available",
+      "url": "https://events.rochester.edu/event/cs-seminar-series-yicheng-zhang",
+      "description": "Computer Science seminar.",
+      "status": []
+    },
+    {
+      "date": "2026-11-09",
+      "time": "1:00 PM",
+      "category": "MUSIC",
+      "title": "Bach the Pedagogue with Ludger Lohmann",
+      "location": "Christ Church",
+      "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-11-04",
+      "description": "Eastman Rochester Organ Initiative program.",
+      "status": [
+        "TICKETED"
+      ]
+    },
+    {
+      "date": "2026-11-09",
+      "time": "3:30–5:00 PM",
+      "category": "ARTS",
+      "title": "Coded Bias screening",
+      "location": "Meliora Hall 203",
+      "url": "https://events.rochester.edu/event/movie-screening-coded-bias-presented-by-the-department-of-mathematics",
+      "description": "Department of Mathematics screening of the documentary on algorithmic bias.",
+      "status": []
+    },
+    {
+      "date": "2026-11-09",
+      "time": "5:30–7:00 PM",
+      "category": "OTHER CAMPUS EVENTS",
+      "title": "Pizza & Payoffs with Lisa Kahn and Chris Nosko",
+      "location": "Location not posted on the organizer page; check RSVP confirmation",
+      "url": "https://form.jotform.com/262814740404150",
+      "description": "Economics-major Q&A with Amazon Chief Economist Chris Nosko; questions are due Nov. 6 at 11:59 PM.",
+      "status": [
+        "RSVP REQUIRED"
+      ]
+    },
+    {
+      "date": "2026-11-09",
+      "time": "7:00–9:00 PM",
+      "category": "ARTS",
+      "title": "Stop Looking Away",
+      "location": "Interfaith Chapel, Sanctuary",
+      "url": "https://events.rochester.edu/event/stop-looking-away-two-short-films-on-healthcare-workers-in-palestine",
+      "description": "Two short films on health-care workers in Palestine.",
+      "status": [
+        "FREE"
+      ]
+    },
+    {
+      "date": "2026-11-09",
+      "time": "7:30 PM",
+      "category": "MUSIC",
+      "title": "Composers Sinfonietta",
+      "location": "Kilbourn Hall",
+      "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-11-04",
+      "description": "Eastman’s official calendar marks this concert canceled.",
+      "status": [
+        "CANCELED"
+      ]
+    },
+    {
+      "date": "2026-11-09",
+      "time": "7:30 PM",
+      "category": "MUSIC",
+      "title": "Eastman Wind Orchestra",
+      "location": "Kodak Hall at Eastman Theatre",
+      "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-11-04",
+      "description": "Free Eastman ensemble concert; livestream available.",
+      "status": [
+        "FREE"
+      ]
+    },
+    {
+      "date": "2026-11-09",
+      "time": "8:00 PM",
+      "category": "MUSIC",
+      "title": "Daniel Roth book-launch concert and reception",
+      "location": "Christ Church",
+      "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-11-04",
+      "description": "Eastman Rochester Organ Initiative evening program.",
+      "status": [
+        "TICKETED"
+      ]
+    },
+    {
+      "date": "2026-11-10",
+      "time": "12:10 PM",
+      "category": "MUSIC",
+      "title": "Tuesday Pipes",
+      "location": "Christ Church",
+      "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-11-04",
+      "description": "Weekly Eastman organ series.",
+      "status": [
+        "FREE"
+      ]
+    },
+    {
+      "date": "2026-11-10",
+      "time": "1:00–2:00 PM",
+      "category": "TALKS / LECTURES",
+      "title": "River Campus Libraries AI Coffee Salon",
+      "location": "Rush Rhees Library, Welles-Brown Room",
+      "url": "https://events.rochester.edu/event/river-campus-libraries-ai-coffee-salon-3rd-meeting",
+      "description": "Third informal discussion in the Libraries’ AI series.",
+      "status": []
+    },
+    {
+      "date": "2026-11-10",
+      "time": "5:00 PM",
+      "category": "TALKS / LECTURES",
+      "title": "Honor and Risk: Recovering Afro-Atlantic Power",
+      "location": "Rush Rhees Library, Humanities Center Conference Room D",
+      "url": "https://events.rochester.edu/event/honor-and-risk-recovering-afro-atlantic-power-and-its-objects-from-the-archives-of-enslavement-by-cecile-fromont",
+      "description": "Cécile Fromont speaks on archives of enslavement.",
+      "status": []
+    },
+    {
+      "date": "2026-11-10",
+      "time": "5:00–7:00 PM",
+      "category": "TALKS / LECTURES",
+      "title": "The Good Mind with Freida Jacques and Trish Corcoran",
+      "location": "Interfaith Chapel, Riverview Level",
+      "url": "https://events.rochester.edu/event/the-good-mind-with-freida-jacques-and-trish-corcoran",
+      "description": "Conversation on Indigenous knowledge and the Good Mind.",
+      "status": []
+    },
+    {
+      "date": "2026-11-10",
+      "time": "6:00–9:00 PM",
+      "category": "ARTS",
+      "title": "Art Start: Paint & Snack — Sol Luna Beso",
+      "location": "Memorial Art Gallery, Creative Workshop",
+      "url": "https://mag.rochester.edu/programs/",
+      "description": "The organizer marks this class canceled.",
+      "status": [
+        "CANCELED"
+      ]
+    },
+    {
+      "date": "2026-11-10",
+      "time": "7:30 PM",
+      "category": "MUSIC",
+      "title": "Michael Burritt, percussion",
+      "location": "Kilbourn Hall",
+      "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-11-04",
+      "description": "Faculty Artist Series recital; livestream available.",
+      "status": [
+        "TICKETED"
+      ]
+    },
+    {
+      "date": "2026-11-10",
+      "time": "8:00 PM",
+      "category": "MUSIC",
+      "title": "Organ and Harpsichord Concert",
+      "location": "Christ Church",
+      "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-11-04",
+      "description": "Eastman Rochester Organ Initiative performance.",
+      "status": [
+        "TICKETED"
+      ]
+    },
+    {
+      "date": "2026-11-11",
+      "time": "2:00–3:30 PM",
+      "category": "TALKS / LECTURES",
+      "title": "Build Your Personal Website with Quarto",
+      "location": "Online",
+      "url": "https://events.rochester.edu/event/data-bloom-build-your-personal-website-with-quarto",
+      "description": "River Campus Libraries Data Bloom workshop.",
+      "status": []
+    },
+    {
+      "date": "2026-11-11",
+      "time": "5:00–6:30 PM",
+      "category": "TALKS / LECTURES",
+      "title": "Kabbalah and the Divine Feminine in Leonard Cohen’s Songs",
+      "location": "Wilson Commons, Gowen Room",
+      "url": "https://events.rochester.edu/event/an-artists-perspective-kabbalah-and-the-divine-feminine-in-leonard-cohens-songs",
+      "description": "An artist’s perspective on Cohen’s music.",
+      "status": []
+    },
+    {
+      "date": "2026-11-11",
+      "time": "5:30–8:30 PM",
+      "category": "ARTS",
+      "title": "Art Start: Woodblock Printing",
+      "location": "Memorial Art Gallery, Creative Workshop",
+      "url": "https://mag.rochester.edu/programs/",
+      "description": "Beginning woodblock class; listed at $55.",
+      "status": [
+        "SOLD OUT",
+        "TICKETED"
+      ]
+    },
+    {
+      "date": "2026-11-11",
+      "time": "7:00–8:00 PM",
+      "category": "TALKS / LECTURES",
+      "title": "Chasing Rainbows: How We Talk About Color",
+      "location": "Memorial Art Gallery Auditorium",
+      "url": "https://mag.rochester.edu/programs/",
+      "description": "Free public talk with lexicographer Kory Stamper.",
+      "status": [
+        "FREE"
+      ]
+    },
+    {
+      "date": "2026-11-11",
+      "time": "7:30 PM",
+      "category": "MUSIC",
+      "title": "Composers Concert",
+      "location": "Hatch Recital Hall",
+      "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-11-04",
+      "description": "New music by Eastman composers; livestream available.",
+      "status": [
+        "FREE"
+      ]
+    },
+    {
+      "date": "2026-11-11",
+      "time": "7:30 PM",
+      "category": "MUSIC",
+      "title": "Eastman Wind Ensemble with Ian Carleton Schaefer",
+      "location": "Kodak Hall at Eastman Theatre",
+      "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-11-04",
+      "description": "Guest-conducted ensemble concert; livestream available.",
+      "status": [
+        "FREE"
+      ]
+    },
+    {
+      "date": "2026-11-12",
+      "time": "8:00 AM",
+      "category": "TALKS / LECTURES",
+      "title": "RCBU Biomedical Ultrasound Symposium Day",
+      "location": "Frederick Douglass Commons, Feldman Ballroom",
+      "url": "https://events.rochester.edu/event/rcbu-biomedical-ultrasound-symposium-day-2026",
+      "description": "Annual Rochester Center for Biomedical Ultrasound symposium.",
+      "status": []
+    },
+    {
+      "date": "2026-11-12",
+      "time": "12:15 PM",
+      "category": "MUSIC",
+      "title": "The Art of the String Quartet II: Tchaikovsky",
+      "location": "First Universalist Church of Rochester",
+      "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-11-04",
+      "description": "Eastman at Washington Square lunchtime concert.",
+      "status": [
+        "FREE"
+      ]
+    },
+    {
+      "date": "2026-11-12",
+      "time": "12:30–2:00 PM",
+      "category": "TALKS / LECTURES",
+      "title": "Open Panel on AI in Humanities Scholarship",
+      "location": "Rush Rhees Library, Humanities Center Conference Room D",
+      "url": "https://events.rochester.edu/event/open-panel-discussion-on-ai-in-humanities-scholarship",
+      "description": "Cross-disciplinary panel in the AI and Humanities series.",
+      "status": []
+    },
+    {
+      "date": "2026-11-12",
+      "time": "3:00–4:30 PM",
+      "category": "TALKS / LECTURES",
+      "title": "Wallis Seminar: Juan Felipe Riaño",
+      "location": "Harkness Hall 112",
+      "url": "https://www.wallis.rochester.edu/events/seminar.html",
+      "description": "Georgetown political economist; the organizer still lists the topic as TBD.",
+      "status": []
+    },
+    {
+      "date": "2026-11-12",
+      "time": "3:30 PM",
+      "category": "TALKS / LECTURES",
+      "title": "Environmental Impact of AI and Its Implications for Education",
+      "location": "Online",
+      "url": "https://events.rochester.edu/event/lida-colloquium-series-environmental-impact-of-ai-and-its-implications-for-education",
+      "description": "LiDA colloquium on AI’s environmental costs.",
+      "status": []
+    },
+    {
+      "date": "2026-11-12",
+      "time": "4:30–5:30 PM",
+      "category": "ARTS",
+      "title": "Open MIC: Hugo McCloud",
+      "location": "Memorial Art Gallery",
+      "url": "https://mag.rochester.edu/programs/",
+      "description": "Members-in-conversation program about the Hugo McCloud exhibition.",
+      "status": [
+        "SOLD OUT"
+      ]
+    },
+    {
+      "date": "2026-11-12",
+      "time": "5:30 PM",
+      "category": "MUSIC",
+      "title": "Andrew Kim, jazz trombone",
+      "location": "Hatch Recital Hall",
+      "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-11-04",
+      "description": "Eastman student degree recital; livestream available.",
+      "status": [
+        "FREE"
+      ]
+    },
+    {
+      "date": "2026-11-12",
+      "time": "6:45–7:45 PM",
+      "category": "ARTS",
+      "title": "MAG Highlights Tour",
+      "location": "Memorial Art Gallery; meet at Admissions",
+      "url": "https://mag.rochester.edu/programs/",
+      "description": "Included with museum admission.",
+      "status": [
+        "TICKETED"
+      ]
+    },
+    {
+      "date": "2026-11-12",
+      "time": "7:30 PM",
+      "category": "MUSIC",
+      "title": "RPO: Mozart & Bartók",
+      "location": "Kodak Hall at Eastman Theatre",
+      "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-11-04",
+      "description": "Rochester Philharmonic concert.",
+      "status": [
+        "TICKETED"
+      ]
+    },
+    {
+      "date": "2026-11-12",
+      "time": "7:30 PM",
+      "category": "MUSIC",
+      "title": "Trombone Choir",
+      "location": "Kilbourn Hall",
+      "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-11-04",
+      "description": "Eastman ensemble concert; livestream available.",
+      "status": [
+        "FREE"
+      ]
+    },
+    {
+      "date": "2026-11-12",
+      "time": "8:30 PM",
+      "category": "MUSIC",
+      "title": "Shannon Gunn, jazz trombone",
+      "location": "Hatch Recital Hall",
+      "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-11-04",
+      "description": "Eastman student degree recital; livestream available.",
+      "status": [
+        "FREE"
+      ]
+    }
+  ],
+  "source_health": [
+    "Localist API unavailable; HTML/direct pages used",
+    "CCC mobile feed unavailable; organizer and Student Life alternatives used",
+    "Official athletics live coverage and schedules checked",
+    "Eastman date-filtered calendar checked",
+    "MAG organizer page used for cancellation and sold-out status"
+  ]
+}

@@ -284,6 +284,17 @@
       font-size: .95rem;
     }
 
+
+    /* Pizza and Payoffs is the sole scheduled upcoming event. */
+    #pizza-and-payoffs{grid-column:1 / -1;border:4px solid #b00000;box-shadow:0 6px 18px #0002;display:grid;grid-template-columns:minmax(230px, .7fr) minmax(0,2fr)}
+    #pizza-and-payoffs .upcoming-thumb{background:#fff}
+    #pizza-and-payoffs .upcoming-thumb img{display:block;max-width:100%;max-height:400px;height:auto}
+    #pizza-and-payoffs .upcoming-body h3{font-size:1.55rem;color:#a00000}
+    .archived-gilbert{padding:18px;border:1px solid #d9d9d9;border-top:5px solid var(--navy);background:#fff;border-radius:10px;margin:18px 0 24px}
+    .archived-gilbert>h2{font-size:1.42rem}
+    .past-event-label{font-size:.8rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:#6c2730;margin:0 0 6px}
+    @media(max-width:840px){#pizza-and-payoffs{grid-template-columns:1fr}}
+
     @media (max-width: 840px) {
       main { padding: 22px 18px 34px; }
       .gilbert-history { grid-template-columns: 1fr; }
@@ -320,14 +331,14 @@
       </div>
 
       <nav class="nav-strip" aria-label="Page sections">
-        <a href="#upcoming">Upcoming</a>
-        <a href="#pena-human-capital">Past: Pablo Peña · Oct. 8</a>
-        <a href="#gilbert-lecture-2026">Gilbert Lecture · Robert Staiger · November 3</a>
-        <a href="#trade-war">Trade War · Sept. 29</a>
-        <a href="#dogs-and-donuts">Dogs &amp; Donuts · Oct. 20 · 4–5 PM</a>
-        <a href="#ai-privacy">AI & Privacy · Nov. 4</a>
-        <a href="#pizza-and-payoffs">Pizza and Payoffs · Nov. 9 · 5:30–7 PM</a>
+        <a href="#upcoming">Upcoming Events</a>
+        <a href="#pizza-and-payoffs">Pizza and Payoffs · Nov. 9</a>
         <a href="#archive">Past Events / Materials</a>
+        <a href="#ai-privacy">Past: AI and Privacy · Nov. 4</a>
+        <a href="#gilbert-lecture-2026">Past: Gilbert Lecture · Nov. 3</a>
+        <a href="#pena-human-capital">Past: Pablo Peña · Oct. 8</a>
+        <a href="#trade-war">Past: Trade War · Sept. 29</a>
+        <a href="#engerman-hornbeck-2026">Past: Engerman Lecture · Sept. 16</a>
         <a href="#what-is-oyster">OYSTERS?</a>
       </nav>
 
@@ -339,122 +350,32 @@
         <div class="grid-three">
 
 
-          <article class="upcoming-card" id="gilbert-lecture-upcoming">
-            <div class="upcoming-thumb" style="background:#fff;">
-              <a href="https://home.dartmouth.edu/news/2025/09/professor-robert-staiger-named-chief-economist-wto" target="_blank" rel="noopener noreferrer">
-                <img src="https://economics.dartmouth.edu/sites/economics/files/styles/3_2_lg/public/2025-09/Staiger-WTO-Logo-Words.jpg.webp?h=c6980913&itok=8FYTIiys" alt="Robert Staiger with World Trade Organization artwork." loading="lazy">
-              </a>
-            </div>
-            <div class="upcoming-body">
-              <h3>57th Annual Gilbert Lecture — A Critical Juncture for the World Trading System</h3>
-              <p><strong>Title:</strong> A Critical Juncture for the World Trading System</p>
-              <p><strong>Who:</strong> Robert Staiger, Chief Economist of the World Trade Organization</p>
-              <p><strong>Date:</strong> Tuesday, November 3, 2026</p>
-              <p><strong>Time:</strong> 4:00–5:15 p.m.</p>
-              <p><strong>Location:</strong> Morey Hall 321, University of Rochester</p>
-              <p><strong>Admission:</strong> Free and open to the public.</p>
-              <p><strong>Harkness history:</strong> Walk around Harkness to see a little of the history behind the Gilbert Lecture.</p>
-              <p><strong>Why this one matters:</strong> The Gilbert Lecture is one of the Department of Economics’ signature traditions, created to bring first-rate economics to the practical and policy problems of the day.</p>
-              <p><span class="tag">Gilbert Lecture</span><span class="tag">International Trade</span><span class="tag">WTO</span><span class="tag">Economic Policy</span></p>
-              <div class="button-row">
-                <a class="button" href="#gilbert-lecture-2026">Lecture history &amp; details</a>
-                <a class="button light" href="https://home.dartmouth.edu/news/2025/09/professor-robert-staiger-named-chief-economist-wto" target="_blank" rel="noopener noreferrer">About Robert Staiger</a>
-              </div>
-            </div>
-          </article>
+          
 
 
-          <article class="upcoming-card">
-            <div class="upcoming-thumb">
-              <a href="poster-files/engerman-hornbeck-after-shocks-poster.png">
-                <img src="poster-files/engerman-hornbeck-after-shocks-poster.png" alt="Poster for Richard Hornbeck's Engerman Lecture, After Shocks.">
-              </a>
-            </div>
+          
 
-            <div class="upcoming-body">
-              <h3>Engerman Lecture</h3>
-              <p><strong>Title:</strong> After Shocks: Adaptation and Growth through Volatile Times</p>
-              <p><strong>Speaker:</strong> <a href="https://www.chicagobooth.edu/faculty/directory/h/richard-hornbeck" target="_blank" rel="noopener noreferrer">Richard Hornbeck</a>, University of Chicago</p>
-              <p><strong>Date:</strong> Wednesday, September 16</p>
-              <p><strong>Time:</strong> 5:00 PM</p>
-              <p><strong>Location:</strong> Morey 321</p>
-              <p><span class="tag">Economic History</span><span class="tag">Engerman Lecture</span><span class="tag">Adaptation</span></p>
-              <div class="button-row"><a class="button light" href="poster-files/engerman-hornbeck-after-shocks-poster.png">View Poster</a></div>
-            </div>
-          </article>
+          
 
-          <article class="upcoming-card" id="trade-war">
-            <div class="upcoming-thumb">
-              <a href="poster-files/trade-war-fall-2026.jpg"><img src="poster-files/trade-war-fall-2026.jpg" alt="Trade War: The View from Across Lake America — University of Rochester economics event with Joe Steinberg of the University of Toronto." loading="lazy"></a>
-            </div>
-            <div class="upcoming-body">
-              <h3>Department of Economics Special Event</h3>
-              <p><strong>Title:</strong> Trade War: The View from Across Lake America!</p>
-              <p><strong>Who:</strong> Joe Steinberg, University of Toronto</p>
-              <p><strong>Date:</strong> Tuesday, September 29, 2026</p>
-              <p><strong>Time:</strong> 6:00–7:00 PM</p>
-              <p><strong>Location:</strong> Morey 321</p>
-              <p><strong>Reception:</strong> 7:00–8:30 PM in Morey’s Rettner Gallery, with Dinosaur Bar-B-Que.</p>
-              <p style="color:#b00020"><strong>RSVP FOR FOOD BY FRIDAY, SEPTEMBER 25.</strong> Please register for the reception so we can get a reasonable count for the food order.</p>
-              <p><span class="tag">International Trade</span><span class="tag">Canada</span><span class="tag">Trade War</span><span class="tag">Dinosaur BBQ</span></p>
-              <div class="button-row"><a class="button" href="https://form.jotform.com/262586026121048" target="_blank" rel="noopener noreferrer">RSVP for the Reception</a><a class="button light" href="poster-files/trade-war-fall-2026.jpg">View Artwork</a></div>
-            </div>
-          </article>
+          
 
-          <article class="upcoming-card" id="dogs-and-donuts">
-            <div class="upcoming-thumb" style="background:#ffcc17;color:#062f63;min-height:220px;">
-              <div style="line-height:1.05;">
-                <div style="font-size:.92rem;letter-spacing:.14em;margin-bottom:12px;">SCHOOL OF ARTS &amp; SCIENCES</div>
-                <div style="font-size:2.45rem;font-weight:900;">DOGS &amp; DONUTS</div>
-                <div style="font-size:1.08rem;margin-top:12px;font-weight:800;">THERAPY DOGS • DONUTS • SPRING COURSES</div>
-              </div>
-            </div>
-            <div class="upcoming-body">
-              <h3>Dogs &amp; Donuts</h3>
-              <p><strong>Host:</strong> School of Arts &amp; Sciences</p>
-              <p><strong>Date:</strong> Tuesday, October 20, 2026</p>
-              <p><strong>Time:</strong> 4:00–5:00 PM</p>
-              <p><strong>Location:</strong> Feldman Ballroom, Douglass Commons</p>
-              <p><strong>What:</strong> Stop in during midterms to de-stress with therapy dogs and enjoy a donut. Faculty and department contacts will also be there so students can ask questions and learn about Spring 2027 course offerings.</p>
-              <p><span class="tag">Therapy Dogs</span><span class="tag">Donuts</span><span class="tag">Midterms</span><span class="tag">Spring 2027</span></p>
-              <div class="button-row"><a class="button" href="https://cglink.me/2eC/c1968790921164725" target="_blank" rel="noopener noreferrer">RSVP on CCC</a></div>
-            </div>
-          </article>
-
-          <article class="upcoming-card" id="ai-privacy">
-            <div class="upcoming-thumb" style="background:linear-gradient(135deg,#07182d,#0b4f6c); color:white; min-height:220px;">
-              <div style="line-height:1.05;">
-                <div style="font-size:.92rem; letter-spacing:.16em; margin-bottom:12px;">POLITICS + MARKETS PROJECT</div>
-                <div style="font-size:2.35rem; font-weight:900;">AI + PRIVACY</div>
-                <div style="font-size:1rem; margin-top:12px; font-weight:700;">REGULATION • PRICING • SURVEILLANCE</div>
-              </div>
-            </div>
-            <div class="upcoming-body">
-              <h3>Politics and Markets Project — Moderated Panel Discussion</h3>
-              <p><strong>Title:</strong> AI and Privacy</p>
-              <p><strong>Moderator:</strong> Professor David Primo</p>
-              <p><strong>Date:</strong> Wednesday, November 4, 2026</p>
-              <p><strong>Time:</strong> 7:30–8:30 PM</p>
-              <p><strong>Location:</strong> Wegmans Hall, 1400</p>
-              <p><strong>Topic:</strong> AI and privacy, including government regulation, surveillance pricing, and the flip side of data-driven markets: whether consumers can use information and AI to get better deals.</p>
-              <p><span class="tag">Politics and Markets</span><span class="tag">AI</span><span class="tag">Privacy</span><span class="tag">Regulation</span><span class="tag">Panel</span></p>
-              <div class="button-row"><a class="button light" href="https://www.instagram.com/pmprochester/" target="_blank" rel="noopener noreferrer">Follow PMP on Instagram</a></div>
-            </div>
-          </article>
+          
 
           <article class="upcoming-card" id="pizza-and-payoffs">
             <div class="upcoming-thumb">
               <a href="poster-files/pizza-and-payoffs-fall-2026.jpg"><img src="poster-files/pizza-and-payoffs-fall-2026.jpg" alt="Pizza and Payoffs — economics, pizza, and Amazon-inspired shipping-box artwork." loading="lazy"></a>
             </div>
             <div class="upcoming-body">
-              <h3>Department of Economics <em>PIZZA and PAYOFFS</em> Special Event</h3>
+              <h3>PIZZA &amp; PAYOFFS — ECONOMICS, CAREERS &amp; AMAZON</h3>
               <p><strong>Title:</strong> Pizza and Payoffs: Everything you wanted to know about the Econ major — courses, careers, and what you can actually do with an economics degree.</p>
-              <p><strong>Who:</strong> Professor Lisa Kahn and <em>special guest Chris Nosko</em></p>
-              <p><strong>Date:</strong> Monday, November 9</p>
-              <p><strong>Time:</strong> 5:30pm to 7:00pm</p>
+              <p><strong>Who:</strong> Professor Lisa Kahn and special guest <strong>Chris Nosko, Chief Economist at Amazon</strong>.</p>
+              <p><strong>Date:</strong> Monday, November 9, 2026</p>
+              <p><strong>Time:</strong> 5:30–7:00 p.m.</p>
               <p><strong>Location:</strong> TBD</p>
-              <p><strong>More Info:</strong> <a href="https://share.google/4L683nQPAZ469BWWs" target="_blank" rel="noopener noreferrer">Chris Nosko</a> is the head economist for Amazon! Very short department information session and lots of time for Q&amp;A and discussions with Nosko and our department faculty.</p>
-              <div class="button-row"><a class="button light" href="poster-files/pizza-and-payoffs-fall-2026.jpg">View Artwork</a></div>
+              <p><strong>What to expect:</strong> Learn about Rochester's economics program, courses, careers, what you can do with an economics degree, and the job market. Bring questions for Chris Nosko and the department.</p>
+              <p style="color:#b00000;font-weight:900">Question submission deadline: Friday, November 6 at 11:59 p.m.</p>
+              <p>If you have more than one question, please submit another form for each question.</p>
+              <div class="button-row"><a class="button" href="https://forms.gle/fkFJffgu1aAgUULo9" target="_blank" rel="noopener noreferrer">Submit a question</a><a class="button secondary" href="https://form.jotform.com/262814740404150" target="_blank" rel="noopener noreferrer">RSVP</a><a class="button light" href="poster-files/pizza-and-payoffs-fall-2026.jpg">View Flyer</a></div>
             </div>
           </article>
 
@@ -475,7 +396,11 @@
         </div>
       </section>
 
-      <section id="gilbert-lecture-2026">
+      <section id="archive">
+        <h2>Past Events / Materials</h2>
+
+        <div id="gilbert-lecture-2026" class="archived-gilbert">
+        <p class="past-event-label">Past Event · Tuesday, November 3, 2026</p>
         <h2>57th Annual Donald W. Gilbert Memorial Lecture · November 3, 2026</h2>
 
         <article class="event-card">
@@ -493,7 +418,7 @@
 
               <p>Robert Staiger is a leading scholar of international trade policy and institutions and now serves as Chief Economist of the World Trade Organization. The 2026 Gilbert Lecture brings the Department’s long-running tradition of practical economics directly to the contemporary world trading system.</p>
 
-              <p><strong>Before the lecture:</strong> Walk around Harkness to see a little of the Gilbert Lecture’s history.</p>
+              <p><strong>Historical context:</strong> Explore the Harkness area to see some of the history behind the Gilbert Lecture.</p>
               <div class="button-row">
                 <a class="button" href="https://home.dartmouth.edu/news/2025/09/professor-robert-staiger-named-chief-economist-wto" target="_blank" rel="noopener noreferrer">Learn more about Robert Staiger</a>
               </div>
@@ -536,10 +461,8 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section id="archive">
-        <h2>Past Events / Materials</h2>
 
         <article class="event-card" id="pena-human-capital">
           <div class="event-main">
@@ -589,6 +512,67 @@
         </article>
 
         <div class="archive-list">
+
+          <article class="archive-item" id="ai-privacy">
+            <div class="archive-thumb" style="background:linear-gradient(135deg,#07182d,#0b4f6c); color:white; min-height:220px;">
+              <div style="line-height:1.05;">
+                <div style="font-size:.92rem; letter-spacing:.16em; margin-bottom:12px;">POLITICS + MARKETS PROJECT</div>
+                <div style="font-size:2.35rem; font-weight:900;">AI + PRIVACY</div>
+                <div style="font-size:1rem; margin-top:12px; font-weight:700;">REGULATION • PRICING • SURVEILLANCE</div>
+              </div>
+            </div>
+            <div class="archive-body">
+              <h3>Politics and Markets Project — Moderated Panel Discussion</h3>
+              <p><strong>Title:</strong> AI and Privacy</p>
+              <p><strong>Moderator:</strong> Professor David Primo</p>
+              <p><strong>Date:</strong> Wednesday, November 4, 2026</p>
+              <p><strong>Time:</strong> 7:30–8:30 PM</p>
+              <p><strong>Location:</strong> Wegmans Hall, 1400</p>
+              <p><strong>Topic:</strong> AI and privacy, including government regulation, surveillance pricing, and the flip side of data-driven markets: whether consumers can use information and AI to get better deals.</p>
+              <p><span class="tag">Politics and Markets</span><span class="tag">AI</span><span class="tag">Privacy</span><span class="tag">Regulation</span><span class="tag">Panel</span></p>
+              <div class="button-row"><a class="button light" href="https://www.instagram.com/pmprochester/" target="_blank" rel="noopener noreferrer">Follow PMP on Instagram</a></div>
+            </div>
+          </article>
+
+          
+
+          <article class="archive-item" id="trade-war">
+            <div class="archive-thumb">
+              <a href="poster-files/trade-war-fall-2026.jpg"><img src="poster-files/trade-war-fall-2026.jpg" alt="Trade War: The View from Across Lake America — University of Rochester economics event with Joe Steinberg of the University of Toronto." loading="lazy"></a>
+            </div>
+            <div class="archive-body">
+              <h3>Department of Economics Special Event</h3>
+              <p><strong>Title:</strong> Trade War: The View from Across Lake America!</p>
+              <p><strong>Who:</strong> Joe Steinberg, University of Toronto</p>
+              <p><strong>Date:</strong> Tuesday, September 29, 2026</p>
+              <p><strong>Time:</strong> 6:00–7:00 PM</p>
+              <p><strong>Location:</strong> Morey 321</p>
+              <p><strong>Reception:</strong> 7:00–8:30 PM in Morey’s Rettner Gallery, with Dinosaur Bar-B-Que.</p>
+              <p style="color:#b00020"><strong>RSVP FOR FOOD BY FRIDAY, SEPTEMBER 25.</strong> Please register for the reception so we can get a reasonable count for the food order.</p>
+              <p><span class="tag">International Trade</span><span class="tag">Canada</span><span class="tag">Trade War</span><span class="tag">Dinosaur BBQ</span></p>
+              <div class="button-row"><a class="button" href="https://form.jotform.com/262586026121048" target="_blank" rel="noopener noreferrer">RSVP for the Reception</a><a class="button light" href="poster-files/trade-war-fall-2026.jpg">View Artwork</a></div>
+            </div>
+          </article>
+
+          <article class="archive-item" id="engerman-hornbeck-2026">
+            <div class="archive-thumb">
+              <a href="poster-files/engerman-hornbeck-after-shocks-poster.png">
+                <img src="poster-files/engerman-hornbeck-after-shocks-poster.png" alt="Poster for Richard Hornbeck's Engerman Lecture, After Shocks.">
+              </a>
+            </div>
+
+            <div class="archive-body">
+              <h3>Engerman Lecture</h3>
+              <p><strong>Title:</strong> After Shocks: Adaptation and Growth through Volatile Times</p>
+              <p><strong>Speaker:</strong> <a href="https://www.chicagobooth.edu/faculty/directory/h/richard-hornbeck" target="_blank" rel="noopener noreferrer">Richard Hornbeck</a>, University of Chicago</p>
+              <p><strong>Date:</strong> Wednesday, September 16</p>
+              <p><strong>Time:</strong> 5:00 PM</p>
+              <p><strong>Location:</strong> Morey 321</p>
+              <p><span class="tag">Economic History</span><span class="tag">Engerman Lecture</span><span class="tag">Adaptation</span></p>
+              <div class="button-row"><a class="button light" href="poster-files/engerman-hornbeck-after-shocks-poster.png">View Poster</a></div>
+            </div>
+          </article>
+
 
           <article class="archive-item">
             <div class="archive-thumb"><a href="poster-files/engerman-margo-poster.png"><img src="poster-files/engerman-margo-poster.png" alt="Poster for Robert Margo Engerman Talk, From the Artisan Shop to the Mechanized Factory."></a></div>

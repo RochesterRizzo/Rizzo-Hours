@@ -285,15 +285,9 @@
     }
 
 
-    /* Pizza and Payoffs is the sole scheduled upcoming event. */
-    #pizza-and-payoffs{grid-column:1 / -1;border:4px solid #b00000;box-shadow:0 6px 18px #0002;display:grid;grid-template-columns:minmax(230px, .7fr) minmax(0,2fr)}
-    #pizza-and-payoffs .upcoming-thumb{background:#fff}
-    #pizza-and-payoffs .upcoming-thumb img{display:block;max-width:100%;max-height:400px;height:auto}
-    #pizza-and-payoffs .upcoming-body h3{font-size:1.55rem;color:#a00000}
     .archived-gilbert{padding:18px;border:1px solid #d9d9d9;border-top:5px solid var(--navy);background:#fff;border-radius:10px;margin:18px 0 24px}
     .archived-gilbert>h2{font-size:1.42rem}
     .past-event-label{font-size:.8rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:#6c2730;margin:0 0 6px}
-    @media(max-width:840px){#pizza-and-payoffs{grid-template-columns:1fr}}
 
     @media (max-width: 840px) {
       main { padding: 22px 18px 34px; }
@@ -310,6 +304,20 @@
       .archive-thumb { border-right: 0; border-bottom: 1px solid var(--line); max-height: 360px; }
       .archive-thumb img { object-fit: contain; }
     }
+
+    #upcoming .grid-three{grid-template-columns:repeat(2,minmax(0,1fr))}
+    @media(max-width:840px){#upcoming .grid-three{grid-template-columns:1fr}}
+    .mckenzie-card{grid-column:1 / -1}
+    .mckenzie-card .upcoming-body h3{font:700 1.6rem Georgia,serif}
+    .mckenzie-figure{max-width:900px;margin:0 auto;padding:0 18px}
+    .mckenzie-board{position:relative;overflow:hidden;border-radius:7px;background:#193b2c;color:#fff}
+    .mckenzie-board img{display:block;width:100%;height:auto}
+    .mckenzie-theorems{position:absolute;left:51%;right:4%;top:9%;font:clamp(14px,1.8vw,19px)/1.42 Georgia,serif;text-shadow:0 1px 3px #000}
+    .mckenzie-theorems h4{font-size:1.12em;line-height:1.2;color:#fff0bc;margin:0 0 .55em}
+    .mckenzie-theorems p{margin:0 0 1.5em;color:#fff}
+    .mckenzie-figure figcaption{font-size:.78rem;line-height:1.5;color:var(--muted);margin-top:8px}
+    .mckenzie-history p{line-height:1.6}
+    @media(max-width:600px){.mckenzie-theorems{position:static;padding:20px;font-size:16px;background:#193b2c}.mckenzie-theorems p:last-child{margin-bottom:0}.mckenzie-figure{padding:0 12px}}
   </style>
 </head>
 
@@ -332,8 +340,10 @@
 
       <nav class="nav-strip" aria-label="Page sections">
         <a href="#upcoming">Upcoming Events</a>
-        <a href="#pizza-and-payoffs">Pizza and Payoffs · Nov. 9</a>
+        <a href="#bird-friendly-spaces">Bird-friendly Spaces · Nov. 13</a>
+        <a href="#mckenzie-lecture-2027">McKenzie Lecture · April 2027</a>
         <a href="#archive">Past Events / Materials</a>
+        <a href="#pizza-and-payoffs">Past: Pizza and Payoffs · Nov. 9</a>
         <a href="#ai-privacy">Past: AI and Privacy · Nov. 4</a>
         <a href="#gilbert-lecture-2026">Past: Gilbert Lecture · Nov. 3</a>
         <a href="#pena-human-capital">Past: Pablo Peña · Oct. 8</a>
@@ -361,23 +371,26 @@
 
           
 
-          <article class="upcoming-card" id="pizza-and-payoffs">
+
+
+
+          <article class="upcoming-card" id="bird-friendly-spaces">
             <div class="upcoming-thumb">
-              <a href="poster-files/pizza-and-payoffs-fall-2026.jpg"><img src="poster-files/pizza-and-payoffs-fall-2026.jpg" alt="Pizza and Payoffs — economics, pizza, and Amazon-inspired shipping-box artwork." loading="lazy"></a>
+              <a href="poster-files/meredith-barges-bird-friendly-spaces-2026-11-13.jpg"><img src="poster-files/meredith-barges-bird-friendly-spaces-2026-11-13.jpg" alt="Poster for Bird-friendly Spaces, a guest lecture by Meredith Barges on November 13, 2026." width="2550" height="3300" style="height:auto" loading="lazy"></a>
             </div>
             <div class="upcoming-body">
-              <h3>PIZZA &amp; PAYOFFS — ECONOMICS, CAREERS &amp; AMAZON</h3>
-              <p><strong>Title:</strong> Pizza and Payoffs: Everything you wanted to know about the Econ major — courses, careers, and what you can actually do with an economics degree.</p>
-              <p><strong>Who:</strong> Professor Lisa Kahn and special guest <strong>Chris Nosko, Chief Economist at Amazon</strong>.</p>
-              <p><strong>Date:</strong> Monday, November 9, 2026</p>
-              <p><strong>Time:</strong> 5:30–7:00 p.m.</p>
-              <p><strong>Location:</strong> TBD</p>
-              <p><strong>What to expect:</strong> Learn about Rochester's economics program, courses, careers, what you can do with an economics degree, and the job market. Bring questions for Chris Nosko and the department.</p>
-              <p style="color:#b00000;font-weight:900">Question submission deadline: Friday, November 6 at 11:59 p.m.</p>
-              <p>If you have more than one question, please submit another form for each question.</p>
-              <div class="button-row"><a class="button" href="https://forms.gle/fkFJffgu1aAgUULo9" target="_blank" rel="noopener noreferrer">Submit a question</a><a class="button secondary" href="https://form.jotform.com/262814740404150" target="_blank" rel="noopener noreferrer">RSVP</a><a class="button light" href="poster-files/pizza-and-payoffs-fall-2026.jpg">View Flyer</a></div>
+              <h3>Bird-friendly Spaces: Situating Birds and Biodiversity on Green Campuses</h3>
+              <p><strong>Speaker:</strong> Meredith Barges, MDiv, PhD candidate at SUNY ESF</p>
+              <p><strong>Date:</strong> Friday, November 13, 2026</p>
+              <p><strong>Time:</strong> Noon–1:00 p.m.</p>
+              <p><strong>Location:</strong> Dewey Hall 1-101, University of Rochester</p>
+              <p>Meredith Barges will discuss bird-window collisions and green building policy, particularly at universities, and how to make Rochester safer for birds.</p>
+              <p>She is co-author of <em>Building Safer Cities for Birds</em>, a policy brief on bird-friendly law, and co-founder of Lights Out Connecticut.</p>
+              <p><strong>Sponsor:</strong> Smash the Crash ROC. Announcement shared by Richard Fadok.</p>
+              <div class="button-row"><a class="button" href="https://events.rochester.edu/event/bird-friendly-spaces-situating-birds-biodiversity-in-green-campuses" target="_blank" rel="noopener noreferrer">University event details</a><a class="button light" href="poster-files/meredith-barges-bird-friendly-spaces-2026-11-13.jpg">View Poster</a></div>
             </div>
           </article>
+
 
           <article class="upcoming-card">
             <div class="upcoming-thumb">Event image coming soon</div>
@@ -393,11 +406,50 @@
             </div>
           </article>
 
+
+          <article class="upcoming-card mckenzie-card" id="mckenzie-lecture-2027">
+            <div class="upcoming-body">
+              <h3>Lionel W. McKenzie Lecture</h3>
+              <p><strong>Coming in April 2027</strong></p>
+              <p>Speaker, lecture title, exact date, time, and location will be announced.</p>
+            </div>
+            <figure class="mckenzie-figure">
+              <div class="mckenzie-board">
+                <img src="poster-files/lionel-mckenzie-teaching.jpg" alt="Illustration of Lionel McKenzie teaching beside a chalkboard, with the two fundamental welfare theorems displayed alongside him." width="1536" height="1024" loading="lazy">
+                <div class="mckenzie-theorems">
+                  <h4>First Fundamental Welfare Theorem</h4>
+                  <p>With complete competitive markets and locally nonsatiated preferences, every competitive equilibrium allocation is Pareto efficient.</p>
+                  <h4>Second Fundamental Welfare Theorem</h4>
+                  <p>Under convexity and standard regularity conditions, any Pareto-efficient allocation can be supported as a competitive equilibrium after suitable lump-sum redistribution of initial wealth.</p>
+                </div>
+              </div>
+              <figcaption>AI-generated teaching illustration based on the University’s portrait of Lionel McKenzie. Theorems stated with their key assumptions; these welfare results are distinct from McKenzie’s equilibrium-existence proof.</figcaption>
+            </figure>
+            <div class="upcoming-body mckenzie-history">
+              <p>The <strong>McKenzie Lecture</strong> began in 1986 with a wonderful premise: Rochester’s economics graduate students would choose an outstanding economist to visit, give a lecture, and spend the day talking with them. Edward Prescott was the first speaker; Robert Lucas followed. The series has brought students into conversation with economists including Gary Becker, Paul Krugman, Alvin Roth, Daron Acemoglu, and Paul Milgrom. The department’s published roster includes at least 19 Nobel laureates, counting prizes awarded through 2025.</p>
+              <p><strong>Lionel McKenzie helped build the foundations of modern economics.</strong> His independent 1954 proof of the existence of competitive general equilibrium appeared before the famous Arrow–Debreu paper. He helped show how prices could make the separate plans of consumers and firms mutually compatible across an entire economy. There is a powerful historical case that he deserved to share Nobel recognition for this achievement.</p>
+              <p>McKenzie came to Rochester in <strong>1957</strong>, founded the PhD program, and recruited scholars including Ronald Jones, Stanley Engerman, and Robert Fogel. By 1995, the National Research Council ranked the program among the country’s top ten. The lecture honors both the economist whose ideas changed the discipline and the teacher who helped make Rochester one of its great intellectual homes.</p>
+              <div class="button-row"><a class="button" href="https://mckenzie-lecture-rochester.wintercow20.chatgpt.site/" target="_blank" rel="noopener noreferrer">Read the history: Lionel McKenzie &amp; the lecture</a><a class="button light" href="https://www.sas.rochester.edu/eco/news-events/mckenzie-lecture.html" target="_blank" rel="noopener noreferrer">Department history &amp; past speakers</a></div>
+            </div>
+          </article>
+
         </div>
       </section>
 
       <section id="archive">
         <h2>Past Events / Materials</h2>
+
+        <article class="archive-item" id="pizza-and-payoffs">
+          <div class="archive-thumb"><a href="poster-files/pizza-and-payoffs-fall-2026.jpg"><img src="poster-files/pizza-and-payoffs-fall-2026.jpg" alt="Pizza and Payoffs event flyer" loading="lazy"></a></div>
+          <div class="archive-body">
+            <p class="past-event-label">Past event</p>
+            <h3>Pizza &amp; Payoffs — Economics, Careers &amp; Amazon</h3>
+            <p class="date">Monday, November 9, 2026 · 5:30–7:00 p.m.</p>
+            <p>Professor Lisa Kahn and special guest Chris Nosko, Chief Economist at Amazon, discussed the economics major, courses, careers, and the job market.</p>
+            <div class="button-row"><a class="button light" href="poster-files/pizza-and-payoffs-fall-2026.jpg">View flyer</a></div>
+          </div>
+        </article>
+
 
         <div id="gilbert-lecture-2026" class="archived-gilbert">
         <p class="past-event-label">Past Event · Tuesday, November 3, 2026</p>

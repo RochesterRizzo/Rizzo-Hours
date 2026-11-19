@@ -1,0 +1,533 @@
+{
+  "week_start": "2026-11-19",
+  "week_end": "2026-11-26",
+  "timezone": "America/New_York",
+  "generated_at": "2026-11-19T08:04:53-05:00",
+  "staff_picks": [
+    {
+      "id": "pick-1",
+      "day": "Thursday · Sonic history",
+      "title": "Listening Through Soviet History",
+      "summary": "5–7 PM · Humanities Center Conference Room D.",
+      "url": "https://events.rochester.edu/event/listening-through-soviet-history"
+    },
+    {
+      "id": "pick-2",
+      "day": "Friday · Data science",
+      "title": "GIDS-AI Fall Research Symposium",
+      "summary": "2–3 PM · Wegmans Hall 1400 · stream available.",
+      "url": "https://events.rochester.edu/event/gids-ai-fall-research-symposium-yasemin-basdogan-and-lisha-chen"
+    },
+    {
+      "id": "pick-3",
+      "day": "Saturday · River Campus music",
+      "title": "Arthur Satz Chamber Orchestra",
+      "summary": "8 PM · Upper Strong Auditorium · free.",
+      "url": "https://www.sas.rochester.edu/mur/ensembles/concerts.html"
+    },
+    {
+      "id": "pick-4",
+      "day": "Sunday · Heritage celebration",
+      "title": "Haudenosaunee Heritage Celebration Day",
+      "summary": "Noon–4 PM · Memorial Art Gallery · free for everyone.",
+      "url": "https://mag.rochester.edu/event/haudenosaunee-heritage-celebration-day-2026/"
+    },
+    {
+      "id": "pick-5",
+      "day": "Monday · New music",
+      "title": "OSSIA/EMuSE: multi# / matrix~ / mayhem!",
+      "summary": "7:30 PM · Hatch Recital Hall · free with livestream.",
+      "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-11-23"
+    },
+    {
+      "id": "pick-6",
+      "day": "Tuesday · Percussion",
+      "title": "Chamber Percussion Ensemble",
+      "summary": "7:30 PM · Kilbourn Hall · free with livestream.",
+      "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-11-24"
+    },
+    {
+      "id": "pick-7",
+      "day": "Wednesday · Holiday classic",
+      "title": "The Nutcracker",
+      "summary": "7 PM · Kodak Hall · RPO with Rochester City Ballet · ticketed.",
+      "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-11-25"
+    }
+  ],
+  "days": {
+    "Thursday, November 19": [
+      {
+        "category": "TALKS / LECTURES",
+        "title": "Mastering Your NSF Data Management and Sharing Plan",
+        "time_location": "11:00 AM–12:00 PM · Virtual",
+        "description": "River Campus Libraries explains current NSF data-management and sharing requirements.",
+        "url": "https://events.rochester.edu/event/mastering-your-nsf-data-management-and-sharing-plan",
+        "status": null
+      },
+      {
+        "category": "MUSIC",
+        "title": "Eastman @ Washington Square: A Journey through Time",
+        "time_location": "12:15 PM · First Universalist Church of Rochester",
+        "description": "Historical-performance specialists play period instruments; no ticket is required.",
+        "url": "https://www.esm.rochester.edu/esm-event/eastman-washington-square-a-journey-through-time/",
+        "status": "FREE"
+      },
+      {
+        "category": "SPORTS",
+        "title": "Men’s Basketball vs. St. John Fisher University",
+        "time_location": "5:30 PM · NEUTRAL · Oswego, NY; venue not specified on the official schedule",
+        "description": "Rochester opens the Marks Pizzeria Crosstown Shootout at SUNY Oswego.",
+        "url": "https://uofrathletics.com/sports/mens-basketball/schedule/2026-27",
+        "status": "TICKETED"
+      },
+      {
+        "category": "TALKS / LECTURES",
+        "title": "Listening Through Soviet History",
+        "time_location": "5:00–7:00 PM · Rush Rhees Library, Humanities Center Conference Room D",
+        "description": "Gabrielle Cornish traces how sound and music helped construct Soviet identity after Stalin.",
+        "url": "https://events.rochester.edu/event/listening-through-soviet-history",
+        "status": null
+      },
+      {
+        "category": "ARTS",
+        "title": "Cinema and Politics Series: No",
+        "time_location": "5:30–8:30 PM · Dewey Hall 1-101",
+        "description": "A campus film screening and discussion in the Cinema and Politics series.",
+        "url": "https://events.rochester.edu/event/cinema-and-politics-series-no",
+        "status": null
+      },
+      {
+        "category": "ARTS",
+        "title": "Make a Connection!",
+        "time_location": "6:00–8:00 PM · Memorial Art Gallery, Bausch & Lomb Parlor",
+        "description": "MAG’s social art program; $15 general and $5 for UR students and MAG members.",
+        "url": "https://mag.rochester.edu/event/make-a-connection-nov19/",
+        "status": "SOLD OUT"
+      },
+      {
+        "category": "ARTS",
+        "title": "Art Start: Paper Marbling",
+        "time_location": "6:00–8:00 PM · Memorial Art Gallery, Creative Workshop",
+        "description": "Beginning paper-marbling workshop for adults; $55.",
+        "url": "https://mag.rochester.edu/event/art-start-paper-marbling-11af26/",
+        "status": "SOLD OUT"
+      },
+      {
+        "category": "MUSIC",
+        "title": "Third Thursday Concert: CWRU Historical Performance Program",
+        "time_location": "7:00–8:00 PM · Memorial Art Gallery, Fountain Court",
+        "description": "Students and faculty from Case Western’s historical-performance program perform; included with museum admission.",
+        "url": "https://mag.rochester.edu/event/third-thursday-concert-showcase-cwru-historical-performance-program/",
+        "status": "TICKETED"
+      },
+      {
+        "category": "SPORTS",
+        "title": "Women’s Basketball vs. St. John Fisher University",
+        "time_location": "7:30 PM · HOME · Louis Alexander Palestra",
+        "description": "Crosstown Shootout game; tournament admission is $5 adults and $1 students.",
+        "url": "https://uofrathletics.com/sports/2026/10/22/2026-womens-marks-pizzeria-crosstown-shootout.aspx",
+        "status": "TICKETED"
+      },
+      {
+        "category": "MUSIC",
+        "title": "Horn Choir",
+        "time_location": "7:30 PM · Kilbourn Hall · livestream available",
+        "description": "A free Eastman ensemble concert.",
+        "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-11-19",
+        "status": "FREE"
+      },
+      {
+        "category": "MUSIC",
+        "title": "Arthur Satz Chamber Ensemble Recital II",
+        "time_location": "8:00 PM · Wilson Commons, May Room",
+        "description": "River Campus chamber ensembles perform; admission is free unless otherwise noted.",
+        "url": "https://www.sas.rochester.edu/mur/ensembles/concerts.html",
+        "status": "FREE"
+      },
+      {
+        "category": "OTHER CAMPUS EVENTS",
+        "title": "Late Night × Quiz Bowl: Trivia Night",
+        "time_location": "10:00–11:00 PM · CampusGroups/Wilson Commons location not exposed in the public listing",
+        "description": "Late Night and Quiz Bowl host Thursday trivia.",
+        "url": "https://ccc.rochester.edu/latenight/events/",
+        "status": "FREE"
+      }
+    ],
+    "Friday, November 20": [
+      {
+        "category": "OTHER CAMPUS EVENTS",
+        "title": "Friends of Strong Holiday Market and Food Bazaar",
+        "time_location": "8:00 AM–4:30 PM · Strong Memorial Hospital, Sarah Flaum Atrium",
+        "description": "Holiday vendors and food in the hospital atrium.",
+        "url": "https://events.rochester.edu/event/friends-of-strong-holiday-market-and-food-bazaar",
+        "status": null
+      },
+      {
+        "category": "ARTS",
+        "title": "MAG Highlights Tour",
+        "time_location": "11:15 AM–12:15 PM · Memorial Art Gallery; meet at Admissions",
+        "description": "A docent-led collection tour included with museum admission.",
+        "url": "https://mag.rochester.edu/event/",
+        "status": "TICKETED"
+      },
+      {
+        "category": "TALKS / LECTURES",
+        "title": "November CIRC Symposium",
+        "time_location": "11:30 AM–1:00 PM · Wegmans Hall 1400",
+        "description": "Talks on the dark genome and computational analysis of music and speech.",
+        "url": "https://events.rochester.edu/event/november-circ-symposium",
+        "status": null
+      },
+      {
+        "category": "TALKS / LECTURES",
+        "title": "GIDS-AI Fall Research Symposium",
+        "time_location": "2:00–3:00 PM · Wegmans Hall 1400; stream available",
+        "description": "Yasemin Basdogan and Lisha Chen discuss AI, computational materials, optimization, and research opportunities.",
+        "url": "https://events.rochester.edu/event/gids-ai-fall-research-symposium-yasemin-basdogan-and-lisha-chen",
+        "status": null
+      },
+      {
+        "category": "TALKS / LECTURES",
+        "title": "Earth & Environmental Sciences Seminar: Schuyler Lockwood",
+        "time_location": "3:00–4:00 PM · Goergen Hall, Sloan Auditorium 101",
+        "description": "Atmospheric chemistry, methane oxidation kinetics, and biomass-burning emissions.",
+        "url": "https://sas.rochester.edu/ees/news-events/seminars.html",
+        "status": null
+      },
+      {
+        "category": "SPORTS",
+        "title": "Men’s and Women’s Swimming & Diving at Grove City College",
+        "time_location": "4:30 PM Friday / 1:00 PM Saturday · AWAY · Grove City, PA; pool not specified on Rochester’s schedules",
+        "description": "The official live-coverage page lists Friday and Saturday sessions.",
+        "url": "https://uofrathletics.com/coverage",
+        "status": null
+      },
+      {
+        "category": "MUSIC",
+        "title": "Tuba Mirum",
+        "time_location": "7:30 PM · Kilbourn Hall · livestream available",
+        "description": "Justin Benavidez directs Eastman’s tuba/euphonium ensemble.",
+        "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-11-20",
+        "status": "FREE"
+      },
+      {
+        "category": "MUSIC",
+        "title": "Chamber Music Extravaganza: Guitar and Friends",
+        "time_location": "7:30 PM · Hatch Recital Hall · livestream available",
+        "description": "Eastman guitar chamber-music students perform.",
+        "url": "https://www.esm.rochester.edu/esm-event/chamber-music-extravaganza-guitar-and-friends/",
+        "status": "FREE"
+      },
+      {
+        "category": "MUSIC",
+        "title": "RPO: All-American John Williams",
+        "time_location": "7:30 PM · Kodak Hall at Eastman Theatre",
+        "description": "A Rochester Philharmonic program at Eastman Theatre; Eastman identifies it as a non-school event.",
+        "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-11-20",
+        "status": "TICKETED"
+      }
+    ],
+    "Saturday, November 21": [
+      {
+        "category": "MUSIC",
+        "title": "Piano Pedagogy Symposium",
+        "time_location": "10:30 AM · Howard Hanson Hall",
+        "description": "A free Eastman symposium on piano teaching and learning.",
+        "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-11-21",
+        "status": "FREE"
+      },
+      {
+        "category": "SPORTS",
+        "title": "NCAA Division III Cross Country Championships",
+        "time_location": "12:00 PM CT women / 1:00 PM CT men · AWAY · Bill Huyck Championship Course, Northfield, MN",
+        "description": "Ella Blau, Joe Berry, and Liam Sakakeeny represent Rochester as individual qualifiers.",
+        "url": "https://uofrathletics.com/news/2026/11/15/mens-cross-country-mens-xcs-berry-sakakeeny-headed-back-to-ncaas.aspx",
+        "status": null
+      },
+      {
+        "category": "SPORTS",
+        "title": "Men’s Squash at Middlebury College",
+        "time_location": "12:00 PM · AWAY · Middlebury, VT; court venue not specified on the official schedule",
+        "description": "Rochester visits Middlebury for a noon match.",
+        "url": "https://uofrathletics.com/sports/mens-squash/schedule/2026-27",
+        "status": null
+      },
+      {
+        "category": "SPORTS",
+        "title": "Men’s and Women’s Swimming & Diving at Grove City College",
+        "time_location": "1:00 PM · AWAY · Grove City, PA; pool not specified on Rochester’s schedules",
+        "description": "Saturday session of the road meet.",
+        "url": "https://uofrathletics.com/sports/mens-swimming-and-diving/schedule/2026-27",
+        "status": null
+      },
+      {
+        "category": "SPORTS",
+        "title": "Men’s Basketball vs. Nazareth University",
+        "time_location": "2:00 PM · NEUTRAL · Oswego, NY; venue not specified on the official schedule",
+        "description": "Second Crosstown Shootout game at SUNY Oswego.",
+        "url": "https://uofrathletics.com/sports/mens-basketball/schedule/2026-27",
+        "status": "TICKETED"
+      },
+      {
+        "category": "SPORTS",
+        "title": "Women’s Basketball vs. Nazareth University",
+        "time_location": "4:00 PM · HOME · Louis Alexander Palestra",
+        "description": "Crosstown Shootout finale; tournament admission is $5 adults and $1 students.",
+        "url": "https://uofrathletics.com/sports/2026/10/22/2026-womens-marks-pizzeria-crosstown-shootout.aspx",
+        "status": "TICKETED"
+      },
+      {
+        "category": "MUSIC",
+        "title": "Arthur Satz Chamber Orchestra",
+        "time_location": "8:00 PM · Upper Strong Auditorium",
+        "description": "The River Campus Chamber Orchestra’s fall concert.",
+        "url": "https://www.sas.rochester.edu/mur/ensembles/concerts.html",
+        "status": "FREE"
+      },
+      {
+        "category": "MUSIC",
+        "title": "Eastman Student Recital Marathon",
+        "time_location": "11:30 AM–8:30 PM · Hatch, Kilbourn, Howard Hanson, Ciminelli, and Miller Center venues",
+        "description": "A full day of free degree, non-degree, and ECMS recitals; see the official date-filtered calendar for individual performers and livestreams.",
+        "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-11-21",
+        "status": "FREE"
+      }
+    ],
+    "Sunday, November 22": [
+      {
+        "category": "ARTS",
+        "title": "Haudenosaunee Heritage Celebration Day",
+        "time_location": "12:00–4:00 PM · Memorial Art Gallery",
+        "description": "Dance, storytelling, art, and cultural presentations; free for everyone.",
+        "url": "https://mag.rochester.edu/event/haudenosaunee-heritage-celebration-day-2026/",
+        "status": "FREE"
+      },
+      {
+        "category": "MUSIC",
+        "title": "Going for Baroque",
+        "time_location": "1:30 PM and 3:00 PM · Memorial Art Gallery, Fountain Court",
+        "description": "Two short Eastman performances on MAG’s Italian Baroque organ during the free celebration day.",
+        "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-11-22",
+        "status": "FREE"
+      },
+      {
+        "category": "MUSIC",
+        "title": "Celebrating the Life of Michael A. Jones",
+        "time_location": "2:30 PM · Hatch Recital Hall · livestream available",
+        "description": "A memorial concert presented at Eastman.",
+        "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-11-22",
+        "status": "TICKETED"
+      },
+      {
+        "category": "MUSIC",
+        "title": "Eastman Chorale",
+        "time_location": "3:30 PM · Kilbourn Hall · livestream available",
+        "description": "Donald Nally and Liyao Yu conduct Renaissance through contemporary choral music.",
+        "url": "https://www.esm.rochester.edu/esm-event/eastman-chorale-5/",
+        "status": "FREE"
+      },
+      {
+        "category": "MUSIC",
+        "title": "ECMS Music Educators’ Wind Ensemble with UR Wind Symphony",
+        "time_location": "5:00–6:30 PM · Upper Strong Auditorium",
+        "description": "Eastman Community Music School educators join the River Campus Wind Symphony.",
+        "url": "https://events.rochester.edu/event/ecms-music-educators-wind-ensemble-with-urochester-wind-symphony",
+        "status": "FREE"
+      },
+      {
+        "category": "MUSIC",
+        "title": "Compline with Schola Cantorum",
+        "time_location": "9:00 PM · Christ Church",
+        "description": "A late-evening choral service.",
+        "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-11-22",
+        "status": "FREE"
+      }
+    ],
+    "Monday, November 23": [
+      {
+        "category": "OTHER CAMPUS EVENTS",
+        "title": "Intro to Fellowships and Fulbright",
+        "time_location": "10:00–11:00 AM · Virtual",
+        "description": "An overview of fellowship and Fulbright opportunities.",
+        "url": "https://events.rochester.edu/event/intro-to-fellowships-and-fulbright",
+        "status": null
+      },
+      {
+        "category": "TALKS / LECTURES",
+        "title": "Gender, Social Status and the Late Medieval Pilgrimage to Saint Patrick’s Purgatory",
+        "time_location": "1:00 PM · Virtual",
+        "description": "Tara Shields examines pilgrimage, gender, status, and mobility in late medieval Ireland.",
+        "url": "https://events.rochester.edu/event/gender-social-status-and-the-late-medieval-pilgrimage-to-saint-patricks-purgatory",
+        "status": "RSVP REQUIRED"
+      },
+      {
+        "category": "TALKS / LECTURES",
+        "title": "Atomic Precision as a Path Toward Non-Precious Metal Catalysts",
+        "time_location": "4:00–5:00 PM · Hutchison Hall 140",
+        "description": "Gwendolyn Bailey discusses earth-abundant catalysts and atomically precise molecular clusters.",
+        "url": "https://events.rochester.edu/event/inorganic-chemistry-seminar-atomic-precision-as-a-path-towards-non-precious-metal-catalysts",
+        "status": null
+      },
+      {
+        "category": "OTHER CAMPUS EVENTS",
+        "title": "Graduate Writing Project Fall Retreat",
+        "time_location": "4:30–8:30 PM · Rush Rhees Library G-121, Conference Room A",
+        "description": "A focused writing retreat for graduate students; additional sessions Tuesday and Wednesday.",
+        "url": "https://events.rochester.edu/event/graduate-writing-project-fall-retreat",
+        "status": null
+      },
+      {
+        "category": "MUSIC",
+        "title": "Brass Guild",
+        "time_location": "7:30 PM · Kilbourn Hall · livestream available",
+        "description": "A free Eastman brass ensemble concert.",
+        "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-11-23",
+        "status": "FREE"
+      },
+      {
+        "category": "MUSIC",
+        "title": "OSSIA/EMuSE: multi# / matrix~ / mayhem!",
+        "time_location": "7:30 PM · Hatch Recital Hall · livestream available",
+        "description": "Eastman’s student new-music organizations present an experimental program.",
+        "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-11-23",
+        "status": "FREE"
+      }
+    ],
+    "Tuesday, November 24": [
+      {
+        "category": "MUSIC",
+        "title": "Tuesday Pipes",
+        "time_location": "12:10 PM · Christ Church",
+        "description": "A free lunchtime organ recital.",
+        "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-11-24",
+        "status": "FREE"
+      },
+      {
+        "category": "ARTS",
+        "title": "Conversations: Art & Cinema",
+        "time_location": "12:30–1:30 PM · Virtual",
+        "description": "Pirooz Kalayeh and University of Rochester students discuss art and cinema.",
+        "url": "https://events.rochester.edu/event/conversations-art-cinema-fall-2026",
+        "status": null
+      },
+      {
+        "category": "ARTS",
+        "title": "Hebrew Table",
+        "time_location": "12:30 PM · Rush Rhees Library 442",
+        "description": "An informal Hebrew-language gathering in the library.",
+        "url": "https://events.rochester.edu/event/hebrew-table",
+        "status": null
+      },
+      {
+        "category": "MUSIC",
+        "title": "Live Music at Finger Lakes Coffee Shop",
+        "time_location": "2:00–3:00 PM · Strong Memorial Hospital, near the Green Elevator",
+        "description": "A free hospital music performance.",
+        "url": "https://events.rochester.edu/event/live-music-at-finger-lakes-coffee-shop",
+        "status": "FREE"
+      },
+      {
+        "category": "SPORTS",
+        "title": "Women’s Basketball at William Smith College",
+        "time_location": "5:30 PM · AWAY · Geneva, NY; venue not specified on Rochester’s official schedule",
+        "description": "A road game against William Smith.",
+        "url": "https://uofrathletics.com/sports/womens-basketball/schedule/2026-27",
+        "status": null
+      },
+      {
+        "category": "SPORTS",
+        "title": "Men’s Basketball at Hobart College",
+        "time_location": "7:30 PM · AWAY · Geneva, NY; venue not specified on Rochester’s official schedule",
+        "description": "A road game against Hobart.",
+        "url": "https://uofrathletics.com/sports/mens-basketball/schedule/2026-27",
+        "status": null
+      },
+      {
+        "category": "MUSIC",
+        "title": "Chamber Percussion Ensemble",
+        "time_location": "7:30 PM · Kilbourn Hall · livestream available",
+        "description": "Eastman’s chamber percussion students perform.",
+        "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-11-24",
+        "status": "FREE"
+      },
+      {
+        "category": "OTHER CAMPUS EVENTS",
+        "title": "Graduate Writing Project Fall Retreat",
+        "time_location": "7:00–10:00 PM · Rush Rhees Library G-121, Conference Room A",
+        "description": "The second holiday-week writing-retreat session.",
+        "url": "https://events.rochester.edu/event/graduate-writing-project-fall-retreat",
+        "status": null
+      }
+    ],
+    "Wednesday, November 25": [
+      {
+        "category": "MUSIC",
+        "title": "Wilmot Wednesdays: Music in the Lobby",
+        "time_location": "10:00–11:00 AM · Wilmot Cancer Center",
+        "description": "A public morning performance in the cancer-center lobby.",
+        "url": "https://events.rochester.edu/event/wilmot-wednesdays-music-in-the-lobby-of-wci",
+        "status": null
+      },
+      {
+        "category": "ARTS",
+        "title": "MAG Exhibitions: Cao Fei, Desire and Abundance, and Hugo McCloud",
+        "time_location": "11:00 AM–5:00 PM · Memorial Art Gallery",
+        "description": "Three exhibitions remain on view; admission is free to UR ID holders for Desire and Abundance and otherwise governed by museum admission.",
+        "url": "https://mag.rochester.edu/exhibitions/",
+        "status": "TICKETED"
+      },
+      {
+        "category": "OTHER CAMPUS EVENTS",
+        "title": "Graduate Writing Project Fall Retreat",
+        "time_location": "4:30–8:30 PM · Rush Rhees Library G-121, Conference Room A",
+        "description": "Final session of the three-day focused writing retreat.",
+        "url": "https://events.rochester.edu/event/graduate-writing-project-fall-retreat",
+        "status": null
+      },
+      {
+        "category": "THEATER / DANCE",
+        "title": "RPO and Rochester City Ballet: The Nutcracker",
+        "time_location": "7:00 PM · Kodak Hall at Eastman Theatre",
+        "description": "The Rochester Philharmonic and Rochester City Ballet open their holiday run; Eastman identifies this as a non-school event.",
+        "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-11-25",
+        "status": "TICKETED"
+      }
+    ],
+    "Thursday, November 26": [
+      {
+        "category": "ARTS",
+        "title": "From Classroom to Clinic: The Student Experience at 100",
+        "time_location": "10:00 AM · Edward G. Miner Library",
+        "description": "An exhibition marking a century of Rochester medical education; verify holiday access with the library before traveling.",
+        "url": "https://events.rochester.edu/event/from-classroom-to-clinic-the-student-experience-at-100",
+        "status": null
+      },
+      {
+        "category": "TALKS / LECTURES",
+        "title": "Opioid Overdose Prevention Training",
+        "time_location": "1:00–1:30 PM · Virtual",
+        "description": "A short virtual overdose-prevention training.",
+        "url": "https://events.rochester.edu/event/opioid-overdose-prevention-training",
+        "status": null
+      },
+      {
+        "category": "OTHER CAMPUS EVENTS",
+        "title": "Dine on Do Not Disturb",
+        "time_location": "5:00–7:00 PM · Susan B. Anthony Halls, Danforth Dining Hall",
+        "description": "A Thanksgiving-evening dining-hall program listed on the University calendar.",
+        "url": "https://events.rochester.edu/event/dine-on-do-not-disturb",
+        "status": null
+      }
+    ]
+  },
+  "source_health": {
+    "central_api": "unavailable",
+    "central_html": "verified",
+    "ccc_public_feed": "unavailable",
+    "late_night": "verified",
+    "eastman": "verified",
+    "athletics": "verified with Grove City session discrepancy",
+    "mag": "verified",
+    "departmental_sources": "verified with named gaps"
+  }
+}

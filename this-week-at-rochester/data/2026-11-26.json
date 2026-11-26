@@ -1,0 +1,449 @@
+{
+  "week_start": "2026-11-26",
+  "week_end": "2026-12-03",
+  "timezone": "America/New_York",
+  "generated": "2026-11-26",
+  "event_count": 48,
+  "events": [
+    {
+      "date": "2026-11-26",
+      "category": "TALKS / LECTURES",
+      "title": "Opioid Overdose Prevention Training",
+      "when_where": "1:00–1:30 PM · Virtual",
+      "description": "University-led overdose-response training.",
+      "url": "https://events.rochester.edu/event/opioid-overdose-prevention-training",
+      "status": null
+    },
+    {
+      "date": "2026-11-26",
+      "category": "OTHER CAMPUS EVENTS",
+      "title": "Dine on Do Not Disturb",
+      "when_where": "5:00–7:00 PM · Danforth Dining Hall, Susan B. Anthony Halls",
+      "description": "A phone-free dinner and conversation space during Thanksgiving recess.",
+      "url": "https://events.rochester.edu/event/dine-on-do-not-disturb",
+      "status": null
+    },
+    {
+      "date": "2026-11-26",
+      "category": "ARTS",
+      "title": "From Classroom to Clinic: The Student Experience at 100",
+      "when_where": "10:00 AM · Edward G. Miner Library",
+      "description": "A centennial exhibit about the student experience; holiday building access was not separately confirmed.",
+      "url": "https://events.rochester.edu/event/from-classroom-to-clinic-the-student-experience-at-100",
+      "status": null
+    },
+    {
+      "date": "2026-11-27",
+      "category": "ARTS",
+      "title": "Cao Fei: Duotopia Vol. 1 and Vol. 2",
+      "when_where": "11:00 AM–5:00 PM · Memorial Art Gallery",
+      "description": "Two moving-image installations; included with museum admission.",
+      "url": "https://mag.rochester.edu/exhibitions/cao-fei-duotopia-vol-1-and-vol-2/",
+      "status": "TICKETED"
+    },
+    {
+      "date": "2026-11-27",
+      "category": "ARTS",
+      "title": "Desire and Abundance: American Culture and the Still Life",
+      "when_where": "11:00 AM–5:00 PM · Memorial Art Gallery, Forman Gallery",
+      "description": "Still life and American consumer culture; included with admission and free with UR ID.",
+      "url": "https://mag.rochester.edu/exhibitions/desire-and-abundance-american-culture-and-the-still-life/",
+      "status": "TICKETED"
+    },
+    {
+      "date": "2026-11-27",
+      "category": "MUSIC",
+      "title": "The Nutcracker with Rochester City Ballet",
+      "when_where": "2:00 PM and 7:00 PM · Kodak Hall at Eastman Theatre",
+      "description": "Rochester Philharmonic Orchestra and Rochester City Ballet in the holiday classic.",
+      "url": "https://www.esm.rochester.edu/esm-event/rpo-the-nutcracker-with-rochester-city-ballet-4/",
+      "status": "TICKETED"
+    },
+    {
+      "date": "2026-11-28",
+      "category": "ARTS",
+      "title": "Mindful MAGiC: Sonic Yoga",
+      "when_where": "9:15–10:45 AM · MAG Fountain Court",
+      "description": "Yoga, meditation, and an immersive live soundscape; $35, or $30 for MAG members.",
+      "url": "https://mag.rochester.edu/event/mindful-magic-sonic-yoga-nov28/",
+      "status": "SOLD OUT"
+    },
+    {
+      "date": "2026-11-28",
+      "category": "ARTS",
+      "title": "Debra Jacobson Trunk Show",
+      "when_where": "12:00–5:00 PM · The Store @ MAG",
+      "description": "Meet the artist and browse one-of-a-kind jewelry and wearable art; museum admission is not required to shop.",
+      "url": "https://mag.rochester.edu/event/debra-jacobson-trunk-show/",
+      "status": "FREE"
+    },
+    {
+      "date": "2026-11-28",
+      "category": "MUSIC",
+      "title": "The Nutcracker with Rochester City Ballet",
+      "when_where": "2:00 PM and 7:00 PM · Kodak Hall at Eastman Theatre",
+      "description": "RPO and Rochester City Ballet; two Saturday performances.",
+      "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-11-28",
+      "status": "TICKETED"
+    },
+    {
+      "date": "2026-11-29",
+      "category": "ARTS",
+      "title": "Mansawear Collection Pop-Up",
+      "when_where": "12:00–4:00 PM · The Store @ MAG",
+      "description": "Meet Rochester designer Nita Brown and browse the Mansawear collection; no museum admission is required to shop.",
+      "url": "https://mag.rochester.edu/event/mansawear-collection-pop-up/",
+      "status": "FREE"
+    },
+    {
+      "date": "2026-11-29",
+      "category": "ARTS",
+      "title": "MAG Highlights Tour",
+      "when_where": "12:30–1:30 PM · Memorial Art Gallery; meet at Admissions",
+      "description": "Drop-in docent tour, subject to docent availability and included with museum admission.",
+      "url": "https://mag.rochester.edu/event/mag-highlights-tour-3/2026-11-29/",
+      "status": "TICKETED"
+    },
+    {
+      "date": "2026-11-29",
+      "category": "MUSIC",
+      "title": "Going for Baroque",
+      "when_where": "1:30 PM and 3:00 PM · Memorial Art Gallery",
+      "description": "Eastman students perform Italian Baroque music beside MAG’s Italian Baroque organ.",
+      "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-11-29",
+      "status": "FREE"
+    },
+    {
+      "date": "2026-11-29",
+      "category": "THEATER / DANCE",
+      "title": "The Nutcracker with Rochester City Ballet",
+      "when_where": "2:00 PM · Kodak Hall at Eastman Theatre",
+      "description": "Final listed weekend performance with the RPO and Rochester City Ballet.",
+      "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-11-29",
+      "status": "TICKETED"
+    },
+    {
+      "date": "2026-11-29",
+      "category": "MUSIC",
+      "title": "Compline with Schola Cantorum",
+      "when_where": "9:00 PM · Christ Church",
+      "description": "A candlelit late-evening choral service.",
+      "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-11-29",
+      "status": "FREE"
+    },
+    {
+      "date": "2026-11-30",
+      "category": "TALKS / LECTURES",
+      "title": "Department of Biology Seminar",
+      "when_where": "12:00–1:00 PM · Hutchison Hall 140, Lander Auditorium",
+      "description": "The department’s weekly research seminar.",
+      "url": "https://events.rochester.edu/event/department-of-biology-seminar",
+      "status": null
+    },
+    {
+      "date": "2026-11-30",
+      "category": "MUSIC",
+      "title": "Brass Guest Masterclass: Nathaniel Silberschlag, horn",
+      "when_where": "12:00 PM · Ciminelli Lounge, Eastman School of Music",
+      "description": "Cleveland Orchestra principal horn Nathaniel Silberschlag leads a masterclass; Eastman students only.",
+      "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-11-30",
+      "status": "FREE"
+    },
+    {
+      "date": "2026-11-30",
+      "category": "TALKS / LECTURES",
+      "title": "Physics Colloquium: Michael Zemcov",
+      "when_where": "4:00 PM · Physics & Astronomy; room not stated on the posted schedule",
+      "description": "RIT physicist Michael Zemcov; title remains listed as TBD.",
+      "url": "https://www.sas.rochester.edu/pas/news-events/events/colloquia/index.html",
+      "status": null
+    },
+    {
+      "date": "2026-11-30",
+      "category": "THEATER / DANCE",
+      "title": "Todd Talk: Emily Skinner",
+      "when_where": "Organizer says date/time to be rescheduled · Virtual",
+      "description": "The central calendar still shows 5:00–6:00 PM, but the International Theatre Program now says the talk is to be rescheduled.",
+      "url": "https://www.sas.rochester.edu/theatre/productions/todd-talks.html",
+      "status": "POSTPONED"
+    },
+    {
+      "date": "2026-11-30",
+      "category": "MUSIC",
+      "title": "Student Non-Degree Recital: Christian Yohannes, viola",
+      "when_where": "8:30 PM · Ray Wright Room, Eastman School of Music",
+      "description": "An Eastman student recital; no ticket required.",
+      "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-11-30",
+      "status": "FREE"
+    },
+    {
+      "date": "2026-12-01",
+      "category": "TALKS / LECTURES",
+      "title": "The Simon Consortium Experience",
+      "when_where": "12:00–1:00 PM · Online",
+      "description": "Current Simon students and alumni discuss the Consortium network and MBA experience.",
+      "url": "https://simon.rochester.edu/events/simon-consortium-experience-hear-current-students-alumni",
+      "status": "RSVP REQUIRED"
+    },
+    {
+      "date": "2026-12-01",
+      "category": "MUSIC",
+      "title": "Tuesday Pipes",
+      "when_where": "12:10 PM · Christ Church",
+      "description": "Eastman’s weekly organ series.",
+      "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-12-01",
+      "status": "FREE"
+    },
+    {
+      "date": "2026-12-01",
+      "category": "TALKS / LECTURES",
+      "title": "A Ladder of Hope: Ray Qu",
+      "when_where": "12:30–2:00 PM · Humanities Center Conference Room D, Rush Rhees Library",
+      "description": "A Rosenberger work-in-progress seminar on religious aspiration under authoritarian biopolitics in North China.",
+      "url": "https://events.rochester.edu/event/a-ladder-of-hope-the-religious-capacity-to-aspire-under-authoritarian-biopolitics-in-north-china",
+      "status": null
+    },
+    {
+      "date": "2026-12-01",
+      "category": "TALKS / LECTURES",
+      "title": "Navigating Qualitative Methods Choices in D&I Research",
+      "when_where": "4:00–5:00 PM · Virtual",
+      "description": "A dissemination and implementation science webinar with Jodi Summers Holtrop.",
+      "url": "https://events.rochester.edu/event/dissemination-implementation-science-webinar-1489",
+      "status": "FREE"
+    },
+    {
+      "date": "2026-12-01",
+      "category": "OTHER CAMPUS EVENTS",
+      "title": "Destress Fest",
+      "when_where": "5:00–7:00 PM · Welles-Brown Room, Rush Rhees Library",
+      "description": "Sweet treats, relaxing crafts, and a study break hosted by Health Promotion.",
+      "url": "https://events.rochester.edu/event/destress-fest-870",
+      "status": "FREE"
+    },
+    {
+      "date": "2026-12-01",
+      "category": "SPORTS",
+      "title": "Women’s Basketball vs. Ithaca College",
+      "when_where": "5:30 PM · HOME · Louis Alexander Palestra",
+      "description": "The Yellowjackets host Ithaca.",
+      "url": "https://uofrathletics.com/sports/womens-basketball/schedule/2026-27",
+      "status": "TICKETED"
+    },
+    {
+      "date": "2026-12-01",
+      "category": "SPORTS",
+      "title": "Men’s Basketball vs. Ithaca College",
+      "when_where": "7:30 PM · HOME · Louis Alexander Palestra",
+      "description": "The Yellowjackets host Ithaca in the second game of the home doubleheader.",
+      "url": "https://uofrathletics.com/sports/mens-basketball/schedule/2026-27",
+      "status": "TICKETED"
+    },
+    {
+      "date": "2026-12-01",
+      "category": "MUSIC",
+      "title": "Eastman New Jazz Orchestra",
+      "when_where": "7:30 PM · Kilbourn Hall · livestream available",
+      "description": "A free Eastman ensemble concert.",
+      "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-12-01",
+      "status": "FREE"
+    },
+    {
+      "date": "2026-12-02",
+      "category": "TALKS / LECTURES",
+      "title": "Resilience and the Humanities Book Launch",
+      "when_where": "10:00–11:00 AM · Humanities Center Conference Room D, Rush Rhees Library · stream available",
+      "description": "Launch of the inaugural volume in the Humanities in the World series.",
+      "url": "https://events.rochester.edu/event/resilience-and-the-humanities-book-launch",
+      "status": null
+    },
+    {
+      "date": "2026-12-02",
+      "category": "TALKS / LECTURES",
+      "title": "RL Post-Training Unveiled: How Transformers Learn to Reason and Search",
+      "when_where": "12:00–1:00 PM · Computer Studies Building 601",
+      "description": "A technical talk on reinforcement-learning post-training and transformer reasoning.",
+      "url": "https://events.rochester.edu/event/rl-post-training-unveiled-how-transformers-learn-to-reason-and-search",
+      "status": null
+    },
+    {
+      "date": "2026-12-02",
+      "category": "OTHER CAMPUS EVENTS",
+      "title": "Chat with Simon’s Graduate Programs Staff",
+      "when_where": "12:00–1:00 PM · Wilson Commons",
+      "description": "Drop in with Simon admissions staff to discuss MBA and MS programs.",
+      "url": "https://simon.rochester.edu/events",
+      "status": "FREE"
+    },
+    {
+      "date": "2026-12-02",
+      "category": "TALKS / LECTURES",
+      "title": "America’s Got Regulatory Science Talent Student Competition",
+      "when_where": "12:00 PM · Helen Wood Hall 1W-304",
+      "description": "Students present regulatory-science ideas to a judging panel.",
+      "url": "https://events.rochester.edu/event/americas-got-regulatory-science-talent-student-competition",
+      "status": "FREE"
+    },
+    {
+      "date": "2026-12-02",
+      "category": "MUSIC",
+      "title": "Low Brass Concert with Philadelphia Orchestra Musicians",
+      "when_where": "12:30 PM · Kilbourn Hall",
+      "description": "An Eastman Brass Department guest concert.",
+      "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-12-02",
+      "status": "FREE"
+    },
+    {
+      "date": "2026-12-02",
+      "category": "TALKS / LECTURES",
+      "title": "AI Coffee Salon: December Meeting",
+      "when_where": "1:00–2:00 PM · Welles-Brown Room, Rush Rhees Library",
+      "description": "An informal campus conversation about artificial intelligence.",
+      "url": "https://events.rochester.edu/event/ai-coffee-salon-december-meeting",
+      "status": null
+    },
+    {
+      "date": "2026-12-02",
+      "category": "TALKS / LECTURES",
+      "title": "Voices of XR: Kaan Akşit",
+      "when_where": "2:00–3:15 PM · Studio X, first floor of Carlson Library",
+      "description": "A Studio X talk in the Voices of XR series.",
+      "url": "https://events.rochester.edu/event/voices-of-xr-kaan-aksit",
+      "status": null
+    },
+    {
+      "date": "2026-12-02",
+      "category": "OTHER CAMPUS EVENTS",
+      "title": "Humanities Center Social Hour",
+      "when_where": "4:00–5:00 PM · Humanities Center Lounge 212, Rush Rhees Library",
+      "description": "A community social hour hosted by the Humanities Center.",
+      "url": "https://events.rochester.edu/event/humanities-center-social-hour",
+      "status": "FREE"
+    },
+    {
+      "date": "2026-12-02",
+      "category": "MUSIC",
+      "title": "Cello Choir",
+      "when_where": "6:30 PM · Kilbourn Hall · livestream available",
+      "description": "A free Eastman ensemble concert.",
+      "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-12-02",
+      "status": "FREE"
+    },
+    {
+      "date": "2026-12-02",
+      "category": "MUSIC",
+      "title": "Student Degree Recital: Miao Gao, piano",
+      "when_where": "8:30 PM · Kilbourn Hall · livestream available",
+      "description": "An Eastman student degree recital.",
+      "url": "https://www.esm.rochester.edu/events/?_esm_events_date_range=2026-12-02",
+      "status": "FREE"
+    },
+    {
+      "date": "2026-12-03",
+      "category": "SPORTS",
+      "title": "Women’s Swimming and Diving at Ithaca College Bomber Invitational",
+      "when_where": "9:00 AM · AWAY · Ithaca, NY",
+      "description": "Opening day of the Bomber Invitational.",
+      "url": "https://uofrathletics.com/sports/womens-swimming-and-diving/schedule/2026-27",
+      "status": null
+    },
+    {
+      "date": "2026-12-03",
+      "category": "SPORTS",
+      "title": "Men’s Swimming and Diving at Ithaca College Bomber Invitational",
+      "when_where": "9:00 AM · AWAY · Ithaca, NY",
+      "description": "Opening day of the Bomber Invitational.",
+      "url": "https://uofrathletics.com/sports/mens-swimming-and-diving/schedule/2026-27",
+      "status": null
+    },
+    {
+      "date": "2026-12-03",
+      "category": "OTHER CAMPUS EVENTS",
+      "title": "Coffee with Homer",
+      "when_where": "9:00 AM · Havens Lounge 409, Wilson Commons",
+      "description": "Morning coffee with Dean of Students Homer.",
+      "url": "https://events.rochester.edu/event/coffee-with-homer",
+      "status": "FREE"
+    },
+    {
+      "date": "2026-12-03",
+      "category": "MUSIC",
+      "title": "Eastman @ Washington Square: Cantilena Trio",
+      "when_where": "12:15 PM · First Universalist Church of Rochester",
+      "description": "Beethoven’s “Archduke” Piano Trio; tickets are not required.",
+      "url": "https://www.esm.rochester.edu/esm-event/eastman-washington-square-cantilena-trio-majesty-reflection-and-verve/",
+      "status": "FREE"
+    },
+    {
+      "date": "2026-12-03",
+      "category": "MUSIC",
+      "title": "Music for Two Euphoniums",
+      "when_where": "1:00–2:00 PM · Strong Memorial Hospital Interfaith Chapel",
+      "description": "Eastman students Jane Altenbach and Nathanael Kumar perform classical and folk music.",
+      "url": "https://events.rochester.edu/event/smh-interfaith-chapel-music-for-two-euphoniums",
+      "status": "FREE"
+    },
+    {
+      "date": "2026-12-03",
+      "category": "TALKS / LECTURES",
+      "title": "Physics Colloquium: Doran Raccah",
+      "when_where": "4:00 PM · Physics & Astronomy; room not stated on the posted schedule",
+      "description": "A University of Texas at Austin colloquium; the posted title remains TBD.",
+      "url": "https://www.sas.rochester.edu/pas/news-events/events/colloquia/index.html",
+      "status": null
+    },
+    {
+      "date": "2026-12-03",
+      "category": "ARTS",
+      "title": "Merry MAG Member Night",
+      "when_where": "5:00–7:00 PM · Memorial Art Gallery",
+      "description": "Cocoa, cookies, art projects, trunk shows, and member shopping discounts; free member ticket required.",
+      "url": "https://mag.rochester.edu/event/merry-mag-member-night/",
+      "status": "RSVP REQUIRED"
+    },
+    {
+      "date": "2026-12-03",
+      "category": "ARTS",
+      "title": "Fall 2026 Writer’s Lounge",
+      "when_where": "5:00–7:00 PM · Humanities Center Lounge, Rush Rhees Library",
+      "description": "An evening gathering for campus writers.",
+      "url": "https://events.rochester.edu/event/fall-2026-writers-lounge",
+      "status": "FREE"
+    },
+    {
+      "date": "2026-12-03",
+      "category": "ARTS",
+      "title": "MAG Highlights Tour",
+      "when_where": "6:45–7:45 PM · Memorial Art Gallery; meet at Admissions",
+      "description": "Drop-in docent tour, subject to availability and included with museum admission.",
+      "url": "https://mag.rochester.edu/event/mag-highlights-tour/2026-12-03/",
+      "status": "TICKETED"
+    },
+    {
+      "date": "2026-12-03",
+      "category": "MUSIC",
+      "title": "Student Non-Degree Recital: Yanhe (Lisa) Lei, jazz voice",
+      "when_where": "8:30 PM · Howard Hanson Hall",
+      "description": "An Eastman student recital; tickets are not required.",
+      "url": "https://www.esm.rochester.edu/esm-event/student-non-degree-recital-yanhe-lisa-lei-jazz-voice/",
+      "status": "FREE"
+    },
+    {
+      "date": "2026-12-03",
+      "category": "OTHER CAMPUS EVENTS",
+      "title": "Late Night × Quiz Bowl: Trivia Night",
+      "when_where": "10:00–11:00 PM · CampusGroups location not exposed publicly",
+      "description": "Late Night and Quiz Bowl host Thursday trivia.",
+      "url": "https://ccc.rochester.edu/latenight/events/",
+      "status": "FREE"
+    }
+  ],
+  "source_health": {
+    "localist_api": "unavailable; HTML day and upcoming pages used",
+    "ccc_mobile": "unavailable; public Late Night verified",
+    "eastman": "verified",
+    "athletics": "verified active schedules",
+    "mag": "verified",
+    "named_departments": "verified where publicly accessible"
+  }
+}
